@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserInput", "UserInput\User
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefErtek", "RefErtek\RefErtek.csproj", "{F2C69556-5D4D-4FCB-AC2C-DC33CADEAC41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization", "Serialization\Serialization.csproj", "{A684F6EC-AC35-4FC7-8E92-A6BAB8C6B72F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serialization", "Serialization\Serialization.csproj", "{A684F6EC-AC35-4FC7-8E92-A6BAB8C6B72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesztPelda", "TesztPelda\TesztPelda.csproj", "{8B3CB0D6-89BE-4916-B3EA-E95B8FCE9945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesztPelda.Tests", "TesztPelda.Tests\TesztPelda.Tests.csproj", "{1770AE85-9701-4175-8E11-D359F10BDA53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{A684F6EC-AC35-4FC7-8E92-A6BAB8C6B72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A684F6EC-AC35-4FC7-8E92-A6BAB8C6B72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A684F6EC-AC35-4FC7-8E92-A6BAB8C6B72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B3CB0D6-89BE-4916-B3EA-E95B8FCE9945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B3CB0D6-89BE-4916-B3EA-E95B8FCE9945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B3CB0D6-89BE-4916-B3EA-E95B8FCE9945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B3CB0D6-89BE-4916-B3EA-E95B8FCE9945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1770AE85-9701-4175-8E11-D359F10BDA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1770AE85-9701-4175-8E11-D359F10BDA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1770AE85-9701-4175-8E11-D359F10BDA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1770AE85-9701-4175-8E11-D359F10BDA53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
