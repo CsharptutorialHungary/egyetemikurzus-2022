@@ -308,7 +308,7 @@
     }
   },
   {
-    "name": "&nbsp;Forked Pale Tongue",
+    "name": "Forked Pale Tongue",
     "description": "Proof of a red orb invader's victory over a blue spirit. Consume to acquire 2 Pale Tongues.",
     "type": {
       "description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
@@ -434,7 +434,7 @@
     }
   },
   {
-    "name": "&nbsp;Yellow Bug Pellet",
+    "name": "Yellow Bug Pellet",
     "description": "15% boost in lightning damage absorption for 60 seconds.",
     "type": {
       "description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
@@ -721,14 +721,14 @@
     }
   },
   {
-    "name": "&nbsp;Dung Pie",
+    "name": "Dung Pie",
     "description": "Throw at enemy to inflict toxin build-up, but also ups your own toxicity.",
     "type": {
       "description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
     }
   },
   {
-    "name": "&nbsp;Firebomb",
+    "name": "Firebomb",
     "description": "Use to create an explosion at the point of impact, dealing fire damage.",
     "type": {
       "description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
@@ -812,13 +812,6 @@
     }
   },
   {
-    "name": "Bolts",
-    "description": "",
-    "type": {
-      "description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
-    }
-  },
-  {
     "name": "Standard Bolt",
     "description": "Ammo for Crossbows.Standard bolts.",
     "type": {
@@ -863,13 +856,6 @@
   {
     "name": "Splintering Bolt",
     "description": "Ammo for Crossbows.Bolts that explode immediately after being shot, causing immense Bleeding.",
-    "type": {
-      "description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
-    }
-  },
-  {
-    "name": "Arrows",
-    "description": "",
     "type": {
       "description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
     }
@@ -926,13 +912,6 @@
   {
     "name": "Large Arrow",
     "description": "Ammo for Bows.More powerful arrows, but with a shorter range due to their weight.",
-    "type": {
-      "description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
-    }
-  },
-  {
-    "name": "Great Arrows",
-    "description": "",
     "type": {
       "description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
     }
@@ -1120,176 +1099,169 @@
     }
   },
   {
-    "name": "Soul",
-    "description": "Item 1",
-    "type": {
-      "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
-    }
-  },
-  {
     "name": "Soul of Boreal Valley Vordt",
-    "description": "Vordt's Great Hammer (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of the Rotted Greatwood",
-    "description": "Hollowslayer Greatsword (1,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of a Crystal Sage",
-    "description": "Crystal Sage's Rapier (1,500 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of the Blood of the Wolf",
-    "description": "Farron Greatsword (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "&nbsp; Soul of Rosaria",
-    "description": "Bountiful Sunlight (0 Souls)",
+    "name": "Soul of Rosaria",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "&nbsp;Soul of the Deacons of the Deep",
-    "description": "Deep Soul (0 Souls)",
+    "name": "Soul of the Deacons of the Deep",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of High Lord Wolnir",
-    "description": "Wolnir's Holy Sword (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of the Old Demon King",
-    "description": "Chaos Bed Vestiges (5,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of a Demon",
-    "description": "Demon's Greataxe (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Pontiff Sulyvahn",
-    "description": "Greatsword of Judgment (3,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Yhorm the Giant",
-    "description": "Yhorm's Great Machete (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Aldrich",
-    "description": "Lifehunt Scythe (5,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of the Dancer",
-    "description": "Soothing Sunlight (5,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Dragonslayer Armour",
-    "description": "Dragonslayer Greataxe (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Consumed Oceiros",
-    "description": "White Dragon Breath (10,000 souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Champion Gundyr",
-    "description": "Gundyr's Halberd (0 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of the Twin Princes",
-    "description": "Lothric's Holy Sword (5,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "Soul of the&nbsp;Nameless King",
-    "description": "Storm Curved Sword (5,000 Souls)",
+    "name": "Soul of the Nameless King",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of a Stray Demon",
-    "description": "Havel's Ring (5,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "Soul of the&nbsp;Lords",
-    "description": "Sunlight Spear (10,000 Souls)",
+    "name": "Soul of the Lords",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
     "name": "Soul of Sister Friede",
-    "description": "Friede's Great Scythe (10,000 Souls)",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "&nbsp; Soul of the Demon Prince",
-    "description": "Seething Chaos (10,000 Souls)",
+    "name": "Soul of the Demon Prince",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "&nbsp; Soul of Darkeater Midir",
-    "description": "Frayed Blade (5,000 Souls)",
+    "name": "Soul of Darkeater Midir",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }
   },
   {
-    "name": "&nbsp; Soul of Slave Knight Gael",
-    "description": "(20,000 Souls)",
+    "name": "Soul of Slave Knight Gael",
+    "description": "-",
     "type": {
       "description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
     }

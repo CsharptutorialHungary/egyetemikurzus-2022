@@ -1,5 +1,6 @@
 ﻿namespace Inventory
 {
+
     internal record class Item
     {
         public string name { get; set; }

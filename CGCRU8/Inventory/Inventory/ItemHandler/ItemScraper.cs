@@ -9,15 +9,15 @@ namespace ItemHandler
     {
         readonly private HttpClient _client;
         readonly private HtmlDocument _doc;
-
-        private const string basePageLink = "https://darksouls3.wiki.fextralife.com/";
-
+        readonly private string? _basePageLink;
         readonly private Dictionary<string, ItemType> _itemTypes;
 
         public ItemScraper()
         {
             _client = new HttpClient();
             _doc = new HtmlDocument();
+
+            _basePageLink = ConfigurationManager.AppSettings["basePageLink"];
 
             _itemTypes = new Dictionary<string, ItemType>()
             {
@@ -43,16 +43,16 @@ namespace ItemHandler
 
                 Logger.Log("Tárgyak létrehozása elkezdődött.");
 
-                string url = (basePageLink + "Items");
-                string[] subPages = GetSubPages(url);
+                string url = (_basePageLink + "Items");
+                string[] itemCategories = GetSubPages(url);
                 Logger.Log("Aloldalak linkje megszerezve.");
 
                 List<Item> allItems = new List<Item>();
 
-                foreach (string subPage in subPages)
+                foreach (string category in itemCategories)
                 {
-                    GetItemsFromCategory(allItems, basePageLink + subPage, subPage);
-                    Logger.Log(basePageLink + subPage + " oldal tárgyai elmentve.");
+                    GetItemsFromCategory(allItems, category);
+                    Logger.Log(_basePageLink + category + " oldal tárgyai elmentve.");
                 }
 
                 ItemSerializer.SaveItems(allItems);
@@ -71,6 +71,7 @@ namespace ItemHandler
             Logger.Log("Tárgyak létrehozva!");
             return true;
         }
+
         private string[] GetSubPages(string url)
         {
             var html = _client.GetStringAsync(url);
@@ -91,24 +92,27 @@ namespace ItemHandler
             return subPageNames.ToArray();
         }
 
-        private void GetItemsFromCategory(List<Item> allItems, string url, string category)
+        private void GetItemsFromCategory(List<Item> allItems, string category, string? basePageLink = null)
         {
-            var html = _client.GetStringAsync(url);
+            var html = _client.GetStringAsync((basePageLink == null ? _basePageLink : basePageLink) + category);
             _doc.LoadHtml(html.Result);
 
             var table = _doc.DocumentNode.Descendants("table").ToList();
+
+            string[] headers = new string[]{"Name &amp; Icon", "Name", "Soul", "Bolts", "Arrows", "Great Arrows"};
 
             foreach (var item in table[0].Descendants("tr").ToList())
             {
                 string[] itemProperties = item.InnerText.Split("\n");
 
-                int startIndex = category == "Consumables" ? 2 : 1; 
+                int startIndex = category == "Consumables" ? 2 : 1;
 
-                if (itemProperties[startIndex].Trim().StartsWith("Name"))
+                if (headers.Contains(itemProperties[startIndex].Trim()))
                     continue;
 
-                allItems.Add(new Item(itemProperties[startIndex].Trim(),
-                    itemProperties[startIndex + 1].Replace("&nbsp;", " ").Trim(),
+                allItems.Add(new Item(
+                    itemProperties[startIndex].Replace("&nbsp;", " ").Trim(),
+                    category == "Boss+Souls" ? "-" : itemProperties[startIndex + 1].Replace("&nbsp;", " ").Trim(),
                     _itemTypes[category])
                 );
             }

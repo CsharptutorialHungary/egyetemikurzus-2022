@@ -1,8 +1,9 @@
 ﻿using System;
-using System.Diagnostics;
 using ItemHandler;
 using ConsoleTables;
+using System.Runtime.CompilerServices;
 
+[assembly: InternalsVisibleTo("Inventory.Tests")]
 namespace Inventory
 {
     public class Controller
