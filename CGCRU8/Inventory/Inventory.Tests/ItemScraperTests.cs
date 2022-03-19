@@ -48,8 +48,8 @@ namespace Inventory.Tests
             getItemsMethod.Invoke(new ItemScraper(), new object[] { items, category, "https://darksouls3.wiki.fextralife.com/" });
 
             Assert.AreEqual(expectedNumber, items.Count);
-            Assert.AreEqual(firstItem, items[0].name);
-            Assert.AreEqual(lastItem, items[items.Count - 1].name);
+            Assert.AreEqual(firstItem, items[0].Name);
+            Assert.AreEqual(lastItem, items[items.Count - 1].Name);
         }
     }
 }

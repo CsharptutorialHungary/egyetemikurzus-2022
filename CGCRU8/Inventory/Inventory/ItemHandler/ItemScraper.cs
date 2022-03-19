@@ -1,5 +1,4 @@
-﻿using System;
-using HtmlAgilityPack;
+﻿using HtmlAgilityPack;
 using Inventory;
 using System.Configuration;
 
@@ -55,7 +54,7 @@ namespace ItemHandler
                     Logger.Log(_basePageLink + category + " oldal tárgyai elmentve.");
                 }
 
-                ItemSerializer.SaveItems(allItems);
+                Serializer<Item>.SaveItems(allItems, ConfigurationManager.AppSettings["allItemsFile"]);
             }
             catch (IOException ex)
             {
@@ -94,28 +93,27 @@ namespace ItemHandler
 
         private void GetItemsFromCategory(List<Item> allItems, string category, string? basePageLink = null)
         {
-            var html = _client.GetStringAsync((basePageLink == null ? _basePageLink : basePageLink) + category);
+            var html = _client.GetStringAsync((basePageLink ?? _basePageLink) + category);
             _doc.LoadHtml(html.Result);
 
-            var table = _doc.DocumentNode.Descendants("table").ToList();
+            var table = _doc.DocumentNode.Descendants("table").ToList()[0].Descendants("tbody").ToList();
 
-            string[] headers = new string[]{"Name &amp; Icon", "Name", "Soul", "Bolts", "Arrows", "Great Arrows"};
+            string[] headers = new string[]{"Name &amp; Icon", "Name", "Icon", "Soul", "Bolts", "Arrows", "Great Arrows"};
 
             foreach (var item in table[0].Descendants("tr").ToList())
             {
-                string[] itemProperties = item.InnerText.Split("\n");
+                string[] itemProperties = item.InnerText.Replace("&nbsp;", "").Trim().Split("\n");
 
-                int startIndex = category == "Consumables" ? 2 : 1;
-
-                if (headers.Contains(itemProperties[startIndex].Trim()))
+                if (headers.Contains(itemProperties[0].Trim()))
                     continue;
 
-                allItems.Add(new Item(
-                    itemProperties[startIndex].Replace("&nbsp;", " ").Trim(),
-                    category == "Boss+Souls" ? "-" : itemProperties[startIndex + 1].Replace("&nbsp;", " ").Trim(),
-                    _itemTypes[category])
-                );
-            }
+                allItems.Add(new Item
+                {
+                    Name = itemProperties[0].Trim(),
+                    Description = category == "Boss+Souls" ? "-" : itemProperties[1].Trim(),
+                    Type = _itemTypes[category]
+                });
+        }
         }
     }
 }

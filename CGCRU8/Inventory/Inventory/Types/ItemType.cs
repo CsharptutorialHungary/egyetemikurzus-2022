@@ -1,6 +1,6 @@
 ﻿namespace Inventory
 {
-    internal class ItemType
+    internal abstract class ItemType
     {
         public virtual string? description { get; protected set; }
     }

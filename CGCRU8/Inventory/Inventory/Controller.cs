@@ -2,6 +2,8 @@
 using ItemHandler;
 using ConsoleTables;
 using System.Runtime.CompilerServices;
+using System.Configuration;
+
 
 [assembly: InternalsVisibleTo("Inventory.Tests")]
 namespace Inventory
@@ -12,13 +14,16 @@ namespace Inventory
         {
             try
             {
+                new WeaponScraper().ScrapeAllWeaponsFromLink();
+                return;
+
                 if (!new ItemScraper().ScrapeAllItemsFromLink())
                 {
                     Console.WriteLine("A tárgyak létrehozása nem sikerült. További információ a log fájlban.");
                     return;
                 }
 
-                List<Item>? allItems = ItemSerializer.LoadItems();
+                List<Item>? allItems = Serializer<Item>.LoadItems(ConfigurationManager.AppSettings["allItemsFile"]);
 
                 if (allItems == null)
                 {
@@ -54,7 +59,7 @@ namespace Inventory
             catch (Exception ex)
             {
                 Console.WriteLine("Ismeretlen hiba lépett fel. További információ a log fájlban.");
-                Logger.Log("Hiba: " + ex.StackTrace);
+                Logger.Log("Hiba: " + ex.Message + "\n" + ex.StackTrace);
             }
             finally
             {

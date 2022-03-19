@@ -299,3 +299,167 @@
 2022. 03. 18. 22:57:33 - Tárgyak létrehozva!
 2022. 03. 18. 22:57:33 - Tárgyak beolvasása elkezdve.
 2022. 03. 18. 22:57:33 - Tárgyak beolvasása befejeződött.
+2022. 03. 19. 19:09:16 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:09:18 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:09:18 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:09:18 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:09:20 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:09:21 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:09:21 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:09:22 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 19. 19:09:22 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:09:23 - Hiba:    at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at ItemHandler.WeaponScraper.GetWeaponsFromCategory(List`1 allWeapons, String category, String basePageLink) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 164
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 69
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:09:23 - 
+
+
+2022. 03. 19. 19:12:21 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:12:22 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:12:23 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:12:23 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:12:24 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:12:25 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:12:25 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:12:26 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 19. 19:12:26 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:12:27 - Hiba: The given key 'Piercing+Swords' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at ItemHandler.WeaponScraper.GetWeaponsFromCategory(List`1 allWeapons, String category, String basePageLink) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 164
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 69
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:12:27 - 
+
+
+2022. 03. 19. 19:14:22 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:14:24 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:14:25 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:14:25 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:14:25 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:14:26 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:14:26 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:14:27 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 19. 19:14:27 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:14:28 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:14:28 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 03. 19. 19:14:28 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 03. 19. 19:14:28 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:14:29 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:14:29 - Hiba: One or more errors occurred. (Response status code does not indicate success: 404 (Not Found).)
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ItemHandler.WeaponScraper.GetWeaponsFromCategory(List`1 allWeapons, String category, String basePageLink) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 113
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 69
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:14:29 - 
+
+
+2022. 03. 19. 19:20:52 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:20:54 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:20:55 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:20:55 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:20:56 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:20:57 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:20:57 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:20:58 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 19. 19:20:58 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:20:59 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:21:00 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 03. 19. 19:21:00 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 03. 19. 19:21:00 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:21:00 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:21:01 - Hiba: One or more errors occurred. (Response status code does not indicate success: 404 (Not Found).)
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ItemHandler.WeaponScraper.GetWeaponsFromCategory(List`1 allWeapons, String category, String basePageLink) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 114
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 69
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:21:01 - 
+
+
+2022. 03. 19. 19:22:31 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:22:33 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:22:33 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:22:34 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:22:34 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:22:35 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:23:11 - Hiba: One or more errors occurred. (Response status code does not indicate success: 502 (Bad Gateway).)
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ItemHandler.WeaponScraper.GetWeaponsFromCategory(List`1 allWeapons, String category, String basePageLink) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 114
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 69
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:23:11 - 
+
+
+2022. 03. 19. 19:23:16 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:24:10 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:27:39 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:27:45 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:27:46 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:27:47 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:27:54 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:27:58 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:28:01 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:28:03 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 19. 19:28:04 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:28:05 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:28:06 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 03. 19. 19:28:06 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 03. 19. 19:28:06 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:28:06 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:28:07 - Hiba: The given key 'Fist+&+Claws' was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at ItemHandler.WeaponScraper.GetWeaponsFromCategory(List`1 allWeapons, String category, String basePageLink) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 165
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 69
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:28:07 - 
+
+
+2022. 03. 19. 19:29:08 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:31:26 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:32:15 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:32:31 - Hiba: One or more errors occurred. (Response status code does not indicate success: 524 (Timeout).)
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task`1.GetResultCore(Boolean waitCompletionNotification)
+   at System.Threading.Tasks.Task`1.get_Result()
+   at ItemHandler.WeaponScraper.GetSubPages(String url) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 93
+   at ItemHandler.WeaponScraper.ScrapeAllWeaponsFromLink() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\WeaponScraper.cs:line 62
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 17
+2022. 03. 19. 19:32:31 - 
+
+
+2022. 03. 19. 19:39:48 - Fegyverek létrehozása elkezdődött.
+2022. 03. 19. 19:39:59 - Aloldalak linkje megszerezve.
+2022. 03. 19. 19:40:30 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 19. 19:40:30 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:40:52 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:40:56 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:41:01 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:41:04 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 19. 19:41:04 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 19. 19:41:09 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 03. 19. 19:41:10 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 03. 19. 19:41:10 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 03. 19. 19:41:11 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:41:11 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 03. 19. 19:41:11 - https://darksouls3.wiki.fextralife.com/Fist+&+Claws oldal fegyverei elmentve.
+2022. 03. 19. 19:41:12 - https://darksouls3.wiki.fextralife.com/Spears+&+Pikes oldal fegyverei elmentve.
+2022. 03. 19. 19:41:14 - https://darksouls3.wiki.fextralife.com/Halberds oldal fegyverei elmentve.
+2022. 03. 19. 19:41:15 - https://darksouls3.wiki.fextralife.com/Reapers oldal fegyverei elmentve.
+2022. 03. 19. 19:41:15 - https://darksouls3.wiki.fextralife.com/Whips oldal fegyverei elmentve.
+2022. 03. 19. 19:41:16 - https://darksouls3.wiki.fextralife.com/Bows oldal fegyverei elmentve.
+2022. 03. 19. 19:41:16 - https://darksouls3.wiki.fextralife.com/Greatbows oldal fegyverei elmentve.
+2022. 03. 19. 19:41:16 - https://darksouls3.wiki.fextralife.com/Crossbows oldal fegyverei elmentve.
+2022. 03. 19. 19:41:18 - https://darksouls3.wiki.fextralife.com/Staves oldal fegyverei elmentve.
+2022. 03. 19. 19:41:18 - https://darksouls3.wiki.fextralife.com/Flames oldal fegyverei elmentve.
+2022. 03. 19. 19:41:18 - https://darksouls3.wiki.fextralife.com/Talismans oldal fegyverei elmentve.
+2022. 03. 19. 19:41:19 - https://darksouls3.wiki.fextralife.com/Sacred+Chimes oldal fegyverei elmentve.
+2022. 03. 19. 19:41:19 - Fegyverek létrehozva!
+2022. 03. 19. 19:41:19 - 
+
+
