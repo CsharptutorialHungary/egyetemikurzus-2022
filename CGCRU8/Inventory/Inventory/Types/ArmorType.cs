@@ -1,6 +1,6 @@
-﻿namespace Inventory.Types
+﻿namespace Inventory
 {
-    internal class ArmorType
+    internal abstract class ArmorType
     {
         public virtual string? description { get; protected set; }
     }

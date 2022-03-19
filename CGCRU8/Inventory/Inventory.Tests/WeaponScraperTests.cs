@@ -6,7 +6,7 @@ using System.Reflection;
 namespace Inventory.Tests
 {
     [TestFixture]
-    internal class WeaponScraperClass
+    internal class WeaponScraperTests
     {
         [Test]
         public void WeaponScraper_GetSubPages_Returns_Correct_Links()

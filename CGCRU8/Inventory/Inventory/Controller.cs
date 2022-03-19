@@ -14,7 +14,7 @@ namespace Inventory
         {
             try
             {
-                new WeaponScraper().ScrapeAllWeaponsFromLink();
+                new ArmorScraper().ScrapeAllArmorsFromLink();
                 return;
 
                 if (!new ItemScraper().ScrapeAllItemsFromLink())

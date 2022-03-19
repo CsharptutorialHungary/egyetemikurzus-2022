@@ -113,7 +113,7 @@ namespace ItemHandler
                     Description = category == "Boss+Souls" ? "-" : itemProperties[1].Trim(),
                     Type = _itemTypes[category]
                 });
-        }
+            }
         }
     }
 }

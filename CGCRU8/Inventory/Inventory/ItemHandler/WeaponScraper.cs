@@ -159,7 +159,7 @@ namespace ItemHandler
 
                 string[] durabilityAndWeight = weaponProperties[index].Trim().Split(" ");
                 _ = int.TryParse(durabilityAndWeight[0], out int durability);
-                double weight = category == "Staves" ? double.Parse(weaponProperties[index - 1].Trim()) :  double.Parse(durabilityAndWeight[1], CultureInfo.InvariantCulture);
+                double weight = category == "Staves" ? double.Parse(weaponProperties[index - 1].Trim(), CultureInfo.InvariantCulture) :  double.Parse(durabilityAndWeight[1], CultureInfo.InvariantCulture);
 
                 allWeapons.Add(new Weapon
                 {
