@@ -213,7 +213,7 @@
     "IntelligenceRequirement": 5,
     "IntelligenceScaling": "D",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "D",
     "Durability": 50,
     "Weight": 1.5,
     "Type": {
@@ -247,7 +247,7 @@
     "IntelligenceRequirement": 12,
     "IntelligenceScaling": "-",
     "FaithRequirement": 12,
-    "FaithScaling": "C",
+    "FaithScaling": "-",
     "Durability": 70,
     "Weight": 3.0,
     "Type": {
@@ -366,7 +366,7 @@
     "IntelligenceRequirement": 8,
     "IntelligenceScaling": "C",
     "FaithRequirement": 8,
-    "FaithScaling": "-",
+    "FaithScaling": "C",
     "Durability": 65,
     "Weight": 2.0,
     "Type": {
@@ -434,7 +434,7 @@
     "IntelligenceRequirement": 0,
     "IntelligenceScaling": "0",
     "FaithRequirement": 10,
-    "FaithScaling": "E",
+    "FaithScaling": "0",
     "Durability": 80,
     "Weight": 4.0,
     "Type": {
@@ -638,7 +638,7 @@
     "IntelligenceRequirement": 13,
     "IntelligenceScaling": "-",
     "FaithRequirement": 13,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 70,
     "Weight": 7.5,
     "Type": {
@@ -655,7 +655,7 @@
     "IntelligenceRequirement": 17,
     "IntelligenceScaling": "D",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "D",
     "Durability": 85,
     "Weight": 9.0,
     "Type": {
@@ -672,7 +672,7 @@
     "IntelligenceRequirement": 16,
     "IntelligenceScaling": "C",
     "FaithRequirement": 16,
-    "FaithScaling": "-",
+    "FaithScaling": "C",
     "Durability": 75,
     "Weight": 10.5,
     "Type": {
@@ -1182,7 +1182,7 @@
     "IntelligenceRequirement": 10,
     "IntelligenceScaling": "D",
     "FaithRequirement": 10,
-    "FaithScaling": "-",
+    "FaithScaling": "D",
     "Durability": 70,
     "Weight": 2.5,
     "Type": {
@@ -1488,7 +1488,7 @@
     "IntelligenceRequirement": 13,
     "IntelligenceScaling": "C",
     "FaithRequirement": 13,
-    "FaithScaling": "-",
+    "FaithScaling": "C",
     "Durability": 40,
     "Weight": 2.5,
     "Type": {
@@ -1794,7 +1794,7 @@
     "IntelligenceRequirement": 40,
     "IntelligenceScaling": "-",
     "FaithRequirement": 40,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 165,
     "Weight": 20.0,
     "Type": {
@@ -1828,7 +1828,7 @@
     "IntelligenceRequirement": 24,
     "IntelligenceScaling": "-",
     "FaithRequirement": 24,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 115,
     "Weight": 17.0,
     "Type": {
@@ -1930,7 +1930,7 @@
     "IntelligenceRequirement": 12,
     "IntelligenceScaling": "C",
     "FaithRequirement": 12,
-    "FaithScaling": "-",
+    "FaithScaling": "C",
     "Durability": 70,
     "Weight": 4.5,
     "Type": {
@@ -2066,7 +2066,7 @@
     "IntelligenceRequirement": 50,
     "IntelligenceScaling": "-",
     "FaithRequirement": 50,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 250,
     "Weight": 24.0,
     "Type": {
@@ -2423,7 +2423,7 @@
     "IntelligenceRequirement": 12,
     "IntelligenceScaling": "-",
     "FaithRequirement": 12,
-    "FaithScaling": "C",
+    "FaithScaling": "-",
     "Durability": 70,
     "Weight": 8.5,
     "Type": {
@@ -2474,7 +2474,7 @@
     "IntelligenceRequirement": 18,
     "IntelligenceScaling": "-",
     "FaithRequirement": 18,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 65,
     "Weight": 6.5,
     "Type": {
@@ -2508,7 +2508,7 @@
     "IntelligenceRequirement": 16,
     "IntelligenceScaling": "-",
     "FaithRequirement": 16,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 100,
     "Weight": 14.5,
     "Type": {
@@ -2525,7 +2525,7 @@
     "IntelligenceRequirement": 20,
     "IntelligenceScaling": "-",
     "FaithRequirement": 20,
-    "FaithScaling": "D",
+    "FaithScaling": "-",
     "Durability": 80,
     "Weight": 9.5,
     "Type": {
@@ -2542,7 +2542,7 @@
     "IntelligenceRequirement": 10,
     "IntelligenceScaling": "-",
     "FaithRequirement": 10,
-    "FaithScaling": "B",
+    "FaithScaling": "-",
     "Durability": 50,
     "Weight": 3.0,
     "Type": {
@@ -2780,7 +2780,7 @@
     "IntelligenceRequirement": 18,
     "IntelligenceScaling": "B",
     "FaithRequirement": 18,
-    "FaithScaling": "-",
+    "FaithScaling": "B",
     "Durability": 85,
     "Weight": 10.0,
     "Type": {
@@ -2848,7 +2848,7 @@
     "IntelligenceRequirement": 19,
     "IntelligenceScaling": "E",
     "FaithRequirement": 19,
-    "FaithScaling": "D",
+    "FaithScaling": "E",
     "Durability": 80,
     "Weight": 12.0,
     "Type": {
@@ -2916,7 +2916,7 @@
     "IntelligenceRequirement": 12,
     "IntelligenceScaling": "C",
     "FaithRequirement": 12,
-    "FaithScaling": "E",
+    "FaithScaling": "C",
     "Durability": 60,
     "Weight": 13.0,
     "Type": {
@@ -3001,7 +3001,7 @@
     "IntelligenceRequirement": 10,
     "IntelligenceScaling": "-",
     "FaithRequirement": 10,
-    "FaithScaling": "B",
+    "FaithScaling": "-",
     "Durability": 50,
     "Weight": 3.5,
     "Type": {
@@ -3103,7 +3103,7 @@
     "IntelligenceRequirement": 7,
     "IntelligenceScaling": "C",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "C",
     "Durability": 50,
     "Weight": 4.5,
     "Type": {
@@ -3307,7 +3307,7 @@
     "IntelligenceRequirement": 6,
     "IntelligenceScaling": "B",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "B",
     "Durability": 7,
     "Weight": 50.0,
     "Type": {
@@ -3324,7 +3324,7 @@
     "IntelligenceRequirement": 6,
     "IntelligenceScaling": "A",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "A",
     "Durability": 15,
     "Weight": 45.0,
     "Type": {
@@ -3341,7 +3341,7 @@
     "IntelligenceRequirement": 8,
     "IntelligenceScaling": "B",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "B",
     "Durability": 7,
     "Weight": 55.0,
     "Type": {
@@ -3358,7 +3358,7 @@
     "IntelligenceRequirement": 7,
     "IntelligenceScaling": "C",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "C",
     "Durability": 7,
     "Weight": 40.0,
     "Type": {
@@ -3375,7 +3375,7 @@
     "IntelligenceRequirement": 7,
     "IntelligenceScaling": "B",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "B",
     "Durability": 30,
     "Weight": 50.0,
     "Type": {
@@ -3392,7 +3392,7 @@
     "IntelligenceRequirement": 12,
     "IntelligenceScaling": "B",
     "FaithRequirement": 12,
-    "FaithScaling": "C",
+    "FaithScaling": "B",
     "Durability": 7,
     "Weight": 55.0,
     "Type": {
@@ -3409,7 +3409,7 @@
     "IntelligenceRequirement": 6,
     "IntelligenceScaling": "B",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "B",
     "Durability": 20,
     "Weight": 45.0,
     "Type": {
@@ -3426,7 +3426,7 @@
     "IntelligenceRequirement": 8,
     "IntelligenceScaling": "-",
     "FaithRequirement": 8,
-    "FaithScaling": "A",
+    "FaithScaling": "-",
     "Durability": 7,
     "Weight": 55.0,
     "Type": {
@@ -3460,7 +3460,7 @@
     "IntelligenceRequirement": 7,
     "IntelligenceScaling": "B",
     "FaithRequirement": 0,
-    "FaithScaling": "-",
+    "FaithScaling": "B",
     "Durability": 7,
     "Weight": 55.0,
     "Type": {
@@ -3477,7 +3477,7 @@
     "IntelligenceRequirement": 12,
     "IntelligenceScaling": "A",
     "FaithRequirement": 12,
-    "FaithScaling": "-",
+    "FaithScaling": "A",
     "Durability": 5,
     "Weight": 50.0,
     "Type": {
@@ -3494,7 +3494,7 @@
     "IntelligenceRequirement": 6,
     "IntelligenceScaling": "B",
     "FaithRequirement": 6,
-    "FaithScaling": "E",
+    "FaithScaling": "B",
     "Durability": 0,
     "Weight": 65.0,
     "Type": {
@@ -3562,7 +3562,7 @@
     "IntelligenceRequirement": 4,
     "IntelligenceScaling": "-",
     "FaithRequirement": 4,
-    "FaithScaling": "B",
+    "FaithScaling": "-",
     "Durability": 50,
     "Weight": 0.5,
     "Type": {
@@ -3579,7 +3579,7 @@
     "IntelligenceRequirement": 4,
     "IntelligenceScaling": "-",
     "FaithRequirement": 4,
-    "FaithScaling": "A",
+    "FaithScaling": "-",
     "Durability": 65,
     "Weight": 0.5,
     "Type": {
@@ -3596,7 +3596,7 @@
     "IntelligenceRequirement": 4,
     "IntelligenceScaling": "-",
     "FaithRequirement": 4,
-    "FaithScaling": "B",
+    "FaithScaling": "-",
     "Durability": 65,
     "Weight": 0.5,
     "Type": {
@@ -3630,7 +3630,7 @@
     "IntelligenceRequirement": 4,
     "IntelligenceScaling": "C",
     "FaithRequirement": 4,
-    "FaithScaling": "B",
+    "FaithScaling": "C",
     "Durability": 50,
     "Weight": 0.5,
     "Type": {
@@ -3647,7 +3647,7 @@
     "IntelligenceRequirement": 4,
     "IntelligenceScaling": "-",
     "FaithRequirement": 4,
-    "FaithScaling": "B",
+    "FaithScaling": "-",
     "Durability": 55,
     "Weight": 0.5,
     "Type": {
@@ -3664,7 +3664,7 @@
     "IntelligenceRequirement": 0,
     "IntelligenceScaling": "-",
     "FaithRequirement": 3,
-    "FaithScaling": "B",
+    "FaithScaling": "-",
     "Durability": 45,
     "Weight": 0.5,
     "Type": {
@@ -3681,7 +3681,7 @@
     "IntelligenceRequirement": 3,
     "IntelligenceScaling": "-",
     "FaithRequirement": 3,
-    "FaithScaling": "A",
+    "FaithScaling": "-",
     "Durability": 50,
     "Weight": 0.5,
     "Type": {
@@ -3698,7 +3698,7 @@
     "IntelligenceRequirement": 3,
     "IntelligenceScaling": "C",
     "FaithRequirement": 3,
-    "FaithScaling": "B",
+    "FaithScaling": "C",
     "Durability": 45,
     "Weight": 0.5,
     "Type": {
@@ -3715,7 +3715,7 @@
     "IntelligenceRequirement": 3,
     "IntelligenceScaling": "-",
     "FaithRequirement": 3,
-    "FaithScaling": "C",
+    "FaithScaling": "-",
     "Durability": 45,
     "Weight": 0.5,
     "Type": {
@@ -3749,7 +3749,7 @@
     "IntelligenceRequirement": 3,
     "IntelligenceScaling": "-",
     "FaithRequirement": 3,
-    "FaithScaling": "A",
+    "FaithScaling": "-",
     "Durability": 60,
     "Weight": 0.5,
     "Type": {
@@ -3766,7 +3766,7 @@
     "IntelligenceRequirement": 4,
     "IntelligenceScaling": "-",
     "FaithRequirement": 4,
-    "FaithScaling": "C",
+    "FaithScaling": "-",
     "Durability": 50,
     "Weight": 0.5,
     "Type": {

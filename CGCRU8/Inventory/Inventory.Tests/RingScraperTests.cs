@@ -13,7 +13,7 @@ namespace Inventory.Tests
         {
             List<Ring> rings = new List<Ring>();
 
-            MethodInfo? getRingsMethod = typeof(RingScraper).GetMethod("GetRingsFromPage", BindingFlags.NonPublic | BindingFlags.Instance);
+            MethodInfo? getRingsMethod = typeof(Scraper<RingType, Ring>).GetMethod("GetItemsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (getRingsMethod == null)
                 Assert.Fail("Nincs ilyen nevű metódus");

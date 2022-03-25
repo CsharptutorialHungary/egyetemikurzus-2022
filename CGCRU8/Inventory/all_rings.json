@@ -1,0 +1,570 @@
+[
+  {
+    "Name": "Life Ring",
+    "Weight": 0.3,
+    "Effect": "Increases HP by 7%. +1 Version : 8% +2 Version : 9% +3 Version :10%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Sun Princess Ring",
+    "Weight": 0.6,
+    "Effect": "Gradually restores HP (2 per second)",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Estus Ring",
+    "Weight": 0.8,
+    "Effect": "Increases HP restored with Estus Flaskby 20%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Ashen Estus Ring",
+    "Weight": 0.8,
+    "Effect": "Increases FP restored with Ashen Estus Flask by 20%.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Chloranthy Ring",
+    "Weight": 0.7,
+    "Effect": "Raises stamina recovery speed +7 staminaper second +1 Version : +8 stamina per second +2 Version : +9 stamina per second +3 Version : +10 stamina per second",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Havel's Ring",
+    "Weight": 1.5,
+    "Effect": "Increases maximum equip load by 15% +1 Version : +17% +2 Version : +18% +3 Version : + 19%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Ring of Favor",
+    "Weight": 1.5,
+    "Effect": "Increases max HP by 3%, staminaby 9% and equip load by 5% +1 Version : Increases max HP by 4.5%, stamina by 10% and equip load by 6% +2 Version :Increases max HP by 5%, stamina by 11% and equip load by 7% +3 Version :Increases max HP by 6%, max Stamina by 12% and Equip Load by 8%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Prisoner's Chain",
+    "Weight": 0.8,
+    "Effect": "Increases VGR(5), END(5), and VIT(5), and reduces absorptions by4%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Ring of Steel Protection",
+    "Weight": 0.8,
+    "Effect": "Decreases incoming physical damage by 10% in PvE and 2% in PvP +1 Version : 13% in PvE and 3% in PvP +2 Version : 15% in PvE and 4% in PvP +3 Version : 17% in PvE and 5% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Magic Stoneplate Ring",
+    "Weight": 0.6,
+    "Effect": "Increases MagicAbsorption by 13% in PvE and 4% in PvP +1 Version : +17% in PvE and 5% in PvP +2 Version : +20% in PvE and 6% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Flame Stoneplate Ring",
+    "Weight": 0.6,
+    "Effect": "Increases Fire Absorption by 13% in PvE and 4% in PvP +1 Version : +17% in PvE and 5% in PvP +2 Version : +20% in PvE and 6% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Thunder Stoneplate Ring",
+    "Weight": 0.6,
+    "Effect": "Increases LightningAbsorption by 13% in PvE and 4% in PvP +1 Version : +17% in PvE and 5% in PvP +2 Version : +20% in PvE and 6% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Dark Stoneplate Ring",
+    "Weight": 0.6,
+    "Effect": "Increases Dark Absorption by 13% in PvE and 4% in PvP +1 Version : +17% in PvE and 5% in PvP +2 Version : +20% in PvE and 6% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Speckled Stoneplate Ring",
+    "Weight": 0.9,
+    "Effect": "Increases Magic, Fire, Lightning and Dark Absorption by 5% in PvE and 2% in PvP +1 Version : +7% in PvE and 3% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Bloodbite Ring",
+    "Weight": 0.6,
+    "Effect": "Increases Bleed Resistance by90 points +1 Version : +140",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Poisonbite Ring",
+    "Weight": 0.6,
+    "Effect": "Increases Poison Resistance by 90 points +1 Version : +140",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Cursebite Ring",
+    "Weight": 0.6,
+    "Effect": "Increases Curse Resistance by150 points",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Fleshbite Ring",
+    "Weight": 0.9,
+    "Effect": "Raises Poison, Bleed, Frostand Curseresist by 40 points +1 Version : +60",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Knight's Ring",
+    "Weight": 0.8,
+    "Effect": "Increases Strength by 5 points",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Hunter's Ring",
+    "Weight": 0.8,
+    "Effect": "Increases Dexterity by 5points",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Scholar Ring",
+    "Weight": 0.6,
+    "Effect": "Increase Intelligence by 5points",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Priestess Ring",
+    "Weight": 0.6,
+    "Effect": "Increases Faith by 5points",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Covetous Gold Serpent Ring",
+    "Weight": 1.2,
+    "Effect": "Increases item discovery +50 +1 Version : +75 +2 Version : +100 +3 Version: +125",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Covetous Silver Serpent Ring",
+    "Weight": 1.2,
+    "Effect": "Fallen foes yield +10% more souls +1 Version : +20% +2 Version : +30% +3 Version : +35%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Saint's Ring",
+    "Weight": 0.5,
+    "Effect": "Allows attunement of additional spells.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Deep Ring",
+    "Weight": 0.5,
+    "Effect": "Allow attunement of additional spells.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Darkmoon Ring",
+    "Weight": 0.8,
+    "Effect": "Gives 2 extra attunement slots.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Young Dragon Ring",
+    "Weight": 0.7,
+    "Effect": "Boosts sorcery damageby +12%.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Bellowing Dragoncrest Ring",
+    "Weight": 1.0,
+    "Effect": "Boosts sorcery damageby +20%.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Great Swamp Ring",
+    "Weight": 0.7,
+    "Effect": "Boosts pyromancy damageby +12%.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Witch's Ring",
+    "Weight": 1.0,
+    "Effect": "Boosts pyromancy damageby +20%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Morne's Ring",
+    "Weight": 0.7,
+    "Effect": "Boosts miracle damage by 12%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Ring of the Sun's First Born",
+    "Weight": 1.0,
+    "Effect": "Boosts miracle damage by 20%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Lingering Dragoncrest Ring",
+    "Weight": 0.5,
+    "Effect": "Extends length of spell effect by 30% +1 Version : +35% +2 Version : +40%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Sage Ring",
+    "Weight": 0.7,
+    "Effect": "Spell casting speed increased as if you had +30 higher dexterity +1 Version : +35 +2 Version : +40",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Dusk Crown Ring",
+    "Weight": 0.6,
+    "Effect": "Reduces consumption of FP by 25% at the cost of 15% less max HP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Leo Ring",
+    "Weight": 0.5,
+    "Effect": "Strengthens thrust weapon counter attacks by 15%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Wolf Ring",
+    "Weight": 0.5,
+    "Effect": "Increases poise by +4 +1 Version : +6 +2 Version : +8 +3 Version : +9",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Hawk Ring",
+    "Weight": 0.7,
+    "Effect": "Extends the range of arrows",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Hornet Ring",
+    "Weight": 1.1,
+    "Effect": "Increases Critical Damage by 30%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Knight Slayer's Ring",
+    "Weight": 0.9,
+    "Effect": "Enemies lose 20% more staminawhen guarding attacks.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Ring of the Evil Eye",
+    "Weight": 1.0,
+    "Effect": "Absorb +30 HPfrom each defeated foe. +1 Version : +33 HP +2 Version : +35 HP +3 Version: +37 HP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Farron Ring",
+    "Weight": 0.8,
+    "Effect": "Reduces Skill FPconsumption by 25%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Dragonscale Ring",
+    "Weight": 1.1,
+    "Effect": "Reduced damage taken from backstabs by 30%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Horsehoof Ring",
+    "Weight": 0.6,
+    "Effect": "Enemies lose 40% more Staminawhen guarding against your kicks",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Wood Grain Ring",
+    "Weight": 0.5,
+    "Effect": "Increases weapon durability by 20% +1 Version : +30% +2 Version : +40%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Flynn's Ring",
+    "Weight": 0.9,
+    "Effect": "Loweringequip load increases attack power up to 15%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Magic Clutch Ring",
+    "Weight": 0.8,
+    "Effect": "Increases magic attack by 15% in PvE and 8% in PvP Reduces Physical, Strike, Slash, and Thrust Absorptions 10% in PvE and 15% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Lightning Clutch Ring",
+    "Weight": 0.8,
+    "Effect": "Increases lightning attack by 15% in PvE and 8% in PvP Reduces Physical, Strike, Slash, and Thrust Absorptions 10% in PvE and 15% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Fire Clutch Ring",
+    "Weight": 0.8,
+    "Effect": "Increases fire attack by 15% in PvE and 8% in PvP Reduces Physical, Strike, Slash, and Thrust Absorptions 10% in PvE and 15% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Dark Clutch Ring",
+    "Weight": 0.8,
+    "Effect": "Increases dark attack by 15% in PvE and 8% in PvP Reduces Physical, Strike, Slash, and Thrust Absorptions 10% in PvE and 15% in PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Red Tearstone Ring",
+    "Weight": 1.4,
+    "Effect": "Increases damage by 20% when HP is below 20%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Blue Tearstone Ring",
+    "Weight": 1.1,
+    "Effect": "Decreases incoming damage by 20% when HPis below 20%; 15% for PvP",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Lloyd's Sword Ring",
+    "Weight": 0.9,
+    "Effect": "Boosts Attack Rating by 10% when HPis full (over 99%)",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Lloyd's Shield Ring",
+    "Weight": 0.9,
+    "Effect": "Boosts Damage Absorption by 20% when HPis full (over 99%)",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Carthus Milkring",
+    "Weight": 0.8,
+    "Effect": "Grants 3 points of Dexterityand obscures the wearer while rolling.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Carthus Bloodring",
+    "Weight": 0.8,
+    "Effect": "Boosts rolling invincibility, at thecost of defense. (Minus 30% Absorption)",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Pontiff's Right Eye",
+    "Weight": 1.4,
+    "Effect": "Boosts Attack Power in stages: 3%, 5%, and +10% at maximum, as long as attacking persists.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Pontiff's Left Eye",
+    "Weight": 0.9,
+    "Effect": "Restores 30 HP after a certain amount of successive attacks.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Aldrich's Ruby",
+    "Weight": 0.8,
+    "Effect": "Recovers 85 HPfrom critical attacks",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Aldrich's Sapphire",
+    "Weight": 0.8,
+    "Effect": "Recovers 15 FPfrom critical attacks",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Silvercat Ring",
+    "Weight": 0.6,
+    "Effect": "Removes fall damage, but falling a lethal distance still kills you",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Slumbering Draconcrest Ring",
+    "Weight": 0.7,
+    "Effect": "Movement and rolling make no sound, enemies won't react to your movement sounds",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Obscuring Ring",
+    "Weight": 0.9,
+    "Effect": "Enemies need to be closer to notice you with sight, and you are invisible to other players beyond a certain distance",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Untrue Dark Ring",
+    "Weight": 0.7,
+    "Effect": "Retain human appearance while hollow and disguise as a host in other worlds",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Untrue White Ring",
+    "Weight": 0.7,
+    "Effect": "Take the appearance of a white phantom at all times",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Reversal Ring",
+    "Weight": 0.5,
+    "Effect": "Use the animations of the opposite gender (run and walk animations, emotes, etc.)",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Skull Ring",
+    "Weight": 0.6,
+    "Effect": "Easier to be detected by enemies",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Calamity Ring",
+    "Weight": 0.8,
+    "Effect": "Reduces Absorptions by 100%",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Ring of Sacrifice",
+    "Weight": 1.0,
+    "Effect": "Its wearer will lose nothing upon death, but the ring itself breaks.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  },
+  {
+    "Name": "Chillbite Ring",
+    "Weight": 0.6,
+    "Effect": "Increases frost resistance by 140.",
+    "Type": {
+      "description": "Rings are an important category of equipment in Dark Souls 3.Players may equip up to 4 rings at once and they each grant specific benefits.This page has a list of all of the rings available in the game, separated by default and DLC rings.Click on each ring to find specific written location information. The list is by order that they will display in your inventory in game.This is to facilitate their acquisition by making it easy to see which you are missing with your inventory screen open."
+    }
+  }
+]

@@ -5,17 +5,17 @@ using System.Reflection;
 namespace Inventory.Tests
 {
     [TestFixture]
-    internal class ItemScraperTests
+    internal class CollectibleScraperTests
     {
         [Test]
         public void ItemScraper_GetSubPages_Returns_Correct_Links()
         {
-            MethodInfo? getSubPagesMethod = typeof(ItemScraper).GetMethod("GetSubPages", BindingFlags.NonPublic | BindingFlags.Instance);
+            MethodInfo? getSubPagesMethod = typeof(CollectibleScraper).GetMethod("GetSubPages", BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (getSubPagesMethod == null)
                 Assert.Fail("Nincs ilyen nevű metódus");
 
-            string[]? res = getSubPagesMethod.Invoke(new ItemScraper(), new object[] { "https://darksouls3.wiki.fextralife.com/Items" }) as string[];
+            string[]? res = getSubPagesMethod.Invoke(new CollectibleScraper(), new object[] { "https://darksouls3.wiki.fextralife.com/Items" }) as string[];
 
             if (res == null)
                 Assert.Fail("Hibás visszatérés");
@@ -38,14 +38,14 @@ namespace Inventory.Tests
         [TestCase("Ashes", 19, "Greirat's Ashes", "Old Woman's Ashes")]
         public void ItemScraper_GetItemsFromCategory_Returns_All_Items_From_Category(string category, int expectedNumber, string firstItem, string lastItem)
         {
-            List<Item> items = new List<Item>();
+            List<Collectible> items = new List<Collectible>();
 
-            MethodInfo? getItemsMethod = typeof(ItemScraper).GetMethod("GetItemsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
+            MethodInfo? getItemsMethod = typeof(Scraper<CollectibleType, Collectible>).GetMethod("GetItemsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (getItemsMethod == null)
                 Assert.Fail("Nincs ilyen nevű metódus");
 
-            getItemsMethod.Invoke(new ItemScraper(), new object[] { items, category, "https://darksouls3.wiki.fextralife.com/" });
+            getItemsMethod.Invoke(new CollectibleScraper(), new object[] { items, category, "https://darksouls3.wiki.fextralife.com/" });
 
             Assert.AreEqual(expectedNumber, items.Count);
             Assert.AreEqual(firstItem, items[0].Name);

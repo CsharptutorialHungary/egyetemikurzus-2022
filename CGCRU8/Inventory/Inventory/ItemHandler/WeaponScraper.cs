@@ -1,60 +1,49 @@
-﻿using HtmlAgilityPack;
-using Inventory;
+﻿using Inventory;
 using System.Configuration;
 using System.Globalization;
 
 namespace ItemHandler
 {
-    internal class WeaponScraper
+    internal class WeaponScraper : Scraper<WeaponType, Weapon>
     {
-        readonly private HttpClient _client;
-        readonly private HtmlDocument _doc;
-        readonly private string? _basePageLink;
-        readonly private Dictionary<string, WeaponType> _weaponTypes;
 
-        public WeaponScraper()
-        {
-            _client = new HttpClient();
-            _doc = new HtmlDocument();
+        public WeaponScraper() : base(itemTypes: new Dictionary<string, WeaponType>()
+                                                {
+                                                    { "Daggers",            new Dagger()},
+                                                    { "Straight+Swords",    new StraightSword()},
+                                                    { "Greatswords",        new Greatsword()},
+                                                    { "Ultra+Greatswords",  new UltraGreatsword()},
+                                                    { "Curved+Swords",      new CurvedSword()},
+                                                    { "Katanas",            new Katana()},
+                                                    { "Curved+Greatswords", new CurvedGreatsword()},
+                                                    { "Piercing+Swords",    new PiercingSword()},
+                                                    { "Axes",               new Axe()},
+                                                    { "Greataxes",          new Greataxe()},
+                                                    { "Hammers",            new Hammer()},
+                                                    { "Great+Hammers",      new GreatHammer()},
+                                                    { "Fist+&+Claws",       new FistAndClaw()},
+                                                    { "Spears+&+Pikes",     new SpearAndSpike()},
+                                                    { "Halberds",           new Halberd()},
+                                                    { "Reapers",            new Reaper()},
+                                                    { "Whips",              new Whip()},
+                                                    { "Bows",               new Bow()},
+                                                    { "Greatbows",          new Greatbow()},
+                                                    { "Crossbows",          new Crossbow()},
+                                                    { "Staves",             new Stave()},
+                                                    { "Flames",             new Flame()},
+                                                    { "Talismans",          new Talisman()},
+                                                    { "Sacred+Chimes",      new SacredChime()},
+                                                })
+        {}
 
-            _basePageLink = ConfigurationManager.AppSettings["basePageLink"];
-
-            _weaponTypes = new Dictionary<string, WeaponType>()
-            {
-                { "Daggers",            new Dagger()},
-                { "Straight+Swords",    new StraightSword()},
-                { "Greatswords",        new Greatsword()},
-                { "Ultra+Greatswords",  new UltraGreatsword()},
-                { "Curved+Swords",      new CurvedSword()},
-                { "Katanas",            new Katana()},
-                { "Curved+Greatswords", new CurvedGreatsword()},
-                { "Piercing+Swords",    new PiercingSword()},
-                { "Axes",               new Axe()},
-                { "Greataxes",          new Greataxe()},
-                { "Hammers",            new Hammer()},
-                { "Great+Hammers",      new GreatHammer()},
-                { "Fist+&+Claws",       new FistAndClaw()},
-                { "Spears+&+Pikes",     new SpearAndSpike()},
-                { "Halberds",           new Halberd()},
-                { "Reapers",            new Reaper()},
-                { "Whips",              new Whip()},
-                { "Bows",               new Bow()},
-                { "Greatbows",          new Greatbow()},
-                { "Crossbows",          new Crossbow()},
-                { "Staves",             new Stave()},
-                { "Flames",             new Flame()},
-                { "Talismans",          new Talisman()},
-                { "Sacred+Chimes",      new SacredChime()},
-
-            };
-        }
-
-        public bool ScrapeAllWeaponsFromLink()
+        public override bool ScrapeAllItemsFromLink()
         {
             try
             {
+#if RELEASE
                 if (File.Exists(ConfigurationManager.AppSettings["allWeaponsFile"]))
                     return true;
+#endif
 
                 Logger.Log("Fegyverek létrehozása elkezdődött.");
 
@@ -64,10 +53,13 @@ namespace ItemHandler
 
                 List<Weapon> allWeapons = new List<Weapon>();
 
-                foreach (string category in weaponCategories)
+                for (int i = 0; i < weaponCategories.Length; i++)
                 {
-                    GetWeaponsFromCategory(allWeapons, category);
-                    Logger.Log(_basePageLink + category + " oldal fegyverei elmentve.");
+                    GetItemsFromCategory(allWeapons, weaponCategories[i]);
+
+                    Console.WriteLine($"Fegyver megszerezve: {i + 1} / {weaponCategories.Length} ({(int)((i + 1) / (double)weaponCategories.Length * 100)}%)");
+
+                    Logger.Log(_basePageLink + weaponCategories[i] + " oldal fegyverei elmentve.");
                 }
 
                 Serializer<Weapon>.SaveItems(allWeapons, ConfigurationManager.AppSettings["allWeaponsFile"]);
@@ -87,7 +79,7 @@ namespace ItemHandler
             return true;
         }
 
-        private string[] GetSubPages(string url)
+        protected override string[] GetSubPages(string url)
         {
             var html = _client.GetStringAsync(url);
             _doc.LoadHtml(html.Result);
@@ -107,7 +99,7 @@ namespace ItemHandler
             return subPageNames.ToArray();
         }
 
-        private void GetWeaponsFromCategory(List<Weapon> allWeapons, string category, string? basePageLink = null)
+        protected override void GetItemsFromCategory(List<Weapon> allWeapons, string category, string? basePageLink = null)
         {
             var html = _client.GetStringAsync((basePageLink ?? _basePageLink) + category);
             _doc.LoadHtml(html.Result);
@@ -133,27 +125,11 @@ namespace ItemHandler
 
                 string[] intelligence = weaponProperties[index++].Trim().Split(" ");
                 int intRequirement = intelligence[0] == "-" ? 0 : Convert.ToInt32(strength[0]);
-                char intScale;
-                try
-                {
-                    intScale = Convert.ToChar(intelligence[1]);
-                }
-                catch(IndexOutOfRangeException)
-                {
-                    intScale = '-';
-                }
+                char intScale = intelligence.Length == 1 ? '-' : Convert.ToChar(intelligence[1]);
 
                 string[] faith = weaponProperties[index++].Trim().Split(" ");
                 int fthRequirement = faith[0] == "-" ? 0 : Convert.ToInt32(strength[0]);
-                char fthScale;
-                try
-                {
-                    fthScale = Convert.ToChar(faith[1]);
-                }
-                catch (IndexOutOfRangeException)
-                {
-                    fthScale = '-';
-                }
+                char fthScale = faith.Length == 1 ? '-' : Convert.ToChar(intelligence[1]);
 
                 index = category == "Staves" ? 14 : new[] { "Flames", "Bows", "Greatbows", "Whips" }.Contains(category) ? 13 : 12;
 
@@ -181,7 +157,7 @@ namespace ItemHandler
                     Durability = durability,
                     Weight = weight,
 
-                    Type = _weaponTypes[category]
+                    Type = _itemTypes[category]
                 });
             }
         }

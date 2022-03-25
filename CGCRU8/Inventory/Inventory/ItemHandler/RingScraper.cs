@@ -1,35 +1,33 @@
-﻿using HtmlAgilityPack;
-using Inventory;
+﻿using Inventory;
 using System.Configuration;
 using System.Globalization;
 
 namespace ItemHandler
 {
-    internal class RingScraper
+    internal class RingScraper : Scraper<RingType, Ring>
     {
-        readonly private HttpClient _client;
-        readonly private HtmlDocument _doc;
-        readonly private string? _basePageLink;
 
-        public RingScraper()
-        {
-            _client = new HttpClient();
-            _doc = new HtmlDocument();
+        public RingScraper() : base(itemTypes: new Dictionary<string, RingType>
+                                                {
+                                                    {"ring", new RingType()}
+                                                }) 
+        {}
 
-            _basePageLink = ConfigurationManager.AppSettings["basePageLink"];
-        }
-
-        public bool ScrapeAllRingsFromLink()
+        public override bool ScrapeAllItemsFromLink()
         {
             try
             {
-                if (File.Exists(ConfigurationManager.AppSettings["allArmorsFile"]))
+#if RELEASE
+                if (File.Exists(ConfigurationManager.AppSettings["allRingsFile"]))
                     return true;
+#endif
 
                 Logger.Log("Gyűrűk létrehozása elkezdődött.");
 
                 List<Ring> allRings = new List<Ring>();
-                GetRingsFromPage(allRings, "Rings");
+                GetItemsFromCategory(allRings, "Rings");
+
+                Console.WriteLine("Gyűrű megszerezve: 1 / 1 (100%)");
 
                 Serializer<Ring>.SaveItems(allRings, ConfigurationManager.AppSettings["allRingsFile"]);
             }
@@ -48,7 +46,9 @@ namespace ItemHandler
             return true;
         }
 
-        private void GetRingsFromPage(List<Ring> allRings, string category, string? basePageLink = null)
+        protected override string[] GetSubPages(string url) { return null;  }
+
+        protected override void GetItemsFromCategory(List<Ring> allRings, string category, string? basePageLink = null)
         {
             var html = _client.GetStringAsync((basePageLink ?? _basePageLink) + category);
             _doc.LoadHtml(html.Result);
@@ -67,6 +67,7 @@ namespace ItemHandler
                     Name = ringProperties[0].Trim(),
                     Weight = double.Parse(ringProperties[1].Trim(), CultureInfo.InvariantCulture),
                     Effect = ringProperties[2].Trim(),
+                    Type = _itemTypes["ring"],
                 });
             }
         }

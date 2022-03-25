@@ -1,44 +1,33 @@
-﻿using HtmlAgilityPack;
-using Inventory;
+﻿using Inventory;
 using System.Configuration;
 
 namespace ItemHandler
 {
-    public class ItemScraper
+    internal class CollectibleScraper : Scraper<CollectibleType, Collectible>
     {
-        readonly private HttpClient _client;
-        readonly private HtmlDocument _doc;
-        readonly private string? _basePageLink;
-        readonly private Dictionary<string, ItemType> _itemTypes;
+        public CollectibleScraper() : base(itemTypes : new Dictionary<string, CollectibleType>()
+                                                        {
+                                                            { "Key+Items",          new KeyItem()},
+                                                            { "Multiplayer+Items",  new MultiplayerItem()},
+                                                            { "Consumables",        new Consumable()},
+                                                            { "Tools",              new Tool()},
+                                                            { "Projectiles",        new Projectile()},
+                                                            { "Ammunition",         new Ammunition()},
+                                                            { "Souls",              new Soul()},
+                                                            { "Boss+Souls",         new BossSoul()},
+                                                            { "Ore",                new Ore()},
+                                                            { "Ashes",              new Ash()},
+                                                        })
+        {}
 
-        public ItemScraper()
-        {
-            _client = new HttpClient();
-            _doc = new HtmlDocument();
-
-            _basePageLink = ConfigurationManager.AppSettings["basePageLink"];
-
-            _itemTypes = new Dictionary<string, ItemType>()
-            {
-                { "Key+Items",          new KeyItem()},
-                { "Multiplayer+Items",  new MultiplayerItem()},
-                { "Consumables",        new Consumable()},
-                { "Tools",              new Tool()},
-                { "Projectiles",        new Projectile()},
-                { "Ammunition",         new Ammunition()},
-                { "Souls",              new Soul()},
-                { "Boss+Souls",         new BossSoul()},
-                { "Ore",                new Ore()},
-                { "Ashes",              new Ash()},
-            };
-        }
-
-        public bool ScrapeAllItemsFromLink()
+        public override bool ScrapeAllItemsFromLink()
         {
             try
             {
+#if RELEASE
                 if (File.Exists(ConfigurationManager.AppSettings["allItemsFile"]))
                     return true;
+#endif
 
                 Logger.Log("Tárgyak létrehozása elkezdődött.");
 
@@ -46,15 +35,18 @@ namespace ItemHandler
                 string[] itemCategories = GetSubPages(url);
                 Logger.Log("Aloldalak linkje megszerezve.");
 
-                List<Item> allItems = new List<Item>();
+                List<Collectible> allItems = new List<Collectible>();
 
-                foreach (string category in itemCategories)
+                for (int i = 0; i < itemCategories.Length; i++)
                 {
-                    GetItemsFromCategory(allItems, category);
-                    Logger.Log(_basePageLink + category + " oldal tárgyai elmentve.");
+                    GetItemsFromCategory(allItems, itemCategories[i]);
+
+                    Console.WriteLine($"Tárgy megszerezve: {i + 1} / {itemCategories.Length} ({(int)((i + 1) / (double)itemCategories.Length * 100)}%)");
+
+                    Logger.Log(_basePageLink + itemCategories[i] + " oldal tárgyai elmentve.");
                 }
 
-                Serializer<Item>.SaveItems(allItems, ConfigurationManager.AppSettings["allItemsFile"]);
+                Serializer<Collectible>.SaveItems(allItems, ConfigurationManager.AppSettings["allItemsFile"]);
             }
             catch (IOException ex)
             {
@@ -71,7 +63,7 @@ namespace ItemHandler
             return true;
         }
 
-        private string[] GetSubPages(string url)
+        protected override string[] GetSubPages(string url)
         {
             var html = _client.GetStringAsync(url);
             _doc.LoadHtml(html.Result);
@@ -91,7 +83,7 @@ namespace ItemHandler
             return subPageNames.ToArray();
         }
 
-        private void GetItemsFromCategory(List<Item> allItems, string category, string? basePageLink = null)
+        protected override void GetItemsFromCategory(List<Collectible> allItems, string category, string? basePageLink = null)
         {
             var html = _client.GetStringAsync((basePageLink ?? _basePageLink) + category);
             _doc.LoadHtml(html.Result);
@@ -107,7 +99,7 @@ namespace ItemHandler
                 if (headers.Contains(itemProperties[0].Trim()))
                     continue;
 
-                allItems.Add(new Item
+                allItems.Add(new Collectible
                 {
                     Name = itemProperties[0].Trim(),
                     Description = category == "Boss+Souls" ? "-" : itemProperties[1].Trim(),

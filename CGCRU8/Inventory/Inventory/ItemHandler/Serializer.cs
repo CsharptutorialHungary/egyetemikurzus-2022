@@ -10,11 +10,11 @@ namespace ItemHandler
             File.WriteAllText(destFile, JsonConvert.SerializeObject(ds3Stuff, Formatting.Indented));
         }
 
-        public static List<T>? LoadItems(string srcFile)
+        public static List<T>? LoadItems(string srcFile, string type)
         {
             List<T> ds3Stuff = new List<T>();
 
-            Logger.Log("Tárgyak beolvasása elkezdve.");
+            Logger.Log($"{type} beolvasása elkezdve.");
 
             try
             {
@@ -26,7 +26,7 @@ namespace ItemHandler
                 return null;
             }
 
-            Logger.Log("Tárgyak beolvasása befejeződött.");
+            Logger.Log($"{type} beolvasása befejeződött.");
 
             return ds3Stuff;
         }

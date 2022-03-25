@@ -36,7 +36,7 @@ namespace Inventory.Tests
         {
             List<Armor> armors = new List<Armor>();
 
-            MethodInfo? getItemsMethod = typeof(ArmorScraper).GetMethod("GetArmorsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
+            MethodInfo? getItemsMethod = typeof(Scraper<ArmorType, Armor>).GetMethod("GetItemsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (getItemsMethod == null)
                 Assert.Fail("Nincs ilyen nevű metódus");

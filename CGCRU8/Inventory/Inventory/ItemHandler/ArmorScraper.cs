@@ -1,39 +1,29 @@
-﻿using HtmlAgilityPack;
-using Inventory;
+﻿using Inventory;
 using System.Configuration;
 using System.Globalization;
 
 namespace ItemHandler
 {
-    internal class ArmorScraper
+    internal class ArmorScraper : Scraper<ArmorType, Armor>
     {
-        readonly private HttpClient _client;
-        readonly private HtmlDocument _doc;
-        readonly private string? _basePageLink;
-        readonly private Dictionary<string, ArmorType> _armorTypes;
+        public ArmorScraper() : base(itemTypes: new Dictionary<string, ArmorType>()
+                                                {
+                                                    { "Helms",          new Helmet()},
+                                                    { "Chest+Armor",    new Chest()},
+                                                    { "Gauntlets",      new Gauntlet()},
+                                                    { "Leggings",       new Legging()},
+                                                })
+        {}
 
-        public ArmorScraper()
-        {
-            _client = new HttpClient();
-            _doc = new HtmlDocument();
 
-            _basePageLink = ConfigurationManager.AppSettings["basePageLink"];
-
-            _armorTypes = new Dictionary<string, ArmorType>()
-            {
-                { "Helms",          new Helmet()},
-                { "Chest+Armor",    new Chest()},
-                { "Gauntlets",      new Gauntlet()},
-                { "Leggings",       new Legging()},
-            };
-        }
-
-        public bool ScrapeAllArmorsFromLink()
+        public override bool ScrapeAllItemsFromLink()
         {
             try
             {
+#if RELEASE
                 if (File.Exists(ConfigurationManager.AppSettings["allArmorsFile"]))
                     return true;
+#endif
 
                 Logger.Log("Páncélok létrehozása elkezdődött.");
 
@@ -43,10 +33,13 @@ namespace ItemHandler
 
                 List<Armor> allArmors = new List<Armor>();
 
-                foreach (string category in armorCategories)
+                for (int i = 0; i < armorCategories.Length; i++)
                 {
-                    GetArmorsFromCategory(allArmors, category);
-                    Logger.Log(_basePageLink + category + " oldal tárgyai elmentve.");
+                    GetItemsFromCategory(allArmors, armorCategories[i]);
+                    
+                    Console.WriteLine($"Páncél megszerezve: {i + 1} / {armorCategories.Length} ({(int)((i + 1) / (double)armorCategories.Length * 100)}%)");
+
+                    Logger.Log(_basePageLink + armorCategories[i] + " oldal tárgyai elmentve.");
                 }
 
                 Serializer<Armor>.SaveItems(allArmors, ConfigurationManager.AppSettings["allArmorsFile"]);
@@ -66,7 +59,7 @@ namespace ItemHandler
             return true;
         }
 
-        private string[] GetSubPages(string url)
+        protected override string[] GetSubPages(string url)
         {
             var html = _client.GetStringAsync(url);
             _doc.LoadHtml(html.Result);
@@ -85,7 +78,7 @@ namespace ItemHandler
             return subPageNames.ToArray();
         }
 
-        private void GetArmorsFromCategory(List<Armor> allArmors, string category, string? basePageLink = null)
+        protected override void GetItemsFromCategory(List<Armor> allArmors, string category, string? basePageLink = null)
         {
             var html = _client.GetStringAsync((basePageLink ?? _basePageLink) + category);
             _doc.LoadHtml(html.Result);
@@ -120,7 +113,7 @@ namespace ItemHandler
                     Weight = double.Parse(armorProperties[14].Trim(), CultureInfo.InvariantCulture),
                     Durability = armorProperties[15].Contains("?") ? -1 : double.Parse(armorProperties[15].Trim(), CultureInfo.InvariantCulture),
 
-                    Type = _armorTypes[category],
+                    Type = _itemTypes[category],
                 });
             }
         }

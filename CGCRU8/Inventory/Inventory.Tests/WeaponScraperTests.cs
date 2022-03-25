@@ -50,11 +50,11 @@ namespace Inventory.Tests
         [TestCase("Flames", 3, "Pyromancy Flame", "Demon's Scar")]
         [TestCase("Talismans", 6, "Talisman", "Canvas Talisman")]
         [TestCase("Sacred+Chimes", 7, "Priest's Chime", "Sacred Chime of Filianore")]
-        public void WeaponScraper_GetWeaponsFromCategory_Returns_All_Weapons_From_Category(string category, int expectedNumber, string firstItem, string lastItem)
+        public void WeaponScraper_GetItemsFromCategory_Returns_All_Weapons_From_Category(string category, int expectedNumber, string firstItem, string lastItem)
         {
             List<Weapon> weapons = new List<Weapon>();
 
-            MethodInfo? getWeaponsMethod = typeof(WeaponScraper).GetMethod("GetWeaponsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
+            MethodInfo? getWeaponsMethod = typeof(Scraper<WeaponType, Weapon>).GetMethod("GetItemsFromCategory", BindingFlags.NonPublic | BindingFlags.Instance);
 
             if (getWeaponsMethod == null)
                 Assert.Fail("Nincs ilyen nevű metódus");
