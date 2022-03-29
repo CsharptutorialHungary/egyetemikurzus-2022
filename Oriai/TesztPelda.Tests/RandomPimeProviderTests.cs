@@ -9,8 +9,11 @@ namespace TesztPelda.Tests
 {
     internal class TestRandomProvider : IRandomProvider
     {
+        public static int CallCounter { get; private set; }
+
         public int GetNumber(int minimum, int maximum)
         {
+            ++CallCounter;
             return 3;
         }
     }
