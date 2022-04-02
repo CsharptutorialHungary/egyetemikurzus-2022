@@ -748,3 +748,199 @@
 2022. 03. 25. 17:32:32 - Páncélok létrehozva!
 2022. 03. 25. 17:32:32 - Gyűrűk létrehozása elkezdődött.
 2022. 03. 25. 17:32:33 - Gyűrűk létrehozva!
+2022. 03. 29. 22:10:18 - Tárgyak létrehozása elkezdődött.
+2022. 03. 29. 22:10:19 - Aloldalak linkje megszerezve.
+2022. 03. 29. 22:10:19 - https://darksouls3.wiki.fextralife.com/Key+Items oldal tárgyai elmentve.
+2022. 03. 29. 22:10:19 - https://darksouls3.wiki.fextralife.com/Multiplayer+Items oldal tárgyai elmentve.
+2022. 03. 29. 22:10:20 - https://darksouls3.wiki.fextralife.com/Consumables oldal tárgyai elmentve.
+2022. 03. 29. 22:10:20 - https://darksouls3.wiki.fextralife.com/Tools oldal tárgyai elmentve.
+2022. 03. 29. 22:10:20 - https://darksouls3.wiki.fextralife.com/Projectiles oldal tárgyai elmentve.
+2022. 03. 29. 22:10:21 - https://darksouls3.wiki.fextralife.com/Ammunition oldal tárgyai elmentve.
+2022. 03. 29. 22:10:21 - https://darksouls3.wiki.fextralife.com/Souls oldal tárgyai elmentve.
+2022. 03. 29. 22:10:21 - https://darksouls3.wiki.fextralife.com/Boss+Souls oldal tárgyai elmentve.
+2022. 03. 29. 22:10:22 - https://darksouls3.wiki.fextralife.com/Ore oldal tárgyai elmentve.
+2022. 03. 29. 22:10:22 - https://darksouls3.wiki.fextralife.com/Ashes oldal tárgyai elmentve.
+2022. 03. 29. 22:10:22 - Tárgyak létrehozva!
+2022. 03. 29. 22:10:22 - Fegyverek létrehozása elkezdődött.
+2022. 03. 29. 22:10:23 - Aloldalak linkje megszerezve.
+2022. 03. 29. 22:10:23 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 03. 29. 22:10:24 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 03. 29. 22:10:24 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 03. 29. 22:10:24 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 03. 29. 22:10:25 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 03. 29. 22:10:25 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 03. 29. 22:10:26 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 03. 29. 22:10:26 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 03. 29. 22:10:26 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 03. 29. 22:10:27 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 03. 29. 22:10:27 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 03. 29. 22:10:27 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 03. 29. 22:10:28 - https://darksouls3.wiki.fextralife.com/Fist+&+Claws oldal fegyverei elmentve.
+2022. 03. 29. 22:10:28 - https://darksouls3.wiki.fextralife.com/Spears+&+Pikes oldal fegyverei elmentve.
+2022. 03. 29. 22:10:29 - https://darksouls3.wiki.fextralife.com/Halberds oldal fegyverei elmentve.
+2022. 03. 29. 22:10:29 - https://darksouls3.wiki.fextralife.com/Reapers oldal fegyverei elmentve.
+2022. 03. 29. 22:10:29 - https://darksouls3.wiki.fextralife.com/Whips oldal fegyverei elmentve.
+2022. 03. 29. 22:10:30 - https://darksouls3.wiki.fextralife.com/Bows oldal fegyverei elmentve.
+2022. 03. 29. 22:10:30 - https://darksouls3.wiki.fextralife.com/Greatbows oldal fegyverei elmentve.
+2022. 03. 29. 22:10:30 - https://darksouls3.wiki.fextralife.com/Crossbows oldal fegyverei elmentve.
+2022. 03. 29. 22:10:31 - https://darksouls3.wiki.fextralife.com/Staves oldal fegyverei elmentve.
+2022. 03. 29. 22:10:31 - https://darksouls3.wiki.fextralife.com/Flames oldal fegyverei elmentve.
+2022. 03. 29. 22:10:31 - https://darksouls3.wiki.fextralife.com/Talismans oldal fegyverei elmentve.
+2022. 03. 29. 22:10:31 - https://darksouls3.wiki.fextralife.com/Sacred+Chimes oldal fegyverei elmentve.
+2022. 03. 29. 22:10:31 - Fegyverek létrehozva!
+2022. 03. 29. 22:10:31 - Páncélok létrehozása elkezdődött.
+2022. 03. 29. 22:10:32 - Aloldalak linkje megszerezve.
+2022. 03. 29. 22:10:33 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 03. 29. 22:10:33 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 03. 29. 22:10:33 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 03. 29. 22:10:34 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 03. 29. 22:10:34 - Páncélok létrehozva!
+2022. 03. 29. 22:10:34 - Gyűrűk létrehozása elkezdődött.
+2022. 03. 29. 22:10:34 - Gyűrűk létrehozva!
+2022. 03. 29. 22:10:38 - Tárgyak létrehozása elkezdődött.
+2022. 03. 29. 22:10:38 - Aloldalak linkje megszerezve.
+2022. 03. 29. 22:10:39 - https://darksouls3.wiki.fextralife.com/Key+Items oldal tárgyai elmentve.
+2022. 03. 29. 22:10:39 - https://darksouls3.wiki.fextralife.com/Multiplayer+Items oldal tárgyai elmentve.
+2022. 03. 29. 22:10:40 - https://darksouls3.wiki.fextralife.com/Consumables oldal tárgyai elmentve.
+2022. 03. 29. 22:10:40 - https://darksouls3.wiki.fextralife.com/Tools oldal tárgyai elmentve.
+2022. 03. 29. 22:10:40 - https://darksouls3.wiki.fextralife.com/Projectiles oldal tárgyai elmentve.
+2022. 03. 29. 22:10:41 - https://darksouls3.wiki.fextralife.com/Ammunition oldal tárgyai elmentve.
+2022. 03. 29. 22:10:41 - https://darksouls3.wiki.fextralife.com/Souls oldal tárgyai elmentve.
+2022. 03. 29. 22:10:41 - https://darksouls3.wiki.fextralife.com/Boss+Souls oldal tárgyai elmentve.
+2022. 03. 29. 22:10:42 - https://darksouls3.wiki.fextralife.com/Ore oldal tárgyai elmentve.
+2022. 03. 29. 22:10:42 - https://darksouls3.wiki.fextralife.com/Ashes oldal tárgyai elmentve.
+2022. 03. 29. 22:10:42 - Tárgyak létrehozva!
+2022. 03. 29. 22:11:13 - Tárgyak létrehozása elkezdődött.
+2022. 03. 29. 22:11:14 - Aloldalak linkje megszerezve.
+2022. 03. 29. 22:11:14 - https://darksouls3.wiki.fextralife.com/Key+Items oldal tárgyai elmentve.
+2022. 03. 29. 22:11:15 - https://darksouls3.wiki.fextralife.com/Multiplayer+Items oldal tárgyai elmentve.
+2022. 03. 29. 22:11:15 - https://darksouls3.wiki.fextralife.com/Consumables oldal tárgyai elmentve.
+2022. 03. 29. 22:11:15 - https://darksouls3.wiki.fextralife.com/Tools oldal tárgyai elmentve.
+2022. 03. 29. 22:11:15 - https://darksouls3.wiki.fextralife.com/Projectiles oldal tárgyai elmentve.
+2022. 03. 29. 22:11:16 - https://darksouls3.wiki.fextralife.com/Ammunition oldal tárgyai elmentve.
+2022. 03. 29. 22:11:16 - https://darksouls3.wiki.fextralife.com/Souls oldal tárgyai elmentve.
+2022. 03. 29. 22:11:16 - https://darksouls3.wiki.fextralife.com/Boss+Souls oldal tárgyai elmentve.
+2022. 03. 29. 22:11:16 - https://darksouls3.wiki.fextralife.com/Ore oldal tárgyai elmentve.
+2022. 03. 29. 22:11:17 - https://darksouls3.wiki.fextralife.com/Ashes oldal tárgyai elmentve.
+2022. 03. 29. 22:11:17 - Tárgyak létrehozva!
+2022. 03. 29. 22:11:43 - Gyűrűk létrehozása elkezdődött.
+2022. 03. 29. 22:11:44 - Gyűrűk létrehozva!
+2022. 03. 29. 22:11:50 - 
+
+
+2022. 03. 29. 22:18:15 - Gyűrűk létrehozása elkezdődött.
+2022. 03. 29. 22:18:16 - Gyűrűk létrehozva!
+2022. 03. 29. 22:18:17 - 
+
+
+2022. 03. 29. 22:18:28 - 
+
+
+2022. 03. 29. 22:18:56 - 
+
+
+2022. 03. 29. 22:19:02 - 
+
+
+2022. 03. 29. 23:25:22 - Páncélok létrehozása elkezdődött.
+2022. 03. 29. 23:25:23 - Aloldalak linkje megszerezve.
+2022. 03. 29. 23:25:23 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 03. 29. 23:25:24 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 03. 29. 23:25:25 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 03. 29. 23:25:25 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 03. 29. 23:25:25 - Páncélok létrehozva!
+2022. 03. 29. 23:25:27 - 
+
+
+2022. 04. 01. 15:41:56 - 
+
+
+2022. 04. 02. 20:58:27 - Tárgyak létrehozása elkezdődött.
+2022. 04. 02. 20:58:29 - Aloldalak linkje megszerezve.
+2022. 04. 02. 20:58:29 - https://darksouls3.wiki.fextralife.com/Key+Items oldal tárgyai elmentve.
+2022. 04. 02. 20:58:29 - https://darksouls3.wiki.fextralife.com/Multiplayer+Items oldal tárgyai elmentve.
+2022. 04. 02. 20:58:30 - https://darksouls3.wiki.fextralife.com/Consumables oldal tárgyai elmentve.
+2022. 04. 02. 20:58:31 - https://darksouls3.wiki.fextralife.com/Tools oldal tárgyai elmentve.
+2022. 04. 02. 20:58:31 - https://darksouls3.wiki.fextralife.com/Projectiles oldal tárgyai elmentve.
+2022. 04. 02. 20:58:31 - https://darksouls3.wiki.fextralife.com/Ammunition oldal tárgyai elmentve.
+2022. 04. 02. 20:58:32 - https://darksouls3.wiki.fextralife.com/Souls oldal tárgyai elmentve.
+2022. 04. 02. 20:58:32 - https://darksouls3.wiki.fextralife.com/Boss+Souls oldal tárgyai elmentve.
+2022. 04. 02. 20:58:33 - https://darksouls3.wiki.fextralife.com/Ore oldal tárgyai elmentve.
+2022. 04. 02. 20:58:33 - https://darksouls3.wiki.fextralife.com/Ashes oldal tárgyai elmentve.
+2022. 04. 02. 20:58:33 - Tárgyak létrehozva!
+2022. 04. 02. 20:58:33 - Fegyverek létrehozása elkezdődött.
+2022. 04. 02. 20:58:34 - Aloldalak linkje megszerezve.
+2022. 04. 02. 20:58:34 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 04. 02. 20:58:35 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 04. 02. 20:58:36 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 04. 02. 20:58:37 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 04. 02. 20:58:37 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 04. 02. 20:58:38 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 04. 02. 20:58:38 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 04. 02. 20:58:39 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 04. 02. 20:58:39 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 04. 02. 20:58:39 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 04. 02. 20:58:39 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 04. 02. 20:58:40 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 04. 02. 20:58:40 - https://darksouls3.wiki.fextralife.com/Fist+&+Claws oldal fegyverei elmentve.
+2022. 04. 02. 20:58:40 - https://darksouls3.wiki.fextralife.com/Spears+&+Pikes oldal fegyverei elmentve.
+2022. 04. 02. 20:58:41 - https://darksouls3.wiki.fextralife.com/Halberds oldal fegyverei elmentve.
+2022. 04. 02. 20:58:41 - https://darksouls3.wiki.fextralife.com/Reapers oldal fegyverei elmentve.
+2022. 04. 02. 20:58:42 - https://darksouls3.wiki.fextralife.com/Whips oldal fegyverei elmentve.
+2022. 04. 02. 20:58:42 - https://darksouls3.wiki.fextralife.com/Bows oldal fegyverei elmentve.
+2022. 04. 02. 20:58:42 - https://darksouls3.wiki.fextralife.com/Greatbows oldal fegyverei elmentve.
+2022. 04. 02. 20:58:42 - https://darksouls3.wiki.fextralife.com/Crossbows oldal fegyverei elmentve.
+2022. 04. 02. 20:58:43 - https://darksouls3.wiki.fextralife.com/Staves oldal fegyverei elmentve.
+2022. 04. 02. 20:58:43 - https://darksouls3.wiki.fextralife.com/Flames oldal fegyverei elmentve.
+2022. 04. 02. 20:58:43 - https://darksouls3.wiki.fextralife.com/Talismans oldal fegyverei elmentve.
+2022. 04. 02. 20:58:44 - https://darksouls3.wiki.fextralife.com/Sacred+Chimes oldal fegyverei elmentve.
+2022. 04. 02. 20:58:44 - Fegyverek létrehozva!
+2022. 04. 02. 20:58:44 - Páncélok létrehozása elkezdődött.
+2022. 04. 02. 20:58:44 - Aloldalak linkje megszerezve.
+2022. 04. 02. 20:58:44 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 04. 02. 20:58:45 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 04. 02. 20:58:45 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 04. 02. 20:58:45 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 04. 02. 20:58:45 - Páncélok létrehozva!
+2022. 04. 02. 20:58:45 - Gyűrűk létrehozása elkezdődött.
+2022. 04. 02. 20:58:46 - Gyűrűk létrehozva!
+2022. 04. 02. 20:59:59 - Fegyverek létrehozása elkezdődött.
+2022. 04. 02. 21:00:00 - Aloldalak linkje megszerezve.
+2022. 04. 02. 21:00:01 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 04. 02. 21:00:01 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 04. 02. 21:00:01 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 04. 02. 21:00:02 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 04. 02. 21:00:03 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 04. 02. 21:00:03 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 04. 02. 21:00:03 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 04. 02. 21:00:04 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 04. 02. 21:00:05 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 04. 02. 21:00:05 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 04. 02. 21:00:05 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 04. 02. 21:00:06 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 04. 02. 21:00:06 - https://darksouls3.wiki.fextralife.com/Fist+&+Claws oldal fegyverei elmentve.
+2022. 04. 02. 21:00:07 - https://darksouls3.wiki.fextralife.com/Spears+&+Pikes oldal fegyverei elmentve.
+2022. 04. 02. 21:00:07 - https://darksouls3.wiki.fextralife.com/Halberds oldal fegyverei elmentve.
+2022. 04. 02. 21:00:07 - https://darksouls3.wiki.fextralife.com/Reapers oldal fegyverei elmentve.
+2022. 04. 02. 21:00:08 - https://darksouls3.wiki.fextralife.com/Whips oldal fegyverei elmentve.
+2022. 04. 02. 21:00:08 - https://darksouls3.wiki.fextralife.com/Bows oldal fegyverei elmentve.
+2022. 04. 02. 21:00:09 - https://darksouls3.wiki.fextralife.com/Greatbows oldal fegyverei elmentve.
+2022. 04. 02. 21:00:09 - https://darksouls3.wiki.fextralife.com/Crossbows oldal fegyverei elmentve.
+2022. 04. 02. 21:00:09 - https://darksouls3.wiki.fextralife.com/Staves oldal fegyverei elmentve.
+2022. 04. 02. 21:00:09 - https://darksouls3.wiki.fextralife.com/Flames oldal fegyverei elmentve.
+2022. 04. 02. 21:00:10 - https://darksouls3.wiki.fextralife.com/Talismans oldal fegyverei elmentve.
+2022. 04. 02. 21:00:10 - https://darksouls3.wiki.fextralife.com/Sacred+Chimes oldal fegyverei elmentve.
+2022. 04. 02. 21:00:10 - Fegyverek létrehozva!
+2022. 04. 02. 21:00:18 - 
+
+
+2022. 04. 02. 21:01:06 - Páncélok létrehozása elkezdődött.
+2022. 04. 02. 21:01:08 - Aloldalak linkje megszerezve.
+2022. 04. 02. 21:01:09 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 04. 02. 21:01:09 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 04. 02. 21:01:10 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 04. 02. 21:01:10 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 04. 02. 21:01:11 - Páncélok létrehozva!
+2022. 04. 02. 21:01:33 - 
+
+

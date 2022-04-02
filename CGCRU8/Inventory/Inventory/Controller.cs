@@ -1,9 +1,9 @@
-﻿using System;
-using ItemHandler;
+﻿using Commands;
 using ConsoleTables;
 using System.Runtime.CompilerServices;
 using System.Configuration;
-
+using System.Reflection;
+using System.Collections.Generic;
 
 [assembly: InternalsVisibleTo("Inventory.Tests")]
 namespace Inventory
@@ -14,19 +14,26 @@ namespace Inventory
         {
             try
             {
+                Dictionary<string, ICommand> commands = new Dictionary<string, ICommand>();
+
+                foreach(var command in LoadCommands<IGetCommand>().ToDictionary(x => x.GetType().Name.ToLower(), x => x))
+                    commands.Add(command.Key, command.Value);
+
+                foreach (var command in LoadCommands<IManageCommand>().ToDictionary(x => x.GetType().Name.ToLower(), x => x))
+                    commands.Add(command.Key, command.Value);
+
                 while (true)
                 {
                     ConsoleTable table = new ConsoleTable("Parancs", "Leírás");
                     Console.WriteLine("\n\tMit szeretnél csinálni?");
 
                     if(MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
-                        table.AddRow("minden_megszerzese", "Minden megszerzése (tárgyak, fegyverek, páncélok, gyűrűk)");
+                        table.AddRow("GetAll", "Minden megszerzése (tárgyak, fegyverek, páncélok, gyűrűk)");
 
-                    table.AddRow("targyak_" + MissingFileText("allItemsFile", true), "Tárgyak " + MissingFileText("allItemsFile"));
-                    table.AddRow("fegyverek_" + MissingFileText("allWeaponsFile", true), "Fegyverek " + MissingFileText("allWeaponsFile"));
-                    table.AddRow("pancelok_" + MissingFileText("allArmorsFile", true), "Páncélok " + MissingFileText("allArmorsFile"));
-                    table.AddRow("gyuruk_" + MissingFileText("allRingsFile", true), "Gyűrűk " + MissingFileText("allRingsFile"));
-
+                    table.AddRow($"{MissingFileText("allItemsFile", true)}Collectibles", $"Tárgyak {MissingFileText("allItemsFile")}");
+                    table.AddRow($"{MissingFileText("allWeaponsFile", true)}Weapons", $"Fegyverek {MissingFileText("allWeaponsFile")}");
+                    table.AddRow($"{MissingFileText("allArmorsFile", true)}Armors", $"Páncélok {MissingFileText("allArmorsFile")}");
+                    table.AddRow($"{MissingFileText("allRingsFile", true)}Rings", $"Gyűrűk {MissingFileText("allRingsFile")}");
 
                     table.AddRow("", "");
                     if(!MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
@@ -34,19 +41,34 @@ namespace Inventory
 
 
                     table.AddRow("", "");
-                    table.AddRow("kilep", "Kilépés a programból");
+                    table.AddRow("close", "Kilépés a programból");
 
                     table.Write();
 
                     Console.Write("> ");
                     string? action = Console.ReadLine();
 
-                    if (action == null || action == "" || action == "kilep")
+                    if (string.IsNullOrEmpty(action))
                         break;
 
-                    DoSomething(action);
+                    action = action.ToLower();
+
+                    if (action == "close")
+                        break;
 
                     Console.WriteLine("\n\n\n\n");
+
+                    bool error = false;
+                    if (commands.ContainsKey(action))
+                        error = !commands[action].Execute();
+                    else
+                        Console.WriteLine($"Ismeretlen parancs: {action}!");
+
+                    if(error)
+                    {
+                        Console.WriteLine($"Hiba lépett fel a(z) {action} parancs futtatása közben. Bővebb információ a log fájlban.");
+                        Console.ReadKey();
+                    }
                 }
             }
             catch (Exception ex)
@@ -72,31 +94,19 @@ namespace Inventory
         private static string MissingFileText(string fileName, bool command = false)
         {
             if (MissingFile(fileName))
-                return command ? "megszerzese" : "megszerzése a wikipédiáról";
+                return command ? "Get" : "megszerzése a wikipédiáról";
             else
-                return command ? "kezelese" : "kezelése";
+                return command ? "Manage" : "kezelése";
         }
 
-        private static void DoSomething(string command)
+        public static IEnumerable<CommandType> LoadCommands<CommandType>()
         {
-            switch (command)
-            {
-                case "minden_megszerzese":
-                {
-                    new CollectibleScraper().ScrapeAllItemsFromLink();
-                    new WeaponScraper().ScrapeAllItemsFromLink();
-                    new ArmorScraper().ScrapeAllItemsFromLink();
-                    new RingScraper().ScrapeAllItemsFromLink();
-                    break;
-                }
-                case "targyak_megszerzese":
-                    new CollectibleScraper().ScrapeAllItemsFromLink();
-                    break;
+            var commands = from command in Assembly.GetExecutingAssembly().GetTypes()
+                           where typeof(CommandType).IsAssignableFrom(command) && !command.IsAbstract
+                           select command;
 
-                default:
-                    Console.WriteLine("Ismeretlen parancs!");
-                    break;
-            }
+            foreach (var command in commands)
+                yield return (CommandType)Activator.CreateInstance(command);
         }
     }
 }
