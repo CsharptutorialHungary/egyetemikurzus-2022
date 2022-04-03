@@ -1,30 +1,17 @@
 ﻿using Commands;
 using ConsoleTables;
 using Inventory;
-using ItemHandler;
 using Types;
-using System.Configuration;
 
 namespace Controllers
 {
-    internal class ArmorController : ItemController
+    internal class ArmorController : ItemController<IManageArmors, Armor>
     {
-        private readonly Dictionary<string, IManageArmors> commands;
-        private readonly List<Armor>? armors;
-
-        public ArmorController()
-        {
-            commands = new Dictionary<string, IManageArmors>();
-
-            foreach (var command in Controller.LoadCommands<IManageArmors>().ToDictionary(x => x.GetType().Name.ToLower(), x => x))
-                commands.Add(command.Key, command.Value);
-
-            armors = Serializer.LoadItems<Armor>(ConfigurationManager.AppSettings["allArmorsFile"], "Páncélok");
-        }
+        public ArmorController() : base("allArmorsFile", "Páncélok") {}
 
         public override bool Manage()
         {
-            if (armors == null)
+            if (items == null)
                 return false;
 
             while (true)
@@ -45,7 +32,7 @@ namespace Controllers
 
                 bool error = false;
                 if (commands.ContainsKey(action))
-                    error = !commands[action].Execute(armors, arg);
+                    error = !commands[action].Execute(items, arg);
                 else
                     Console.WriteLine($"Ismeretlen parancs: {action}!");
 
@@ -67,7 +54,7 @@ namespace Controllers
             ConsoleTable table = new ConsoleTable("Parancs", "Leírás");
             table.AddRow("listAll", "Összes páncél kilistázása");
             table.AddRow("listByCategory", "Páncélok listázása kategóriánként");
-            table.AddRow("detail nameOfTheItem", "Páncél adatainak listázása");
+            table.AddRow("detail nameOfTheArmor", "Páncél adatainak megtekintése");
 
             table.AddRow("", "");
             table.AddRow("back", "Vissza a főmenübe");
@@ -75,16 +62,6 @@ namespace Controllers
             table.Write();
 
             Console.Write("> ");
-        }
-
-        protected override string GetArgsFromCommand(string command)
-        {
-            if (!command.Contains(" "))
-                return "";
-
-            List<string> args = new List<string>(command.Split(" "));
-
-            return String.Join(" ", args.GetRange(1, args.Count - 1));
         }
     }
 }

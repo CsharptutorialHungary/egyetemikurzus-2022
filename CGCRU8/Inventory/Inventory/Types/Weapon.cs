@@ -21,5 +21,24 @@
         public double Weight { get; set; }
 
         public WeaponType? Type { get; set; }
+
+        public override string ToString()
+        {
+            return 
+                $"{Name}\n\n" +
+                $"Attack: {Attack}\n\n" +
+                $"Strength requirement: {StrengthRequirement}\n" +
+                $"Strength scailing: {StrenthScaling}\n\n" +
+                $"Dexterity requirement: {DexterityRequirement}\n" +
+                $"Dexterity scaling: {DexterityScaling}\n\n" +
+                $"Intelligence requirement: {IntelligenceRequirement}\n" +
+                $"Intelligence scaling: {IntelligenceScaling}\n\n" +
+                $"Faith requirement: {FaithRequirement}\n" +
+                $"Faith scaling: {FaithScaling}\n\n" +
+                $"Durability: {Durability}\n" +
+                $"Weight: {Weight}\n\n" +
+                $"Type: {Type.Name}\n" +
+                $"Type description: {Type.Description}";
+        }
     }
 }

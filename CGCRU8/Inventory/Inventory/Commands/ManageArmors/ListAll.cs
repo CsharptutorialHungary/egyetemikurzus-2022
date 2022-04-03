@@ -18,7 +18,7 @@ namespace ArmorCommands
                 return false;
             }
 
-            ItemController.ListItemsInGrid(armors);
+            ItemController<ICommand, Item>.ListItemsInGrid(armors);
 
             Console.WriteLine("\nNyomj entert a folytatáshoz...");
             Console.ReadLine();

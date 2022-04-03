@@ -24,7 +24,7 @@
         public double Weight { get; set; }
         public double Durability { get; set; }
 
-        public ArmorType Type { get; set; }
+        public ArmorType? Type { get; set; }
 
         public override string ToString()
         {
@@ -45,7 +45,8 @@
                 $"Poise: {Poise}\n\n" +
                 $"Weight: {Weight}\n" +
                 $"Durability: {Durability}\n\n" +
-                $"Type description: {Type.description}";
+                $"Type: {Type.Name}\n" +
+                $"Type description: {Type.Description}";
         }
     }
 }

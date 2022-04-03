@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Commands;
+using ConsoleTables;
+using Inventory;
+using Types;
 
 namespace Controllers
 {
-    internal class WeaponController : ItemController
+    internal class WeaponController : ItemController<IManageWeapons, Weapon>
     {
+        public WeaponController() : base("allWeaponsFile", "Fegyverek") { }
+
         public override bool Manage()
         {
             while (true)
@@ -20,11 +21,6 @@ namespace Controllers
         }
 
         protected override void ConstructConsoleTable()
-        {
-            throw new NotImplementedException();
-        }
-
-        protected override string GetArgsFromCommand(string command)
         {
             throw new NotImplementedException();
         }

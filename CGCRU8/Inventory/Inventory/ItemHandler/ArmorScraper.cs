@@ -12,7 +12,7 @@ namespace ItemHandler
                                                     { "Helms",          new Helmet()},
                                                     { "Chest+Armor",    new Chest()},
                                                     { "Gauntlets",      new Gauntlet()},
-                                                    { "Leggings",       new Legging()},
+                                                    { "Leggings",       new Leggings()},
                                                 })
         {}
 

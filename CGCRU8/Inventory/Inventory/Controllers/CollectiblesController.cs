@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Commands;
+using ConsoleTables;
+using Inventory;
+using Types;
 
 namespace Controllers
 {
-    internal class CollectiblesController : ItemController
+    internal class CollectiblesController : ItemController<IManageCollectibles, Collectible>
     {
+        public CollectiblesController() : base("allItemsFile", "Tárgyak") {}
+
         public override bool Manage()
         {
             while (true)
@@ -22,12 +23,19 @@ namespace Controllers
 
         protected override void ConstructConsoleTable()
         {
-            throw new NotImplementedException();
-        }
+            Console.WriteLine("\n\tMit szeretnél csinálni?");
 
-        protected override string GetArgsFromCommand(string command)
-        {
-            throw new NotImplementedException();
+            ConsoleTable table = new ConsoleTable("Parancs", "Leírás");
+            table.AddRow("listAll", "Összes tárgy kilistázása");
+            table.AddRow("listByCategory", "Tárgyak listázása kategóriánként");
+            table.AddRow("detail nameOfTheItem", "Tárgy adatainak megtekintése");
+
+            table.AddRow("", "");
+            table.AddRow("back", "Vissza a főmenübe");
+
+            table.Write();
+
+            Console.Write("> ");
         }
     }
 }

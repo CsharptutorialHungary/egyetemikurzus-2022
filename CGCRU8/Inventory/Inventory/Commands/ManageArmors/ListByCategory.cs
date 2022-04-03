@@ -22,12 +22,12 @@ namespace ArmorCommands
             foreach(string category in categories)
             {
                 var selectedArmors = from armor in armors
-                                     where armor.Type.description.Split(" ")[0] == category
+                                     where armor.Type.Name == category
                                      orderby armor.Name
                                      select armor;
 
                 Console.WriteLine($"\t{category}");
-                ItemController.ListItemsInGrid(selectedArmors.ToList());
+                ItemController<ICommand, Item>.ListItemsInGrid(selectedArmors.ToList());
 
                 Console.WriteLine("\nNyomj entert a folytatáshoz...");
                 Console.ReadLine();
@@ -39,7 +39,7 @@ namespace ArmorCommands
         private string[] GetArmorCategories(List<Armor> armors)
         {
             var armorCategories = from armor in armors
-                                  group armor.Type.description.Split(" ")[0] by armor.Type.description.Split(" ")[0] into categories
+                                  group armor.Type.Name by armor.Type.Name into categories
                                   select categories;
 
             List<string> categoriesAsString = new List<string>();
