@@ -1,8 +1,8 @@
-﻿namespace Inventory
+﻿namespace Types
 {
-    internal record class Collectible
+    internal record class Collectible : Item
     {
-        public string? Name { get; set; }
+        public override string? Name { get; set; }
         public string? Description { get; set; }
         public CollectibleType? Type { get; set; }
     }

@@ -1,8 +1,8 @@
-﻿namespace Inventory
+﻿namespace Types
 {
-    internal abstract class ArmorType
+    internal class ArmorType
     {
-        public virtual string? description { get; protected set; }
+        public virtual string? description { get; set; }
     }
 
     internal class Helmet : ArmorType

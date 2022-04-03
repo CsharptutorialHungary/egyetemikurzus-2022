@@ -1,4 +1,4 @@
-﻿namespace Inventory
+﻿namespace Types
 {
     internal class RingType
     {

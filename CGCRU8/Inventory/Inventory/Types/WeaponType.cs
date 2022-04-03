@@ -1,8 +1,8 @@
-﻿namespace Inventory
+﻿namespace Types
 {
-    internal abstract class WeaponType
+    internal class WeaponType
     {
-        public virtual string? description { get; protected set; }
+        public virtual string? description { get; set; }
     }
 
     internal class Dagger : WeaponType

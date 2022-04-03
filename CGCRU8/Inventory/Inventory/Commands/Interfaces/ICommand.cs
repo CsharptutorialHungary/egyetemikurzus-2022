@@ -2,6 +2,6 @@
 {
     internal interface ICommand
     {
-        bool Execute();
+        bool Execute(params object[] args);
     }
 }

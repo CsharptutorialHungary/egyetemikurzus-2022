@@ -4,9 +4,9 @@ namespace Commands
 {
     internal class ManageWeapons : IManageCommand
     {
-        public bool Execute()
+        public bool Execute(params object[] args)
         {
-            return new WeaponsController().Manage();
+            return new WeaponController().Manage();
         }
     }
 }

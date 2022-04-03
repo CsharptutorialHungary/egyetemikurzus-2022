@@ -944,3 +944,586 @@
 2022. 04. 02. 21:01:33 - 
 
 
+2022. 04. 02. 23:07:43 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:07:43 - Hiba: Input string '..' is not a valid number. Path '', line 1, position 2.
+   at Newtonsoft.Json.JsonTextReader.ParseReadNumber(ReadType readType, Char firstChar, Int32 initialPosition)
+   at Newtonsoft.Json.JsonTextReader.ParseValue()
+   at Newtonsoft.Json.JsonReader.ReadAndMoveToContent()
+   at Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ItemHandler.Serializer`1.LoadItems(String srcFile, String type) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\Serializer.cs:line 21
+   at Controllers.ArmorsController..ctor() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 21
+   at Commands.ManageArmors.Execute() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 62
+2022. 04. 02. 23:07:43 - 
+
+
+2022. 04. 02. 23:09:50 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:09:50 - Hiba: Could not create an instance of type Inventory.ArmorType. Type is an interface or abstract class and cannot be instantiated. Path '[0].Type.description', line 20, position 20.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateNewObject(JsonReader reader, JsonObjectContract objectContract, JsonProperty containerMember, JsonProperty containerProperty, String id, Boolean& createdFromNonDefaultCreator)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ItemHandler.Serializer`1.LoadItems(String srcFile, String type) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\Serializer.cs:line 21
+   at Controllers.ArmorsController..ctor() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 21
+   at Commands.ManageArmors.Execute() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 62
+2022. 04. 02. 23:09:50 - 
+
+
+2022. 04. 02. 23:11:57 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:11:58 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:13:55 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:13:55 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:20:03 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:20:03 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:21:19 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:21:19 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:38:36 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:38:36 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:38:46 - 
+
+
+2022. 04. 02. 23:40:10 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:40:10 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:41:42 - asd
+2022. 04. 02. 23:41:45 - managerarmors
+2022. 04. 02. 23:41:47 - listall
+2022. 04. 02. 23:41:48 - 
+
+
+2022. 04. 02. 23:42:17 - managearmors
+2022. 04. 02. 23:42:17 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:42:17 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:42:21 - A kapott argumentum null volt az elvárt páncéllista helyett
+2022. 04. 02. 23:42:41 - 
+
+
+2022. 04. 02. 23:44:16 - managearmors
+2022. 04. 02. 23:44:16 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:44:17 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:44:18 - listall
+2022. 04. 02. 23:44:18 - A kapott argumentum null volt az elvárt páncéllista helyett
+2022. 04. 02. 23:45:06 - managearmors
+2022. 04. 02. 23:45:06 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:45:07 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:45:08 - listall
+2022. 04. 02. 23:45:08 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[System.Object]' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 11
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 02. 23:45:08 - 
+
+
+2022. 04. 02. 23:47:19 - managearmors
+2022. 04. 02. 23:47:19 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:47:19 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:47:21 - listall
+2022. 04. 02. 23:47:21 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[Inventory.Armor]' to type 'Inventory.Armor'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 02. 23:47:21 - 
+
+
+2022. 04. 02. 23:49:35 - managearmors
+2022. 04. 02. 23:49:35 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:49:36 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:49:37 - listall
+2022. 04. 02. 23:49:37 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[System.Object]' to type 'System.Collections.Generic.IEnumerable`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 02. 23:49:37 - 
+
+
+2022. 04. 02. 23:52:48 - managearmors
+2022. 04. 02. 23:52:48 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:52:48 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:52:50 - listall
+2022. 04. 02. 23:52:50 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[System.Object]' to type 'System.Collections.Generic.IEnumerable`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 02. 23:52:50 - 
+
+
+2022. 04. 02. 23:54:48 - managearmors
+2022. 04. 02. 23:54:48 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:54:48 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:54:50 - listall
+2022. 04. 02. 23:54:50 - Hiba: Object must implement IConvertible.
+   at System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   at System.Convert.ChangeType(Object value, Type conversionType)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 02. 23:54:50 - 
+
+
+2022. 04. 02. 23:56:33 - managearmors
+2022. 04. 02. 23:56:33 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:56:33 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:56:34 - listall
+2022. 04. 02. 23:57:09 - managearmors
+2022. 04. 02. 23:57:09 - Páncélok beolvasása elkezdve.
+2022. 04. 02. 23:57:09 - Páncélok beolvasása befejeződött.
+2022. 04. 02. 23:57:11 - listall
+2022. 04. 02. 23:57:11 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[System.Object]' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 13
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 02. 23:57:11 - 
+
+
+2022. 04. 03. 0:01:53 - managearmors
+2022. 04. 03. 0:01:53 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:01:54 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:01:55 - listall
+2022. 04. 03. 0:01:55 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[Inventory.Armor]' to type 'Inventory.Armor'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:01:55 - 
+
+
+2022. 04. 03. 0:02:38 - managearmors
+2022. 04. 03. 0:02:38 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:02:38 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:02:39 - listall
+2022. 04. 03. 0:02:40 - Hiba: Unable to cast object of type '<CastIterator>d__63`1[System.Collections.Generic.List`1[Inventory.Armor]]' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:02:40 - 
+
+
+2022. 04. 03. 0:05:23 - managearmors
+2022. 04. 03. 0:05:23 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:05:24 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:05:26 - listall
+2022. 04. 03. 0:05:40 - managearmors
+2022. 04. 03. 0:05:40 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:05:40 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:05:42 - listall
+2022. 04. 03. 0:05:42 - Hiba: The number columns in the row (5) does not match the values (1
+   at ConsoleTables.ConsoleTable.AddRow(Object[] values)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 40
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:05:42 - 
+
+
+2022. 04. 03. 0:06:56 - managearmors
+2022. 04. 03. 0:06:56 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:06:56 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:06:58 - listall
+2022. 04. 03. 0:07:23 - managearmors
+2022. 04. 03. 0:07:23 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:07:23 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:07:27 - listall
+2022. 04. 03. 0:08:06 - managearmors
+2022. 04. 03. 0:08:06 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:08:06 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:08:08 - listall
+2022. 04. 03. 0:08:34 - managearmors
+2022. 04. 03. 0:08:34 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:08:35 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:08:36 - listall
+2022. 04. 03. 0:11:33 - managearmors
+2022. 04. 03. 0:11:33 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:11:33 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:11:34 - listall
+2022. 04. 03. 0:11:34 - Hiba: Unable to cast object of type 'System.Object[]' to type 'System.Collections.Generic.IEnumerable`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:11:34 - 
+
+
+2022. 04. 03. 0:12:06 - managearmors
+2022. 04. 03. 0:12:06 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:12:06 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:12:07 - listall
+2022. 04. 03. 0:12:07 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[System.Object]' to type 'Inventory.Armor'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:12:07 - 
+
+
+2022. 04. 03. 0:12:56 - managearmors
+2022. 04. 03. 0:12:56 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:12:57 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:12:58 - listall
+2022. 04. 03. 0:12:58 - Hiba: Unable to cast object of type '<CastIterator>d__63`1[System.Collections.Generic.List`1[Inventory.Armor]]' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:12:58 - 
+
+
+2022. 04. 03. 0:13:51 - managearmors
+2022. 04. 03. 0:13:52 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:13:52 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:13:54 - listall
+2022. 04. 03. 0:13:54 - Hiba: Unable to cast object of type '<CastIterator>d__63`1[System.Collections.Generic.List`1[Inventory.Armor]]' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:13:54 - 
+
+
+2022. 04. 03. 0:14:16 - managearmors
+2022. 04. 03. 0:14:16 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:14:16 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:14:17 - listall
+2022. 04. 03. 0:14:17 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[Inventory.Armor]' to type 'Inventory.Armor'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:14:17 - 
+
+
+2022. 04. 03. 0:14:40 - managearmors
+2022. 04. 03. 0:14:40 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:14:40 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:14:41 - listall
+2022. 04. 03. 0:14:41 - Hiba: Unable to cast object of type 'System.Collections.Generic.List`1[Inventory.Armor]' to type 'Inventory.Armor'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 14
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:14:41 - 
+
+
+2022. 04. 03. 0:15:52 - managearmors
+2022. 04. 03. 0:15:52 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:15:52 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:15:53 - listall
+2022. 04. 03. 0:16:09 - managearmors
+2022. 04. 03. 0:16:10 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:16:10 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:16:11 - listall
+2022. 04. 03. 0:16:42 - managearmors
+2022. 04. 03. 0:16:42 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:16:43 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:16:45 - listall
+2022. 04. 03. 0:17:25 - managearmors
+2022. 04. 03. 0:17:25 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:17:25 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:17:27 - listall
+2022. 04. 03. 0:18:04 - managearmors
+2022. 04. 03. 0:18:04 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:18:05 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:18:05 - lista
+2022. 04. 03. 0:18:07 - listall
+2022. 04. 03. 0:18:26 - managearmors
+2022. 04. 03. 0:18:26 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:18:26 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:18:27 - listall
+2022. 04. 03. 0:19:17 - managearmors
+2022. 04. 03. 0:19:17 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:19:18 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:19:20 - listall
+2022. 04. 03. 0:19:50 - managearmors
+2022. 04. 03. 0:19:50 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:19:50 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:19:51 - listall
+2022. 04. 03. 0:20:13 - managearmors
+2022. 04. 03. 0:20:14 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:20:14 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:20:15 - listall
+2022. 04. 03. 0:20:15 - Hiba: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 30
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 61
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:20:15 - 
+
+
+2022. 04. 03. 0:21:16 - managearmors
+2022. 04. 03. 0:21:16 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:21:16 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:21:17 - listall
+2022. 04. 03. 0:21:50 - managearmors
+2022. 04. 03. 0:21:50 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:21:51 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:21:52 - listall
+2022. 04. 03. 0:22:54 - 
+
+
+2022. 04. 03. 0:37:45 - managearmors
+2022. 04. 03. 0:37:45 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:37:45 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:37:51 - detail asd
+2022. 04. 03. 0:37:51 - Hiba: Unable to cast object of type 'System.String' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.Detail.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\Detail.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 65
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:37:51 - 
+
+
+2022. 04. 03. 0:39:27 - managearmors
+2022. 04. 03. 0:39:27 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:39:27 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:39:30 - listall asd
+2022. 04. 03. 0:39:30 - Hiba: Unable to cast object of type 'System.String' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 64
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:39:30 - 
+
+
+2022. 04. 03. 0:39:51 - managearmors
+2022. 04. 03. 0:39:51 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:39:52 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:39:53 - listall
+2022. 04. 03. 0:39:56 - 
+
+
+2022. 04. 03. 0:41:28 - managearmors
+2022. 04. 03. 0:41:28 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:41:29 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:41:31 - lsitall
+2022. 04. 03. 0:41:32 - listall
+2022. 04. 03. 0:41:34 - listall asd
+2022. 04. 03. 0:41:34 - Hiba: Unable to cast object of type 'System.String' to type 'System.Collections.Generic.List`1[Inventory.Armor]'.
+   at System.Linq.Enumerable.CastIterator[TResult](IEnumerable source)+MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at ArmorCommands.ListAll.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListAll.cs:line 12
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 64
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:41:34 - 
+
+
+2022. 04. 03. 0:42:34 - managearmors
+2022. 04. 03. 0:42:34 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:42:34 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:42:38 - listall asd
+2022. 04. 03. 0:42:42 - 
+
+
+2022. 04. 03. 0:43:05 - managearmors
+2022. 04. 03. 0:43:05 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:43:05 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:43:07 - listall
+2022. 04. 03. 0:43:12 - listall asd
+2022. 04. 03. 0:43:18 - listall asd asd
+2022. 04. 03. 0:43:23 - detail asd
+2022. 04. 03. 0:44:25 - managearmors
+2022. 04. 03. 0:44:25 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:44:25 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:44:28 - listall asd
+2022. 04. 03. 0:44:35 - listall
+2022. 04. 03. 0:45:18 - listall
+2022. 04. 03. 0:45:22 - managearmors
+2022. 04. 03. 0:45:22 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:45:22 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:45:24 - listall ads
+2022. 04. 03. 0:45:27 - listall 
+2022. 04. 03. 0:45:28 - listall asd
+2022. 04. 03. 0:46:47 - managearmors
+2022. 04. 03. 0:46:47 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:46:47 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:46:49 - listall 
+2022. 04. 03. 0:46:51 - listall asd
+2022. 04. 03. 0:47:24 - managearmors
+2022. 04. 03. 0:47:25 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:47:25 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:47:26 - listall
+2022. 04. 03. 0:47:34 - listall asdasd
+2022. 04. 03. 0:51:40 - managearmors
+2022. 04. 03. 0:51:40 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:51:41 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:51:43 - deatil asd
+2022. 04. 03. 0:51:46 - detail asd
+2022. 04. 03. 0:51:46 - Hiba: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at ArmorCommands.Detail.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\Detail.cs:line 20
+   at Controllers.ArmorsController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorsController.cs:line 62
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 63
+2022. 04. 03. 0:51:46 - 
+
+
+2022. 04. 03. 0:54:26 - managearmors
+2022. 04. 03. 0:54:26 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:54:26 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:54:30 - detail asd
+2022. 04. 03. 0:54:41 - listall
+2022. 04. 03. 0:54:51 - detail harald legion leggings
+2022. 04. 03. 0:58:11 - managearmors
+2022. 04. 03. 0:58:11 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:58:12 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:58:13 - listall
+2022. 04. 03. 0:58:18 - detail ruin leggings
+2022. 04. 03. 0:58:43 - managearmors
+2022. 04. 03. 0:58:43 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:58:44 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:58:53 - detail ruin leggings
+2022. 04. 03. 0:59:44 - managearmors
+2022. 04. 03. 0:59:44 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 0:59:45 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 0:59:52 - detail ruin leggings
+2022. 04. 03. 1:02:21 - managearmors
+2022. 04. 03. 1:02:21 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 1:02:21 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 1:02:26 - detail ruinleggings
+2022. 04. 03. 1:02:36 - detail ruin leggings
+2022. 04. 03. 1:05:57 - getarmors
+2022. 04. 03. 1:05:57 - Páncélok létrehozása elkezdődött.
+2022. 04. 03. 1:05:58 - Aloldalak linkje megszerezve.
+2022. 04. 03. 1:05:59 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 04. 03. 1:05:59 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 04. 03. 1:05:59 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 04. 03. 1:06:00 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 04. 03. 1:06:00 - Páncélok létrehozva!
+2022. 04. 03. 1:06:11 - managearmors
+2022. 04. 03. 1:06:11 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 1:06:11 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 1:06:17 - detail ruin leggings
+2022. 04. 03. 1:07:00 - managearmors
+2022. 04. 03. 1:07:00 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 1:07:01 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 1:07:02 - listall
+2022. 04. 03. 1:07:11 - detail ordained trousers
+2022. 04. 03. 9:18:16 - managearmors
+2022. 04. 03. 9:18:16 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 9:18:17 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 9:18:19 - back
+2022. 04. 03. 9:18:23 - close
+2022. 04. 03. 9:18:23 - 
+
+
+2022. 04. 03. 9:42:07 - managerarmors
+2022. 04. 03. 9:42:10 - managearmors
+2022. 04. 03. 9:42:10 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 9:42:11 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 9:42:15 - listall 
+2022. 04. 03. 9:42:35 - detail black witch trousers
+2022. 04. 03. 9:58:57 - managearmors
+2022. 04. 03. 9:58:57 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 9:58:57 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 9:59:01 - listbycategory
+2022. 04. 03. 9:59:20 - managearmors
+2022. 04. 03. 9:59:20 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 9:59:20 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 9:59:25 - listbycategory
+2022. 04. 03. 10:00:32 - managearmors
+2022. 04. 03. 10:00:32 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:00:32 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:00:35 - listbycategory
+2022. 04. 03. 10:02:06 - managearmors
+2022. 04. 03. 10:02:06 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:02:06 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:02:09 - listbycategory
+2022. 04. 03. 10:05:49 - managearmors
+2022. 04. 03. 10:05:49 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:05:49 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:05:53 - listbycategory
+2022. 04. 03. 10:13:23 - managearmors
+2022. 04. 03. 10:13:23 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:13:23 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:13:27 - listbycategory
+2022. 04. 03. 10:13:29 - 
+
+
+2022. 04. 03. 10:46:15 - managearmors
+2022. 04. 03. 10:46:15 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:46:15 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:46:16 - listall
+2022. 04. 03. 10:46:26 - detail iron dragonslyer leggings
+2022. 04. 03. 10:46:33 - listall
+2022. 04. 03. 10:46:44 - detail iron dragonslayer leggings
+2022. 04. 03. 10:46:48 - 
+
+
+2022. 04. 03. 10:49:13 - managearmors
+2022. 04. 03. 10:49:13 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:49:13 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:49:17 - listbycategory
+2022. 04. 03. 10:49:58 - managearmors
+2022. 04. 03. 10:49:58 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:49:58 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:50:01 - listbycategory
+2022. 04. 03. 10:50:01 - Hiba: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at Controllers.ItemController.ListItemsInGrid[T](List`1 items) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ItemController.cs:line 33
+   at ArmorCommands.ListByCategory.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\ManageArmors\ListByCategory.cs:line 30
+   at Controllers.ArmorController.Manage() in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ArmorController.cs:line 48
+   at Commands.ManageArmors.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageArmors.cs:line 9
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 40
+2022. 04. 03. 10:50:01 - 
+
+
+2022. 04. 03. 10:50:52 - managearmors
+2022. 04. 03. 10:50:52 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:50:53 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:50:56 - listbycategory
+2022. 04. 03. 10:51:32 - managearmors
+2022. 04. 03. 10:51:32 - Páncélok beolvasása elkezdve.
+2022. 04. 03. 10:51:32 - Páncélok beolvasása befejeződött.
+2022. 04. 03. 10:51:37 - listbycategory
+2022. 04. 03. 10:52:01 - detail pyromancer wrap
+2022. 04. 03. 10:52:05 - 
+
+

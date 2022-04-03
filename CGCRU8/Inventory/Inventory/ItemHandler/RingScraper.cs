@@ -1,6 +1,7 @@
 ﻿using Inventory;
 using System.Configuration;
 using System.Globalization;
+using Types;
 
 namespace ItemHandler
 {
@@ -29,7 +30,7 @@ namespace ItemHandler
 
                 Console.WriteLine("Gyűrű megszerezve: 1 / 1 (100%)");
 
-                Serializer<Ring>.SaveItems(allRings, ConfigurationManager.AppSettings["allRingsFile"]);
+                Serializer.SaveItems(allRings, ConfigurationManager.AppSettings["allRingsFile"]);
             }
             catch (IOException ex)
             {

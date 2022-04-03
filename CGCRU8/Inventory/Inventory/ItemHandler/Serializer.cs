@@ -1,16 +1,17 @@
 ﻿using Inventory;
 using Newtonsoft.Json;
+using Types;
 
 namespace ItemHandler
 {
-    internal class Serializer<T>
+    internal class Serializer
     {
-        public static void SaveItems(List<T> ds3Stuff, string destFile)
+        public static void SaveItems<T>(List<T> ds3Stuff, string destFile) where T: Item
         {
             File.WriteAllText(destFile, JsonConvert.SerializeObject(ds3Stuff, Formatting.Indented));
         }
 
-        public static List<T>? LoadItems(string srcFile, string type)
+        public static List<T>? LoadItems<T>(string srcFile, string type) where T: Item
         {
             List<T> ds3Stuff = new List<T>();
 
@@ -18,7 +19,7 @@ namespace ItemHandler
 
             try
             {
-                ds3Stuff.AddRange(JsonConvert.DeserializeObject<T[]>(srcFile));
+                ds3Stuff.AddRange(JsonConvert.DeserializeObject<T[]>(File.ReadAllText(srcFile)));
             }
             catch (IOException ex)
             {

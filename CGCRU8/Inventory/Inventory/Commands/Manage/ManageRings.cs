@@ -4,9 +4,9 @@ namespace Commands
 {
     internal class ManageRings : IManageCommand
     {
-        public bool Execute()
+        public bool Execute(params object[] args)
         {
-            return new RingsController().Manage();
+            return new RingController().Manage();
         }
     }
 }

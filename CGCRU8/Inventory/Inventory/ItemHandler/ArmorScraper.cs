@@ -1,6 +1,7 @@
 ﻿using Inventory;
 using System.Configuration;
 using System.Globalization;
+using Types;
 
 namespace ItemHandler
 {
@@ -42,7 +43,7 @@ namespace ItemHandler
                     Logger.Log(_basePageLink + armorCategories[i] + " oldal tárgyai elmentve.");
                 }
 
-                Serializer<Armor>.SaveItems(allArmors, ConfigurationManager.AppSettings["allArmorsFile"]);
+                Serializer.SaveItems(allArmors, ConfigurationManager.AppSettings["allArmorsFile"]);
             }
             catch (IOException ex)
             {

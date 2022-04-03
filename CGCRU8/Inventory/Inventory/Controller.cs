@@ -3,7 +3,6 @@ using ConsoleTables;
 using System.Runtime.CompilerServices;
 using System.Configuration;
 using System.Reflection;
-using System.Collections.Generic;
 
 [assembly: InternalsVisibleTo("Inventory.Tests")]
 namespace Inventory
@@ -24,37 +23,15 @@ namespace Inventory
 
                 while (true)
                 {
-                    ConsoleTable table = new ConsoleTable("Parancs", "Leírás");
-                    Console.WriteLine("\n\tMit szeretnél csinálni?");
+                    ConstructConsoleTable();
 
-                    if(MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
-                        table.AddRow("GetAll", "Minden megszerzése (tárgyak, fegyverek, páncélok, gyűrűk)");
-
-                    table.AddRow($"{MissingFileText("allItemsFile", true)}Collectibles", $"Tárgyak {MissingFileText("allItemsFile")}");
-                    table.AddRow($"{MissingFileText("allWeaponsFile", true)}Weapons", $"Fegyverek {MissingFileText("allWeaponsFile")}");
-                    table.AddRow($"{MissingFileText("allArmorsFile", true)}Armors", $"Páncélok {MissingFileText("allArmorsFile")}");
-                    table.AddRow($"{MissingFileText("allRingsFile", true)}Rings", $"Gyűrűk {MissingFileText("allRingsFile")}");
-
-                    table.AddRow("", "");
-                    if(!MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
-                        table.AddRow("eszkoztar", "Eszköztár megnyitása");
-
-
-                    table.AddRow("", "");
-                    table.AddRow("close", "Kilépés a programból");
-
-                    table.Write();
-
-                    Console.Write("> ");
                     string? action = Console.ReadLine();
 
-                    if (string.IsNullOrEmpty(action))
+                    if (string.IsNullOrEmpty(action) || action.ToLower() == "close")
                         break;
 
                     action = action.ToLower();
-
-                    if (action == "close")
-                        break;
+                    Logger.Log(action);
 
                     Console.WriteLine("\n\n\n\n");
 
@@ -66,7 +43,8 @@ namespace Inventory
 
                     if(error)
                     {
-                        Console.WriteLine($"Hiba lépett fel a(z) {action} parancs futtatása közben. Bővebb információ a log fájlban.");
+                        Console.WriteLine($"Hiba lépett fel a(z) {action} parancs futtatása közben. Bővebb információ a log fájlban.\n\n" +
+                                          $"A folytatáshoz nyomj meg egy gombot...");
                         Console.ReadKey();
                     }
                 }
@@ -97,6 +75,33 @@ namespace Inventory
                 return command ? "Get" : "megszerzése a wikipédiáról";
             else
                 return command ? "Manage" : "kezelése";
+        }
+
+        private static void ConstructConsoleTable()
+        {
+            Console.WriteLine("\n\tMit szeretnél csinálni?");
+
+            ConsoleTable table = new ConsoleTable("Parancs", "Leírás");
+
+            if (MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
+                table.AddRow("GetAll", "Minden megszerzése (tárgyak, fegyverek, páncélok, gyűrűk)");
+
+            table.AddRow($"{MissingFileText("allItemsFile", true)}Collectibles", $"Tárgyak {MissingFileText("allItemsFile")}");
+            table.AddRow($"{MissingFileText("allWeaponsFile", true)}Weapons", $"Fegyverek {MissingFileText("allWeaponsFile")}");
+            table.AddRow($"{MissingFileText("allArmorsFile", true)}Armors", $"Páncélok {MissingFileText("allArmorsFile")}");
+            table.AddRow($"{MissingFileText("allRingsFile", true)}Rings", $"Gyűrűk {MissingFileText("allRingsFile")}");
+
+            table.AddRow("", "");
+            if (!MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
+                table.AddRow("eszkoztar", "Eszköztár megnyitása");
+
+
+            table.AddRow("", "");
+            table.AddRow("close", "Kilépés a programból");
+
+            table.Write();
+
+            Console.Write("> ");
         }
 
         public static IEnumerable<CommandType> LoadCommands<CommandType>()

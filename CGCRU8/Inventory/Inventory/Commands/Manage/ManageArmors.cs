@@ -4,9 +4,9 @@ namespace Commands
 {
     internal class ManageArmors : IManageCommand
     {
-        public bool Execute()
+        public bool Execute(params object[] args)
         {
-            return new ArmorsController().Manage();
+            return new ArmorController().Manage();
         }
     }
 }

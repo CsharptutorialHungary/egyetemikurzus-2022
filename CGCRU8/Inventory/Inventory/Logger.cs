@@ -4,7 +4,7 @@ namespace Inventory
 {
     internal class Logger
     {
-        public static void Log(string message)
+        public static async void Log(string message)
         {
             try
             {

@@ -4,7 +4,7 @@ namespace Commands
 {
     internal class GetCollectibles : IGetCommand
     {
-        public bool Execute()
+        public bool Execute(params object[] args)
         {
             return new CollectibleScraper().ScrapeAllItemsFromLink();
         }

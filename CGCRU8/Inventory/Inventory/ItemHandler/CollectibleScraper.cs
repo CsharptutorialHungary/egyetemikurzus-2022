@@ -1,5 +1,6 @@
 ﻿using Inventory;
 using System.Configuration;
+using Types;
 
 namespace ItemHandler
 {
@@ -46,7 +47,7 @@ namespace ItemHandler
                     Logger.Log(_basePageLink + itemCategories[i] + " oldal tárgyai elmentve.");
                 }
 
-                Serializer<Collectible>.SaveItems(allItems, ConfigurationManager.AppSettings["allItemsFile"]);
+                Serializer.SaveItems(allItems, ConfigurationManager.AppSettings["allItemsFile"]);
             }
             catch (IOException ex)
             {

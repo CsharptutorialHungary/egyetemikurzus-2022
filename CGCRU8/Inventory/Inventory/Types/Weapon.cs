@@ -1,8 +1,8 @@
-﻿namespace Inventory
+﻿namespace Types
 {
-    internal record class Weapon
+    internal record class Weapon : Item
     {
-        public string? Name { get; set; }
+        public override string? Name { get; set; }
         public int Attack { get; set; }
 
         public int StrengthRequirement { get; set; }

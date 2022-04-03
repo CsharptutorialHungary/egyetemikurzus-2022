@@ -1,8 +1,8 @@
-﻿namespace Inventory
+﻿namespace Types
 {
-    internal abstract class CollectibleType
+    internal class CollectibleType
     {
-        public virtual string? description { get; protected set; }
+        public virtual string? description { get; set; }
     }
 
     internal class KeyItem : CollectibleType

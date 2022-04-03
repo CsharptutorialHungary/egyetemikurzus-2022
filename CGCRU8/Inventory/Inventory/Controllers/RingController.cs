@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Controllers
 {
-    internal class CollectiblesController : ItemController
+    internal class RingController : ItemController
     {
         public override bool Manage()
         {
             while (true)
             {
-                Console.WriteLine("Manage Collectibles");
+                Console.WriteLine("Manage Rings");
                 break;
             }
-
 
             return true;
         }

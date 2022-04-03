@@ -1,8 +1,8 @@
-﻿namespace Inventory
+﻿namespace Types
 {
-    internal record class Ring
+    internal record class Ring : Item
     {
-        public string? Name { get; set; }
+        public override string? Name { get; set; }
         public double Weight { get; set; }
         public string? Effect { get; set; }
 
