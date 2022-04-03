@@ -2,7 +2,7 @@
 {
     internal record class Weapon : Item
     {
-        public override string? Name { get; set; }
+        public override string Name { get; set; }
         public int Attack { get; set; }
 
         public int StrengthRequirement { get; set; }
@@ -20,7 +20,7 @@
         public int Durability { get; set; }
         public double Weight { get; set; }
 
-        public WeaponType? Type { get; set; }
+        public override ItemType Type { get; set; }
 
         public override string ToString()
         {

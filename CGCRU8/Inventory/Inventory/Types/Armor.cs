@@ -2,7 +2,7 @@
 {
     internal record class Armor : Item
     {
-        public override string? Name { get; set; }
+        public override string Name { get; set; }
 
         public double PhysicalDefense { get; set; }
         public double StrikeDefense { get; set; }
@@ -24,7 +24,7 @@
         public double Weight { get; set; }
         public double Durability { get; set; }
 
-        public ArmorType? Type { get; set; }
+        public override ItemType Type { get; set; }
 
         public override string ToString()
         {

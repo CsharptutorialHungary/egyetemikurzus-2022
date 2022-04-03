@@ -1,4 +1,5 @@
 ﻿using Controllers;
+using Types;
 
 namespace Commands
 {
@@ -6,7 +7,7 @@ namespace Commands
     {
         public bool Execute(params object[] args)
         {
-            return new WeaponController().Manage();
+            return new ItemController<Weapon>("allWeaponsFile", "Fegyver", "Fegyverek", "Weapon").Manage();
         }
     }
 }

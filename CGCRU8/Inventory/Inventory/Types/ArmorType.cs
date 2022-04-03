@@ -1,10 +1,6 @@
 ﻿namespace Types
 {
-    internal class ArmorType
-    {
-        public virtual string? Name { get; set; }
-        public virtual string? Description { get; set; }
-    }
+    internal class ArmorType : ItemType {}
 
     internal class Helmet : ArmorType
     {

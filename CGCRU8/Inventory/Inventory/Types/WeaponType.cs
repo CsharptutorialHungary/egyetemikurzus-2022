@@ -1,10 +1,6 @@
 ﻿namespace Types
 {
-    internal class WeaponType
-    {
-        public virtual string? Name { get; set; }
-        public virtual string? Description { get; set; }
-    }
+    internal class WeaponType : ItemType {}
 
     internal class Dagger : WeaponType
     {

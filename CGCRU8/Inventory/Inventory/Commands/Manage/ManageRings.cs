@@ -1,4 +1,5 @@
 ﻿using Controllers;
+using Types;
 
 namespace Commands
 {
@@ -6,7 +7,7 @@ namespace Commands
     {
         public bool Execute(params object[] args)
         {
-            return new RingController().Manage();
+            return new ItemController<Ring>("allRingsFile", "Gyűrű", "Gyűrűk", "Ring").Manage();
         }
     }
 }

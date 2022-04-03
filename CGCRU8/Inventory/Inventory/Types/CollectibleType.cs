@@ -1,10 +1,6 @@
 ﻿namespace Types
 {
-    internal class CollectibleType
-    {
-        public virtual string? Name { get; set; }
-        public virtual string? Description { get; set; }
-    }
+    internal class CollectibleType : ItemType {}
 
     internal class KeyItem : CollectibleType
     {
