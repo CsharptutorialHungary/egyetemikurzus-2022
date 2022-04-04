@@ -5,22 +5,24 @@ using Controllers;
 
 namespace ItemCommands
 {
-    internal class ListAll : IManageItems
+    internal class ListAll : IManageItemsCommand
     {
         public bool Execute(params object[] args)
         {
-            List<Item>? items = new List<Item>((IEnumerable<Item>)args[0]);
-
-            if (items == null)
+            if (args == null || args.Length < 1)
             {
-                Logger.Log("(ItemController listAll) A kapott argumentum null volt az elvárt érték helyett.");
+                Logger.Log($"(ItemController listAll) A kapott argumentumok száma nem volt megfelelő.");
+                return false;
+            }
+            else if (args[0] == null || !args[0].GetType().GetGenericArguments()[0].IsSubclassOf(typeof(Item)))
+            {
+                Logger.Log("(ItemController listAll) A kapott argumentum típusa nem volt megfelelő.");
                 return false;
             }
 
-            ItemController<Item>.ListItemsInGrid(items);
+            List<Item>? items = new List<Item>((IEnumerable<Item>)args[0]);
 
-            Console.WriteLine("\nNyomj entert a folytatáshoz...");
-            Console.ReadLine();
+            ItemController<Item>.ListItemsInGrid(items);
 
             return true;
         }

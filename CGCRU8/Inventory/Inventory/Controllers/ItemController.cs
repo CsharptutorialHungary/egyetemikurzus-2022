@@ -9,7 +9,7 @@ namespace Controllers
 {
     internal class ItemController<ItemType> where ItemType : Item
     {
-        private readonly Dictionary<string, IManageItems> commands;
+        private readonly Dictionary<string, IManageItemsCommand> commands;
         private readonly List<ItemType>? items;
 
         private readonly string category;
@@ -18,9 +18,9 @@ namespace Controllers
 
         public ItemController(string file, string category, string categoryPlural, string categoryEnglish)
         {
-            commands = new Dictionary<string, IManageItems>();
+            commands = new Dictionary<string, IManageItemsCommand>();
 
-            foreach (var command in Controller.LoadCommands<IManageItems>().ToDictionary(x => x.GetType().Name.ToLower(), x => x))
+            foreach (var command in Controller.LoadCommands<IManageItemsCommand>().ToDictionary(x => x.GetType().Name.ToLower(), x => x))
                 commands.Add(command.Key, command.Value);
 
             items = Serializer.LoadItems<ItemType>(ConfigurationManager.AppSettings[file], categoryPlural);
@@ -53,7 +53,12 @@ namespace Controllers
 
                 bool error = false;
                 if (commands.ContainsKey(action))
+                {
                     error = !commands[action].Execute(items, arg);
+
+                    Console.WriteLine("\nNyomj entert a folytatáshoz...");
+                    Console.ReadLine();
+                }
                 else
                     Console.WriteLine($"Ismeretlen parancs: {action}!");
 

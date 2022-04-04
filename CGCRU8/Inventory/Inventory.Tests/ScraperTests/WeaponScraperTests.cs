@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using ItemHandler;
 using System.Reflection;
-
+using Types;
 
 namespace Inventory.Tests
 {

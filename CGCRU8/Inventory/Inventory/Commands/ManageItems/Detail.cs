@@ -4,30 +4,32 @@ using Types;
 
 namespace ItemCommands
 {
-    internal class Detail : IManageItems
+    internal class Detail : IManageItemsCommand
     {
         public bool Execute(params object[] args)
         {
-            List<Item>? items = new List<Item>((IEnumerable<Item>)args[0]);
-            string? itemName = args[1].ToString();
-
-            if(items == null || itemName == null)
+            if(args == null || args.Length < 2)
             {
-                Logger.Log($"(ItemController detail[{itemName}]) A kapott argumentum null volt az elvárt érték helyett.");
+                Logger.Log($"(ItemController detail) A kapott argumentumok száma nem volt megfelelő.");
+                return false;
+            }
+            else if (!args[0].GetType().GetGenericArguments()[0].IsSubclassOf(typeof(Item)) || args[1] is not string)
+            {
+                Logger.Log($"(ItemController detail) A kapott argumentumok típusa nem volt megfelelő.");
                 return false;
             }
 
-            IEnumerable<Item> selectedItem = from item in items
-                                              where item.Name.ToLower() == itemName
-                                              select item;
+            List<Item>? items = new List<Item>((IEnumerable<Item>)args[0]);
+            string? itemName = args[1].ToString();
 
-            if(!selectedItem.Any())
+            IEnumerable<Item> selectedItem = from item in items
+                                             where item.Name.ToLower() == itemName
+                                             select item;
+
+            if (!selectedItem.Any())
                 Console.WriteLine($"Nem található {itemName} nevű tárgy.");
             else
                 Console.WriteLine(selectedItem.First().ToString());
-
-            Console.WriteLine("\nNyomj entert a folytatáshoz...");
-            Console.ReadLine();
 
             return true;
         }

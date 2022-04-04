@@ -1789,3 +1789,30 @@
 2022. 04. 04. 1:17:00 - 
 
 
+2022. 04. 04. 18:34:21 - namagecollectibles
+2022. 04. 04. 18:34:27 - managearmors
+2022. 04. 04. 18:34:28 - Páncélok beolvasása elkezdve.
+2022. 04. 04. 18:34:28 - Páncélok beolvasása befejeződött.
+2022. 04. 04. 18:34:33 - detail asd
+2022. 04. 04. 20:51:36 - managerings
+2022. 04. 04. 20:51:36 - Gyűrűk beolvasása elkezdve.
+2022. 04. 04. 20:51:37 - Gyűrűk beolvasása befejeződött.
+2022. 04. 04. 20:51:42 - detail life ring
+2022. 04. 04. 21:06:29 - managearmors
+2022. 04. 04. 21:06:29 - Páncélok beolvasása elkezdve.
+2022. 04. 04. 21:06:29 - Páncélok beolvasása befejeződött.
+2022. 04. 04. 21:06:30 - listall
+2022. 04. 04. 21:06:35 - listbycategory
+2022. 04. 04. 21:06:51 - listbycategory
+2022. 04. 04. 21:07:44 - manageweapons
+2022. 04. 04. 21:07:44 - Fegyverek beolvasása elkezdve.
+2022. 04. 04. 21:07:45 - Fegyverek beolvasása befejeződött.
+2022. 04. 04. 21:07:46 - listall
+2022. 04. 04. 21:07:50 - listbycategory
+2022. 04. 04. 21:08:02 - managecollectibles
+2022. 04. 04. 21:08:02 - Tárgyak beolvasása elkezdve.
+2022. 04. 04. 21:08:02 - Tárgyak beolvasása befejeződött.
+2022. 04. 04. 21:08:07 - detail old woman's ashes
+2022. 04. 04. 21:08:10 - 
+
+

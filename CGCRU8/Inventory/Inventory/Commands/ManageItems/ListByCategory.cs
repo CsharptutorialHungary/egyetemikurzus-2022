@@ -5,17 +5,22 @@ using Controllers;
 
 namespace ItemCommands
 {
-    internal class ListByCategory : IManageItems
+    internal class ListByCategory : IManageItemsCommand
     {
         public bool Execute(params object[] args)
         {
-            List<Item>? items = new List<Item>((IEnumerable<Item>)args[0]);
-
-            if (items == null)
+            if (args == null || args.Length < 1)
             {
-                Logger.Log("(ItemController listByCategory) A kapott argumentum null volt az elvárt érték helyett.");
+                Logger.Log($"(ItemController listByCategory) A kapott argumentumok száma nem volt megfelelő.");
                 return false;
             }
+            if (args[0] == null || !args[0].GetType().GetGenericArguments()[0].IsSubclassOf(typeof(Item)))
+            {
+                Logger.Log("(ItemController listByCategory) A kapott argumentum típusa nem volt megfelelő.");
+                return false;
+            }
+
+            List<Item>? items = new List<Item>((IEnumerable<Item>)args[0]);
 
             string[] categories = GetItemCategories(items);
             

@@ -13,13 +13,13 @@ namespace ItemHandler
 
         public static List<T>? LoadItems<T>(string srcFile, string type) where T: Item
         {
-            List<T> ds3Stuff = new List<T>();
+            List<T> items = new List<T>();
 
             Logger.Log($"{type} beolvasása elkezdve.");
 
             try
             {
-                ds3Stuff.AddRange(JsonConvert.DeserializeObject<T[]>(File.ReadAllText(srcFile)));
+                items.AddRange(JsonConvert.DeserializeObject<T[]>(File.ReadAllText(srcFile)));
             }
             catch (IOException ex)
             {
@@ -29,7 +29,7 @@ namespace ItemHandler
 
             Logger.Log($"{type} beolvasása befejeződött.");
 
-            return ds3Stuff;
+            return items;
         }
     }
 }
