@@ -1816,3 +1816,191 @@
 2022. 04. 04. 21:08:10 - 
 
 
+2022. 04. 05. 13:11:58 - getall
+2022. 04. 05. 13:11:58 - Tárgyak létrehozása elkezdődött.
+2022. 04. 05. 13:11:59 - Aloldalak linkje megszerezve.
+2022. 04. 05. 13:11:59 - https://darksouls3.wiki.fextralife.com/Key+Items oldal tárgyai elmentve.
+2022. 04. 05. 13:11:59 - https://darksouls3.wiki.fextralife.com/Multiplayer+Items oldal tárgyai elmentve.
+2022. 04. 05. 13:12:00 - https://darksouls3.wiki.fextralife.com/Consumables oldal tárgyai elmentve.
+2022. 04. 05. 13:12:00 - https://darksouls3.wiki.fextralife.com/Tools oldal tárgyai elmentve.
+2022. 04. 05. 13:12:00 - https://darksouls3.wiki.fextralife.com/Projectiles oldal tárgyai elmentve.
+2022. 04. 05. 13:12:00 - https://darksouls3.wiki.fextralife.com/Ammunition oldal tárgyai elmentve.
+2022. 04. 05. 13:12:01 - https://darksouls3.wiki.fextralife.com/Souls oldal tárgyai elmentve.
+2022. 04. 05. 13:12:01 - https://darksouls3.wiki.fextralife.com/Boss+Souls oldal tárgyai elmentve.
+2022. 04. 05. 13:12:02 - https://darksouls3.wiki.fextralife.com/Ore oldal tárgyai elmentve.
+2022. 04. 05. 13:12:02 - https://darksouls3.wiki.fextralife.com/Ashes oldal tárgyai elmentve.
+2022. 04. 05. 13:12:02 - Tárgyak létrehozva!
+2022. 04. 05. 13:12:02 - Fegyverek létrehozása elkezdődött.
+2022. 04. 05. 13:12:03 - Aloldalak linkje megszerezve.
+2022. 04. 05. 13:12:03 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 04. 05. 13:12:04 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 04. 05. 13:12:04 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 04. 05. 13:12:04 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 04. 05. 13:12:05 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 04. 05. 13:12:06 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 04. 05. 13:12:06 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 04. 05. 13:12:06 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 04. 05. 13:12:07 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 04. 05. 13:12:07 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 04. 05. 13:12:07 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 04. 05. 13:12:08 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 04. 05. 13:12:08 - https://darksouls3.wiki.fextralife.com/Fist+&+Claws oldal fegyverei elmentve.
+2022. 04. 05. 13:12:09 - https://darksouls3.wiki.fextralife.com/Spears+&+Pikes oldal fegyverei elmentve.
+2022. 04. 05. 13:12:09 - https://darksouls3.wiki.fextralife.com/Halberds oldal fegyverei elmentve.
+2022. 04. 05. 13:12:09 - https://darksouls3.wiki.fextralife.com/Reapers oldal fegyverei elmentve.
+2022. 04. 05. 13:12:09 - https://darksouls3.wiki.fextralife.com/Whips oldal fegyverei elmentve.
+2022. 04. 05. 13:12:10 - https://darksouls3.wiki.fextralife.com/Bows oldal fegyverei elmentve.
+2022. 04. 05. 13:12:10 - https://darksouls3.wiki.fextralife.com/Greatbows oldal fegyverei elmentve.
+2022. 04. 05. 13:12:10 - https://darksouls3.wiki.fextralife.com/Crossbows oldal fegyverei elmentve.
+2022. 04. 05. 13:12:11 - https://darksouls3.wiki.fextralife.com/Staves oldal fegyverei elmentve.
+2022. 04. 05. 13:12:11 - https://darksouls3.wiki.fextralife.com/Flames oldal fegyverei elmentve.
+2022. 04. 05. 13:12:11 - https://darksouls3.wiki.fextralife.com/Talismans oldal fegyverei elmentve.
+2022. 04. 05. 13:12:12 - https://darksouls3.wiki.fextralife.com/Sacred+Chimes oldal fegyverei elmentve.
+2022. 04. 05. 13:12:12 - Fegyverek létrehozva!
+2022. 04. 05. 13:12:12 - Páncélok létrehozása elkezdődött.
+2022. 04. 05. 13:12:12 - Aloldalak linkje megszerezve.
+2022. 04. 05. 13:12:13 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 04. 05. 13:12:13 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 04. 05. 13:12:13 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 04. 05. 13:12:14 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 04. 05. 13:12:14 - Páncélok létrehozva!
+2022. 04. 05. 13:12:14 - Gyűrűk létrehozása elkezdődött.
+2022. 04. 05. 13:12:14 - Gyűrűk létrehozva!
+2022. 04. 05. 13:12:18 - managearmor
+2022. 04. 05. 13:12:22 - managearmor
+2022. 04. 05. 13:12:28 - managearmors
+2022. 04. 05. 13:12:28 - Páncélok beolvasása elkezdve.
+2022. 04. 05. 13:12:28 - Páncélok beolvasása befejeződött.
+2022. 04. 05. 13:12:32 - listall
+2022. 04. 05. 13:12:38 - listbycategory
+2022. 04. 05. 13:13:00 - detail worker trousers
+2022. 04. 05. 13:13:01 - 
+
+
+2022. 04. 05. 21:20:58 - managerings
+2022. 04. 05. 21:20:58 - Gyűrűk beolvasása elkezdve.
+2022. 04. 05. 21:20:58 - Hiba lépett fel a fájlművelet közben Could not find file 'E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\all_rings.json'.
+2022. 04. 05. 21:21:11 - 
+
+
+2022. 04. 07. 19:49:31 - managerings
+2022. 04. 07. 19:49:31 - Gyűrűk beolvasása elkezdve.
+2022. 04. 07. 19:49:31 - Hiba lépett fel a fájlművelet közben Could not find file 'E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\all_rings.json'.
+2022. 04. 07. 19:49:37 - getrings
+2022. 04. 07. 19:49:37 - Gyűrűk létrehozása elkezdődött.
+2022. 04. 07. 19:49:39 - Gyűrűk létrehozva!
+2022. 04. 07. 19:49:41 - managerings
+2022. 04. 07. 19:49:41 - Gyűrűk beolvasása elkezdve.
+2022. 04. 07. 19:49:41 - Gyűrűk beolvasása befejeződött.
+2022. 04. 07. 19:49:45 - listall
+2022. 04. 07. 19:49:55 - detail life ring
+2022. 04. 07. 19:50:02 - managearmors
+2022. 04. 07. 19:50:02 - Páncélok beolvasása elkezdve.
+2022. 04. 07. 19:50:02 - Páncélok beolvasása befejeződött.
+2022. 04. 07. 19:50:06 - listbycategory
+2022. 04. 07. 20:07:37 - getall
+2022. 04. 07. 20:07:37 - Tárgyak létrehozása elkezdődött.
+2022. 04. 07. 20:07:38 - Aloldalak linkje megszerezve.
+2022. 04. 07. 20:07:38 - https://darksouls3.wiki.fextralife.com/Key+Items oldal tárgyai elmentve.
+2022. 04. 07. 20:07:39 - https://darksouls3.wiki.fextralife.com/Multiplayer+Items oldal tárgyai elmentve.
+2022. 04. 07. 20:07:40 - https://darksouls3.wiki.fextralife.com/Consumables oldal tárgyai elmentve.
+2022. 04. 07. 20:07:40 - https://darksouls3.wiki.fextralife.com/Tools oldal tárgyai elmentve.
+2022. 04. 07. 20:07:41 - https://darksouls3.wiki.fextralife.com/Projectiles oldal tárgyai elmentve.
+2022. 04. 07. 20:07:42 - https://darksouls3.wiki.fextralife.com/Ammunition oldal tárgyai elmentve.
+2022. 04. 07. 20:07:42 - https://darksouls3.wiki.fextralife.com/Souls oldal tárgyai elmentve.
+2022. 04. 07. 20:07:43 - https://darksouls3.wiki.fextralife.com/Boss+Souls oldal tárgyai elmentve.
+2022. 04. 07. 20:07:44 - https://darksouls3.wiki.fextralife.com/Ore oldal tárgyai elmentve.
+2022. 04. 07. 20:07:45 - https://darksouls3.wiki.fextralife.com/Ashes oldal tárgyai elmentve.
+2022. 04. 07. 20:07:45 - Tárgyak létrehozva!
+2022. 04. 07. 20:07:45 - Fegyverek létrehozása elkezdődött.
+2022. 04. 07. 20:07:46 - Aloldalak linkje megszerezve.
+2022. 04. 07. 20:07:47 - https://darksouls3.wiki.fextralife.com/Daggers oldal fegyverei elmentve.
+2022. 04. 07. 20:07:47 - https://darksouls3.wiki.fextralife.com/Straight+Swords oldal fegyverei elmentve.
+2022. 04. 07. 20:07:48 - https://darksouls3.wiki.fextralife.com/Greatswords oldal fegyverei elmentve.
+2022. 04. 07. 20:07:49 - https://darksouls3.wiki.fextralife.com/Ultra+Greatswords oldal fegyverei elmentve.
+2022. 04. 07. 20:07:50 - https://darksouls3.wiki.fextralife.com/Curved+Swords oldal fegyverei elmentve.
+2022. 04. 07. 20:07:51 - https://darksouls3.wiki.fextralife.com/Katanas oldal fegyverei elmentve.
+2022. 04. 07. 20:07:51 - https://darksouls3.wiki.fextralife.com/Curved+Greatswords oldal fegyverei elmentve.
+2022. 04. 07. 20:07:53 - https://darksouls3.wiki.fextralife.com/Piercing+Swords oldal fegyverei elmentve.
+2022. 04. 07. 20:07:53 - https://darksouls3.wiki.fextralife.com/Axes oldal fegyverei elmentve.
+2022. 04. 07. 20:07:54 - https://darksouls3.wiki.fextralife.com/Greataxes oldal fegyverei elmentve.
+2022. 04. 07. 20:07:55 - https://darksouls3.wiki.fextralife.com/Hammers oldal fegyverei elmentve.
+2022. 04. 07. 20:07:55 - https://darksouls3.wiki.fextralife.com/Great+Hammers oldal fegyverei elmentve.
+2022. 04. 07. 20:07:56 - https://darksouls3.wiki.fextralife.com/Fist+&+Claws oldal fegyverei elmentve.
+2022. 04. 07. 20:07:57 - https://darksouls3.wiki.fextralife.com/Spears+&+Pikes oldal fegyverei elmentve.
+2022. 04. 07. 20:07:57 - https://darksouls3.wiki.fextralife.com/Halberds oldal fegyverei elmentve.
+2022. 04. 07. 20:07:58 - https://darksouls3.wiki.fextralife.com/Reapers oldal fegyverei elmentve.
+2022. 04. 07. 20:07:59 - https://darksouls3.wiki.fextralife.com/Whips oldal fegyverei elmentve.
+2022. 04. 07. 20:08:00 - https://darksouls3.wiki.fextralife.com/Bows oldal fegyverei elmentve.
+2022. 04. 07. 20:08:00 - https://darksouls3.wiki.fextralife.com/Greatbows oldal fegyverei elmentve.
+2022. 04. 07. 20:08:01 - https://darksouls3.wiki.fextralife.com/Crossbows oldal fegyverei elmentve.
+2022. 04. 07. 20:08:02 - https://darksouls3.wiki.fextralife.com/Staves oldal fegyverei elmentve.
+2022. 04. 07. 20:08:02 - https://darksouls3.wiki.fextralife.com/Flames oldal fegyverei elmentve.
+2022. 04. 07. 20:08:03 - https://darksouls3.wiki.fextralife.com/Talismans oldal fegyverei elmentve.
+2022. 04. 07. 20:08:04 - https://darksouls3.wiki.fextralife.com/Sacred+Chimes oldal fegyverei elmentve.
+2022. 04. 07. 20:08:04 - Fegyverek létrehozva!
+2022. 04. 07. 20:08:04 - Páncélok létrehozása elkezdődött.
+2022. 04. 07. 20:08:05 - Aloldalak linkje megszerezve.
+2022. 04. 07. 20:08:05 - https://darksouls3.wiki.fextralife.com/Helms oldal tárgyai elmentve.
+2022. 04. 07. 20:08:06 - https://darksouls3.wiki.fextralife.com/Chest+Armor oldal tárgyai elmentve.
+2022. 04. 07. 20:08:07 - https://darksouls3.wiki.fextralife.com/Gauntlets oldal tárgyai elmentve.
+2022. 04. 07. 20:08:08 - https://darksouls3.wiki.fextralife.com/Leggings oldal tárgyai elmentve.
+2022. 04. 07. 20:08:08 - Páncélok létrehozva!
+2022. 04. 07. 20:08:08 - Gyűrűk létrehozása elkezdődött.
+2022. 04. 07. 20:08:09 - Gyűrűk létrehozva!
+2022. 04. 07. 20:08:26 - managecollectibles
+2022. 04. 07. 20:08:26 - Tárgyak beolvasása elkezdve.
+2022. 04. 07. 20:08:26 - Hiba: Could not create an instance of type Types.ItemType. Type is an interface or abstract class and cannot be instantiated. Path '[0].Type.Name', line 6, position 13.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateNewObject(JsonReader reader, JsonObjectContract objectContract, JsonProperty containerMember, JsonProperty containerProperty, String id, Boolean& createdFromNonDefaultCreator)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateList(IList list, JsonReader reader, JsonArrayContract contract, JsonProperty containerProperty, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateList(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, Object existingValue, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at ItemHandler.Serializer.LoadItems[T](String srcFile, String type) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\ItemHandler\Serializer.cs:line 22
+   at Controllers.ItemController`1..ctor(String file, String category, String categoryPlural, String categoryEnglish) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controllers\ItemController.cs:line 26
+   at Commands.ManageCollectibles.Execute(Object[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Commands\Manage\ManageCollectibles.cs:line 10
+   at Inventory.Controller.Main(String[] args) in E:\Programozas\C#\egyetemikurzus-2022\CGCRU8\Inventory\Inventory\Controller.cs:line 40
+2022. 04. 07. 20:08:26 - 
+
+
+2022. 04. 07. 20:09:01 - managecollectibles
+2022. 04. 07. 20:09:01 - Tárgyak beolvasása elkezdve.
+2022. 04. 07. 20:09:02 - Tárgyak beolvasása befejeződött.
+2022. 04. 07. 20:09:04 - listall
+2022. 04. 07. 20:09:14 - listbycategory
+2022. 04. 07. 20:09:21 - 
+
+
+2022. 04. 07. 20:09:29 - managecollectibles
+2022. 04. 07. 20:09:29 - Tárgyak beolvasása elkezdve.
+2022. 04. 07. 20:09:30 - Tárgyak beolvasása befejeződött.
+2022. 04. 07. 20:09:32 - listall
+2022. 04. 07. 20:09:42 - detail duel charm
+2022. 04. 07. 20:09:58 - manageweapons
+2022. 04. 07. 20:09:58 - Fegyverek beolvasása elkezdve.
+2022. 04. 07. 20:09:58 - Fegyverek beolvasása befejeződött.
+2022. 04. 07. 20:10:03 - listall
+2022. 04. 07. 20:10:09 - detail uchigatana
+2022. 04. 07. 20:10:25 - 
+
+
+2022. 04. 07. 20:18:51 - manageweapons
+2022. 04. 07. 20:18:51 - Fegyverek beolvasása elkezdve.
+2022. 04. 07. 20:18:52 - Fegyverek beolvasása befejeződött.
+2022. 04. 07. 20:18:55 - listall
+2022. 04. 07. 20:19:01 - detail chaos blade
+2022. 04. 07. 20:19:10 - cas
+2022. 04. 07. 20:19:13 - 
+
+

@@ -92,11 +92,6 @@ namespace Inventory
             table.AddRow($"{MissingFileText("allRingsFile", true)}Rings", $"Gyűrűk {MissingFileText("allRingsFile")}");
 
             table.AddRow("", "");
-            if (!MissingFile("allItemsFile", "allWeaponsFile", "allArmorsFile", "allRingsFile"))
-                table.AddRow("eszkoztar", "Eszköztár megnyitása");
-
-
-            table.AddRow("", "");
             table.AddRow("close", "Kilépés a programból");
 
             table.Write();

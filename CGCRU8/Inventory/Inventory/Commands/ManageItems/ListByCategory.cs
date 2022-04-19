@@ -48,8 +48,8 @@ namespace ItemCommands
                                  select categories;
 
             List<string> categoriesAsString = new List<string>();
-            foreach (var armorCategory in itemCategories)
-                categoriesAsString.Add(armorCategory.Key);
+            foreach (var itemCategory in itemCategories)
+                categoriesAsString.Add(itemCategory.Key);
 
             return categoriesAsString.ToArray();
         }
