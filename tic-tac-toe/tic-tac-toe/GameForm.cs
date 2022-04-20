@@ -4,8 +4,10 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -21,6 +23,8 @@ namespace tic_tac_toe
         List<int> o_reserved_btns;
         public static string p1_name;
         public static string p2_name;
+        public static Player p1;
+        public static Player p2;
         public GameForm()
         {
             InitializeComponent();
@@ -94,12 +98,35 @@ namespace tic_tac_toe
             player.Text = Convert.ToString(plusone);
             MessageBox.Show("The winner is " + playerName, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Buttons_Enable();
+            List<Player> playerList = ToplistForm.loadPlayersData();
+            if (p1.Name == playerName)
+            {
+                p1.Wins++;
+                p2.Loses++;
+            } else
+            {
+                p2.Wins++;
+                p1.Loses++;
+            }
+            playerList.Add(p1);
+            playerList.Add(p2);
+            string playersJson = JsonSerializer.Serialize(playerList);
+            File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
         }
 
         private void draw_game()
         {
             MessageBox.Show("The game is draw!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Buttons_Enable();
+            List<Player> playerList = ToplistForm.loadPlayersData();
+            p1.Draw++;
+            p2.Draw++;
+            playerList.Add(p1);
+            playerList.Add(p2);
+            string playersJson = JsonSerializer.Serialize(playerList);
+            File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)

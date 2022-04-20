@@ -70,9 +70,12 @@ namespace tic_tac_toe
                         Password = tb_password.Text,
                         Wins = 0,
                         Loses = 0,
+                        Draw = 0,
                     });
                     string playersJson = JsonSerializer.Serialize(playerList);
                     File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
+                    MessageBox.Show("You have successfully logged in.", "TicTacToe",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
         }

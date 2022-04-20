@@ -169,7 +169,7 @@
             // 
             this.p1_label.AutoSize = true;
             this.p1_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.p1_label.Location = new System.Drawing.Point(26, 28);
+            this.p1_label.Location = new System.Drawing.Point(19, 28);
             this.p1_label.Name = "p1_label";
             this.p1_label.Size = new System.Drawing.Size(182, 46);
             this.p1_label.TabIndex = 0;
@@ -311,7 +311,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(1118, 612);
+            this.ClientSize = new System.Drawing.Size(1106, 532);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "GameForm";

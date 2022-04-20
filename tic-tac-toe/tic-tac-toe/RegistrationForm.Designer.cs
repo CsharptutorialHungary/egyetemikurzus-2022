@@ -43,14 +43,15 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.Location = new System.Drawing.Point(85, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(242, 20);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Username";
+            this.label1.Text = "Username (max 30 characters)";
             // 
             // tb_username
             // 
             this.tb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.tb_username.Location = new System.Drawing.Point(89, 56);
+            this.tb_username.MaxLength = 30;
             this.tb_username.Name = "tb_username";
             this.tb_username.Size = new System.Drawing.Size(330, 64);
             this.tb_username.TabIndex = 1;
@@ -60,6 +61,7 @@
             // 
             this.tb_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.tb_password.Location = new System.Drawing.Point(89, 200);
+            this.tb_password.MaxLength = 30;
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(330, 64);
             this.tb_password.TabIndex = 3;
@@ -71,14 +73,15 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(85, 177);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 20);
+            this.label2.Size = new System.Drawing.Size(239, 20);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Password";
+            this.label2.Text = "Password (max 30 characters)";
             // 
             // tb_password_again
             // 
             this.tb_password_again.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
             this.tb_password_again.Location = new System.Drawing.Point(89, 338);
+            this.tb_password_again.MaxLength = 30;
             this.tb_password_again.Name = "tb_password_again";
             this.tb_password_again.Size = new System.Drawing.Size(330, 64);
             this.tb_password_again.TabIndex = 5;
