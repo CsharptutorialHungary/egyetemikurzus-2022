@@ -6,7 +6,7 @@ namespace Beadando
     {
         static void Main(string[] args)
         {
-          
+            Console.WriteLine("But other times the Code writes me.");
         }
     }
 }
