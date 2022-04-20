@@ -3,7 +3,7 @@
 ## Követelmények
 
 Írj egy tetszőleges témájú programot, ami megfelel az alábbi technológiai követelményeknek a tanultak alapján:
-
+<image>
 **Nem kihagyható elemek:**
 * Legyen benne kivételkezelés (`try-catch`)
 * Legalább a képenyőre írjon ki hibaüzeneteket

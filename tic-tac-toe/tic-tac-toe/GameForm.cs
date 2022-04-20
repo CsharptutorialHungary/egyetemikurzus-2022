@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace tic_tac_toe
 {
-    public partial class Form1 : Form
+    public partial class GameForm : Form
     {
         Boolean checker;
         int plusone;
@@ -19,7 +19,9 @@ namespace tic_tac_toe
         List<int[]> winSteps;
         List<int> x_reserved_btns;
         List<int> o_reserved_btns;
-        public Form1()
+        public string p1_name;
+        public string p2_name;
+        public GameForm()
         {
             InitializeComponent();
             InitializeForm();
@@ -57,8 +59,6 @@ namespace tic_tac_toe
         private void score()
         {
             bool game_win = false;
-            //A counter legyen nagyobb mint az utolsó step száma.
-            //
             foreach (int[] steps in winSteps)
             {
                 var tempx_inters = steps.Intersect(x_reserved_btns);
@@ -230,6 +230,15 @@ namespace tic_tac_toe
             {
                 MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void go_to_menu_btn_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void userControl11_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

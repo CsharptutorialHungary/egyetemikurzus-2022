@@ -1,6 +1,6 @@
 ﻿namespace tic_tac_toe
 {
-    partial class Form1
+    partial class GameForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.components = new System.ComponentModel.Container();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
             this.btn_reset = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
             this.btn_new_game = new System.Windows.Forms.Button();
@@ -40,7 +39,6 @@
             this.player_x_score_lbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -50,19 +48,18 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.go_to_menu_btn = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Location = new System.Drawing.Point(22, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1177, 97);
-            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -81,16 +78,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(553, 480);
             this.panel4.TabIndex = 3;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btn_reset);
-            this.panel6.Controls.Add(this.btn_exit);
-            this.panel6.Controls.Add(this.btn_new_game);
-            this.panel6.Location = new System.Drawing.Point(20, 227);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(517, 247);
-            this.panel6.TabIndex = 5;
             // 
             // btn_reset
             // 
@@ -181,22 +168,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Player X:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button9);
-            this.panel3.Controls.Add(this.button8);
-            this.panel3.Controls.Add(this.button7);
-            this.panel3.Controls.Add(this.button6);
-            this.panel3.Controls.Add(this.button5);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Location = new System.Drawing.Point(15, 20);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(591, 480);
-            this.panel3.TabIndex = 2;
             // 
             // button3
             // 
@@ -306,7 +277,58 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // go_to_menu_btn
+            // 
+            this.go_to_menu_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.go_to_menu_btn.Location = new System.Drawing.Point(18, 3);
+            this.go_to_menu_btn.Name = "go_to_menu_btn";
+            this.go_to_menu_btn.Size = new System.Drawing.Size(224, 91);
+            this.go_to_menu_btn.TabIndex = 0;
+            this.go_to_menu_btn.Text = "Go to menu";
+            this.go_to_menu_btn.UseVisualStyleBackColor = true;
+            this.go_to_menu_btn.Click += new System.EventHandler(this.go_to_menu_btn_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btn_reset);
+            this.panel6.Controls.Add(this.btn_exit);
+            this.panel6.Controls.Add(this.btn_new_game);
+            this.panel6.Location = new System.Drawing.Point(20, 227);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(517, 247);
+            this.panel6.TabIndex = 5;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.button9);
+            this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.button7);
+            this.panel3.Controls.Add(this.button6);
+            this.panel3.Controls.Add(this.button5);
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Location = new System.Drawing.Point(15, 20);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(591, 480);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.go_to_menu_btn);
+            this.panel1.Location = new System.Drawing.Point(22, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1177, 97);
+            this.panel1.TabIndex = 0;
+            // 
+            // GameForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -314,27 +336,24 @@
             this.ClientSize = new System.Drawing.Size(1219, 655);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "GameForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
+            this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
@@ -351,6 +370,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label player_x_score_lbl;
         private System.Windows.Forms.Label player_o_score_lbl;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button go_to_menu_btn;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
