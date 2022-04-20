@@ -19,8 +19,8 @@ namespace tic_tac_toe
         List<int[]> winSteps;
         List<int> x_reserved_btns;
         List<int> o_reserved_btns;
-        public string p1_name;
-        public string p2_name;
+        public static string p1_name;
+        public static string p2_name;
         public GameForm()
         {
             InitializeComponent();
@@ -43,9 +43,10 @@ namespace tic_tac_toe
             o_reserved_btns = new List<int>();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void GameForm_Load(object sender, EventArgs e)
         {
-
+            p1_label.Text = p1_name;
+            p2_label.Text = p2_name;
         }
 
         private void Buttons_Enable()
@@ -164,12 +165,12 @@ namespace tic_tac_toe
             btns[btn_i].Enabled = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void p1_label_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void p2_label_Click(object sender, EventArgs e)
         {
 
         }
@@ -230,15 +231,6 @@ namespace tic_tac_toe
             {
                 MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void go_to_menu_btn_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void userControl11_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
