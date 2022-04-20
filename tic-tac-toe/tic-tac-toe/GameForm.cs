@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tic_tac_toe
@@ -16,13 +11,12 @@ namespace tic_tac_toe
     public partial class GameForm : Form
     {
         Boolean checker;
+        Boolean defChecker = true;
         int plusone;
         List<Button> btns;
         List<int[]> winSteps;
         List<int> x_reserved_btns;
         List<int> o_reserved_btns;
-        public static string p1_name;
-        public static string p2_name;
         public static Player p1;
         public static Player p2;
         public GameForm()
@@ -49,8 +43,8 @@ namespace tic_tac_toe
 
         private void GameForm_Load(object sender, EventArgs e)
         {
-            p1_label.Text = p1_name;
-            p2_label.Text = p2_name;
+            p1_label.Text = p1.Name + ": X";
+            p2_label.Text = p2.Name + ": O";
         }
 
         private void Buttons_Enable()
@@ -71,14 +65,14 @@ namespace tic_tac_toe
                 if (tempx_inters.Count() == steps.Count())
                 {
                     int[] win_step_btns_i = tempx_inters.ToArray();
-                    game_end(win_step_btns_i, player_x_score_lbl, "Player X");
+                    game_end(win_step_btns_i, player_x_score_lbl, p1.Name);
                     game_win = true;
                     break;
                 }
                 if (tempy_inters.Count() == steps.Count())
                 {
                     int[] win_step_btns_i = tempy_inters.ToArray();
-                    game_end(win_step_btns_i, player_o_score_lbl, "Player O");
+                    game_end(win_step_btns_i, player_o_score_lbl, p2.Name);
                     game_win = true;
                     break;
                 }
@@ -98,19 +92,19 @@ namespace tic_tac_toe
             player.Text = Convert.ToString(plusone);
             MessageBox.Show("The winner is " + playerName, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Buttons_Enable();
-            List<Player> playerList = ToplistForm.loadPlayersData();
+            Player tempP1 = MenuForm.players.Find(p => { return p.Name == p1.Name;  });
+            Player tempP2 = MenuForm.players.Find(p => p.Name == p2.Name);
+            Console.WriteLine(p1.Name);
             if (p1.Name == playerName)
             {
-                p1.Wins++;
-                p2.Loses++;
+                tempP1.Wins++;
+                tempP2.Loses++;
             } else
             {
-                p2.Wins++;
-                p1.Loses++;
+                tempP2.Wins++;
+                tempP1.Loses++;
             }
-            playerList.Add(p1);
-            playerList.Add(p2);
-            string playersJson = JsonSerializer.Serialize(playerList);
+            string playersJson = JsonSerializer.Serialize(MenuForm.players);
             File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
         }
 
@@ -118,15 +112,10 @@ namespace tic_tac_toe
         {
             MessageBox.Show("The game is draw!", "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Buttons_Enable();
-            List<Player> playerList = ToplistForm.loadPlayersData();
-            p1.Draw++;
-            p2.Draw++;
-            playerList.Add(p1);
-            playerList.Add(p2);
-            string playersJson = JsonSerializer.Serialize(playerList);
+            MenuForm.players.Find(p => p.Name == p1.Name).Draw++;
+            MenuForm.players.Find(p => p.Name == p2.Name).Draw++;
+            string playersJson = JsonSerializer.Serialize(MenuForm.players);
             File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -204,7 +193,9 @@ namespace tic_tac_toe
 
         private void button_reset_Click(object sender, EventArgs e)
         {
-            try {
+            try
+            {
+                setCheckersAndXPlayer();
                 foreach (Button btn in btns)
                 {
                     btn.Enabled = true;
@@ -223,27 +214,11 @@ namespace tic_tac_toe
             }
         }
 
-        private void button_exit_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DialogResult iExit;
-                iExit = MessageBox.Show("Confirm if you want to exit", "TicTacToe",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Information);
-                if(iExit == DialogResult.Yes)
-                {
-                    Application.Exit();
-                }
-            } catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void button_new_game_Click(object sender, EventArgs e)
         {
             try
             {
+                setCheckersAndXPlayer();
                 foreach (Button btn in btns)
                 {
                     btn.Enabled = true;
@@ -258,6 +233,12 @@ namespace tic_tac_toe
             {
                 MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void setCheckersAndXPlayer()
+        {
+            checker = !defChecker;
+            defChecker = !defChecker;
         }
     }
 }

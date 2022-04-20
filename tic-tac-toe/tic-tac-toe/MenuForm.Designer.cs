@@ -66,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(162, 484);
+            this.panel1.Size = new System.Drawing.Size(162, 529);
             this.panel1.TabIndex = 3;
             // 
             // login_btn
@@ -94,14 +94,14 @@
             this.mainpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainpanel.Location = new System.Drawing.Point(162, 0);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(1087, 484);
+            this.mainpanel.Size = new System.Drawing.Size(1087, 529);
             this.mainpanel.TabIndex = 4;
             // 
             // MenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1249, 484);
+            this.ClientSize = new System.Drawing.Size(1249, 529);
             this.Controls.Add(this.mainpanel);
             this.Controls.Add(this.panel1);
             this.Name = "MenuForm";

@@ -1,1 +1,1 @@
-[{"Name":"Teszt1","Password":null,"Wins":30,"Loses":12},{"Name":"Teszt2","Password":null,"Wins":55,"Loses":14},{"Name":"player1","Password":"player1","Wins":0,"Loses":0},{"Name":"player2","Password":"player2","Wins":0,"Loses":0}]
+[{"Name":"p1","Password":"p1","Wins":3,"Loses":1,"Draw":0},{"Name":"p2","Password":"p2","Wins":1,"Loses":3,"Draw":0}]

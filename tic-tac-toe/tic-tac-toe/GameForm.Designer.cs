@@ -33,7 +33,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_reset = new System.Windows.Forms.Button();
-            this.btn_exit = new System.Windows.Forms.Button();
             this.btn_new_game = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.player_o_score_lbl = new System.Windows.Forms.Label();
@@ -79,7 +78,6 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.btn_reset);
-            this.panel6.Controls.Add(this.btn_exit);
             this.panel6.Controls.Add(this.btn_new_game);
             this.panel6.Location = new System.Drawing.Point(20, 227);
             this.panel6.Name = "panel6";
@@ -96,17 +94,6 @@
             this.btn_reset.Text = "Reset";
             this.btn_reset.UseVisualStyleBackColor = true;
             this.btn_reset.Click += new System.EventHandler(this.button_reset_Click);
-            // 
-            // btn_exit
-            // 
-            this.btn_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.btn_exit.Location = new System.Drawing.Point(249, 120);
-            this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(265, 124);
-            this.btn_exit.TabIndex = 1;
-            this.btn_exit.Text = "Exit";
-            this.btn_exit.UseVisualStyleBackColor = true;
-            this.btn_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
             // btn_new_game
             // 
@@ -341,7 +328,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btn_reset;
-        private System.Windows.Forms.Button btn_exit;
         private System.Windows.Forms.Button btn_new_game;
         private System.Windows.Forms.Label p2_label;
         private System.Windows.Forms.Label p1_label;

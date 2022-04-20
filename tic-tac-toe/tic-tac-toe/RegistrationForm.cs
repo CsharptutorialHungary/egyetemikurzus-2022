@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tic_tac_toe
@@ -50,9 +43,8 @@ namespace tic_tac_toe
             }
             else
             {
-                List<Player> playerList = ToplistForm.loadPlayersData();
                 int exitCode = 0;
-                foreach (Player player in playerList)
+                foreach (Player player in MenuForm.players)
                 {
                     if (player.Name == tb_username.Text)
                     {
@@ -64,7 +56,7 @@ namespace tic_tac_toe
                 }
                 if (exitCode == 0)
                 {
-                    playerList.Add(new Player()
+                    MenuForm.players.Add(new Player()
                     {
                         Name = tb_username.Text,
                         Password = tb_password.Text,
@@ -72,10 +64,11 @@ namespace tic_tac_toe
                         Loses = 0,
                         Draw = 0,
                     });
-                    string playersJson = JsonSerializer.Serialize(playerList);
+                    string playersJson = JsonSerializer.Serialize(MenuForm.players);
                     File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
-                    MessageBox.Show("You have successfully logged in.", "TicTacToe",
+                    MessageBox.Show("You have successfully registered.", "TicTacToe",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MenuForm.loadPlayersData();
                 }
             }
         }
