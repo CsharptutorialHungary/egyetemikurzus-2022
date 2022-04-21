@@ -14,7 +14,6 @@ namespace tic_tac_toe
         Boolean defChecker = true;
         int plusone;
         List<Button> btns;
-        List<int[]> winSteps;
         List<int> x_reserved_btns;
         List<int> o_reserved_btns;
         public static Player p1;
@@ -28,17 +27,9 @@ namespace tic_tac_toe
         private void InitializeForm()
         {
             btns = new List<Button>() { button1, button2, button3, button4, button5, button6, button7, button8, button9 };
-            int[] step1 = { 0, 1, 2 };
-            int[] step2 = { 3, 4, 5 };
-            int[] step3 = { 6, 7, 8 };
-            int[] step4 = { 0, 3, 6 };
-            int[] step5 = { 1, 4, 7 };
-            int[] step6 = { 2, 5, 8 };
-            int[] step7 = { 0, 4, 8 };
-            int[] step8 = { 2, 4, 6 };
-            winSteps = new List<int[]>() { step1, step2, step3, step4, step5, step6, step7, step8 };
             x_reserved_btns = new List<int>();
             o_reserved_btns = new List<int>();
+            p_turn_lb.Text = "It's " + p1.Name + "'s turn.";
         }
 
         private void GameForm_Load(object sender, EventArgs e)
@@ -58,7 +49,7 @@ namespace tic_tac_toe
         private void score()
         {
             bool game_win = false;
-            foreach (int[] steps in winSteps)
+            foreach (int[] steps in MenuForm.gameConfig.WinSteps)
             {
                 var tempx_inters = steps.Intersect(x_reserved_btns);
                 var tempy_inters = steps.Intersect(o_reserved_btns);
@@ -167,12 +158,14 @@ namespace tic_tac_toe
         {
             if (checker == false)
             {
+                p_turn_lb.Text = "It's " + p2.Name + "'s turn.";
                 btns[btn_i].Text = "X";
                 x_reserved_btns.Add(btn_i);
                 checker = true;
             }
             else
             {
+                p_turn_lb.Text = "It's " + p1.Name + "'s turn.";
                 btns[btn_i].Text = "O";
                 o_reserved_btns.Add(btn_i);
                 checker = false;
@@ -191,34 +184,12 @@ namespace tic_tac_toe
 
         }
 
-        private void button_reset_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                setCheckersAndXPlayer();
-                foreach (Button btn in btns)
-                {
-                    btn.Enabled = true;
-                    btn.Text = "";
-                    btn.BackColor = Color.White;
-                }
-                player_x_score_lbl.Text = "0";
-                player_o_score_lbl.Text = "0";
-                btn_reset.Enabled = true;
-                x_reserved_btns = new List<int>();
-                o_reserved_btns = new List<int>();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void button_new_game_Click(object sender, EventArgs e)
         {
             try
             {
-                setCheckersAndXPlayer();
+                checker = !defChecker;
+                defChecker = !defChecker;
                 foreach (Button btn in btns)
                 {
                     btn.Enabled = true;
@@ -235,10 +206,9 @@ namespace tic_tac_toe
             }
         }
 
-        private void setCheckersAndXPlayer()
+        private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            checker = !defChecker;
-            defChecker = !defChecker;
+
         }
     }
 }

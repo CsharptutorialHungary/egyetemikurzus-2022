@@ -106,6 +106,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "MenuForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.MenuForm_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
