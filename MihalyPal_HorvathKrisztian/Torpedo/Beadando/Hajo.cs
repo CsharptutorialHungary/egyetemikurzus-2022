@@ -8,11 +8,11 @@ namespace Beadando
 {
     internal class Hajo
     {
-        private int X { get; set; }
-        private int Y { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
 
-        private int Tipus; 
-        private int Eletero { get; set; }
+        private int Tipus ; 
+        public int Eletero { get; set; }
 
         public Hajo(int x, int y, int tipus, int eletero)
         {

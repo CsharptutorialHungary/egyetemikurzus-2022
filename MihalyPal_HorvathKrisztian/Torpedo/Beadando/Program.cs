@@ -6,8 +6,11 @@ namespace Beadando
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Sometimes I write the code");
-            Console.WriteLine("But other times the Code writes me.");
+            Hajo h = new Hajo();
+    
+            JatekTabla j = new JatekTabla(10,10);
+            j.PalyatGeneral();
+
         }
     }
 }
