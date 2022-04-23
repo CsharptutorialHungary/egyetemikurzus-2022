@@ -16,23 +16,21 @@ namespace Library
                 return;
             }
 
+            var bookManager = new BookManager(books);
+
             while (true)
             {
                 Console.WriteLine("Choose from the following options or type \"exit\" to quit:");
                 Console.WriteLine("1 - Get all book data");
-                Console.WriteLine("2 - Get all books published after 2010");
-                Console.WriteLine("3 - Rent a book");
+                Console.WriteLine("2 - Get all books published before 1991");
                 var userInput = Console.ReadLine();
                 switch (userInput)
                 {
                     case "1":
-                        Console.WriteLine("1 selected");
+                        bookManager.ShowAllBook();
                         break;
                     case "2":
-                        Console.WriteLine("2 selected");
-                        break;
-                    case "3":
-                        Console.WriteLine("3 selected");
+                        bookManager.ShowBooksPublishedBefore(1991);
                         break;
                     case "exit":
                         return;
