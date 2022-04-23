@@ -4,6 +4,7 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tic_tac_toe
@@ -96,7 +97,7 @@ namespace tic_tac_toe
                 tempP1.Loses++;
             }
             string playersJson = JsonSerializer.Serialize(MenuForm.players);
-            File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
+            File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
         }
 
         private void draw_game()
@@ -106,7 +107,7 @@ namespace tic_tac_toe
             MenuForm.players.Find(p => p.Name == p1.Name).Draw++;
             MenuForm.players.Find(p => p.Name == p2.Name).Draw++;
             string playersJson = JsonSerializer.Serialize(MenuForm.players);
-            File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
+            File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -158,20 +159,20 @@ namespace tic_tac_toe
         {
             if (checker == false)
             {
-                p_turn_lb.Text = "It's " + p2.Name + "'s turn.";
                 btns[btn_i].Text = "X";
                 x_reserved_btns.Add(btn_i);
                 checker = true;
+                p_turn_lb.Text = "It's " + p2.Name + "'s turn.";
             }
             else
             {
-                p_turn_lb.Text = "It's " + p1.Name + "'s turn.";
                 btns[btn_i].Text = "O";
                 o_reserved_btns.Add(btn_i);
                 checker = false;
+                p_turn_lb.Text = "It's " + p1.Name + "'s turn.";
             }
-            score();
             btns[btn_i].Enabled = false;
+            score();
         }
 
         private void p1_label_Click(object sender, EventArgs e)

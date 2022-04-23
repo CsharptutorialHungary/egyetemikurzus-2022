@@ -37,9 +37,9 @@ namespace tic_tac_toe
 
         public static void loadPlayersData()
         {
-            if (File.Exists(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json"))
+            if (File.Exists(gameConfig.ToplistPath))
             {
-                using (StreamReader r = new StreamReader(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json"))
+                using (StreamReader r = new StreamReader(gameConfig.ToplistPath))
                 {
                     string json = r.ReadToEnd();
                     players = JsonSerializer.Deserialize<List<Player>>(json);
@@ -48,7 +48,7 @@ namespace tic_tac_toe
             {
                 List<Player> playerList = new List<Player>();
                 string playersJson = JsonSerializer.Serialize(playerList);
-                File.WriteAllText(@"C:\Users\gabri\Desktop\ISKOLA\6.félév\C#\egyetemikurzus-2022\toplist.json", playersJson);
+                File.WriteAllText(gameConfig.ToplistPath, playersJson);
                 loadPlayersData();
             }
         }
