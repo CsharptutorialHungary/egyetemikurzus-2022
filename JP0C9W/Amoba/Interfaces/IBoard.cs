@@ -2,10 +2,13 @@
 {
     public interface IBoard
     {
-        int RowSize { get; }
-        int ColSize { get; }
-        char[,] Cells { get; }
-        void SetMove(int rowNum, int colNum, char playerSymbol);
-        void ResetBoard();
+        int MinSize { get; }
+        int MaxSize { get; }
+        char EmptyCell { get; }
+        int BoardSize { get; }
+        char[][] Cells { get; }
+        void SetCell(int rowIndex, int colIndex, char symbol);
+        void ResetCells();
+        bool IsFilled();
     }
 }
