@@ -7,31 +7,53 @@ namespace Beadando
         static void Main(string[] args)
         {
 
+
+            //Ellenfél táblájának generálása
+            JatekTabla ellenfelTabla = new JatekTabla(10, 10);
+            ellenfelTabla.PalyatGeneral();
+            for(int i = 0; i < 6; i++)
+            {
+                Random rnd = new Random();
+                ellenfelTabla.Hajok[i].X = rnd.Next(0,9);
+                ellenfelTabla.Hajok[i].Y = rnd.Next(0, 9);
+                ellenfelTabla.Hajok[i].Orientacio = rnd.Next(0,2);
+
+                ellenfelTabla.HajotElhelyez(ellenfelTabla.Hajok[i]);
+                ellenfelTabla.tablatKiir();
+            }
+
+            Console.Clear();
+
+            //Ellenfél táblájának generálásának a vége
             Console.WriteLine("A hajók pozícióit úgy kell megadni, hogy megadod az X és Y koordinátákat, majd azt, hogy \n milyen" +
                 "irányban legyen elforgatva. Ezeknek a leírása a következő:\n" +
                 "1: ez az alapértelmezett, ilyenkor vízszintesen van elhelyezve a hajó.\n" +
                 "2: ez a függőleges elhelyezés.\n" +
                 "figyelj majd arra, hogy a hajók ne lógjanak ki a pályáról szóval az általad megadott pozíciótól\n" +
                 "mindig számolj el annyi blokkot, jobbra,vagy lefele amilyen típusú  a hajód!");
-
-            JatekTabla j = new JatekTabla(15, 10);
-            j.PalyatGeneral();
+            
+            JatekTabla jatekTabla = new JatekTabla(10, 10);
+            jatekTabla.PalyatGeneral();
 
             AdatokatBeker bekeres = new AdatokatBeker();
 
-            for (int i = 0; i < j.Hajok.Length; i++)
-            {
-                bekeres.BekerHajot(j.Hajok[i]);
-            }
+          
             Boolean jatekban = true;
 
-            while (jatekban == true)
+            for (int i = 0; i < jatekTabla.Hajok.Length; i++)
             {
+                bekeres.BekerHajot(jatekTabla.Hajok[i]);
+                jatekTabla.HajotElhelyez(jatekTabla.Hajok[i]);
+                jatekTabla.tablatKiir();
 
             }
-            j.HajokatElhelyez();
+
             Console.WriteLine();
-            j.tablatKiir();
+            while (jatekban == true)
+            {
+               
+
+            }
         }
     }
 }

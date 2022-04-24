@@ -8,27 +8,28 @@ namespace Beadando
 {
     internal class Hajo
     {
+        //Itt megkéne csinálni a koordinátákat úgy, hogy az egész hajó testre érvényesek legyenek 
         public int X { get; set; }
         public int Y { get; set; }
 
-        private int Tipus;
+        private int Tipus ; 
         public int Eletero { get; set; }
-
+        public int Orientacio { get; set; }
         public Hajo(int x, int y, int tipus, int eletero)
         {
-            X = x;
-            Y = y;
-            Tipus = tipus;
-            Eletero = eletero;
+            X = x;  
+            Y = y;  
+            Tipus = tipus;  
+            Eletero = eletero;  
 
         }
         public Hajo()
         {
-
+            
         }
         public void SetTipus(int tipus)
         {
-            if (tipus >= 2 && tipus <= 5)
+            if(tipus >= 2 && tipus <= 5)
             {
                 this.Tipus = tipus;
             }
@@ -36,13 +37,13 @@ namespace Beadando
         public int GetTipus() { return this.Tipus; }
         public Boolean HajoKoordinataE(int x, int y)
         {
-            if (x == X && y == Y)
+            if(x == X && y == Y)
             {
-                return true;
+                return true;    
             }
             else
             {
-                return false;
+                return false;  
             }
         }
         //Attributumai egy x és y kezdőérték 

@@ -36,25 +36,65 @@ namespace Beadando
 
         {
 
-            for (int i = 0; i < Magassag; i++)
+            for (int i = -1; i < Magassag; i++)
             {
+                char betuOszlop = 'A';
+                if (i > -1)
+                {
+                    betuOszlop += (char)i;
+                }
+                else
+                {
+                    betuOszlop = ' ';
+                }
+                Console.Write(betuOszlop);
+                if (i == -1)
+                {
+                    for (int j = 0; j < Szelesseg; j++)
+                    {
+                        int szamSor = 0;
+                        szamSor += j;
+                        Console.Write(" " + szamSor + " ");
+                    }
+                    Console.WriteLine();
+                    continue;
+                }
                 for (int j = 0; j < Szelesseg; j++)
                 {
                     Palya[i, j] = '~';
-
+                    Console.Write(" " + Palya[i, j] + " ");
                 }
-
+                Console.WriteLine();
             }
         }
 
-        public void HajokatElhelyez()
+        public Boolean HajotElhelyez(Hajo h)
         {
             //Hiba ellenőrzés ide is 
-            for (int k = 0; k < Hajok.Length; k++)
+            //Ellenőrzöm, hogy a hajók ne legyenek egymáson/egymás mellett
+            for (int i = 0; i < Hajok.Length; i++)
             {
-                Palya[Hajok[k].X, Hajok[k].Y] = 'O';
-
+                if(Hajok[i].X == h.X && Hajok[i].Y == h.Y)
+                {
+                    return false;
+                }
             }
+            for (int j = 0; j < h.GetTipus(); j++)
+            {
+
+                if (h.Orientacio == 1)
+                {
+                    Palya[h.X, h.Y + j] = 'O';
+                    return true;
+
+                }
+                else
+                {
+                    Palya[h.X + j, h.Y] = 'O';
+                    return true;
+                }
+            }
+
         }
         public void HajotLo(int x, int y)
         {
@@ -74,10 +114,32 @@ namespace Beadando
 
         public void tablatKiir()
         {
-            for (int i = 0; i < Magassag; i++)
+            for (int i = -1; i < Magassag; i++)
             {
+                char betuOszlop = 'A';
+                if (i > -1)
+                {
+                    betuOszlop += (char)i;
+                }
+                else
+                {
+                    betuOszlop = ' ';
+                }
+                Console.Write(betuOszlop);
+                if (i == -1)
+                {
+                    for (int j = 0; j < Szelesseg; j++)
+                    {
+                        int szamSor = 0;
+                        szamSor += j;
+                        Console.Write(" " + szamSor + " ");
+                    }
+                    Console.WriteLine();
+                    continue;
+                }
                 for (int j = 0; j < Szelesseg; j++)
                 {
+
                     Console.Write(" " + Palya[i, j] + " ");
                 }
                 Console.WriteLine();
