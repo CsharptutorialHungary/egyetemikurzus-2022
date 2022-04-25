@@ -1,0 +1,3998 @@
+[
+  {
+    "Name": "Parrying Dagger",
+    "Attack": 60,
+    "StrengthRequirement": 5,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 40,
+    "Weight": 1.0,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Harpe",
+    "Attack": 62,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 45,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Dagger",
+    "Attack": 65,
+    "StrengthRequirement": 5,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 9,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Brigand Twindaggers",
+    "Attack": 55,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Scholar's Candlestick",
+    "Attack": 58,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 7,
+    "FaithScaling": "-",
+    "Durability": 40,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Bandit's Knife",
+    "Attack": 79,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Handmaid's Dagger",
+    "Attack": 85,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 40,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Mail Breaker",
+    "Attack": 89,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Corvian Greatknife",
+    "Attack": 93,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Tailbone Short Sword",
+    "Attack": 106,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Rotten Ghru Dagger",
+    "Attack": 64,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 45,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Murky Hand Scythe",
+    "Attack": 72,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 11,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 6,
+    "FaithScaling": "E",
+    "Durability": 50,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Aquamarine Dagger",
+    "Attack": 67,
+    "StrengthRequirement": 5,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 5,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 0,
+    "FaithScaling": "D",
+    "Durability": 50,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Dagger",
+      "Description": "Daggers are a Weapon type in Dark Souls 3. They are lightweight, small, and have fast attack speed. Their main positive is their Critical damage, which allows them to inflict incredible damage on backstabs and ripostes. Daggers also have fast attack as previously mentioned, and when buffed with a status effect like Bleed or a Pine Resin, they can get off massive damage in a short time. However, Daggers do have problems that set them back; Daggers have very short-range, often requiring the user to get up close to the opponent to inflict damage; they also lack the ability to trade with heavier weapons like Greatswords, Ultra Greathammers, and Ultra Greatswords due to their low poise damage and damage without buffs, so Dagger users will have to extremely cautious when going up against these weapons."
+    }
+  },
+  {
+    "Name": "Long Sword",
+    "Attack": 110,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Sunlight Straight Sword",
+    "Attack": 112,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Broken Straight Sword",
+    "Attack": 70,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 8,
+    "FaithScaling": "-",
+    "Durability": 30,
+    "Weight": 1.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Broadsword",
+    "Attack": 117,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Astora Straight Sword",
+    "Attack": 129,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Lothric Knight Sword",
+    "Attack": 103,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Irithyll Straight Sword",
+    "Attack": 124,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Shortsword",
+    "Attack": 99,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 8,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Cleric's Candlestick",
+    "Attack": 70,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 8,
+    "FaithScaling": "C",
+    "Durability": 65,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Barbed Straight Sword",
+    "Attack": 111,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 11,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Dark Sword",
+    "Attack": 115,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 0,
+    "FaithScaling": "0",
+    "Durability": 80,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Gotthard Twinswords",
+    "Attack": 100,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 0,
+    "FaithScaling": "0",
+    "Durability": 70,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Lothric's Holy Sword",
+    "Attack": 107,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 10,
+    "FaithScaling": "0",
+    "Durability": 80,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Anri's Straight Sword",
+    "Attack": 117,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 10,
+    "FaithScaling": "0",
+    "Durability": 80,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Morion Blade",
+    "Attack": 131,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 17,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 0,
+    "FaithScaling": "0",
+    "Durability": 80,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Valorheart",
+    "Attack": 120,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 0,
+    "FaithScaling": "0",
+    "Durability": 70,
+    "Weight": 5.5,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Ringed Knight Straight Sword",
+    "Attack": 120,
+    "StrengthRequirement": 17,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 17,
+    "IntelligenceScaling": "0",
+    "FaithRequirement": 17,
+    "FaithScaling": "0",
+    "Durability": 70,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Straight Sword",
+      "Description": "Straight Swords are a Weapon type in Dark Souls 3. Straight Swords are the most basic type of weapon, but have solid reach and damage, fast attack speed and the Skill Stance, along with other versatile Weapon Arts. All these attributes make this weapon class a popular choice for beginners and experts and a good choice for both PvP and PvE."
+    }
+  },
+  {
+    "Name": "Claymore",
+    "Attack": 138,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Bastard Sword",
+    "Attack": 138,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Hollowslayer Greatsword",
+    "Attack": 145,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Executioner's Greatsword",
+    "Attack": 131,
+    "StrengthRequirement": 19,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 19,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 19,
+    "FaithScaling": "-",
+    "Durability": 85,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Black Knight Sword",
+    "Attack": 173,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 20,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 10.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Flamberge",
+    "Attack": 158,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 15,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Wolf Knight's Greatsword",
+    "Attack": 126,
+    "StrengthRequirement": 24,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 24,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 24,
+    "FaithScaling": "-",
+    "Durability": 95,
+    "Weight": 11.5,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Wolnir's Holy Sword",
+    "Attack": 151,
+    "StrengthRequirement": 13,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 13,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 13,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 7.5,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Greatsword of Judgement",
+    "Attack": 101,
+    "StrengthRequirement": 17,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 17,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 0,
+    "FaithScaling": "D",
+    "Durability": 85,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Moonlight Greatsword",
+    "Attack": 69,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 11,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 16,
+    "FaithScaling": "C",
+    "Durability": 75,
+    "Weight": 10.5,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Storm Ruler",
+    "Attack": 110,
+    "StrengthRequirement": 0,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 10,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Firelink Greatsword",
+    "Attack": 119,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 20,
+    "FaithScaling": "-",
+    "Durability": 105,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Twin Princes' Greatsword",
+    "Attack": 118,
+    "StrengthRequirement": 22,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 22,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 22,
+    "FaithScaling": "D",
+    "Durability": 95,
+    "Weight": 9.5,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Drakeblood Greatsword",
+    "Attack": 83,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 6.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Onyx Blade",
+    "Attack": 80,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 14,
+    "FaithScaling": "D",
+    "Durability": 75,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Gael's Greatsword",
+    "Attack": 147,
+    "StrengthRequirement": 19,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 19,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 19,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatsword",
+      "Description": "Greatswords are a high damage, long reach weapon class. Plan to put a decent amount of points into Strength if you plan to use these weapons. They have various weapon Skills ranging from Stomp to Stance to unique Skills. In terms of damage output per stamina expended, Greatswords are easily the best value weapon category, and they are a good choice for PvE builds as a result."
+    }
+  },
+  {
+    "Name": "Zweihander",
+    "Attack": 145,
+    "StrengthRequirement": 19,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 11,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 10.0,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Greatsword",
+    "Attack": 159,
+    "StrengthRequirement": 28,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 28,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 28,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 20.0,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Farron Greatsword",
+    "Attack": 125,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 12.5,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Fume Ultra Greatsword",
+    "Attack": 149,
+    "StrengthRequirement": 50,
+    "StrenthScaling": "A",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 50,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 50,
+    "FaithScaling": "-",
+    "Durability": 170,
+    "Weight": 25.5,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Profaned Greatsword",
+    "Attack": 161,
+    "StrengthRequirement": 22,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 13.5,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Black Knight Greatsword",
+    "Attack": 185,
+    "StrengthRequirement": 30,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 115,
+    "Weight": 16.0,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Cathedral Knight Greatsword",
+    "Attack": 149,
+    "StrengthRequirement": 26,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 26,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 26,
+    "FaithScaling": "-",
+    "Durability": 120,
+    "Weight": 15.0,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Lorian's Greatsword",
+    "Attack": 151,
+    "StrengthRequirement": 26,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 26,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 26,
+    "FaithScaling": "D",
+    "Durability": 115,
+    "Weight": 14.0,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Lothric Knight Greatsword",
+    "Attack": 131,
+    "StrengthRequirement": 24,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 24,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 24,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 16.5,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Astora Greatsword",
+    "Attack": 132,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Ringed Knight Paired Greatswords",
+    "Attack": 185,
+    "StrengthRequirement": 40,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 40,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 40,
+    "FaithScaling": "E",
+    "Durability": 90,
+    "Weight": 22.5,
+    "Type": {
+      "Name": "Ultra Greatrsword",
+      "Description": "Ultra Greatswords are a type of Weapon returning in Dark Souls 3. These Weapons usually do very high damage and have extremely slow attacks along with high Strength requirements. Ultra Greatswords benefit from 'hyper armor' during certain attack animations, allowing you to continue a combo even while being struck. Ultra Greatswords also cannot be parried when two-handed, with the exception of the rolling and running attacks. There are two types of Ultra Greatswords: Vertical and Horizontal. Horizontal Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed and 2 - handed, but are good for hitting multiple opponents due to its wide range. Vertical Ultra Greatswords have the standard Ultra Greatsword moveset when they are 1 - handed, but when 2 - handed, the normal attacks turn into vertical slams and the ability to hit behind the user when the second normal attack is used."
+    }
+  },
+  {
+    "Name": "Scimitar",
+    "Attack": 90,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "B",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 7,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Pontiff Knight Curved Sword",
+    "Attack": 123,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 3.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Falchion",
+    "Attack": 117,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 9,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Sellsword Twinblades",
+    "Attack": 99,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 5.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Warden Twinblades",
+    "Attack": 93,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Shotel",
+    "Attack": 104,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 9,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Dancer'sEnchanted Swords",
+    "Attack": 79,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 12,
+    "FaithScaling": "D",
+    "Durability": 80,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Storm Curved Sword",
+    "Attack": 110,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 85,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Carthus Curved Sword",
+    "Attack": 115,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 15,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 5.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Carthus Shotel",
+    "Attack": 106,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 19,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Rotten Ghru Curved Sword",
+    "Attack": 103,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 0,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Painting Guardian's Curved Sword",
+    "Attack": 88,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 19,
+    "DexterityScaling": "B",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 7,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Crescent Moon Sword",
+    "Attack": 78,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 10,
+    "FaithScaling": "D",
+    "Durability": 70,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Follower Sabre",
+    "Attack": 112,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 9,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Demon's Scar",
+    "Attack": 0,
+    "StrengthRequirement": 0,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 0,
+    "FaithScaling": "D",
+    "Durability": 70,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Curved Sword",
+      "Description": "Curved Swords are a Weapon type in Dark Souls 3. Curved Swords are a generally a Dexterity-based weapon class with fast swing speeds, decent damage and range, and a excellent roll-catching abilities. These traits allow a player to quickly and easily finish a fight, especially since most Curved Swords can be buffed with spells or Pine Resins. However, there are some negatives to Curved Swords. Players with high Poise and heavier weapons like Greatswords, Ultra Greatswords, and Great Hammers will be able to tank and out-trade hits from a Curved Sword if the user is just swinging mindlessly. Additionally, if players can easily be parried if they swing without caution. The positives of this weapon class seem to outweigh the negatives, and Curved Swords attract new players and experts alike, and are popular choices in PvE and PvP."
+    }
+  },
+  {
+    "Name": "Darkdrift",
+    "Attack": 134,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 28,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 35,
+    "Weight": 3.5,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Washing Pole",
+    "Attack": 121,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 20,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Uchigatana",
+    "Attack": 115,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 35,
+    "Weight": 5.5,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Chaos Blade",
+    "Attack": 103,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "A",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 35,
+    "Weight": 6.0,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Black Blade",
+    "Attack": 122,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Onikiri and Ubadachi",
+    "Attack": 104,
+    "StrengthRequirement": 13,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 25,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 13,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 13,
+    "FaithScaling": "-",
+    "Durability": 35,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Bloodlust",
+    "Attack": 105,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 24,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 40,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Frayed Blade",
+    "Attack": 101,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 40,
+    "DexterityScaling": "B",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 20,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Katana",
+      "Description": "Katanas are a type of Weapon in Dark Souls 3. These Weapons usually do moderate to good damage and deal Bleed. These weapons have particularly strong running attacks. Like curved swords, they're utilized primarily for slashing attacks. While useful in many scenarios, their main downfall is their low durability (an issue that is easily solved in this game, due how durability works), and really low STR scaling (gaining almost no damage benefit from using them two handed)."
+    }
+  },
+  {
+    "Name": "Murakumo",
+    "Attack": 132,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 20,
+    "FaithScaling": "-",
+    "Durability": 105,
+    "Weight": 11.0,
+    "Type": {
+      "Name": "Curved Greatsword",
+      "Description": "Curved Greatswords are a type of Weapon in Dark Souls 3. These Weapons usually do a good deal of damage per swing, but have slower attacks. Sometimes they also possess Auxiliary effects such as Bleed."
+    }
+  },
+  {
+    "Name": "Carthus Curved Greatsword",
+    "Attack": 122,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 22,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 85,
+    "Weight": 10.5,
+    "Type": {
+      "Name": "Curved Greatsword",
+      "Description": "Curved Greatswords are a type of Weapon in Dark Souls 3. These Weapons usually do a good deal of damage per swing, but have slower attacks. Sometimes they also possess Auxiliary effects such as Bleed."
+    }
+  },
+  {
+    "Name": "Exile Greatsword",
+    "Attack": 148,
+    "StrengthRequirement": 24,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 24,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 24,
+    "FaithScaling": "-",
+    "Durability": 120,
+    "Weight": 17.0,
+    "Type": {
+      "Name": "Curved Greatsword",
+      "Description": "Curved Greatswords are a type of Weapon in Dark Souls 3. These Weapons usually do a good deal of damage per swing, but have slower attacks. Sometimes they also possess Auxiliary effects such as Bleed."
+    }
+  },
+  {
+    "Name": "Old Wolf Curved Sword",
+    "Attack": 155,
+    "StrengthRequirement": 19,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 25,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 19,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 19,
+    "FaithScaling": "-",
+    "Durability": 95,
+    "Weight": 13.0,
+    "Type": {
+      "Name": "Curved Greatsword",
+      "Description": "Curved Greatswords are a type of Weapon in Dark Souls 3. These Weapons usually do a good deal of damage per swing, but have slower attacks. Sometimes they also possess Auxiliary effects such as Bleed."
+    }
+  },
+  {
+    "Name": "Harald Curved Greatsword",
+    "Attack": 140,
+    "StrengthRequirement": 22,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 22,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 22,
+    "FaithScaling": "-",
+    "Durability": 120,
+    "Weight": 14.0,
+    "Type": {
+      "Name": "Curved Greatsword",
+      "Description": "Curved Greatswords are a type of Weapon in Dark Souls 3. These Weapons usually do a good deal of damage per swing, but have slower attacks. Sometimes they also possess Auxiliary effects such as Bleed."
+    }
+  },
+  {
+    "Name": "Estoc",
+    "Attack": 105,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 3.5,
+    "Type": {
+      "Name": "Piercing Sword",
+      "Description": "Thrusting Swords are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage per swing, but attack rather quickly, have good reach, and are capable of punishing counter-attacks. Many can also attack from behind a raised shield. Thrusting Swords replace the kick with a quick retreating attack that does minor damage."
+    }
+  },
+  {
+    "Name": "Rapier",
+    "Attack": 95,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 7,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Piercing Sword",
+      "Description": "Thrusting Swords are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage per swing, but attack rather quickly, have good reach, and are capable of punishing counter-attacks. Many can also attack from behind a raised shield. Thrusting Swords replace the kick with a quick retreating attack that does minor damage."
+    }
+  },
+  {
+    "Name": "Crystal Sage's Rapier",
+    "Attack": 55,
+    "StrengthRequirement": 13,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 13,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 13,
+    "FaithScaling": "C",
+    "Durability": 40,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Piercing Sword",
+      "Description": "Thrusting Swords are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage per swing, but attack rather quickly, have good reach, and are capable of punishing counter-attacks. Many can also attack from behind a raised shield. Thrusting Swords replace the kick with a quick retreating attack that does minor damage."
+    }
+  },
+  {
+    "Name": "Irithyll Rapier",
+    "Attack": 116,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Piercing Sword",
+      "Description": "Thrusting Swords are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage per swing, but attack rather quickly, have good reach, and are capable of punishing counter-attacks. Many can also attack from behind a raised shield. Thrusting Swords replace the kick with a quick retreating attack that does minor damage."
+    }
+  },
+  {
+    "Name": "Ricard's Rapier",
+    "Attack": 97,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 8,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Piercing Sword",
+      "Description": "Thrusting Swords are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage per swing, but attack rather quickly, have good reach, and are capable of punishing counter-attacks. Many can also attack from behind a raised shield. Thrusting Swords replace the kick with a quick retreating attack that does minor damage."
+    }
+  },
+  {
+    "Name": "Crow Quills",
+    "Attack": 98,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "B",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 9,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Piercing Sword",
+      "Description": "Thrusting Swords are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage per swing, but attack rather quickly, have good reach, and are capable of punishing counter-attacks. Many can also attack from behind a raised shield. Thrusting Swords replace the kick with a quick retreating attack that does minor damage."
+    }
+  },
+  {
+    "Name": "Battle Axe",
+    "Attack": 125,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Hand Axe",
+    "Attack": 110,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 9,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Thrall Axe",
+    "Attack": 104,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 8,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Dragonslayer's Axe",
+    "Attack": 90,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Butcher Knife",
+    "Attack": 95,
+    "StrengthRequirement": 24,
+    "StrenthScaling": "A",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 24,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 24,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 7.0,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Brigand Axe",
+    "Attack": 124,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Winged Knight Twinaxes",
+    "Attack": 122,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 20,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Eleonora",
+    "Attack": 156,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 20,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Man Serpent Hatchet",
+    "Attack": 125,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Millwood Battle Axe",
+    "Attack": 135,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 15,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Axe",
+      "Description": "Axes are a Weapon type in Dark Souls 3. Axes usually do decent damage and are best used on Strength/Quality builds. Most of the Axes have the Skill Warcry, which provides the weapon with a damage boost for 30 seconds. Axes are generally considered to be worse than Straight Swords, due to their lower attack speed, weaker damage output, and having an arguably worse moveset and Skill spread. However, Axes do have their own positives.Axes deal higher stamina damage, and can roll catch with more or less to the same effectiveness than Straight Swords."
+    }
+  },
+  {
+    "Name": "Greataxe",
+    "Attack": 188,
+    "StrengthRequirement": 32,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 32,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 32,
+    "FaithScaling": "-",
+    "Durability": 135,
+    "Weight": 16.0,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Demon's Greataxe",
+    "Attack": 157,
+    "StrengthRequirement": 28,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 28,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 28,
+    "FaithScaling": "D",
+    "Durability": 60,
+    "Weight": 14.5,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Great Machete",
+    "Attack": 167,
+    "StrengthRequirement": 24,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 24,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 24,
+    "FaithScaling": "-",
+    "Durability": 85,
+    "Weight": 14.0,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Yhorm's Great Machete",
+    "Attack": 185,
+    "StrengthRequirement": 38,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 38,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 38,
+    "FaithScaling": "-",
+    "Durability": 140,
+    "Weight": 19.0,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Dragonslayer Greataxe",
+    "Attack": 203,
+    "StrengthRequirement": 40,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 40,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 40,
+    "FaithScaling": "-",
+    "Durability": 165,
+    "Weight": 20.0,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Black Knight Greataxe",
+    "Attack": 216,
+    "StrengthRequirement": 36,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 36,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 36,
+    "FaithScaling": "-",
+    "Durability": 150,
+    "Weight": 19.5,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Earth Seeker",
+    "Attack": 154,
+    "StrengthRequirement": 24,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 24,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 24,
+    "FaithScaling": "-",
+    "Durability": 115,
+    "Weight": 17.0,
+    "Type": {
+      "Name": "Greataxe",
+      "Description": "Greataxes are a type of Weapon in Dark Souls 3. Greataxes are larger versions of their Axe counterparts and are usually wielded two-handed. These Weapons usually do very high damage and have slower attacks. Great Axes tend to do more AoE attacks than Greatswords. "
+    }
+  },
+  {
+    "Name": "Mace",
+    "Attack": 115,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 7,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Club",
+    "Attack": 108,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Morning Star",
+    "Attack": 122,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 9,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 0,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Reinforced Club",
+    "Attack": 110,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 45,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Drang Hammers",
+    "Attack": 110,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Heysel Pick",
+    "Attack": 93,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 12,
+    "FaithScaling": "C",
+    "Durability": 70,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Blacksmith Hammer",
+    "Attack": 105,
+    "StrengthRequirement": 13,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 13,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 13,
+    "FaithScaling": "-",
+    "Durability": 95,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Warpick",
+    "Attack": 113,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Hammer",
+      "Description": "Hammers is a general term for Maces and the like. Hammers generally attack the slowest of most traditional one-handed weapons, but generally deal the most damage per swing."
+    }
+  },
+  {
+    "Name": "Large Club",
+    "Attack": 148,
+    "StrengthRequirement": 22,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 22,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 22,
+    "FaithScaling": "-",
+    "Durability": 125,
+    "Weight": 10.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Gargoyle Flame Hammer",
+    "Attack": 122,
+    "StrengthRequirement": 22,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 22,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 22,
+    "FaithScaling": "E",
+    "Durability": 150,
+    "Weight": 11.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Great Club",
+    "Attack": 152,
+    "StrengthRequirement": 28,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 28,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 28,
+    "FaithScaling": "-",
+    "Durability": 280,
+    "Weight": 12.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Vordt's Great Hammer",
+    "Attack": 176,
+    "StrengthRequirement": 30,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 30,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 30,
+    "FaithScaling": "-",
+    "Durability": 170,
+    "Weight": 17.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Great Mace",
+    "Attack": 185,
+    "StrengthRequirement": 32,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 32,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 32,
+    "FaithScaling": "-",
+    "Durability": 150,
+    "Weight": 18.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Morne's Great Hammer",
+    "Attack": 200,
+    "StrengthRequirement": 50,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 50,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 50,
+    "FaithScaling": "-",
+    "Durability": 250,
+    "Weight": 24.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Great Wooden Hammer",
+    "Attack": 103,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 135,
+    "Weight": 6.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Smough's Great Hammer",
+    "Attack": 205,
+    "StrengthRequirement": 45,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 45,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 45,
+    "FaithScaling": "-",
+    "Durability": 205,
+    "Weight": 24.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Old King's Great Hammer",
+    "Attack": 180,
+    "StrengthRequirement": 30,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 30,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 30,
+    "FaithScaling": "D",
+    "Durability": 185,
+    "Weight": 18.5,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Pickaxe",
+    "Attack": 140,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 9,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 105,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Dragon Tooth",
+    "Attack": 188,
+    "StrengthRequirement": 40,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 40,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 40,
+    "FaithScaling": "-",
+    "Durability": 340,
+    "Weight": 21.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "SpikedMace",
+    "Attack": 149,
+    "StrengthRequirement": 21,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 21,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 21,
+    "FaithScaling": "-",
+    "Durability": 140,
+    "Weight": 16.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Quakestone Hammer",
+    "Attack": 189,
+    "StrengthRequirement": 40,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 40,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 40,
+    "FaithScaling": "-",
+    "Durability": 150,
+    "Weight": 15.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Ledo's Great Hammer",
+    "Attack": 170,
+    "StrengthRequirement": 60,
+    "StrenthScaling": "B",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 60,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 60,
+    "FaithScaling": "-",
+    "Durability": 310,
+    "Weight": 28.0,
+    "Type": {
+      "Name": "Great Hammer",
+      "Description": "Great Hammers are one of the largest weapon types in the game. They have a slower movesets but feature high damage and are an intimidating choice for players. They also have the highest poise damage of any weapon class in the game, with 45 poise damage on a regular two handed light attack. Great Hammers also cannot be parried two-handed, with the exception of the rolling and running attack."
+    }
+  },
+  {
+    "Name": "Caestus",
+    "Attack": 91,
+    "StrengthRequirement": 5,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 5,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 5,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Fist & Claw",
+      "Description": "Fist & Claws are a type of Weapon in Dark Souls 3. These Weapons usually have similar movesets albeit with different skills and properties. Fists and Claws are often used as parrying tools, due to their fast parry frames. Fists: Fist weapons have a faster light attack than Claws and a different rolling R1, but have shorter range and lack the innate Bleed Auxiliary effect that Claws have.Fist weapons are mostly used for Quality / Strength builds and due to their higher damage and considerably better Weapon Arts, they are usually favored over Claws. Claws: Claws have a slightly slower light attack than Fist weapons but have considerably different movesets when two handed(the Crow Talons especially).Claws have greater range than the Fists and have innate Bleed.Claws are usually used on Dexterity / Luck builds."
+    }
+  },
+  {
+    "Name": "Demon's Fist",
+    "Attack": 111,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 20,
+    "FaithScaling": "E",
+    "Durability": 100,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Fist & Claw",
+      "Description": "Fist & Claws are a type of Weapon in Dark Souls 3. These Weapons usually have similar movesets albeit with different skills and properties. Fists and Claws are often used as parrying tools, due to their fast parry frames. Fists: Fist weapons have a faster light attack than Claws and a different rolling R1, but have shorter range and lack the innate Bleed Auxiliary effect that Claws have.Fist weapons are mostly used for Quality / Strength builds and due to their higher damage and considerably better Weapon Arts, they are usually favored over Claws. Claws: Claws have a slightly slower light attack than Fist weapons but have considerably different movesets when two handed(the Crow Talons especially).Claws have greater range than the Fists and have innate Bleed.Claws are usually used on Dexterity / Luck builds."
+    }
+  },
+  {
+    "Name": "Dark Hand",
+    "Attack": 88,
+    "StrengthRequirement": 0,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 0,
+    "FaithScaling": "C",
+    "Durability": 55,
+    "Weight": 0.0,
+    "Type": {
+      "Name": "Fist & Claw",
+      "Description": "Fist & Claws are a type of Weapon in Dark Souls 3. These Weapons usually have similar movesets albeit with different skills and properties. Fists and Claws are often used as parrying tools, due to their fast parry frames. Fists: Fist weapons have a faster light attack than Claws and a different rolling R1, but have shorter range and lack the innate Bleed Auxiliary effect that Claws have.Fist weapons are mostly used for Quality / Strength builds and due to their higher damage and considerably better Weapon Arts, they are usually favored over Claws. Claws: Claws have a slightly slower light attack than Fist weapons but have considerably different movesets when two handed(the Crow Talons especially).Claws have greater range than the Fists and have innate Bleed.Claws are usually used on Dexterity / Luck builds."
+    }
+  },
+  {
+    "Name": "Claw",
+    "Attack": 86,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 6,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 1.5,
+    "Type": {
+      "Name": "Fist & Claw",
+      "Description": "Fist & Claws are a type of Weapon in Dark Souls 3. These Weapons usually have similar movesets albeit with different skills and properties. Fists and Claws are often used as parrying tools, due to their fast parry frames. Fists: Fist weapons have a faster light attack than Claws and a different rolling R1, but have shorter range and lack the innate Bleed Auxiliary effect that Claws have.Fist weapons are mostly used for Quality / Strength builds and due to their higher damage and considerably better Weapon Arts, they are usually favored over Claws. Claws: Claws have a slightly slower light attack than Fist weapons but have considerably different movesets when two handed(the Crow Talons especially).Claws have greater range than the Fists and have innate Bleed.Claws are usually used on Dexterity / Luck builds."
+    }
+  },
+  {
+    "Name": "Manikin Claws",
+    "Attack": 81,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 8,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Fist & Claw",
+      "Description": "Fist & Claws are a type of Weapon in Dark Souls 3. These Weapons usually have similar movesets albeit with different skills and properties. Fists and Claws are often used as parrying tools, due to their fast parry frames. Fists: Fist weapons have a faster light attack than Claws and a different rolling R1, but have shorter range and lack the innate Bleed Auxiliary effect that Claws have.Fist weapons are mostly used for Quality / Strength builds and due to their higher damage and considerably better Weapon Arts, they are usually favored over Claws. Claws: Claws have a slightly slower light attack than Fist weapons but have considerably different movesets when two handed(the Crow Talons especially).Claws have greater range than the Fists and have innate Bleed.Claws are usually used on Dexterity / Luck builds."
+    }
+  },
+  {
+    "Name": "Crow Talons",
+    "Attack": 91,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 19,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 6,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Fist & Claw",
+      "Description": "Fist & Claws are a type of Weapon in Dark Souls 3. These Weapons usually have similar movesets albeit with different skills and properties. Fists and Claws are often used as parrying tools, due to their fast parry frames. Fists: Fist weapons have a faster light attack than Claws and a different rolling R1, but have shorter range and lack the innate Bleed Auxiliary effect that Claws have.Fist weapons are mostly used for Quality / Strength builds and due to their higher damage and considerably better Weapon Arts, they are usually favored over Claws. Claws: Claws have a slightly slower light attack than Fist weapons but have considerably different movesets when two handed(the Crow Talons especially).Claws have greater range than the Fists and have innate Bleed.Claws are usually used on Dexterity / Luck builds."
+    }
+  },
+  {
+    "Name": "Spear",
+    "Attack": 104,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Tailbone Spear",
+    "Attack": 118,
+    "StrengthRequirement": 13,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 13,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 13,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Winged Spear",
+    "Attack": 95,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 6.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Drang Twinspears",
+    "Attack": 100,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Arstor's Spear",
+    "Attack": 118,
+    "StrengthRequirement": 11,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 19,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 11,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 11,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Four-Pronged Plow",
+    "Attack": 105,
+    "StrengthRequirement": 13,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 11,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 13,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 13,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Saint Bident",
+    "Attack": 98,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 8.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Rotten Ghru Spear",
+    "Attack": 104,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 5.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Partizan",
+    "Attack": 108,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Yorshka's Spear",
+    "Attack": 98,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Gargoyle Flame Spear",
+    "Attack": 103,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 15,
+    "FaithScaling": "E",
+    "Durability": 70,
+    "Weight": 9.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Dragonslayer Swordspear",
+    "Attack": 128,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 22,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 14.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Dragonslayer Spear",
+    "Attack": 113,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 20,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 20,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 9.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Golden Ritual Spear",
+    "Attack": 73,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 10,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Soldering Iron",
+    "Attack": 39,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 25,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Lothric Knight Long Spear",
+    "Attack": 112,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Greatlance",
+    "Attack": 129,
+    "StrengthRequirement": 21,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 10.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Pike",
+    "Attack": 105,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 7.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Follower Javelin",
+    "Attack": 106,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Ringed Knight Spear",
+    "Attack": 126,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 17,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 15,
+    "FaithScaling": "E",
+    "Durability": 90,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Lothric War Banner",
+    "Attack": 100,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 70,
+    "Weight": 5.0,
+    "Type": {
+      "Name": "Spear & Spike",
+      "Description": "Spears & Pikes have long reach and are excellent for dealing damage while remaining defensive. Spears & Pikes function well when paired with a shield, particularly greatshields, as they have relatively moderate stamina consumption and can be quickly thrusted without lowering your guard. These weapons require patience and careful spacing to make proper use of, but are capable of punishing counterattacks. Their most common Skill is Charge."
+    }
+  },
+  {
+    "Name": "Halberd",
+    "Attack": 125,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Lucerne",
+    "Attack": 126,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 13,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 15,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 7.5,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Winged Knight Halberd",
+    "Attack": 135,
+    "StrengthRequirement": 26,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 26,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 26,
+    "FaithScaling": "-",
+    "Durability": 145,
+    "Weight": 14.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Red Hilted Halberd",
+    "Attack": 130,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 80,
+    "Weight": 8.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Black Knight Glaive",
+    "Attack": 150,
+    "StrengthRequirement": 28,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 28,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 28,
+    "FaithScaling": "-",
+    "Durability": 115,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Gundyr's Halberd",
+    "Attack": 145,
+    "StrengthRequirement": 30,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 30,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 30,
+    "FaithScaling": "-",
+    "Durability": 500,
+    "Weight": 13.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Immolation Tinder",
+    "Attack": 118,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 18,
+    "FaithScaling": "B",
+    "Durability": 85,
+    "Weight": 10.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Crescent Axe",
+    "Attack": 119,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 6.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Glaive",
+    "Attack": 141,
+    "StrengthRequirement": 17,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 11,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 17,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 17,
+    "FaithScaling": "-",
+    "Durability": 95,
+    "Weight": 11.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Splitleaf Greatsword",
+    "Attack": 132,
+    "StrengthRequirement": 26,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 26,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 26,
+    "FaithScaling": "-",
+    "Durability": 90,
+    "Weight": 13.5,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Crucifix of the Mad King",
+    "Attack": 124,
+    "StrengthRequirement": 19,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 19,
+    "IntelligenceScaling": "E",
+    "FaithRequirement": 19,
+    "FaithScaling": "E",
+    "Durability": 80,
+    "Weight": 12.0,
+    "Type": {
+      "Name": "Halberd",
+      "Description": "Halberds are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have long reach. Halberds are generally either a fusion between a spear and another weapon, thus combining straight thrusting attacks and wide swinging strikes, or are simply a cutting or chopping weapon on a long shaft, which is swung across and overhead at a distance. These weapons often have trouble performing in close range or tight quarters. Just like Reapers, they have a 'sweet spot' mechanic that awards players extra damage. Even though the sour spots return as well, the damage difference between the sweet spot hit and the sour spot hit isn't as harsh."
+    }
+  },
+  {
+    "Name": "Great Scythe",
+    "Attack": 105,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 7.0,
+    "Type": {
+      "Name": "Reaper",
+      "Description": "Reapers have long reach and a unique sweeping moveset, and most are Bleed weapons. These weapons are particularly useful for sneaking damage behind shields, when swung with proper spacing. Reapers have a 'sweet spot' in which they will do bonus damage when swung at the precise range that their blade reaches the target, and will perform less powerfully when struck with the shaft of the weapon if you are too close to the target. Reapers will also deal chip damage through shields if the 'sweet spot' lands, even if the shield has a 100 % physical block."
+    }
+  },
+  {
+    "Name": "Pontiff Knight Great Scythe",
+    "Attack": 100,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 19,
+    "DexterityScaling": "A",
+    "IntelligenceRequirement": 14,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 14,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 7.5,
+    "Type": {
+      "Name": "Reaper",
+      "Description": "Reapers have long reach and a unique sweeping moveset, and most are Bleed weapons. These weapons are particularly useful for sneaking damage behind shields, when swung with proper spacing. Reapers have a 'sweet spot' in which they will do bonus damage when swung at the precise range that their blade reaches the target, and will perform less powerfully when struck with the shaft of the weapon if you are too close to the target. Reapers will also deal chip damage through shields if the 'sweet spot' lands, even if the shield has a 100 % physical block."
+    }
+  },
+  {
+    "Name": "Great Corvian Scythe",
+    "Attack": 97,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 16,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 16,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Reaper",
+      "Description": "Reapers have long reach and a unique sweeping moveset, and most are Bleed weapons. These weapons are particularly useful for sneaking damage behind shields, when swung with proper spacing. Reapers have a 'sweet spot' in which they will do bonus damage when swung at the precise range that their blade reaches the target, and will perform less powerfully when struck with the shaft of the weapon if you are too close to the target. Reapers will also deal chip damage through shields if the 'sweet spot' lands, even if the shield has a 100 % physical block."
+    }
+  },
+  {
+    "Name": "Friede's Great Scythe",
+    "Attack": 110,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "B",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 12,
+    "FaithScaling": "C",
+    "Durability": 60,
+    "Weight": 13.0,
+    "Type": {
+      "Name": "Reaper",
+      "Description": "Reapers have long reach and a unique sweeping moveset, and most are Bleed weapons. These weapons are particularly useful for sneaking damage behind shields, when swung with proper spacing. Reapers have a 'sweet spot' in which they will do bonus damage when swung at the precise range that their blade reaches the target, and will perform less powerfully when struck with the shaft of the weapon if you are too close to the target. Reapers will also deal chip damage through shields if the 'sweet spot' lands, even if the shield has a 100 % physical block."
+    }
+  },
+  {
+    "Name": "Whip",
+    "Attack": 90,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 6,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Whip",
+      "Description": "Whips are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage, and perform poorly against well-armored foes, but have long reach and can have Auxiliary effects such as Bleeding or Poison. Unlike other melee weapons, whips cannot be parried but cannot backstab or riposte."
+    }
+  },
+  {
+    "Name": "Notched Whip",
+    "Attack": 95,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 19,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 6,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Whip",
+      "Description": "Whips are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage, and perform poorly against well-armored foes, but have long reach and can have Auxiliary effects such as Bleeding or Poison. Unlike other melee weapons, whips cannot be parried but cannot backstab or riposte."
+    }
+  },
+  {
+    "Name": "Witch's Locks",
+    "Attack": 77,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 17,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 9,
+    "FaithScaling": "C",
+    "Durability": 50,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Whip",
+      "Description": "Whips are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage, and perform poorly against well-armored foes, but have long reach and can have Auxiliary effects such as Bleeding or Poison. Unlike other melee weapons, whips cannot be parried but cannot backstab or riposte."
+    }
+  },
+  {
+    "Name": "Spotted Whip",
+    "Attack": 102,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 9,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Whip",
+      "Description": "Whips are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage, and perform poorly against well-armored foes, but have long reach and can have Auxiliary effects such as Bleeding or Poison. Unlike other melee weapons, whips cannot be parried but cannot backstab or riposte."
+    }
+  },
+  {
+    "Name": "Rose of Ariandel",
+    "Attack": 79,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 3.5,
+    "Type": {
+      "Name": "Whip",
+      "Description": "Whips are a type of Weapon in Dark Souls 3. These Weapons usually do little to moderate damage, and perform poorly against well-armored foes, but have long reach and can have Auxiliary effects such as Bleeding or Poison. Unlike other melee weapons, whips cannot be parried but cannot backstab or riposte."
+    }
+  },
+  {
+    "Name": "Short Bow",
+    "Attack": 77,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 40,
+    "Weight": 2.0,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "Longbow",
+    "Attack": 82,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 4.0,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "Black Bow of Pharis",
+    "Attack": 67,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 18,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 3.0,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "Dragonrider Bow",
+    "Attack": 110,
+    "StrengthRequirement": 19,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 15,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 75,
+    "Weight": 6.5,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "Composite Bow",
+    "Attack": 73,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 3.5,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "Darkmoon Longbow",
+    "Attack": 36,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 0,
+    "FaithScaling": "C",
+    "Durability": 50,
+    "Weight": 4.5,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "White Birch Bow",
+    "Attack": 82,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 2.5,
+    "Type": {
+      "Name": "Bow",
+      "Description": "Bows have changed a bit in Dark Souls 3. Different Bow types have different attack speeds, ranges and damage. They require arrows and usually a decent amount of Dexterity. It will be possible to use a Short Bow in melee range. Bows can not be infused."
+    }
+  },
+  {
+    "Name": "Dragonslayer Greatbow",
+    "Attack": 126,
+    "StrengthRequirement": 20,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 10.0,
+    "Type": {
+      "Name": "Greatbow",
+      "Description": "Greatbows are extremely powerful version of Bows that can knock enemies off their feet in a single shot, in exchange for how demanding they are to use. Operating these weapons demand the operator stop moving entirely, and drawing a greatbow is a time consuming process that leaves the user vulnerable."
+    }
+  },
+  {
+    "Name": "Onislayer Greatbow",
+    "Attack": 111,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 24,
+    "DexterityScaling": "C",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 7.5,
+    "Type": {
+      "Name": "Greatbow",
+      "Description": "Greatbows are extremely powerful version of Bows that can knock enemies off their feet in a single shot, in exchange for how demanding they are to use. Operating these weapons demand the operator stop moving entirely, and drawing a greatbow is a time consuming process that leaves the user vulnerable."
+    }
+  },
+  {
+    "Name": "Millwood Greatbow",
+    "Attack": 139,
+    "StrengthRequirement": 28,
+    "StrenthScaling": "C",
+    "DexterityRequirement": 12,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 100,
+    "Weight": 9.0,
+    "Type": {
+      "Name": "Greatbow",
+      "Description": "Greatbows are extremely powerful version of Bows that can knock enemies off their feet in a single shot, in exchange for how demanding they are to use. Operating these weapons demand the operator stop moving entirely, and drawing a greatbow is a time consuming process that leaves the user vulnerable."
+    }
+  },
+  {
+    "Name": "Light Crossbow",
+    "Attack": 64,
+    "StrengthRequirement": 10,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 10,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 10,
+    "FaithScaling": "-",
+    "Durability": 42,
+    "Weight": 45.0,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Knight's Crossbow",
+    "Attack": 40,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 12,
+    "FaithScaling": "-",
+    "Durability": 42,
+    "Weight": 50.0,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Arbalest",
+    "Attack": 78,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 50.0,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Sniper Crossbow",
+    "Attack": 70,
+    "StrengthRequirement": 18,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 18,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 18,
+    "FaithScaling": "-",
+    "Durability": 59,
+    "Weight": 55.0,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Avelyn",
+    "Attack": 64,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 14,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 35,
+    "Weight": 35.0,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Heavy Crossbow",
+    "Attack": 72,
+    "StrengthRequirement": 14,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 8,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 55.0,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Repeating Crossbow",
+    "Attack": 83,
+    "StrengthRequirement": 16,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 20,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 20,
+    "Weight": 7.5,
+    "Type": {
+      "Name": "Crossbow",
+      "Description": "Crossbows are a type of Weapon in Dark Souls 3. These Weapons usually do moderate damage and have less range than Bows. They are generally more close ranged weapons, allowing players to 'shoot from the hip' and reload on the move without entering a two-handed stance. These weapons do not scale with stats, and as a result are less useful on consecutive NG+ runs. Crossbows use Bolts."
+    }
+  },
+  {
+    "Name": "Sorcerer's Staff",
+    "Attack": 60,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 0,
+    "FaithScaling": "B",
+    "Durability": 7,
+    "Weight": 50.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Court Sorcerer's Staff",
+    "Attack": 60,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "A",
+    "FaithRequirement": 0,
+    "FaithScaling": "A",
+    "Durability": 15,
+    "Weight": 45.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Heretic's Staff",
+    "Attack": 63,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 0,
+    "FaithScaling": "B",
+    "Durability": 7,
+    "Weight": 55.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Witch Tree Branch",
+    "Attack": 57,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 0,
+    "FaithScaling": "C",
+    "Durability": 7,
+    "Weight": 40.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Sage's Crystal Staff",
+    "Attack": 84,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 0,
+    "FaithScaling": "B",
+    "Durability": 30,
+    "Weight": 50.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Izalith Staff",
+    "Attack": 120,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 12,
+    "FaithScaling": "B",
+    "Durability": 7,
+    "Weight": 55.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Storyteller's Staff",
+    "Attack": 60,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 0,
+    "FaithScaling": "B",
+    "Durability": 20,
+    "Weight": 45.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Archdeacon Great Staff",
+    "Attack": 89,
+    "StrengthRequirement": 8,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 8,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 8,
+    "FaithScaling": "-",
+    "Durability": 7,
+    "Weight": 55.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Man-Grub's Staff",
+    "Attack": 90,
+    "StrengthRequirement": 9,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 9,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 0,
+    "FaithScaling": "-",
+    "Durability": 7,
+    "Weight": 65.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Mendicant's Staff",
+    "Attack": 60,
+    "StrengthRequirement": 7,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 7,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 0,
+    "FaithScaling": "B",
+    "Durability": 7,
+    "Weight": 55.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Preacher's Right Arm",
+    "Attack": 100,
+    "StrengthRequirement": 12,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 12,
+    "IntelligenceScaling": "A",
+    "FaithRequirement": 12,
+    "FaithScaling": "A",
+    "Durability": 5,
+    "Weight": 50.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Murky Longstaff",
+    "Attack": 86,
+    "StrengthRequirement": 6,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "D",
+    "IntelligenceRequirement": 6,
+    "IntelligenceScaling": "B",
+    "FaithRequirement": 6,
+    "FaithScaling": "B",
+    "Durability": 0,
+    "Weight": 65.0,
+    "Type": {
+      "Name": "Stave",
+      "Description": "Staves are wielded in order to cast Sorceries. Casting Sorceries consumes Focus Points. Their Skill buffs the power of cast spells for a short duration."
+    }
+  },
+  {
+    "Name": "Pyromancy Flame",
+    "Attack": 0,
+    "StrengthRequirement": 0,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 0,
+    "FaithScaling": "C",
+    "Durability": 50,
+    "Weight": 0.0,
+    "Type": {
+      "Name": "Flame",
+      "Description": "Flames are a type of Weapon in Dark Souls 3. These Weapons allow the player to cast Pyromancies. The base game has only one Flame, with the Ashes of Ariandel DLC adding a second one and The Ringed City DLC adding a Curved Sword that doubles as a Flame."
+    }
+  },
+  {
+    "Name": "Pyromancer's Parting Flame",
+    "Attack": 0,
+    "StrengthRequirement": 15,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 15,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 15,
+    "FaithScaling": "D",
+    "Durability": 65,
+    "Weight": 0.0,
+    "Type": {
+      "Name": "Flame",
+      "Description": "Flames are a type of Weapon in Dark Souls 3. These Weapons allow the player to cast Pyromancies. The base game has only one Flame, with the Ashes of Ariandel DLC adding a second one and The Ringed City DLC adding a Curved Sword that doubles as a Flame."
+    }
+  },
+  {
+    "Name": "Demon's Scar",
+    "Attack": 0,
+    "StrengthRequirement": 0,
+    "StrenthScaling": "-",
+    "DexterityRequirement": 16,
+    "DexterityScaling": "E",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 0,
+    "FaithScaling": "D",
+    "Durability": 70,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Flame",
+      "Description": "Flames are a type of Weapon in Dark Souls 3. These Weapons allow the player to cast Pyromancies. The base game has only one Flame, with the Ashes of Ariandel DLC adding a second one and The Ringed City DLC adding a Curved Sword that doubles as a Flame."
+    }
+  },
+  {
+    "Name": "Talisman",
+    "Attack": 52,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 4,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Talisman",
+      "Description": "Talismans are wielded in order to cast Miracles. These items were not present in Dark Souls 2, but make a return here.  The most commonly found Skill among them, Unfaltering Prayer, differentiates them from Chimes and turns them towards PvP use. Not meeting the Faith requirement for the Talisman will drop the spell buff to a flat 60."
+    }
+  },
+  {
+    "Name": "Saint's Talisman",
+    "Attack": 52,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 4,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Talisman",
+      "Description": "Talismans are wielded in order to cast Miracles. These items were not present in Dark Souls 2, but make a return here.  The most commonly found Skill among them, Unfaltering Prayer, differentiates them from Chimes and turns them towards PvP use. Not meeting the Faith requirement for the Talisman will drop the spell buff to a flat 60."
+    }
+  },
+  {
+    "Name": "Sunlight Talisman",
+    "Attack": 52,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 4,
+    "FaithScaling": "-",
+    "Durability": 65,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Talisman",
+      "Description": "Talismans are wielded in order to cast Miracles. These items were not present in Dark Souls 2, but make a return here.  The most commonly found Skill among them, Unfaltering Prayer, differentiates them from Chimes and turns them towards PvP use. Not meeting the Faith requirement for the Talisman will drop the spell buff to a flat 60."
+    }
+  },
+  {
+    "Name": "White Hair Talisman",
+    "Attack": 73,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 4,
+    "FaithScaling": "D",
+    "Durability": 45,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Talisman",
+      "Description": "Talismans are wielded in order to cast Miracles. These items were not present in Dark Souls 2, but make a return here.  The most commonly found Skill among them, Unfaltering Prayer, differentiates them from Chimes and turns them towards PvP use. Not meeting the Faith requirement for the Talisman will drop the spell buff to a flat 60."
+    }
+  },
+  {
+    "Name": "Sunless Talisman",
+    "Attack": 74,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 4,
+    "FaithScaling": "C",
+    "Durability": 50,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Talisman",
+      "Description": "Talismans are wielded in order to cast Miracles. These items were not present in Dark Souls 2, but make a return here.  The most commonly found Skill among them, Unfaltering Prayer, differentiates them from Chimes and turns them towards PvP use. Not meeting the Faith requirement for the Talisman will drop the spell buff to a flat 60."
+    }
+  },
+  {
+    "Name": "Canvas Talisman",
+    "Attack": 52,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 4,
+    "FaithScaling": "-",
+    "Durability": 55,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Talisman",
+      "Description": "Talismans are wielded in order to cast Miracles. These items were not present in Dark Souls 2, but make a return here.  The most commonly found Skill among them, Unfaltering Prayer, differentiates them from Chimes and turns them towards PvP use. Not meeting the Faith requirement for the Talisman will drop the spell buff to a flat 60."
+    }
+  },
+  {
+    "Name": "Priest's Chime",
+    "Attack": 52,
+    "StrengthRequirement": 3,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 0,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 3,
+    "FaithScaling": "-",
+    "Durability": 45,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  },
+  {
+    "Name": "Cleric's Sacred Chime",
+    "Attack": 52,
+    "StrengthRequirement": 3,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 3,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 3,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  },
+  {
+    "Name": "Caitha's Chime",
+    "Attack": 74,
+    "StrengthRequirement": 3,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 3,
+    "IntelligenceScaling": "C",
+    "FaithRequirement": 3,
+    "FaithScaling": "C",
+    "Durability": 45,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  },
+  {
+    "Name": "Saint-tree Bellvine",
+    "Attack": 52,
+    "StrengthRequirement": 3,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 3,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 3,
+    "FaithScaling": "-",
+    "Durability": 45,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  },
+  {
+    "Name": "Crystal Chime",
+    "Attack": 73,
+    "StrengthRequirement": 3,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "0",
+    "IntelligenceRequirement": 3,
+    "IntelligenceScaling": "D",
+    "FaithRequirement": 3,
+    "FaithScaling": "D",
+    "Durability": 40,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  },
+  {
+    "Name": "Yorshka's Chime",
+    "Attack": 54,
+    "StrengthRequirement": 3,
+    "StrenthScaling": "D",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 3,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 3,
+    "FaithScaling": "-",
+    "Durability": 60,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  },
+  {
+    "Name": "Sacred Chime of Filianore",
+    "Attack": 74,
+    "StrengthRequirement": 4,
+    "StrenthScaling": "E",
+    "DexterityRequirement": 0,
+    "DexterityScaling": "-",
+    "IntelligenceRequirement": 4,
+    "IntelligenceScaling": "-",
+    "FaithRequirement": 4,
+    "FaithScaling": "-",
+    "Durability": 50,
+    "Weight": 0.5,
+    "Type": {
+      "Name": "Sacred Chime",
+      "Description": "Sacred Chimes are a type of Weapon that replaced Talismans in Dark Souls 2, but now both have returned in Dark Souls 3. These Weapons are used to cast Miracles and sometimes Sorceries. The most common Skill they have is Gentle Prayer, differentiating them for the Talismans."
+    }
+  }
+]
