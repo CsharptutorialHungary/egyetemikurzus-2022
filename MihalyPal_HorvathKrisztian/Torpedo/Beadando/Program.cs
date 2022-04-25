@@ -9,7 +9,7 @@ namespace Beadando
 
 
             //Ellenfél táblájának generálása
-            JatekTabla ellenfelTabla = new JatekTabla(10, 10);
+         /*   JatekTabla ellenfelTabla = new JatekTabla(10, 10);
             ellenfelTabla.PalyatGeneral();
             for(int i = 0; i < 6; i++)
             {
@@ -21,9 +21,9 @@ namespace Beadando
                 ellenfelTabla.HajotElhelyez(ellenfelTabla.Hajok[i]);
                 ellenfelTabla.tablatKiir();
             }
-
+         */
             Console.Clear();
-
+          
             //Ellenfél táblájának generálásának a vége
             Console.WriteLine("A hajók pozícióit úgy kell megadni, hogy megadod az X és Y koordinátákat, majd azt, hogy \n milyen" +
                 "irányban legyen elforgatva. Ezeknek a leírása a következő:\n" +
@@ -42,9 +42,19 @@ namespace Beadando
 
             for (int i = 0; i < jatekTabla.Hajok.Length; i++)
             {
-                bekeres.BekerHajot(jatekTabla.Hajok[i]);
-                jatekTabla.HajotElhelyez(jatekTabla.Hajok[i]);
-                jatekTabla.tablatKiir();
+                Boolean joVoltE = false;
+                while (joVoltE == false)
+                {
+                    bekeres.BekerHajot(jatekTabla.Hajok[i]);
+                    joVoltE = jatekTabla.HajoLehelyezhetoE(jatekTabla.Hajok[i]);
+
+                }
+
+                if (joVoltE == true)
+                {
+                    jatekTabla.HajotElhelyez(jatekTabla.Hajok[i]);
+                    jatekTabla.tablatKiir();
+                }
 
             }
 
