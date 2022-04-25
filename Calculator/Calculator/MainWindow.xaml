@@ -3,10 +3,78 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Calculator"
+        xmlns:local="clr-namespace:Calculator" 
+        d:DataContext="{d:DesignInstance Type=local:MainViewModel}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Calculator" 
+        Height="450" 
+        Width="300"
+        Icon="/calculatorIcon.ico">
 
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*" />
+            <RowDefinition Height="0.6*"/>
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="0.8*" />
+            <RowDefinition Height="0.8*" />
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" 
+                 Grid.ColumnSpan="4" 
+                 FontSize="30" 
+                 IsReadOnly="True"
+                 Padding="0,8,3,0"
+                 Background="DarkGray"
+                 FontStyle="Italic"
+                 TextAlignment="Right" 
+                 BorderThickness="0,0,0,0"
+                 IsHitTestVisible="False"
+                 Text="" 
+                 BorderBrush="White" 
+                 SelectionBrush="White" />
+        <TextBox Grid.Row="1" 
+                 Background="DarkGray"
+                 Foreground="Black"
+                 BorderThickness="0,0,0,1"
+                 Grid.ColumnSpan="4" 
+                 IsReadOnly="True"
+                 FontSize="30" 
+                 IsHitTestVisible="False"
+                 Padding="0,3,5,0"
+                 TextAlignment="Right"
+                 BorderBrush="Black"
+                 Text="{Binding InputText}" 
+                 SelectionBrush="White" />
+        
+        
+        <Button Grid.Row="2" Grid.Column="3" Content="C" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="tan" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="cos" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="sin" FontSize="30"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="30"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="9" FontSize="30"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="8" FontSize="30"/>
+        <Button Grid.Row="3" Grid.Column="0" Content="7" FontSize="30"/>
+        <Button Grid.Row="4" Grid.Column="3" Content="+" FontSize="30"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="6" FontSize="30"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="5" FontSize="30"/>
+        <Button Grid.Row="4" Grid.Column="0" Content="4" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="*" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="3" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="1" Content="2" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="0" Content="1" Command="{Binding NumberOneClickCommand}" FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="2" Content="/" FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="1" Content="0" FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="0" Content="," FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="3" Content="=" FontSize="30"/>
+        
     </Grid>
 </Window>
