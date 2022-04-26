@@ -26,8 +26,6 @@ namespace HangszerUzlet
 
         public void InsertHangszer(TextBox nev, ComboBox tipus, TextBox ar, DataGridView dataGridView)
         {
-            tipus.DataSource = hangszerTipus.FillTipusok();
-
             string netto = ar.Text;
             double brutto = Convert.ToInt32(netto) + (Convert.ToInt32(netto) * 0.27);
 
@@ -44,8 +42,6 @@ namespace HangszerUzlet
 
         public void ModifyHangszer(TextBox id, TextBox nev, ComboBox tipus, TextBox ar, DataGridView dataGridView)
         {
-            tipus.DataSource = hangszerTipus.FillTipusok();
-
             string netto = ar.Text;
             double brutto = Convert.ToInt32(netto) + (Convert.ToInt32(netto) * 0.27);
 
@@ -85,23 +81,32 @@ namespace HangszerUzlet
                                                    Tipus = h.Tipus,
                                                    Ar = h.Ar
                                                }).ToList();
+
+                XElement element = new XElement("Hangszerek",
+                                       (from h in hangszerList 
+                                        select new XElement("Hangszer",
+                                            new XElement("Name", h.Nev),
+                                            new XElement("Type", h.Tipus),
+                                            new XElement("Price", h.Ar))));
+
+                SaveFileDialog saveFileDialog = new SaveFileDialog();
+                saveFileDialog.Filter = "XML Files|*.xml";
+                if (saveFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    element.Save(saveFileDialog.FileName);
+                }
+
             }
-            catch(Exception e) { }
-
-            XElement element =
-                new XElement("Hangszerek",
-                    (from h in hangszerList
-                     select new XElement("Hangszer",
-                         new XElement("Name", h.Nev),
-                         new XElement("Type", h.Tipus),
-                         new XElement("Price", h.Ar))));
-
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "XML Files|*.xml";
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            catch(Exception ex) 
             {
-                element.Save(saveFileDialog.FileName);
+               var result = MessageBox.Show(ex.ToString(),
+                        "Error Information",
+                        MessageBoxButtons.AbortRetryIgnore,
+                        MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Abort) throw;
             }
+
+           
         }
     }
 }

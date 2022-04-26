@@ -1,8 +1,10 @@
-﻿using System;
+﻿using HangszerUzlet.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace HangszerUzlet.Controler
 {
@@ -10,26 +12,52 @@ namespace HangszerUzlet.Controler
     {
         HangszerDBDataContext context = new HangszerDBDataContext();
 
-        public List<HangszerTipus> FillTipusok()
+        public List<HangszerTipusModel> FillTipusok(ComboBox comboBox)
         {
-            List<HangszerTipus> hangszerTipusList = new List<HangszerTipus>();
-            hangszerTipusList = (from ht in context.HangszerTipus
-                                 select new HangszerTipus
-                                 {
-                                     Nev = ht.Nev
-                                 }).ToList();
+            List<HangszerTipusModel> hangszerTipusList = new List<HangszerTipusModel>();
+            List<HangszerTipusModel> hangszerTipusListResult = new List<HangszerTipusModel>();
 
-            foreach (var item in hangszerTipusList)
+            try
             {
-                HangszerTipus hangszerTipus = new HangszerTipus()
+               hangszerTipusList = (from ht in context.HangszerTipus
+                                    select new HangszerTipusModel
+                                    {
+                                        Id = ht.Id,
+                                        Nev = ht.Nev
+                                    }).ToList();
+
+                foreach (var item in hangszerTipusList)
                 {
-                    Nev = item.Nev
-                };
+                    HangszerTipusModel hangszerTipus = new HangszerTipusModel()
+                    {
+                        Nev = item.Nev
+                    };
 
-                hangszerTipusList.Add(hangszerTipus);
+                    hangszerTipusListResult.Add(hangszerTipus);
+                }
+
+                FillCombobox(comboBox, hangszerTipusList);
+
             }
+            catch (Exception ex)
+            {
+                var result = MessageBox.Show(ex.ToString(),
+                        "Error Information",
+                        MessageBoxButtons.AbortRetryIgnore,
+                        MessageBoxIcon.Exclamation);
+                if (result == DialogResult.Abort) throw;
+            }
+            
 
-            return hangszerTipusList;
+            return hangszerTipusListResult;
+        }
+
+        public void FillCombobox(ComboBox comboBox, List<HangszerTipusModel> hangszerTipusList)
+        {
+            foreach (var tipus in hangszerTipusList)
+            {
+                comboBox.Items.Add(tipus.Nev);
+            }
         }
     }
 }

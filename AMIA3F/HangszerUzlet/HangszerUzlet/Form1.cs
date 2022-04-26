@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HangszerUzlet.Controler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +14,12 @@ namespace HangszerUzlet
     public partial class Form1 : Form
     {
         HangszerDbDAO hangszerDbDAO = new HangszerDbDAO();
+        HangszerTipusDAO hangszerTipusDAO = new HangszerTipusDAO();
 
         public Form1()
         {
             InitializeComponent();
+            hangszerTipusDAO.FillTipusok(typeComboBox);
         }
 
         private void hangszerBindingSource_CurrentChanged(object sender, EventArgs e)
