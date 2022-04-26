@@ -9,21 +9,29 @@ namespace Beadando
 
 
             //Ellenfél táblájának generálása
-         /*   JatekTabla ellenfelTabla = new JatekTabla(10, 10);
+            JatekTabla ellenfelTabla = new JatekTabla(10, 10);
             ellenfelTabla.PalyatGeneral();
-            for(int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                Random rnd = new Random();
-                ellenfelTabla.Hajok[i].X = rnd.Next(0,9);
-                ellenfelTabla.Hajok[i].Y = rnd.Next(0, 9);
-                ellenfelTabla.Hajok[i].Orientacio = rnd.Next(0,2);
 
-                ellenfelTabla.HajotElhelyez(ellenfelTabla.Hajok[i]);
-                ellenfelTabla.tablatKiir();
+                while (true)
+                {
+                    Random rnd = new Random();
+                    ellenfelTabla.Hajok[i].X = rnd.Next(0, 9);
+                    ellenfelTabla.Hajok[i].Y = rnd.Next(0, 9);
+                    ellenfelTabla.Hajok[i].Orientacio = rnd.Next(0, 2);
+                    if(ellenfelTabla.HajoLehelyezhetoE(ellenfelTabla.Hajok[i]) == true)
+                    {
+                        ellenfelTabla.HajotElhelyez(ellenfelTabla.Hajok[i]);
+
+                        break;
+                    }
+                   
+                }
             }
-         */
+
             Console.Clear();
-          
+            //ellenfelTabla.tablatKiir();
             //Ellenfél táblájának generálásának a vége
             Console.WriteLine("A hajók pozícióit úgy kell megadni, hogy megadod az X és Y koordinátákat, majd azt, hogy \n milyen" +
                 "irányban legyen elforgatva. Ezeknek a leírása a következő:\n" +
@@ -31,13 +39,13 @@ namespace Beadando
                 "2: ez a függőleges elhelyezés.\n" +
                 "figyelj majd arra, hogy a hajók ne lógjanak ki a pályáról szóval az általad megadott pozíciótól\n" +
                 "mindig számolj el annyi blokkot, jobbra,vagy lefele amilyen típusú  a hajód!");
-            
+
             JatekTabla jatekTabla = new JatekTabla(10, 10);
             jatekTabla.PalyatGeneral();
 
             AdatokatBeker bekeres = new AdatokatBeker();
 
-          
+
             Boolean jatekban = true;
 
             for (int i = 0; i < jatekTabla.Hajok.Length; i++)
@@ -59,9 +67,9 @@ namespace Beadando
             }
 
             Console.WriteLine();
-            while (jatekban == true)
+            while (true)
             {
-               
+
 
             }
         }

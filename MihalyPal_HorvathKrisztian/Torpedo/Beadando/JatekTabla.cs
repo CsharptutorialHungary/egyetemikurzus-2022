@@ -84,14 +84,17 @@ namespace Beadando
                 return false;
             }
             
-
             for (int i = 0; i < h.GetTipus(); i++)
             {
                 
                 if (h.Orientacio == 1)
                 {
-                    Console.WriteLine("A " + (h.Y) + ", " + (h.X + i) + " koordinátán szereplő dict karakter: " + TombElemeketTaroloDictionary[(h.Y ).ToString() + (h.X + i).ToString()]);
 
+                    if (h.X+i < 0 || h.Y < 0 || h.X+i >= Szelesseg || h.Y >= Magassag)
+                    {
+                        return false;
+                    }
+                    
                     if (TombElemeketTaroloDictionary[(h.Y ).ToString() + (h.X+i).ToString()] != '~') 
                     {
                         
@@ -102,8 +105,11 @@ namespace Beadando
                 }
                 else
                 {
-                    Console.WriteLine("A " + (h.Y+i) + ", " + (h.X) + " koordinátán szereplő dict karakter: " + TombElemeketTaroloDictionary[(h.Y+i).ToString() + (h.X).ToString()]);
-
+                    if (h.X < 0 || h.Y+i < 0 || h.X >= Szelesseg || h.Y+i >= Magassag)
+                    {
+                        return false;
+                    }
+               
                     if (TombElemeketTaroloDictionary[(h.Y+i).ToString() + (h.X).ToString()] != '~')
                     {
                         Console.WriteLine("HIBA, nem helyezheted el a hajódat ennyire közel egy másikhoz!!!");
@@ -119,56 +125,47 @@ namespace Beadando
         public void HajotElhelyez(Hajo h)
         {
 
-            Console.WriteLine("A számláló: " + Szamlalo);
-            Console.WriteLine("X: " + h.X + " Y: " + h.Y);
-            for (int j = 0; j < h.GetTipus(); j++)
-            {
-
-                if (h.Orientacio == 1)
-                {
-                    try
-                    {
-                        Palya[h.Y, h.X + j] = 'O';
-                    }
-                    catch (IndexOutOfRangeException e)
-                    {
-                        Console.WriteLine("HIBA: " + e.Message);
-                    }
-                    TombElemeketTaroloDictionary[h.Y.ToString() + (h.X + j).ToString()] = 'O';
-
-                    TombElemeketTaroloDictionary[(h.Y + 1).ToString() + (h.X + j).ToString()] = '_';
-                    TombElemeketTaroloDictionary[(h.Y - 1).ToString() + (h.X + j).ToString()] = '_';
-                    TombElemeketTaroloDictionary[h.Y.ToString() + (h.X + 1 + j).ToString()] = '_';
-                    TombElemeketTaroloDictionary[h.Y.ToString() + (h.X - 1 + j).ToString()] = '_';
-                    Console.WriteLine("A táblán a következő indexek foglaltak: " + (h.Y + 1) + ", " + (h.X + j));
-                    Console.WriteLine("A táblán a következő indexek foglaltak: " + (h.Y - 1) + ", " + (h.X + j));
-                    Console.WriteLine("A táblán a következő indexek foglaltak: " + (h.Y) + ", " + (h.X+1 + j));
-                    Console.WriteLine("A táblán a következő indexek foglaltak: " + (h.Y) + ", " + (h.X-1 + j));
-
-                }
-                else
+                for (int j = 0; j < h.GetTipus(); j++)
                 {
 
-
-                    try
+                    if (h.Orientacio == 1)
                     {
-                        Palya[h.Y + j, h.X] = 'O';
+                        try
+                        {
+                            Palya[h.Y, h.X + j] = 'O';
+                        }
+                        catch (IndexOutOfRangeException e)
+                        {
+                            Console.WriteLine("HIBA: " + e.Message);
+                        }
+                        TombElemeketTaroloDictionary[h.Y.ToString() + (h.X + j).ToString()] = 'O';
+
+                        TombElemeketTaroloDictionary[(h.Y + 1).ToString() + (h.X + j).ToString()] = '_';
+                        TombElemeketTaroloDictionary[(h.Y - 1).ToString() + (h.X + j).ToString()] = '_';
+                        TombElemeketTaroloDictionary[h.Y.ToString() + (h.X + 1 + j).ToString()] = '_';
+                        TombElemeketTaroloDictionary[h.Y.ToString() + (h.X - 1 + j).ToString()] = '_';
                     }
-                    catch (IndexOutOfRangeException e)
+                    else
                     {
-                        Console.WriteLine("HIBA: " + e.Message);
+
+                        try
+                        {
+                            Palya[h.Y + j, h.X] = 'O';
+                        }
+                        catch (IndexOutOfRangeException e)
+                        {
+                            Console.WriteLine("HIBA: " + e.Message);
+                        }
+                        TombElemeketTaroloDictionary[(h.Y + j).ToString() + h.X.ToString()] = 'O';
+
+                        TombElemeketTaroloDictionary[(h.Y + 1 + j).ToString() + h.X.ToString()] = '_';
+                        TombElemeketTaroloDictionary[(h.Y - 1 + j).ToString() + h.X.ToString()] = '_';
+                        TombElemeketTaroloDictionary[(h.Y + j).ToString() + (h.X + 1).ToString()] = '_';
+                        TombElemeketTaroloDictionary[(h.Y + j).ToString() + (h.X - 1).ToString()] = '_';
+                        
                     }
-                    TombElemeketTaroloDictionary[(h.Y + j).ToString() + h.X.ToString()] = 'O';
-
-                    TombElemeketTaroloDictionary[(h.Y + 1 + j).ToString() + h.X.ToString()] = '_';
-                    TombElemeketTaroloDictionary[(h.Y - 1 + j).ToString() + h.X.ToString()] = '_';
-                    TombElemeketTaroloDictionary[(h.Y + j).ToString() + (h.X + 1).ToString()] = '_';
-                    TombElemeketTaroloDictionary[(h.Y + j).ToString() + (h.X - 1).ToString()] = '_';
-
                 }
-            }
-            Szamlalo++;
-
+            
         }
         public void HajotLo(int x, int y)
         {
