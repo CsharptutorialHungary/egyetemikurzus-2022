@@ -59,14 +59,14 @@
 
 
         <Button Grid.Row="2" Grid.Column="3" Content="C" Command="{Binding ClearTextBox_Command}" FontSize="30"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="x²" Command="{Binding PowerTwo_Command}" FontSize="30"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="cos" FontSize="30" />
-        <Button Grid.Row="2" Grid.Column="0" Content="sin" Command="{Binding Sinus_Command}" FontSize="30"/>
-        <Button Grid.Row="3" Grid.Column="3" Content="-" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="CE" Command="{Binding ClearOneNumberFromTextBox_Command}" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="M-" FontSize="30" />
+        <Button Grid.Row="2" Grid.Column="0" Content="M+" Command="{Binding WriteToMemoryAdd_Command}" FontSize="30"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="-" Command="{Binding Substraction_Command}" FontSize="30"/>
         <Button Grid.Row="3" Grid.Column="2" Content="9" Command="{Binding NotZeroNumber_Command }"  CommandParameter="9" Background="White" FontSize="30"/>
         <Button Grid.Row="3" Grid.Column="1" Content="8" Command="{Binding NotZeroNumber_Command }"  CommandParameter="8" Background="White" FontSize="30"/>
         <Button Grid.Row="3" Grid.Column="0" Content="7" Command="{Binding NotZeroNumber_Command }" CommandParameter="7" Background="White" FontSize="30"/>
-        <Button Grid.Row="4" Grid.Column="3" Content="+" FontSize="30"/>
+        <Button Grid.Row="4" Grid.Column="3" Content="+" Command="{Binding Addition_Command }" FontSize="30"/>
         <Button Grid.Row="4" Grid.Column="2" Content="6" Command="{Binding NotZeroNumber_Command }" CommandParameter="6" Background="White" FontSize="30"/>
         <Button Grid.Row="4" Grid.Column="1" Content="5" Command="{Binding NotZeroNumber_Command }" CommandParameter="5" Background="White" FontSize="30"/>
         <Button Grid.Row="4" Grid.Column="0" Content="4" Command="{Binding NotZeroNumber_Command }" CommandParameter="4" Background="White" FontSize="30"/>
@@ -76,7 +76,7 @@
         <Button Grid.Row="5" Grid.Column="0" Content="1" Command="{Binding NotZeroNumber_Command }" CommandParameter="1" Background="White" FontSize="30"/>
         <Button Grid.Row="6" Grid.Column="2" Content="÷" Background="White" FontSize="30"/>
         <Button Grid.Row="6" Grid.Column="1" Content="0" Command="{Binding ZeroNumber_Command}" Background="White" FontSize="30"/>
-        <Button Grid.Row="6" Grid.Column="0" Content="," Background="White" FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="0" Content="," Command="{Binding CommaSeparator_Command}" Background="White" FontSize="30"/>
         <Button Grid.Row="6" Grid.Column="3" Content="=" Background="CadetBlue" FontSize="30"/>
 
     </Grid>
