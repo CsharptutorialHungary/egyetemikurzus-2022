@@ -31,6 +31,11 @@ namespace HangszerUzlet
         {
             this.components = new System.ComponentModel.Container();
             this.hangszerDataGridView = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tipusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.arDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hangszerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.LoadButton = new System.Windows.Forms.Button();
             this.insertButton = new System.Windows.Forms.Button();
             this.nameTextBox = new System.Windows.Forms.TextBox();
@@ -45,11 +50,7 @@ namespace HangszerUzlet
             this.searchButton = new System.Windows.Forms.Button();
             this.deleteButton = new System.Windows.Forms.Button();
             this.typeComboBox = new System.Windows.Forms.ComboBox();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nevDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tipusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.arDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hangszerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.saveToXML = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.hangszerDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangszerBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +69,35 @@ namespace HangszerUzlet
             this.hangszerDataGridView.Name = "hangszerDataGridView";
             this.hangszerDataGridView.Size = new System.Drawing.Size(432, 286);
             this.hangszerDataGridView.TabIndex = 0;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // nevDataGridViewTextBoxColumn
+            // 
+            this.nevDataGridViewTextBoxColumn.DataPropertyName = "Nev";
+            this.nevDataGridViewTextBoxColumn.HeaderText = "Nev";
+            this.nevDataGridViewTextBoxColumn.Name = "nevDataGridViewTextBoxColumn";
+            // 
+            // tipusDataGridViewTextBoxColumn
+            // 
+            this.tipusDataGridViewTextBoxColumn.DataPropertyName = "Tipus";
+            this.tipusDataGridViewTextBoxColumn.HeaderText = "Tipus";
+            this.tipusDataGridViewTextBoxColumn.Name = "tipusDataGridViewTextBoxColumn";
+            // 
+            // arDataGridViewTextBoxColumn
+            // 
+            this.arDataGridViewTextBoxColumn.DataPropertyName = "Ar";
+            this.arDataGridViewTextBoxColumn.HeaderText = "Ar";
+            this.arDataGridViewTextBoxColumn.Name = "arDataGridViewTextBoxColumn";
+            // 
+            // hangszerBindingSource
+            // 
+            this.hangszerBindingSource.DataSource = typeof(HangszerUzlet.Hangszer);
+            this.hangszerBindingSource.CurrentChanged += new System.EventHandler(this.hangszerBindingSource_CurrentChanged);
             // 
             // LoadButton
             // 
@@ -194,40 +224,22 @@ namespace HangszerUzlet
             this.typeComboBox.TabIndex = 15;
             this.typeComboBox.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // idDataGridViewTextBoxColumn
+            // saveToXML
             // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            // 
-            // nevDataGridViewTextBoxColumn
-            // 
-            this.nevDataGridViewTextBoxColumn.DataPropertyName = "Nev";
-            this.nevDataGridViewTextBoxColumn.HeaderText = "Nev";
-            this.nevDataGridViewTextBoxColumn.Name = "nevDataGridViewTextBoxColumn";
-            // 
-            // tipusDataGridViewTextBoxColumn
-            // 
-            this.tipusDataGridViewTextBoxColumn.DataPropertyName = "Tipus";
-            this.tipusDataGridViewTextBoxColumn.HeaderText = "Tipus";
-            this.tipusDataGridViewTextBoxColumn.Name = "tipusDataGridViewTextBoxColumn";
-            // 
-            // arDataGridViewTextBoxColumn
-            // 
-            this.arDataGridViewTextBoxColumn.DataPropertyName = "Ar";
-            this.arDataGridViewTextBoxColumn.HeaderText = "Ar";
-            this.arDataGridViewTextBoxColumn.Name = "arDataGridViewTextBoxColumn";
-            // 
-            // hangszerBindingSource
-            // 
-            this.hangszerBindingSource.DataSource = typeof(HangszerUzlet.Hangszer);
-            this.hangszerBindingSource.CurrentChanged += new System.EventHandler(this.hangszerBindingSource_CurrentChanged);
+            this.saveToXML.Location = new System.Drawing.Point(680, 356);
+            this.saveToXML.Name = "saveToXML";
+            this.saveToXML.Size = new System.Drawing.Size(108, 40);
+            this.saveToXML.TabIndex = 16;
+            this.saveToXML.Text = "Mentés (XML)";
+            this.saveToXML.UseVisualStyleBackColor = true;
+            this.saveToXML.Click += new System.EventHandler(this.saveToXML_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.saveToXML);
             this.Controls.Add(this.typeComboBox);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.searchButton);
@@ -274,6 +286,7 @@ namespace HangszerUzlet
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.ComboBox typeComboBox;
+        private System.Windows.Forms.Button saveToXML;
     }
 }
 

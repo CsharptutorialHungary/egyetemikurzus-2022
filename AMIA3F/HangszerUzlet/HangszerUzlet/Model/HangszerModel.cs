@@ -14,7 +14,7 @@ namespace HangszerUzlet.Model
 
         public string Tipus { get; set; }
 
-        public int Ar { get; set; }
+        public int? Ar { get; set; }
 
     }
 }

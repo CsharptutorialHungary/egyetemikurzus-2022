@@ -53,5 +53,10 @@ namespace HangszerUzlet
         {
 
         }
+
+        private void saveToXML_Click(object sender, EventArgs e)
+        {
+            hangszerDbDAO.SaveToXML(hangszerDataGridView);
+        }
     }
 }

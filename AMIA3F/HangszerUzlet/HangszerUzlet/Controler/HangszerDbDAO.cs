@@ -2,10 +2,14 @@
 using HangszerUzlet.Model;
 using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
+using System.Xml.Linq;
 
 namespace HangszerUzlet
 {
@@ -65,6 +69,39 @@ namespace HangszerUzlet
         {
             var hsz = from h in context.Hangszers where h.Nev == name.Text select h;
             dataGridView.DataSource = hsz;
+        }
+
+        public void SaveToXML(DataGridView dataGridView)
+        {
+            List<HangszerModel> hangszerList = new List<HangszerModel>();
+
+            try
+            {
+                 hangszerList = (from h in context.Hangszers
+                                               select new HangszerModel
+                                               {
+                                                   Id = h.Id,
+                                                   Nev = h.Nev,
+                                                   Tipus = h.Tipus,
+                                                   Ar = h.Ar
+                                               }).ToList();
+            }
+            catch(Exception e) { }
+
+            XElement element =
+                new XElement("Hangszerek",
+                    (from h in hangszerList
+                     select new XElement("Hangszer",
+                         new XElement("Name", h.Nev),
+                         new XElement("Type", h.Tipus),
+                         new XElement("Price", h.Ar))));
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "XML Files|*.xml";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                element.Save(saveFileDialog.FileName);
+            }
         }
     }
 }
