@@ -12,8 +12,33 @@ using System.Xml.Serialization;
 
 using System.Linq; // Linq-hoz namespace
 
+using System.Threading.Tasks; // async es Task-hoz namespace
+
 namespace Todo
 {
+    // Generikushoz teszt class
+    class Generikus<T> where T : struct
+    {
+        private T valtozo;
+
+        //a konstruktor privat jelen esetben, mivel
+        //a konstruktorok nem lehetnek generikusak!
+        private Generikus() { }
+
+        public static Generikus<T> Letrehoz(T parameter)
+        {
+            Generikus<T> vissza = new Generikus<T>();
+            vissza.valtozo = parameter;
+            return vissza;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("valtozo tarolt tipusa: {0}, Erteke: {1}",
+                                  valtozo.GetType().Name, valtozo);
+        }
+    }
+
     // Linq-hoz teszt class
     public class User
     {
@@ -53,7 +78,7 @@ namespace Todo
             {
                 using (var file = File.CreateText("valami.txt"))
                 {
-                    file.WriteLine("Hello File kezelés!");
+                    file.WriteLine("Hello File kezeles!");
                 }
             }
             catch (IOException ex)
@@ -155,7 +180,37 @@ namespace Todo
             #endregion
             // Linq VEGE
 
+            // Generikus KEZDETE
+            #region generikus
+            var teszt1 = Generikus<int>.Letrehoz(22);
+            var teszt2 = Generikus<double>.Letrehoz(33.2);
+            var teszt3 = Generikus<char>.Letrehoz('A');
+            //az alabbi hibat fog dobni, mert a string osztaly!
+            //Generikus<string> teszt4 = Generikus.Letrehoz("Teszt");
+            #endregion
+            // Generikus VEGE
+
+            // Aszinkron resz KEZDETE
+            #region aszinkron
+            // A task magja így egy async Action delegate.
+            Task.Run(async () =>
+             {
+                 Console.WriteLine("Async elott");
+                 await PrintCurrentTimeAsync();
+                 Console.WriteLine("Async utan");
+            });
+            #endregion
+            // Aszinkron resz VEGE
+
             CreateHostBuilder(args).Build().Run();
+        }
+
+        // Aszinkron Task method
+        private static async Task PrintCurrentTimeAsync()
+        {
+            Console.WriteLine(DateTime.Now);
+            await Task.Delay(2000);
+            Console.WriteLine(DateTime.Now);
         }
 
         // record (immutable type) KEZDETE
