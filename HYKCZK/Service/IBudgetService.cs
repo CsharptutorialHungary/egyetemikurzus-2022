@@ -8,6 +8,8 @@ namespace BudgetManager.Service
 {
     internal interface IBudgetService
     {
+        void SaveBudget();
+
         List<decimal> GetIncomes();
         List<decimal> GetCosts();
         string GetCurrency();

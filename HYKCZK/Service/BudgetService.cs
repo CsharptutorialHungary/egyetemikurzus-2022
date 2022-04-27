@@ -1,42 +1,37 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using BudgetManager.Model;
+﻿using BudgetManager.Model;
+using System.Text.Encodings.Web;
+using System.Text.Json;
 
 namespace BudgetManager.Service
 {
     internal sealed class BudgetService : IBudgetService
     {
-        //private static BudgetService? _instance;
+        private readonly IConsole _console;
 
-        //public static BudgetService Instance
-        //{
-        //    get { return _instance ??= new BudgetService(); }
-        //}
-
+        private string BudgetJsonPath { get; }
         private Budget Budget { get; }
 
-        public BudgetService()
+        public BudgetService(IConsole console)
         {
-            Budget = new Budget()
-            {
-                Incomes = new List<decimal>
-                {
-                    400_000M,
-                    400_000M
-                },
-                Costs = new List<decimal>
-                {
-                    50_000M
-                },
-                Currency = "HUF"
-            };
+            _console = console;
+            BudgetJsonPath = @"budget.json";
 
-            // LoadBudgetFromJSON();
+            var budget = LoadBudgetFromJson();
+            if (budget == null)
+            {
+                Budget = new Budget();
+                _console.WriteLine("Creating new budget.");
+                WriteBudgetToJson();
+            }
+            else
+            {
+                Budget = budget;
+            }
         }
 
-        private void LoadBudgetFromJSON()
+        public void SaveBudget()
         {
-            // TODO: Load from JSON
-            throw new NotImplementedException();
+            WriteBudgetToJson();
         }
 
         public List<decimal> GetIncomes()
@@ -57,6 +52,51 @@ namespace BudgetManager.Service
         public string FormatCurrencyAmount(decimal amount)
         {
             return $"{amount} {Budget.Currency}";
+        }
+
+        private Budget? LoadBudgetFromJson()
+        {
+            Budget? budget = null;
+            try
+            {
+                _console.WriteLine($"Reading JSON {BudgetJsonPath}");
+
+                var jsonText = File.ReadAllText(BudgetJsonPath);
+                budget = JsonSerializer.Deserialize<Budget>(jsonText);
+
+                _console.WriteLine($"JSON {BudgetJsonPath} was read successfully");
+            }
+            catch (Exception ex)
+                when (ex is IOException or JsonException)
+            {
+                _console.WriteLine($"[Error]: Could not read {BudgetJsonPath} file.");
+            }
+
+            return budget;
+        }
+
+        private void WriteBudgetToJson()
+        {
+            try
+            {
+                _console.WriteLine($"Writing JSON {BudgetJsonPath}");
+
+                var jsonText = JsonSerializer.Serialize(Budget, new JsonSerializerOptions()
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true,
+                    Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
+                });
+
+                File.WriteAllText(BudgetJsonPath, jsonText);
+
+                _console.WriteLine($"JSON {BudgetJsonPath} was written successfully.");
+            }
+            catch (Exception ex)
+                when (ex is IOException or JsonException)
+            {
+                _console.WriteLine($"[Error]: Could not write {BudgetJsonPath} file.");
+            }
         }
     }
 }

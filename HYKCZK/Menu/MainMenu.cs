@@ -50,6 +50,9 @@ namespace BudgetManager.Menu
                     ManageBudget();
                 }
             }
+
+            _console.WriteLine("Quitting from the application...");
+            _budgetService.SaveBudget();
         }
 
         private void Statistics()
