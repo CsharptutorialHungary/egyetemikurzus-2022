@@ -14,6 +14,7 @@ namespace BudgetManager
         void WriteLine(string value);
         void WriteLine(string format, params object[] args);
         void WriteLine();
+        string ReadString(string value);
         bool TryReadDecimal(out decimal result, string format, params object[] args);
         void ResetColor();
         T SelectFromList<T>(List<T> options);

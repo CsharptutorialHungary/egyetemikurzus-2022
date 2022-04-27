@@ -26,7 +26,7 @@ namespace BudgetManager.Menu
             // TODO: refactor to delegates or something
             var options = new List<string>
             {
-                "Statistics",
+                "Budget Summary",
                 "Manage Budget",
                 "Quit"
             };
@@ -41,9 +41,9 @@ namespace BudgetManager.Menu
                     break;
                 }
 
-                if (option == "Statistics")
+                if (option == "Budget Summary")
                 {
-                    Statistics();
+                    _budgetService.WriteSummary();
                 }
                 else if (option == "Manage Budget")
                 {
@@ -53,17 +53,6 @@ namespace BudgetManager.Menu
 
             _console.WriteLine("Quitting from the application...");
             _budgetService.SaveBudget();
-        }
-
-        private void Statistics()
-        {
-            _console.WriteLine("Your budget:");
-            decimal incomeSum = _budgetService.GetIncomes().Sum();
-            decimal costSum = _budgetService.GetCosts().Sum();
-            _console.WriteLine("Incomes: {0}", _budgetService.FormatCurrencyAmount(incomeSum));
-            _console.WriteLine("Costs: {0}", _budgetService.FormatCurrencyAmount(costSum));
-            _console.WriteLine("Total: {0}", _budgetService.FormatCurrencyAmount(incomeSum - costSum));
-            _console.WriteLine();
         }
 
         private void ManageBudget()

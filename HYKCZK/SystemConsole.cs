@@ -24,14 +24,17 @@
             Console.WriteLine();
         }
 
+        public string ReadString(string value)
+        {
+            Console.Write(value);
+            var input = ReadInputLine();
+            return input ?? "";
+        }
+
         public bool TryReadDecimal(out decimal result, string format, params object[] args)
         {
             Console.Write(format, args);
-
-            Console.ForegroundColor = ConsoleColor.DarkCyan;
-            var input = Console.ReadLine();
-            Console.ResetColor();
-
+            var input = ReadInputLine();
             return decimal.TryParse(input, out result);
         }
 
@@ -39,7 +42,6 @@
         {
             Console.ResetColor();
         }
-
 
         public T SelectFromList<T>(List<T> options)
         {
@@ -162,6 +164,15 @@
             }
             
             #endregion
+        }
+
+        private string? ReadInputLine()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkCyan;
+            var input = Console.ReadLine();
+            Console.ResetColor();
+
+            return input;
         }
     }
 }

@@ -17,7 +17,12 @@ namespace BudgetManager
                 .BuildServiceProvider();
 
             var mainMenu = serviceProvider.GetService<MainMenu>();
-            mainMenu!.Open();
+            if (mainMenu == null)
+            {
+                Console.WriteLine("Application Could not start.");
+                return;
+            }
+            mainMenu.Open();
         }
     }
 }

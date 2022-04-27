@@ -29,19 +29,26 @@ namespace BudgetManager.Service
             }
         }
 
+        public decimal TotalIncome => Budget.Incomes.Sum(transaction => transaction.Amount);
+
+        public decimal TotalCost => Budget.Costs.Sum(transaction => transaction.Amount);
+
+        public decimal TotalBudget => TotalIncome - TotalCost;
+        public decimal AverageMonthlyCost { get; }
+
         public void SaveBudget()
         {
             WriteBudgetToJson();
         }
 
-        public List<decimal> GetIncomes()
+        public void AddIncome(Transaction transaction)
         {
-            return Budget.Incomes;
+            Budget.Incomes.Add(transaction);
         }
 
-        public List<decimal> GetCosts()
+        public void AddCost(Transaction transaction)
         {
-            return Budget.Costs;
+            Budget.Costs.Add(transaction);
         }
 
         public string GetCurrency()
@@ -52,6 +59,19 @@ namespace BudgetManager.Service
         public string FormatCurrencyAmount(decimal amount)
         {
             return $"{amount} {Budget.Currency}";
+        }
+
+        public void WriteSummary()
+        {
+            _console.WriteLine("Your budget:");
+            _console.WriteLine("Incomes: {0}", FormatCurrencyAmount(TotalIncome));
+            _console.WriteLine("Costs: {0}", FormatCurrencyAmount(TotalCost));
+            _console.WriteLine("Total: {0}", FormatCurrencyAmount(TotalBudget));
+            if (TotalBudget < 0)
+            {
+                _console.WriteLine("[Warning]: It seems like you have a loan. Pay it back as soon as possible.");
+            }
+            _console.WriteLine();
         }
 
         private Budget? LoadBudgetFromJson()

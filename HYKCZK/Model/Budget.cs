@@ -7,16 +7,21 @@ using System.Threading.Tasks;
 
 namespace BudgetManager.Model
 {
-    public class Budget
+    internal class Budget
     {
-        public List<decimal> Incomes { get; set; }
-        public List<decimal> Costs { get; set; }
+        [JsonPropertyName("incomes")]
+        public List<Transaction> Incomes { get; set; }
+
+        [JsonPropertyName("costs")]
+        public List<Transaction> Costs { get; set; }
+
+        [JsonPropertyName("currency")]
         public string Currency { get; set; }
 
         public Budget()
         {
-            Incomes = new List<decimal>();
-            Costs = new List<decimal>();
+            Incomes = new List<Transaction>();
+            Costs = new List<Transaction>();
             Currency = "HUF";
         }
     }

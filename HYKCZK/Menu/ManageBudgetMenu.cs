@@ -1,4 +1,6 @@
-﻿using BudgetManager.Service;
+﻿using BudgetManager.Model;
+using BudgetManager.Provider;
+using BudgetManager.Service;
 
 namespace BudgetManager.Menu
 {
@@ -53,42 +55,48 @@ namespace BudgetManager.Menu
 
         private void AddIncome()
         {
-            decimal amount;
-            bool success;
-            do
-            {
-                success = _console.TryReadDecimal(out amount, "Income ({0}): ", _budgetService.GetCurrency());
-                if (!success)
-                {
-                    WriteInvalidValueError();
-                }
-            } while (!success);
-
-            _budgetService.GetIncomes().Add(amount);
-            _console.WriteLine("Income successfully recorded: {0}", _budgetService.FormatCurrencyAmount(amount));
+            var income = GetTransactionInput("Income");
+            _budgetService.AddIncome(income);
         }
 
         private void AddCost()
         {
-            decimal amount;
-            bool success;
-            do
-            {
-                success = _console.TryReadDecimal(out amount, "Cost ({0}): ", _budgetService.GetCurrency());
-                if (!success)
-                {
-                    WriteInvalidValueError();
-                }
-            } while (!success);
+            var cost = GetTransactionInput("Cost");
+            _budgetService.AddCost(cost);
+        }
 
-            _budgetService.GetCosts().Add(amount);
-            _console.WriteLine("Cost successfully recorded: {0}", _budgetService.FormatCurrencyAmount(amount));
+        private Transaction GetTransactionInput(string type)
+        {
+            decimal amount;
+            string? description;
+
+            while (!_console.TryReadDecimal(out amount, $"{type} ({_budgetService.GetCurrency()}): ") &&
+                  amount < 0)
+            {
+                WriteInvalidValueError();
+            }
+
+            while (true)
+            {
+                description = _console.ReadString("Description: ");
+                if (!string.IsNullOrEmpty(description))
+                {
+                    break;
+                }
+
+                _console.WriteLine("Description can't be empty.");
+            }
+
+            // TODO: timestamp
+
+            _console.WriteLine($"{type} successfully recorded: {_budgetService.FormatCurrencyAmount(amount)}");
+            return new Transaction(amount, description, DateTimeProvider.Now);
         }
 
         private void WriteInvalidValueError()
         {
             _console.ForegroundColor = ConsoleColor.DarkRed;
-            _console.WriteLine("Invalid value. Try again!");
+            _console.WriteLine("Invalid value. Only positive numbers allowed. Try again!");
             _console.ResetColor();
         }
     }
