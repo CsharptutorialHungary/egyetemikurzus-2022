@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ArrayOfTeendo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Teendo teendo="Ez">
+    <Hiba>Foo</Hiba>
+  </Teendo>
+  <Teendo teendo="Az">
+    <Hiba>Másik</Hiba>
+  </Teendo>
+  <Teendo teendo="Amaz">
+    <Hiba>Asd</Hiba>
+  </Teendo>
+</ArrayOfTeendo>
