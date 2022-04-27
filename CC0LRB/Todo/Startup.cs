@@ -1,8 +1,8 @@
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Builder; // Tartalmazza a beepitett koztes szoftver alkalmazashoz valo hozzaadasanak metodusait, valamint a koztes szoftver opciotipusait
+using Microsoft.AspNetCore.Hosting; // Lasd: Program.cs
+using Microsoft.Extensions.Hosting; // Lasd: Program.cs
+using Microsoft.Extensions.Configuration; // Opcioosztalyok
+using Microsoft.Extensions.DependencyInjection; // A .NET tamogatja a fuggosegi injection (DI) tervezesi mintat, amely az osztalyok es fuggosegeik kozotti vezerles inverziojanak (IoC) eleresenek technikaja
 
 namespace Todo
 {
