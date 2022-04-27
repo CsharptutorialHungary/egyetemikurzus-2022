@@ -11,12 +11,5 @@ namespace BudgetManager.Model
         public List<decimal> Incomes { get; set; }
         public List<decimal> Costs { get; set; }
         public string Currency { get; set; }
-
-        public Budget()
-        {
-            Incomes = new List<decimal>();
-            Costs = new List<decimal>();
-            Currency = "HUF";
-        }
     }
 }
