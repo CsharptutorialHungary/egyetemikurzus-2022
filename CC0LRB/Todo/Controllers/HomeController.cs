@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.Sqlite;
 using Microsoft.Extensions.Logging;
-using Todo.Models;
+using Todo.Models; // Modellek nevtereinek importalasa
 using Todo.Models.ViewModels;
 
 namespace Todo.Controllers
@@ -17,6 +17,7 @@ namespace Todo.Controllers
             _logger = logger;
         }
 
+        // Barmikor amikor az Index()-et eszkozoli az app, az index oldallal kerulunk interakcioba
         public IActionResult Index()
         {
             var todoListViewModel = GetAllTodos();
@@ -83,6 +84,7 @@ namespace Todo.Controllers
                 using (var tableCmd = connection.CreateCommand())
                 {
                     connection.Open();
+                    tableCmd.CommandText = $"Delete Id FROM todo";
                     tableCmd.CommandText = $"SELECT * FROM todo Where Id = '{id}'";
 
                     using (var reader = tableCmd.ExecuteReader())

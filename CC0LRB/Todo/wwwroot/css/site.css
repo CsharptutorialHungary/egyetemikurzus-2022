@@ -1,0 +1,43 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+.background {
+    position: relative;
+    z-index: 1;
+    height: 800vh;
+}
+    .background::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        z-index: -1;
+        background-image: url("bg.jpg");
+        opacity: 100;
+    }
+
+.buttons-column {
+    text-align: end;
+}
+
+.todos-column {
+    vertical-align: middle;
+}
