@@ -1,10 +1,18 @@
 ﻿using Szalloda.UI;
 using Szalloda.AppBack;
 using Szalloda.Data;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Xml.Serialization;
 
 InitData.InitializeData();
 
+
+
 AppUI.Welcome();
+GetGuestInformation();
 // használhatjuk a validator-t, de string-eknél nem szükséges.
 // string username = Validator.Convert<string>("username");
 string username = Utility.GetUserInput("username");
@@ -19,4 +27,37 @@ while (true)
     if (key.Key == ConsoleKey.Enter)
         break;
     password += key.KeyChar;
+}
+
+void GetGuestInformation() {
+    string name = Utility.GetUserInput("Name: ");
+    int age = Utility.GetUserInputInt("Age: ");
+    int reservedroom = Utility.GetUserInputInt("Room number: ");
+    int adults = Utility.GetUserInputInt("Adults:");
+    int children = Utility.GetUserInputInt("Children: ");
+    string phonenumber = Utility.GetUserInput("Phone: ");
+    string email = Utility.GetUserInput("Email: ");
+    DateTime arrival = Utility.GetUserInputDate("Arrival (Y/M/D): ");
+    DateTime departure = Utility.GetUserInputDate("Departure (Y/M/D): ");
+
+    //teszt
+    List<Guest> guestList = new List<Guest>
+            {
+                // TODO : folytatni
+                new Guest{Id=1, Name="Zsák Imre", Age=22, ReservedRoomId=1, Adults=2, Children=1, PhoneNumber="06305552233", Email="zsakosfrodo123@gmail.com",
+                    ArrivalDate= new DateTime(2022, 10, 10), DepartureDate= new DateTime(2022, 10, 12)},
+            };
+
+    try
+    {
+        string jsonEncoded = JsonSerializer.Serialize(guestList, new JsonSerializerOptions
+        {
+            WriteIndented = true,
+        });
+        File.WriteAllText(@"c:\Szalloda\Reservations.json", jsonEncoded);
+    }
+    catch (Exception ex) when (ex is IOException || ex is JsonException)
+    {
+        Console.WriteLine(ex.ToString());
+    }
 }

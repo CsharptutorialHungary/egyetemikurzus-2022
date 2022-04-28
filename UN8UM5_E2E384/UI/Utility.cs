@@ -13,6 +13,33 @@ namespace Szalloda.UI
             Console.WriteLine($"Enter {param}");
             return Console.ReadLine();
         }
+
+        public static int GetUserInputInt(string param)
+        {
+            Console.WriteLine($"Enter {param}");
+            try
+            {
+                return Int32.Parse(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+                return 0;
+            }
+        }
+        public static DateTime GetUserInputDate(string param)
+        {
+            Console.WriteLine($"Enter {param}");
+            try
+            {
+                return DateTime.Parse(Console.ReadLine());
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+                return new DateTime(9999, 12, 31);
+            }
+        }
         public static void PrintMessage(string msg, bool success)
         {
             if (success)
