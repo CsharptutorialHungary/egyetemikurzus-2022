@@ -1,4 +1,5 @@
 ﻿using BudgetManager.Menu;
+using BudgetManager.Provider;
 using BudgetManager.Service;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,15 +15,28 @@ namespace BudgetManager
                 .AddSingleton<ManageBudgetMenu>()
                 .AddSingleton<IConsole, SystemConsole>()
                 .AddSingleton<IBudgetService, BudgetService>()
+                .AddSingleton<HttpClient>()
+                .AddSingleton<IExchangeRateApiService, ExchangeRateApiService>()
+                .AddSingleton<IExchangeRateProvider, ExchangeRateProvider>()
                 .BuildServiceProvider();
 
-            var mainMenu = serviceProvider.GetService<MainMenu>();
-            if (mainMenu == null)
+            try
             {
-                Console.WriteLine("Application Could not start.");
-                return;
+                var mainMenu = serviceProvider.GetService<MainMenu>();
+                if (mainMenu == null)
+                {
+                    Console.WriteLine("Application Could not start.");
+                    return;
+                }
+                mainMenu.Open();
+
+                serviceProvider.Dispose();
             }
-            mainMenu.Open();
+            catch (Exception ex)
+            {
+                Console.WriteLine("[Critical Error]: {0}", ex.Message);
+                Console.WriteLine("Application shut down.");
+            }
         }
     }
 }
