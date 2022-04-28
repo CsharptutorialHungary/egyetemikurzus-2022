@@ -1,4 +1,8 @@
 ﻿using Szalloda.UI;
+using Szalloda.AppBack;
+using Szalloda.Data;
+
+InitData.InitializeData();
 
 AppUI.Welcome();
 // használhatjuk a validator-t, de string-eknél nem szükséges.

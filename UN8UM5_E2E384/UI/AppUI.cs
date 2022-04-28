@@ -11,9 +11,9 @@ namespace Szalloda.UI
         public static void Welcome()
         {
             // Console.Clear();
-            Console.Title = "Szálloda alkalmazás";
+            Console.Title = "Hotel application";
             Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Üdv a szálloda alkalmazásban!");
+            Console.WriteLine("Welcome to Hotel application!");
 
             Utility.PressEnterToContinue();
         }
