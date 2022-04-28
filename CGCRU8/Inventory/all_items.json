@@ -1,0 +1,1818 @@
+[
+  {
+    "Name": "Dark Sigil",
+    "Description": "Enables Hollowing",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Tower Key",
+    "Description": "Opens the door to the Bell Tower in Firelink Shrine.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Small Lothric Banner",
+    "Description": "Bring tocliff in Vordt Boss room to take player to Undead Settlement",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Great Swamp Pyromancy Tome",
+    "Description": "Give to Cornyx to unlock Fire Orb, Bursting Fireball, Poison Mist, Profuse Sweat",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Lift Chamber Key",
+    "Description": "Unlocks door in High Wall of Lothric (Tower on the Wall bonfire). You need to go downstairs, and drop two more floors down. There, where that door &amp; elevator behind it, with Dark Wraith awaiting below.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Braille Divine Tome of Carim",
+    "Description": "Unlocks Med Heal, Tears of Denial, Force",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Sage's Scroll",
+    "Description": "Unlocks Great Farron Dart, Farron Hail, Pestilent Mist",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Cell Key",
+    "Description": "Opens the cell to Greirat of the Undead Setlement, at the bottom of \"The tower on the wall\" bonfire.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Fire Keeper Soul",
+    "Description": "Give to the Fire Keeper to enable healing of the Dark Sigil.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Grave Key",
+    "Description": "Opens a door in the sewer that leads to Irina of Carim.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Londor Braille Divine Tome",
+    "Description": "Unlocks Vow of Silence, Dark Blade, Dead Again",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Deep Braille Divine Tome",
+    "Description": "Unlocks Deep Protection and Gnaw",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Small Doll",
+    "Description": "Used to break the seal which keeps players from passing the bridge which leads to Irithyll of the Boreal Valley.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Cinders of a Lord",
+    "Description": "Place upon the thrones of the Lords of Cinderin Firelink Shrine after defeating them.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Carthus Pyromancy Tome",
+    "Description": "Give to Cornyxto unlock Acid Surge, Carthus Beacon, Carthus Flame Arc",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Izalith Pyromancy Tome",
+    "Description": "Give to Cornyxto unlock Chaos Storm, Great Chaos Fire Orb",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Loretta's Bone",
+    "Description": "Give to Greirat to complete his quest.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Old Cell Key",
+    "Description": "Unlock cell in Irithyll Dungeon",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Grand Archives Key",
+    "Description": "Key to the main entrance to the Grand Archives of Lothric.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Quelana Pyromancy Tome",
+    "Description": "Give to Karla to unlock Fire Whip,Firestorm, Rapport",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Grave Warden Pyromancy Tome",
+    "Description": "Give to Karla to unlock Black Flame, Black Fire Orb",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Golden Scroll",
+    "Description": "Unlocks Cast Light, Repair, Hidden Weapon, Hidden Body, Twisted Wall of Light",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Braille Divine Tome of Lothric",
+    "Description": "Unlocks Bountiful Light, Blessed Weapon, Magic Barrier",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Basin of Vows",
+    "Description": "Trigger the boss fight with Dancer of the Boreal Valley.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Logan's Scroll",
+    "Description": "Unlocks Soul Spear, Homing Soulmass",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Sword of Avowal",
+    "Description": "Used to marry Anri of Astora, and thereby unlocking a different ending.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Eyes of a Fire Keeper",
+    "Description": "Give to the Fire Keeperto \"remove fire from the world\". Thischanges the firelink shrine music, as well as providing 2 more ending options when interacting with the fire keeper summon sign instead of the bonfire at the end of the game.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Crystal Scroll",
+    "Description": "Unlocks Homing Crystal Soulmass, Crystal Soul Spear, Crystal Magic Weapon",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Jailbreaker's Key",
+    "Description": "Unlocks door dividing a hallwayinside Irithyll Dungeon",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Jailer's Key Ring",
+    "Description": "Unlocks cell in Irithyll Dungeon holding Karla, as well as 2 more cells in the dungeon containing items.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Hawkwood's Swordgrass",
+    "Description": "Allows you to face Hawkwood at the Abyss Watchers bonfire in Farron Keep for a chance to acquire the Twinkling Dragon Head Stone.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Contraption Key",
+    "Description": "Allows you to gain access to the attic in the Painted World of Ariandel",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Small Envoy Banner",
+    "Description": "Place after you clear The Dreg Heap to be transported to The Ringed City (Location)",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Young Grass Dew",
+    "Description": "Slightly increases absorption andstamina regeneration",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "Blood of the Dark Soul",
+    "Description": "Can be given toPainting Womanif you have completed Ashes of Ariandel for extra dialogue.",
+    "Type": {
+      "Name": "Key Item",
+      "Description": "Key Items in Dark Souls 3 allow players to advance certain questlines, allow access to undiscoverd areas, and diversify the inventories of merchants."
+    }
+  },
+  {
+    "Name": "White Sign Soapstone",
+    "Description": "Using the White Sign Soapstone allows you to place a summon marker down for other players to use to summon you to their world. Up to 2 phantoms can be summoned to assist a host (3 if using Dried Finger).",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Dried Finger",
+    "Description": "Use to allow the summoning of an additional phantom (up to 3 friendly phantoms). However also allows for the summoning of additional invaders and increases the frequency of invasions.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Red Eye Orb",
+    "Description": "Infinite use item used to invade other players. Using it puts you in a queue to invade a player in your area. Is not consumed upon use.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Cracked Red Eye Orb",
+    "Description": "A single use consumable item used to invade other players. Using it puts you in a queue to invade a player in your area.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Ember",
+    "Description": "Ember increases your HP by 30% until death. Also allows for the summoning of phantoms both friendly and enemies and opens up your world for invasions.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Black Separation Crystal",
+    "Description": "Use to return home from a host's world or to return a phantom home that you summoned in yours.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Vertebrae Shackle",
+    "Description": "Mound-Makers covenant rank item.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Way of White Circlet",
+    "Description": "Restore the link to other worlds.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Pale Tongue",
+    "Description": "Rosaria's Fingers covenant rank item.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Forked Pale Tongue",
+    "Description": "Proof of a red orb invader's victory over a blue spirit. Consume to acquire 2 Pale Tongues.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Wolf's Blood Swordgrass",
+    "Description": "Watchdogs of Farron covenant rank item.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Human Dregs",
+    "Description": "Aldrich Faithful covenant rank item.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Proof of a Concord Kept",
+    "Description": "Blades of the Darkmoon covenant rank item.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Proof of Concord Well Kept",
+    "Description": "Proof of a Blade of the Darkmoon summon's victory over an Aldrich Faithful. Use to acquire 2 Proof of a Concord Kepts.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Roster of Knights",
+    "Description": "The Roster of Knights is used to check the contributions of Darkmoon Knights, showing the top 10 contributors in a list to the top, as well as your rank at the bottom.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Sunlight Medal",
+    "Description": "Warrior of Sunlight covenant rank item.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Red Sign Soapstone",
+    "Description": "Useto summon a dark spirit to your world.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Filianore's Spear Ornament",
+    "Description": "Proof of a Church Spear's fulfilment of duty. Used to rank up in the Spears of the Church.",
+    "Type": {
+      "Name": "Multiplayer Item",
+      "Description": "Multiplayer Items in Dark Souls 3 will be used to interact with other players. Either by writing them messages or by summoning and being summoned."
+    }
+  },
+  {
+    "Name": "Estus Flask",
+    "Description": "Use to restore some HP.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Ashen Estus Flask",
+    "Description": "Use to restore some FP.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Divine Blessing",
+    "Description": "Use to fully restore HPand cure all ailments.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Hidden Blessing",
+    "Description": "Fully recover FP",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Siegbrau",
+    "Description": "Restores 20% of maximum HP + 100 HP.+ Temporarily boosts frost resistance by 150 for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Green Blossom",
+    "Description": "Use to increase your Stamina regeneration (+5)for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Budding Green Blossom",
+    "Description": "Use to increase your Stamina regeneration (+9) for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Repair Powder",
+    "Description": "Repairs equipped weapons and armor.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Blue Bug Pellet",
+    "Description": "15% boost inmagicdamage absorption for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Yellow Bug Pellet",
+    "Description": "15% boost in lightningdamage absorption for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Red Bug Pellet",
+    "Description": "15% boost in fire damage absorption for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Black Bug Pellet",
+    "Description": "15% boost in darkdamage absorption for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Mossfruit",
+    "Description": "Temporarily boosts bleed, poison, frost and curse resistance for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Bloodred Moss Clump",
+    "Description": "Reduces bleeding build-up.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Purple Moss Clump",
+    "Description": "Reduces poison build-up. Cures poison.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Blooming Purple Moss Clump",
+    "Description": "Reduces poison and toxin build-up. Cures poison and toxin.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Rime-Blue Moss Clump",
+    "Description": "Reduces frost build up. Cures frostbite status.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Purging Stone",
+    "Description": "Reduces undead curse build-up. Cureshollowing.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Charcoal Pine Resin",
+    "Description": "Applies +85 fire damage to right-hand weapon for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Charcoal Pine Bundle",
+    "Description": "Applies +110 fire damage to right-hand weapon for 7 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Gold Pine Resin",
+    "Description": "Applies +95 lightning damage to right-hand weapon for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Gold Pine Bundle",
+    "Description": "Applies +120 lightning damage to right-hand weapon for 7 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Pale Pine Resin",
+    "Description": "Applies+90 magic damage to right-hand weapon for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Human Pine Resin",
+    "Description": "Applies+95 dark damage to right-hand weapon for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Rotten Pine Resin",
+    "Description": "Applies +45 poison effect to right-hand weapon for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Carthus Rouge",
+    "Description": "Applies +20 bleeddamageto right-hand weapon for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Duel Charm",
+    "Description": "Temporarily disables special effects in vicinity.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Rusted Coin",
+    "Description": "Increases Item Discovery by 50for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Rusted Gold Coin",
+    "Description": "Increases Item Discovery by 100for 60 seconds.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Young White Branch",
+    "Description": "Makes you harder to be spotted. One use only.The Giant Sniper in Undead Settlement will not target you while carrying one of these.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Prism Stone",
+    "Description": "Toss to leave a colored light marker on the ground. ORTrade at Crow's Nest (Pickle-Pee)for a Twinkling Titanite.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Homeward Bone",
+    "Description": "Returns player to last bonfire or the one in Firelink Shrine",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Seed of a Giant Tree",
+    "Description": "Enemies react to invaders.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Divine Spear Fragment",
+    "Description": "Summon a row of upwardly thrusting ritual spears.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Ritual Spear Fragment",
+    "Description": "Summon a row of upwardly thrusting ritual spears.",
+    "Type": {
+      "Name": "Consumable",
+      "Description": "Consumables in Dark Souls 3 are used to gain temporary benefits or deal damage."
+    }
+  },
+  {
+    "Name": "Darksign",
+    "Description": "Returns you to the last bonfire used at the cost of deleting all of your current souls.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Coiled Sword",
+    "Description": "Thrust into the shrine bonfire to restore its power and enable travel between bonfires.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Coiled Sword Fragment",
+    "Description": "Return to last bonfire used or to Firelink Shrine. Can be used repeatedly.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Hello Carving",
+    "Description": "When used, leaves an audible sound saying ''Hello.'' Has unlimited uses.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Thank you Carving",
+    "Description": "When used, leaves an audible sound saying ''Thank you.'' Has unlimited uses.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Very Good Carving",
+    "Description": "When used, leaves an audible sound saying ''Very good.'' Has unlimited uses.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Help me Carving",
+    "Description": "When used, leaves an audible sound saying ''Help me.'' Has unlimited uses.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "I'm sorry Carving",
+    "Description": "When used, leaves an audible sound saying ''I'm sorry.'' Has unlimited uses.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Rubbish",
+    "Description": "Rubbish with no value.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Binoculars",
+    "Description": "Used to view longer distances.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Dragon Head Stone",
+    "Description": "Used to gain the head of a dragon.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Twinkling Dragon Head Stone",
+    "Description": "Used to gain a bigger head of a dragon.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Dragon Torso Stone",
+    "Description": "Used to gain the torso of a dragon and a dragon's roar.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Twinkling Dragon Torso Stone",
+    "Description": "Gain the torso of a dragon and roar alongside an archdragon mirage.",
+    "Type": {
+      "Name": "Tool",
+      "Description": "Tools in Dark Souls 3 are helpful items that can be used indefinitely."
+    }
+  },
+  {
+    "Name": "Alluring Skull",
+    "Description": "Use to attract certain enemies to the location thrown. Does not deal damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Dung Pie",
+    "Description": "Throw at enemy to inflict toxin build-up, but also ups your own toxicity.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Firebomb",
+    "Description": "Use to create an explosion at the point of impact, dealing fire damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Black Firebomb",
+    "Description": "Throws a black firebomb that does increased fire damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Lightning Urn",
+    "Description": "Explodes upon contact, inflicting lightning damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Throwing Knife",
+    "Description": "Throw at enemies to inflict ?? damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Duel Charm",
+    "Description": "Thrown to remove all buff in the area of explosion",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Undead Hunter Charm",
+    "Description": "Prevent Estus usage within its effective range.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Poison Throwing Knife",
+    "Description": "Throw at enemies to inflict poison damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Kukri",
+    "Description": "Throw at enemies to cause bleeding damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Stalk Dung Pie",
+    "Description": "Throw at enemies to inflict toxin build-up, but also upsyour own toxicity.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Rope Firebomb",
+    "Description": "Use to create an explosion at the point of impact, dealing fire damage.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Rope Black Firebomb",
+    "Description": "Thrown behind, explodes inflicting high fire damage",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Church Guardian Shiv",
+    "Description": "Throw illusory blades that seek foes.",
+    "Type": {
+      "Name": "Projectile",
+      "Description": "Projectiles in Dark Souls 3 are offensive items that can be thrown at enemies."
+    }
+  },
+  {
+    "Name": "Standard Bolt",
+    "Description": "Ammo forCrossbows.Standard bolts.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Exploding Bolt",
+    "Description": "Ammo for Crossbows.Bolts that explode on impact. Deals area fire damage in the immediate vicinity.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Wood Bolt",
+    "Description": "Ammo for Crossbows.Weaker bolts that can be easily purchased in bulk.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Heavy Bolt",
+    "Description": "Ammo for Crossbows.More powerful but haveshorter range due to their weight.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Lightning Bolt",
+    "Description": "Ammo for Crossbows.Bolts imbued with Lightning damage.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Sniper Bolt",
+    "Description": "Ammo for Crossbows.Their long range makes them ideal for distant targets.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Splintering Bolt",
+    "Description": "Ammo for Crossbows.Bolts that explode immediately after being shot, causing immense Bleeding.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Standard Arrow",
+    "Description": "Ammo for Bows.Standard arrows used with bows.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Wood Arrow",
+    "Description": "Ammo for Bows.Weaker arrows that can be easily purchased in bulk.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Fire Arrow",
+    "Description": "Ammo for Bows.Arrowswith burning tips todealfire damage.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Poison Arrow",
+    "Description": "Ammo for Bows.Inflict poison damage that gradually wears down foes.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Moonlight Arrow",
+    "Description": "Ammo for Bows.Arrows that inflict Magic damage.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Dark Arrow",
+    "Description": "Ammo for Bows.Arrows that inflict Darkdamage. Has homing properties.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Feather Arrow",
+    "Description": "Ammo for Bows.Their long range makes them ideal for distant targets.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Large Arrow",
+    "Description": "Ammo for Bows.More powerful arrows, but with a shorter range due to their weight.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Dragonslayer Lightning Arrow",
+    "Description": "Ammo for Greatbows.Inflicts Lightning damage.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Dragonslayer Greatarrow",
+    "Description": "Ammo for Greatbows.Easily pierces human flesh.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Onislayer Greatarrow",
+    "Description": "Ammo for Greatbows.Used to destroy giant horned oni.Very accurate.",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Millwood Greatarrow",
+    "Description": "Ammo for Greatbows",
+    "Type": {
+      "Name": "Ammunition",
+      "Description": "Ammunition in Dark Souls 3 are items that can be used with Bows, Greatbows and Crossbows, a player can equip two types of bolts and arrows at the same time."
+    }
+  },
+  {
+    "Name": "Fading Soul",
+    "Description": "Use to gain 50 souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Deserted Corpse",
+    "Description": "Used to gain 200 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large soul of a Deserted Corpse",
+    "Description": "Used to gain 400 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Proud Paladin",
+    "Description": "Use to gain 500 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of an Unknown Traveler",
+    "Description": "Used to gain 800 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large Soul of an Unknown Traveler",
+    "Description": "Used to gain 1000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large Soul of a Proud Paladin",
+    "Description": "Use to gain 1000 Souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Sovereignless Soul",
+    "Description": "Use to gain 2000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of an Intrepid Hero",
+    "Description": "Use to gain 2000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Nameless Soldier",
+    "Description": "Use to gain 2000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large soul of an Intrepid Hero",
+    "Description": "Use to gain 2500 souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large Soul of a Nameless Soldier",
+    "Description": "Use to gain 3000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Seasoned Warrior",
+    "Description": "Use to gain 5000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Weary Warrior",
+    "Description": "Use to gain 5000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large Soul of a Seasoned Warrior",
+    "Description": "Use to gain 7500 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large Soul of a Weary Warrior",
+    "Description": "Use to gain 8000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Crestfallen Knight",
+    "Description": "Use to gain 10,000 souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of an Old Hand",
+    "Description": "Use to gain 12,500 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Large Soul of a Crestfallen Knight",
+    "Description": "Use to gain 20,000 souls.",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Venerable Old Hand",
+    "Description": "Use to gain 20,000 Souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Champion",
+    "Description": "Use to gain 25,000 souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of a Great Champion",
+    "Description": "Use to gain 50,000 Souls",
+    "Type": {
+      "Name": "Soul",
+      "Description": "Souls in Dark Souls 3 are used to gain expendable souls to make purchases, level up, or repair your equipment."
+    }
+  },
+  {
+    "Name": "Soul of Boreal Valley Vordt",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Rotted Greatwood",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of a Crystal Sage",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Blood of the Wolf",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Rosaria",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Deacons of the Deep",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of High Lord Wolnir",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Old Demon King",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of a Demon",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Pontiff Sulyvahn",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Yhorm the Giant",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Aldrich",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Dancer",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Dragonslayer Armour",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Consumed Oceiros",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Champion Gundyr",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Twin Princes",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of theNameless King",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of a Stray Demon",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of theLords",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Sister Friede",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of the Demon Prince",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Darkeater Midir",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Soul of Slave Knight Gael",
+    "Description": "-",
+    "Type": {
+      "Name": "Boss Soul",
+      "Description": "Boss Souls and other special souls in Dark Souls 3 are powerful items that can be converted into new Weapons, Magic, or Items via Soul Transposition from Ludleth of Courland. They may also be consumed to gain a large amount of souls."
+    }
+  },
+  {
+    "Name": "Profaned Coal",
+    "Description": "Enables Dark, Blood and Hollow infusion",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Farron Coal",
+    "Description": "Enables Heavy, Sharp and Poison infusion",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Sage's Coal",
+    "Description": "Enables Crystal, Blessed, and Deep infusion",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Giant's Coal",
+    "Description": "Enables Lightning, Simple and Chaos infusion",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Titanite Shard",
+    "Description": "Reinforce weapons to +3",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Large Titanite Shard",
+    "Description": "Reinforce weapons to +6",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Titanite Chunk",
+    "Description": "Reinforce weapons to +9",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Titanite Slab",
+    "Description": "Reinforce weapons to +10Reinforce unique and transposed weapons to +5",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Twinkling Titanite",
+    "Description": "Reinforce unique weapons to +4",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Titanite Scale",
+    "Description": "Reinforce soul-transposed weapons to +4",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Fire Gem",
+    "Description": "Used in infusion to create Fire weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Refined Gem",
+    "Description": "Used in infusion to create Refined weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Transposing Kiln",
+    "Description": "Enables Transposition",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Heavy Gem",
+    "Description": "Used in infusion to create Heavy weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Raw Gem",
+    "Description": "Used in infusion to create Raw weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Shriving Stone",
+    "Description": "Reverses weapon infusion.",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Crystal Gem",
+    "Description": "Used in infusion to create Crystal weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Hollow Gem",
+    "Description": "Used in infusion to create Hollow weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Deep Gem",
+    "Description": "Used in infusion to create Deep weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Blessed Gem",
+    "Description": "Used in infustion to create Blessed weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Poison Gem",
+    "Description": "Used in infusion to create Poison weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Sharp Gem",
+    "Description": "Used in infusion to create Sharp weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Chaos Gem",
+    "Description": "Used in infusion to create Chaos weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Lightning Gem",
+    "Description": "Used in infusion to create Lightning weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Blood Gem",
+    "Description": "Used in infusion to create Lacerating weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Simple Gem",
+    "Description": "Used in infusion to create Simple weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Dark Gem",
+    "Description": "Used in infusion to create Dark weapons",
+    "Type": {
+      "Name": "Ore",
+      "Description": "Ore in Dark Souls 3 are items that can be used to improve Weapons and Shields via Upgrades. These are done at the Shrine via the Blacksmith. In contrast to previous Dark Souls games, now Armor isn't upgradable at all."
+    }
+  },
+  {
+    "Name": "Greirat's Ashes",
+    "Description": "Unlocks Bloodred Moss Clump, Throwing Knife, Rope Firebomb, Bandit’s Knife, Longsword, Bastard Sword, Mace, Spear, Light Crossbow, Buckler, Elkhorn Round Shield, Round Shield, Kite Shield, Leather Armor, Leather Gloves, Leather Boots, Standard Helm, Hard Leather ArmorSet, Chain Helm, Chain Armor, Thief Mask, Fire Arrow and Standard Bolt from the Shrine Handmaid. Also adds 6 Embers.",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Irina's Ashes",
+    "Description": "Unlocks Heal,Caressing Tears, Homeward, Replenishment, andSaint's Ring at the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Yuria's Ashes",
+    "Description": "UnlocksPurging Stone, Poison Throwing Knife, Londor Braille Divine Tome, Dark Hand, Untrue Dark Ring, Untrue White Ring and Ring of Sacrificeat the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Mortician's Ashes",
+    "Description": "Unlocks Charcoal Pine Resin, Charcoal Pine Bundle andGrave Keyfrom Shrine Handmaid. Also adds 3 Embers.",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Grave Warden's Ashes",
+    "Description": "Unlocks Yellow Bug Pellet, Carthus Rouge, Kukri andTitanite Shards from Shrine Handmaid. Also adds 3 Embers.",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Paladin's Ashes",
+    "Description": "Unlocks Undead Hunter Charm, Duel Charm, Morning Star, Crescent Axe, Canvas Talisman and Lloyd's Shield Ring from the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Excrement-covered Ashes",
+    "Description": "Unlocks Blue Bug Pellet, Blooming Purple Moss Clump and Dung Pie from the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Xanthous Ashes",
+    "Description": "Unlocks the Xanthous Set, Gold Pine Resin, Gold Pine Bundles,and Young White Branch at the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Dreamchaser's Ashes",
+    "Description": "Unlocks Hidden Blessing, Green Blossom, Black Bug Pellet, Gold Pine Resin, Gold Pine Bundle, Rotten Pine Resin,TitaniteShards, Composite Bow, Feather Arrow and Life Ringat the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Prisoner Chief's Ashes",
+    "Description": "Unlocks Rime-Blue Moss Clump, Pale Pine Resin and Karla's Set at the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Dragon Chaser's Ashes",
+    "Description": "Unlocks Mossfruit, Titanite Chunk, Twinkling Titanite and Titanite Scale at the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Karla's Ashes",
+    "Description": "Unlocks her shop items, Affinityand Dark Edge at the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Cornyx's Ashes",
+    "Description": "Unlocks Fireball, Fire Surge, Great Combustion, Poison Mist, Flash Sweat and Pyromancer Set at the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Easterner's Ashes",
+    "Description": "Unlocks Large Titanite Shard, Washing Pole, Dark Arrow, Onislayer Greatarrow, Eastern Armor Set and Eastern Shieldat the Shrine Handmaid",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Patches' Ashes",
+    "Description": "Unlocks Red Bug Pellet, Black Firebomb, Rope Black Firebomb, Human Pine Resin, Alluring Skull, Rusted Coin, Rubbish,Parrying Dagger, Shotel, Winged Spear, Poison Arrowand Black Leather Set at the Shrine Handmaid.",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Hollow's Ashes",
+    "Description": "Unlocks Purging Stone, Poison Throwing Knife, and Ring of Sacrifice (x3) at the Shrine Handmaid.",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Orbeck's Ashes",
+    "Description": "Unlocks Great Soul Arrow, Heavy Soul Arrow, Great Heavy Soul Arrow, Soul Greatsword, Farron Flashsword, Magic Weapon, Magic Shield, Spook and Aural Decoyat the Shrine Handmaid. Or you can give his ashes to Yuria to be rewarded with Morion Blade.",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Captain's Ashes",
+    "Description": "Unlocks Millwood Set, Millwood Greatarrow",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  },
+  {
+    "Name": "Old Woman's Ashes",
+    "Description": "UnlocksRusted CoinandSplitleaf Greatswordfor purchase at theShrine Handmaid, also adds 1 Divine Blessing, 1 Hidden Blessing,5Ember, and 3Rusted Gold Cointo the Shrine Handmaid's inventory",
+    "Type": {
+      "Name": "Umbral Ash",
+      "Description": "Umbral Ashes in Dark Souls 3 are used to unlock more items from Merchants. By giving Merchants different Ashes, they will sell new and different Weapons, Armor and Items. Below is a list of Ashes that can be found in Dark Souls 3."
+    }
+  }
+]
