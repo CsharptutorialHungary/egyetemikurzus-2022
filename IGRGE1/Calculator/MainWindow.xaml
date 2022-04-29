@@ -59,7 +59,7 @@
 
 
         <Button Grid.Row="2" Grid.Column="3" Content="C" Command="{Binding ClearTextBox_Command}" FontSize="30"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="CE" Command="{Binding ClearOneNumberFromTextBox_Command}" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="CM" Command="{Binding ClearMemory_Command}" FontSize="30"/>
         <Button Grid.Row="2" Grid.Column="1" Content="M-" FontSize="30" />
         <Button Grid.Row="2" Grid.Column="0" Content="M+" Command="{Binding WriteToMemoryAdd_Command}" FontSize="30"/>
         <Button Grid.Row="3" Grid.Column="3" Content="-" Command="{Binding Substraction_Command}" FontSize="30"/>

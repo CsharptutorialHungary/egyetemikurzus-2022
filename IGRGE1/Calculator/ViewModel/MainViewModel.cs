@@ -4,8 +4,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
+using System.IO;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Calculator
@@ -24,9 +26,9 @@ namespace Calculator
         public ICommand ClearTextBox_Command { get; private set; }
         public ICommand PowerTwo_Command { get; private set; }
         public ICommand CommaSeparator_Command { get; private set; }
-        public ICommand WriteToMemory_Command { get; private set; }
+        public ICommand WriteToMemoryAdd_Command { get; private set; }
         public ICommand Addition_Command { get; private set; }
-        public ICommand ClearOneNumberFromTextBox_Command { get; private set; }
+        public ICommand ClearMemory_Command { get; private set; }
         public ICommand Substraction_Command { get; private set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -44,14 +46,84 @@ namespace Calculator
 
         public MainViewModel()
         {
-            NotZeroNumber_Command = new RelayCommand<string>(NotZeroNumber_Click);
             ZeroNumber_Command = new RelayCommand(ZeroNumber_Click);
+            NotZeroNumber_Command = new RelayCommand<string>(NotZeroNumber_Click);
             ClearTextBox_Command = new RelayCommand(ClearTextBox);
             CommaSeparator_Command = new RelayCommand(CommaSeparator);
-            WriteToMemory_Command = new RelayCommand(WriteToMemoryAdd);
+            WriteToMemoryAdd_Command = new RelayCommand(WriteToMemoryAddAsync);
             Addition_Command = new RelayCommand(Addition);
-            ClearOneNumberFromTextBox_Command = new RelayCommand(ClearOneNumber);
+            ClearMemory_Command = new RelayCommand(ClearMemory);
             Substraction_Command = new RelayCommand(Substraction);
+        }
+
+        private async void ClearMemory()
+        {
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            await ClearMemoryAsync(dirPath, "memory.txt");
+        }
+
+        private async Task ClearMemoryAsync(string dir, string file)
+        {
+            try
+            {
+                await File.WriteAllTextAsync(Path.Combine(dir, file),String.Empty);
+                
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        private async void WriteToMemoryAddAsync()
+        {
+            var format = new NumberFormatInfo();
+            format.NegativeSign = "-";
+            format.NumberDecimalSeparator = ",";
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            if (!File.Exists(dirPath + "memory.txt") && !TotalText.Equals(""))
+            {
+                await WriteToMemoryAsync(dirPath, "memory.txt", TotalText);
+            }
+            string number = await ReadFromMemoryAsync(dirPath, "memory.txt");
+            double result = Convert.ToDouble(number);
+            result += Convert.ToDouble(TotalText);
+            await WriteToMemoryAsync(dirPath, "memory.txt", result.ToString());
+            TotalText = "";
+
+        }
+
+        static async Task WriteToMemoryAsync(string dir, string file, string content)
+        {
+            try
+            {
+                using StreamWriter outputFile = new(Path.Combine(dir, file));
+                await outputFile.WriteAsync(content);
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+
+        static async Task<string> ReadFromMemoryAsync(string dir, string file)
+        {
+            try
+            {
+                using StreamReader outputFile = new(Path.Combine(dir, file));
+                string? number;
+
+                number = await outputFile.ReadLineAsync();
+
+                return number;
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+                return "";
+            }
+
         }
 
         private void Substraction()
@@ -98,11 +170,6 @@ namespace Calculator
             }
         }
 
-        private async void WriteToMemoryAdd()
-        {
-           
-        }
-
         private void CommaSeparator()
         {
             if(!TotalText.Equals("") && !TotalText.Contains(",") && TotalText.Length < 7)
@@ -115,11 +182,6 @@ namespace Calculator
         {
             TotalText = "";
             SubTotalText = "";
-        }
-
-        private void ClearOneNumber()
-        {
-
         }
 
         private void ZeroNumber_Click()
