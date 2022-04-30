@@ -17,7 +17,7 @@ namespace CourseManager
         protected override void OnStartup(StartupEventArgs e)
         {
             CourseModel course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
-            MessageBox.Show(course.Name);
+            // MessageBox.Show(course.Name);
 
             base.OnStartup(e);
         }

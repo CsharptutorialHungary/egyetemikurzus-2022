@@ -3,10 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CourseManager"
+        xmlns:local="clr-namespace:CourseManager" 
+        xmlns:views="clr-namespace:CourseManager.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="CourseManager" Height="450" Width="800"
+        ResizeMode="NoResize">
+    <Grid Margin="10 0 0 0">
+        <views:CreateCourseView />
     </Grid>
 </Window>

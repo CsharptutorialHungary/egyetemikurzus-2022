@@ -7,6 +7,65 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Row 0 -->
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" FontSize="20" Text="Create Course"/>
+
+        <!-- Row 1 -->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Course Code" Margin="3" />
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Course Name" Margin="3" />
+
+        <!-- Row 2 -->
+        <TextBox Grid.Row="2" Grid.Column="0" Margin="3" MinWidth="125"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="3" MinWidth="125"/>
+
+        <!-- Row 3 -->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Lecturer" Margin="3" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="Language" Margin="3" />
+
+        <!-- Row 4 -->
+        <TextBox Grid.Row="4" Grid.Column="0" Margin="3"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="3"/>
+
+        <!-- Row 5 -->
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Credit" Margin="3" />
+        <TextBlock Grid.Row="5" Grid.Column="1" Text="Limit" Margin="3" />
+
+        <!-- Row 6 -->
+        <TextBox Grid.Row="6" Grid.Column="0" Margin="3"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Margin="3"/>
+
+        <!-- Row 7 -->
+        <TextBlock Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="Description (Optional)" Margin="3" />
+
+        <!-- Row 8 -->
+        <TextBox 
+            Grid.Row="8" 
+            Grid.Column="0" 
+            Grid.ColumnSpan="2" 
+            TextWrapping="Wrap"
+            AcceptsReturn="True"
+            VerticalScrollBarVisibility="Visible"
+            Margin="3" />
+
+        <!-- Row 9 -->
+        <Button Grid.Row="9" Grid.Column="0" Content="Cancel" MaxWidth="70" Margin="0 5 0 0"/>
+        <Button Grid.Row="9" Grid.Column="1" Content="Submit" MaxWidth="70" Margin="0 5 0 0"/>
     </Grid>
 </UserControl>
