@@ -10,6 +10,7 @@
         ResizeMode="NoResize">
     <Grid Margin="10 0 0 0">
         <!--<views:CreateCourseView />-->
-        <views:DeleteCourseView />
+        <!--<views:DeleteCourseView />-->
+        <views:CourseListingView />
     </Grid>
 </Window>
