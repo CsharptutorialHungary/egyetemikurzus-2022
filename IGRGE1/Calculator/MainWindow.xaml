@@ -13,6 +13,8 @@
         <local:MainViewModel />
     </Window.DataContext>
 
+
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" />
@@ -29,6 +31,8 @@
             <RowDefinition Height="0.8*" />
             <RowDefinition Height="0.8*" />
         </Grid.RowDefinitions>
+
+
         <TextBox Grid.Row="0" 
                  Grid.ColumnSpan="4" 
                  FontSize="15" 
@@ -39,6 +43,7 @@
                  TextAlignment="Right" 
                  BorderThickness="0,0,0,0"
                  IsHitTestVisible="False"
+                 x:Name="SubTotalText"
                  Text="{Binding SubTotalText}" 
                  BorderBrush="White" 
                  SelectionBrush="White" />
@@ -49,6 +54,7 @@
                  Grid.ColumnSpan="4" 
                  IsReadOnly="True"
                  MaxLength="10"
+                 x:Name="TotalText"
                  FontSize="30" 
                  IsHitTestVisible="False"
                  Padding="0,3,5,0"
@@ -58,9 +64,9 @@
                  SelectionBrush="White" />
 
 
-        <Button Grid.Row="2" Grid.Column="3" Content="C" Command="{Binding ClearTextBox_Command}" FontSize="30"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="CM" Command="{Binding ClearMemory_Command}" FontSize="30"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="M-" FontSize="30" />
+        <Button Grid.Row="2" Grid.Column="3" Content="C" Command="{Binding ClearTotalTextBox}" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="Min" Command="{Binding FindMin_Command}" FontSize="30"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="Max" Command="{Binding FindMax_Command}" FontSize="30" />
         <Button Grid.Row="2" Grid.Column="0" Content="M+" Command="{Binding WriteToMemoryAdd_Command}" FontSize="30"/>
         <Button Grid.Row="3" Grid.Column="3" Content="-" Command="{Binding Substraction_Command}" FontSize="30"/>
         <Button Grid.Row="3" Grid.Column="2" Content="9" Command="{Binding NotZeroNumber_Command }"  CommandParameter="9" Background="White" FontSize="30"/>
@@ -70,14 +76,17 @@
         <Button Grid.Row="4" Grid.Column="2" Content="6" Command="{Binding NotZeroNumber_Command }" CommandParameter="6" Background="White" FontSize="30"/>
         <Button Grid.Row="4" Grid.Column="1" Content="5" Command="{Binding NotZeroNumber_Command }" CommandParameter="5" Background="White" FontSize="30"/>
         <Button Grid.Row="4" Grid.Column="0" Content="4" Command="{Binding NotZeroNumber_Command }" CommandParameter="4" Background="White" FontSize="30"/>
-        <Button Grid.Row="5" Grid.Column="3" Content="*" FontSize="30"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="*" Command="{Binding Multiplication_Command}" FontSize="30"/>
         <Button Grid.Row="5" Grid.Column="2" Content="3" Command="{Binding NotZeroNumber_Command }" CommandParameter="3" Background="White" FontSize="30"/>
         <Button Grid.Row="5" Grid.Column="1" Content="2" Command="{Binding NotZeroNumber_Command }" CommandParameter="2" Background="White" FontSize="30" />
         <Button Grid.Row="5" Grid.Column="0" Content="1" Command="{Binding NotZeroNumber_Command }" CommandParameter="1" Background="White" FontSize="30"/>
-        <Button Grid.Row="6" Grid.Column="2" Content="÷" Background="White" FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="2" Content="÷" Command="{Binding Divide_Command}"  Background="White" FontSize="30"/>
         <Button Grid.Row="6" Grid.Column="1" Content="0" Command="{Binding ZeroNumber_Command}" Background="White" FontSize="30"/>
         <Button Grid.Row="6" Grid.Column="0" Content="," Command="{Binding CommaSeparator_Command}" Background="White" FontSize="30"/>
-        <Button Grid.Row="6" Grid.Column="3" Content="=" Background="CadetBlue" FontSize="30"/>
+        <Button Grid.Row="6" Grid.Column="3" Content="=" Command="{Binding Equation_Command}" Background="CadetBlue" FontSize="30"/>
+        <ToolBar Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="125">
+            <Button Grid.ColumnSpan="2" Width="100" Height="30" Command="{Binding ExportToJSONMinMax_Command}" Content="Export to JSON" />
+        </ToolBar>
 
     </Grid>
 </Window>

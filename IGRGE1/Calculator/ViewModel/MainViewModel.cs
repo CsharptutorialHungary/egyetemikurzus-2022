@@ -1,10 +1,12 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,19 +20,24 @@ namespace Calculator
     {
         private string totalText = "";
         private string subTotalText = "";
+        private List<string> lines = new();
+        public readonly record struct MinMax(double Minimum, double Maximum);
         double resultHelper = 0;
         public string TotalText { get => totalText; set => SetProperty(ref totalText, value); }
         public string SubTotalText { get => subTotalText; set => SetProperty(ref subTotalText, value); }
         public ICommand NotZeroNumber_Command { get; private set; }
         public ICommand ZeroNumber_Command { get; private set; }
-        public ICommand ClearTextBox_Command { get; private set; }
-        public ICommand PowerTwo_Command { get; private set; }
+        public ICommand ExportToJSONMinMax_Command { get; private set; }
+        public ICommand FindMin_Command { get; private set; }
+        public ICommand FindMax_Command { get; private set; }
+        public ICommand Divide_Command { get; private set; }
+        public ICommand Multiplication_Command { get; private set; }
+        public ICommand ClearTotalTextBox { get; private set; }
         public ICommand CommaSeparator_Command { get; private set; }
         public ICommand WriteToMemoryAdd_Command { get; private set; }
         public ICommand Addition_Command { get; private set; }
-        public ICommand ClearMemory_Command { get; private set; }
         public ICommand Substraction_Command { get; private set; }
-
+        public ICommand Equation_Command { get; private set; }
         public event PropertyChangedEventHandler PropertyChanged;
         protected bool SetProperty<T>(ref T field, T newValue, [CallerMemberName] string propertyName = null)
         {
@@ -46,59 +53,216 @@ namespace Calculator
 
         public MainViewModel()
         {
+            ClearTotalTextBox = new RelayCommand(ClearTextBox);
+            FindMin_Command = new RelayCommand(FindMinAsync);
             ZeroNumber_Command = new RelayCommand(ZeroNumber_Click);
             NotZeroNumber_Command = new RelayCommand<string>(NotZeroNumber_Click);
-            ClearTextBox_Command = new RelayCommand(ClearTextBox);
+            FindMax_Command = new RelayCommand(FindMaxAsync);
             CommaSeparator_Command = new RelayCommand(CommaSeparator);
             WriteToMemoryAdd_Command = new RelayCommand(WriteToMemoryAddAsync);
+            ExportToJSONMinMax_Command = new RelayCommand(ExportToJSONMinMaxAsync);
             Addition_Command = new RelayCommand(Addition);
-            ClearMemory_Command = new RelayCommand(ClearMemory);
             Substraction_Command = new RelayCommand(Substraction);
+            Multiplication_Command = new RelayCommand(Multiplication);
+            Divide_Command = new RelayCommand(Divide);
+            Equation_Command = new RelayCommand(Equation);
         }
 
-        private async void ClearMemory()
+        private void Divide()
+        {
+            if (SubTotalText.Equals("") && !TotalText.Equals("") && !TotalText.Equals("-"))
+            {
+                SubTotalText = TotalText + "÷";
+                TotalText = String.Empty;
+            }
+
+            if (!SubTotalText.Equals("") && !TotalText.Equals("") && SubTotalText.Contains('÷'))
+            {
+                Equation();
+            }
+        }
+
+        private void Multiplication()
+        {
+            if (SubTotalText.Equals("") && !TotalText.Equals("") && !TotalText.Equals("-"))
+            {
+                SubTotalText = TotalText + "*";
+                TotalText = String.Empty;
+            }
+
+            if (!SubTotalText.Equals("") && !TotalText.Equals("") && SubTotalText.Contains('*'))
+            {
+                Equation();
+            }
+        }
+
+        private void Equation()
+        {
+            string WholeText = String.Empty;
+            if (SubTotalText.Contains("+"))
+            {
+                WholeText = SubTotalText + TotalText;
+                string[] operands = WholeText.Split('+');
+                double result = Convert.ToDouble(operands[0]) + Convert.ToDouble(operands[1]);
+                TotalText = result.ToString();
+                SubTotalText = String.Empty;
+                resultHelper = 1;
+            }
+
+            if (SubTotalText.Contains("÷") && !TotalText.Equals("0"))
+            {
+                WholeText = SubTotalText + TotalText;
+                string[] operands = WholeText.Split('÷');
+                double result = Convert.ToDouble(operands[0]) / Convert.ToDouble(operands[1]);
+                TotalText = result.ToString();
+                SubTotalText = String.Empty;
+                resultHelper = 1;
+            }
+
+            if (SubTotalText.Contains("÷") && TotalText.Equals("0"))
+            {
+                SubTotalText = "";
+                resultHelper = 1;
+                TotalText = "Nullával ne pls";
+            }
+
+            if (SubTotalText.Contains("*"))
+            {
+                WholeText = SubTotalText + TotalText;
+                string[] operands = WholeText.Split('*');
+                double result = Convert.ToDouble(operands[0]) * Convert.ToDouble(operands[1]);
+                TotalText = result.ToString();
+                SubTotalText = String.Empty;
+                resultHelper = 1;
+            }
+
+
+            if (SubTotalText.Contains("-") && SubTotalText[0] != '-')
+            {
+                WholeText = SubTotalText + TotalText;
+                string[] operands = WholeText.Split('-');
+                double result = Convert.ToDouble(operands[0]) - Convert.ToDouble(operands[1]);
+                TotalText = result.ToString();
+                SubTotalText = String.Empty;
+                resultHelper = 1;
+            }
+
+            if (SubTotalText.Contains("-") && SubTotalText[0] == '-')
+            {
+                int indexOfNegative = SubTotalText.LastIndexOf('-');
+                WholeText = SubTotalText + TotalText;
+                double result = Convert.ToDouble(WholeText.Substring(0,indexOfNegative)) - Convert.ToDouble(WholeText.Substring(indexOfNegative + 1,WholeText.Length - (indexOfNegative + 1)));
+                TotalText = result.ToString();
+                SubTotalText = String.Empty;
+                resultHelper = 1;
+            }
+
+
+
+        }
+
+        private async void ExportToJSONMinMaxAsync()
         {
             string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            await ClearMemoryAsync(dirPath, "memory.txt");
+            MinMax minMax = new MinMax(await FindMinExtAsync(), await FindMaxExtAsync());
+            string output = JsonConvert.SerializeObject(minMax);
+            await WriteToMemoryAsync(dirPath, "export.json", output);
         }
 
-        private async Task ClearMemoryAsync(string dir, string file)
+        private async Task<double> FindMaxExtAsync()
         {
-            try
+            List<double> numbersList = new List<double>();
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string[]? numbers = await ReadFromMemoryAsync(dirPath, "memory.txt");
+            foreach (var number in numbers)
             {
-                await File.WriteAllTextAsync(Path.Combine(dir, file),String.Empty);
-                
+                numbersList.Add(Convert.ToDouble(number));
             }
-            catch (FileNotFoundException e)
+            double max = numbersList.Max();
+            return max;
+        }
+
+        private async Task<double> FindMinExtAsync()
+        {
+            List<double> numbersList = new List<double>();
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string[]? numbers = await ReadFromMemoryAsync(dirPath, "memory.txt");
+            foreach (var number in numbers)
             {
-                Console.WriteLine(e.Message);
+                numbersList.Add(Convert.ToDouble(number));
             }
+            double min = numbersList.Min();
+            return min;
+
+        }
+
+        private async void FindMaxAsync()
+        {
+            List<double> numbersList = new List<double>();
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string[]? numbers = await ReadFromMemoryAsync(dirPath, "memory.txt");
+            foreach (var number in numbers)
+            {
+                numbersList.Add(Convert.ToDouble(number));
+            }
+            double max = numbersList.Max();
+            TotalText = max.ToString();
+
+        }
+
+        private async void FindMinAsync()
+        {
+            List<double> numbersList = new List<double>();
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            string[]? numbers = await ReadFromMemoryAsync(dirPath, "memory.txt");
+            foreach (var number in numbers)
+            {
+                numbersList.Add(Convert.ToDouble(number));
+            }
+            double min = numbersList.Min();
+            TotalText = min.ToString();
+
         }
 
         private async void WriteToMemoryAddAsync()
         {
-            var format = new NumberFormatInfo();
-            format.NegativeSign = "-";
-            format.NumberDecimalSeparator = ",";
-            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-            if (!File.Exists(dirPath + "memory.txt") && !TotalText.Equals(""))
+            if (TotalText.Equals("Nullával ne pls"))
             {
-                await WriteToMemoryAsync(dirPath, "memory.txt", TotalText);
+                TotalText = "";
+                return;
             }
-            string number = await ReadFromMemoryAsync(dirPath, "memory.txt");
-            double result = Convert.ToDouble(number);
-            result += Convert.ToDouble(TotalText);
-            await WriteToMemoryAsync(dirPath, "memory.txt", result.ToString());
+            lines.Add(TotalText);
+            string dirPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+            await WriteToMemoryAsync(dirPath, "memory.txt", lines);
             TotalText = "";
 
         }
 
-        static async Task WriteToMemoryAsync(string dir, string file, string content)
+        static async Task WriteToMemoryAsync(string dir, string file, List<string> lines)
         {
             try
             {
                 using StreamWriter outputFile = new(Path.Combine(dir, file));
-                await outputFile.WriteAsync(content);
+
+                foreach (var line in lines)
+                {
+                    await outputFile.WriteLineAsync(line);
+                }
+            }
+            catch (FileNotFoundException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
+        static async Task WriteToMemoryAsync(string dir, string file, string line)
+        {
+            if (line.Equals("Nullával ne pls")) return;
+            try
+            {
+                using StreamWriter outputFile = new(Path.Combine(dir, file));
+
+                await outputFile.WriteLineAsync(line);
             }
             catch (FileNotFoundException e)
             {
@@ -107,85 +271,91 @@ namespace Calculator
         }
 
 
-        static async Task<string> ReadFromMemoryAsync(string dir, string file)
+        static async Task<string[]?> ReadFromMemoryAsync(string dir, string file)
         {
             try
             {
-                using StreamReader outputFile = new(Path.Combine(dir, file));
-                string? number;
+                string outputFile = Path.Combine(dir, file);
+                string[] numbers;
 
-                number = await outputFile.ReadLineAsync();
+                numbers = await File.ReadAllLinesAsync(outputFile);
 
-                return number;
+                return numbers;
             }
             catch (FileNotFoundException e)
             {
                 Console.WriteLine(e.Message);
-                return "";
+                return null;
             }
 
         }
 
         private void Substraction()
         {
-
-            var format = new NumberFormatInfo();
-            format.NegativeSign = "-";
-            format.NumberDecimalSeparator = ",";
-            if (!(TotalText.Equals("")) && SubTotalText.Equals(""))
+            if (TotalText.Equals("Nullával ne pls")) TotalText = "";
+            if (!SubTotalText.Equals("") && !TotalText.Equals("") && !SubTotalText.Contains("-") && SubTotalText[0] == '-')
             {
-                SubTotalText = TotalText + "-";
-                TotalText = "";
                 return;
             }
-            if (!TotalText.Equals("") && !SubTotalText.Equals(""))
+
+            if(SubTotalText.Equals("") && TotalText.Equals("") && !TotalText.Contains("-"))
             {
-                var numberFromSubTotalText = subTotalText.Split(new Char[] { '-', '+' });
-                double result = Convert.ToDouble(numberFromSubTotalText[0], format) - Convert.ToDouble(TotalText, format);
-                resultHelper = result;
-                SubTotalText = result.ToString() + "-";
-                TotalText = result.ToString();
+                TotalText = "-";
+            }    
+
+            if (SubTotalText.Equals("") && !TotalText.Equals("") && !TotalText.Equals("-"))
+            {
+                SubTotalText = TotalText + "-";
+                TotalText = String.Empty;
             }
+
+            if (!SubTotalText.Equals("") && !TotalText.Equals("") && SubTotalText.Contains('-'))
+            {
+                Equation();
+            }
+
         }
+
 
         private void Addition()
         {
+            if (TotalText.Equals("Nullával ne pls")) TotalText = "";
 
-            var format = new NumberFormatInfo();
-            format.NegativeSign = "-";
-            format.NumberDecimalSeparator = ",";
-            if (!(TotalText.Equals("")) && SubTotalText.Equals("") )
+            if (SubTotalText.Equals("") && !TotalText.Equals(""))
             {
                 SubTotalText = TotalText + "+";
-                TotalText = "";
-                return;
+                TotalText = String.Empty;
             }
-            if(!TotalText.Equals("") && !SubTotalText.Equals(""))
+
+            if (!SubTotalText.Equals("") && !TotalText.Equals("") && SubTotalText.Contains('+'))
             {
-                var numberFromSubTotalText = subTotalText.Split(new Char[] { '-', '+' });
-                double result = Convert.ToDouble(numberFromSubTotalText[0],format) + Convert.ToDouble(TotalText,format);
-                resultHelper = result;
-                SubTotalText = result.ToString() + "+";
-                TotalText = result.ToString();
+                Equation();
             }
         }
 
         private void CommaSeparator()
         {
-            if(!TotalText.Equals("") && !TotalText.Contains(",") && TotalText.Length < 7)
+            if (!TotalText.Equals("") && !TotalText.Contains(",") && TotalText.Length < 7)
             {
                 TotalText += ",";
             }
         }
 
-        private  void  ClearTextBox()
+        private void ClearTextBox()
         {
+            resultHelper = 0;
             TotalText = "";
             SubTotalText = "";
         }
 
         private void ZeroNumber_Click()
         {
+            if (resultHelper != 0)
+            {
+                TotalText = "";
+                resultHelper = 0;
+            }
+
             if (TotalText.Equals(""))
             {
                 TotalText = "0";
