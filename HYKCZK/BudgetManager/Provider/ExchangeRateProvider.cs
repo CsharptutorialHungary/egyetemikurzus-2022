@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BudgetManager.Enum;
+﻿using BudgetManager.Enum;
 using BudgetManager.Service;
 
 namespace BudgetManager.Provider
@@ -22,14 +17,17 @@ namespace BudgetManager.Provider
             // TODO: Cache
             var exchangeRates = await _exchangeRateApiService.FetchExchangeRatesAsync();
 
-            var exchangeRate = exchangeRates.First(rate =>
-                rate.SourceCurrency == sourceCurrency && rate.TargetCurrency == targetCurrency);
-
-            if (exchangeRate == null)
+            try
             {
-                throw new InvalidOperationException($"Exchange Rate doesn't exists for {sourceCurrency}/{targetCurrency} pair.");
+                var exchangeRate = exchangeRates.First(rate =>
+                    rate.SourceCurrency == sourceCurrency && rate.TargetCurrency == targetCurrency);
+
+                return exchangeRate.Rate;
             }
-            return exchangeRate.Rate;
+            catch (InvalidOperationException ex)
+            {
+                throw new InvalidOperationException($"Exchange Rate doesn't exists for {sourceCurrency}/{targetCurrency} pair.", ex);
+            }
         }
     }
 }
