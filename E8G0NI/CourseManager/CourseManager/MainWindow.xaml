@@ -9,6 +9,7 @@
         Title="CourseManager" Height="450" Width="800"
         ResizeMode="NoResize">
     <Grid Margin="10 0 0 0">
-        <views:CreateCourseView />
+        <!--<views:CreateCourseView />-->
+        <views:DeleteCourseView />
     </Grid>
 </Window>
