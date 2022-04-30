@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace CourseManager.Models
 {
-    public sealed record class CourseModel(string code, string name, string lecturer, int credit, int limit, string language, string description);
+    public sealed record class CourseModel(string Code, string Name, string Lecturer, int Credit, int Limit, string Language, string Description);
 }
