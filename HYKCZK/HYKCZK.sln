@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudgetManager", "BudgetManager.csproj", "{8FF76562-9C7C-40CE-A524-0060D27841C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BudgetManager", "BudgetManager\BudgetManager.csproj", "{8FF76562-9C7C-40CE-A524-0060D27841C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetManager.Tests", "BudgetManager.Tests\BudgetManager.Tests.csproj", "{D4E54825-8F2A-4000-A6B1-285714A90E0E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{8FF76562-9C7C-40CE-A524-0060D27841C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8FF76562-9C7C-40CE-A524-0060D27841C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8FF76562-9C7C-40CE-A524-0060D27841C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4E54825-8F2A-4000-A6B1-285714A90E0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4E54825-8F2A-4000-A6B1-285714A90E0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4E54825-8F2A-4000-A6B1-285714A90E0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4E54825-8F2A-4000-A6B1-285714A90E0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
