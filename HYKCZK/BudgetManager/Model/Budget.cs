@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using BudgetManager.Enum;
 
 namespace BudgetManager.Model
 {
@@ -16,13 +17,14 @@ namespace BudgetManager.Model
         public List<Transaction> Costs { get; set; }
 
         [JsonPropertyName("currency")]
-        public string Currency { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public Currency Currency { get; set; }
 
         public Budget()
         {
             Incomes = new List<Transaction>();
             Costs = new List<Transaction>();
-            Currency = "HUF";
+            Currency = Currency.HUF;
         }
     }
 }

@@ -77,6 +77,7 @@
                 {
                     keyInfo = Console.ReadKey(true);
 
+                 
                     if (keyInfo.Key == ConsoleKey.DownArrow)
                     {
                         selectedOptionIndex = (selectedOptionIndex + 1) % options.Count;

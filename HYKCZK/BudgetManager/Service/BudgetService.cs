@@ -1,4 +1,5 @@
-﻿using BudgetManager.Enum;
+﻿using System.IO.Abstractions;
+using BudgetManager.Enum;
 using BudgetManager.Model;
 using BudgetManager.Provider;
 using System.Text.Encodings.Web;
@@ -8,14 +9,16 @@ namespace BudgetManager.Service
 {
     internal sealed class BudgetService : IBudgetService
     {
+        private readonly IFileSystem _fileSystem;
         private readonly IConsole _console;
         private readonly IExchangeRateProvider _exchangeRateProvider;
 
         private string BudgetJsonPath { get; }
         private Budget Budget { get; }
 
-        public BudgetService(IConsole console, IExchangeRateProvider exchangeRateProvider)
+        public BudgetService(IFileSystem fileSystem, IConsole console, IExchangeRateProvider exchangeRateProvider)
         {
+            _fileSystem = fileSystem;
             _console = console;
             _exchangeRateProvider = exchangeRateProvider;
             BudgetJsonPath = @"budget.json";
@@ -39,8 +42,9 @@ namespace BudgetManager.Service
 
         public decimal TotalBudget => TotalIncome - TotalCost;
         public decimal AverageMonthlyCost { get; }
+        public Currency Currency => Budget.Currency;
 
-        public static string FormatCurrencyAmount(decimal amount, Currency currency)
+        public string FormatCurrencyAmount(decimal amount, Currency currency)
         {
             return $"{amount} {currency}";
         }
@@ -58,16 +62,6 @@ namespace BudgetManager.Service
         public void AddCost(Transaction transaction)
         {
             Budget.Costs.Add(transaction);
-        }
-
-        public string GetCurrency()
-        {
-            return Budget.Currency;
-        }
-
-        public string FormatCurrencyAmount(decimal amount)
-        {
-            return $"{amount} {Budget.Currency}";
         }
 
         public void WriteSummary()
@@ -88,9 +82,9 @@ namespace BudgetManager.Service
             }
 
             _console.WriteLine("Your budget:");
-            _console.WriteLine("Incomes: {0}", FormatCurrencyAmount(TotalIncome));
-            _console.WriteLine("Costs: {0}", FormatCurrencyAmount(TotalCost));
-            _console.WriteLine("Total: {0}", FormatCurrencyAmount(TotalBudget));
+            _console.WriteLine("Incomes: {0}", FormatCurrencyAmount(TotalIncome, Budget.Currency));
+            _console.WriteLine("Costs: {0}", FormatCurrencyAmount(TotalCost, Budget.Currency));
+            _console.WriteLine("Total: {0}", FormatCurrencyAmount(TotalBudget, Budget.Currency));
             if (totalInEur.HasValue)
             {
                 _console.WriteLine("       {0}", FormatCurrencyAmount(totalInEur.Value, Currency.EUR));
@@ -110,7 +104,7 @@ namespace BudgetManager.Service
             {
                 _console.WriteLine("{0,-25} {1,14} - {2}",
                     transaction.AccountedDateTime.ToString("MM/dd/yyyy HH:mm:ss"),
-                    FormatCurrencyAmount(transaction.Amount),
+                    FormatCurrencyAmount(transaction.Amount, Budget.Currency),
                     transaction.Description
                 );
             }
@@ -126,7 +120,7 @@ namespace BudgetManager.Service
             {
                 _console.WriteLine($"Reading JSON {BudgetJsonPath}");
 
-                var jsonText = File.ReadAllText(BudgetJsonPath);
+                var jsonText = _fileSystem.File.ReadAllText(BudgetJsonPath);
                 budget = JsonSerializer.Deserialize<Budget>(jsonText);
 
                 _console.WriteLine($"JSON {BudgetJsonPath} was read successfully");
@@ -153,7 +147,7 @@ namespace BudgetManager.Service
                     Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
                 });
 
-                File.WriteAllText(BudgetJsonPath, jsonText);
+                _fileSystem.File.WriteAllText(BudgetJsonPath, jsonText);
 
                 _console.WriteLine($"JSON {BudgetJsonPath} was written successfully.");
             }

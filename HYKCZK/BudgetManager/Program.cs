@@ -1,4 +1,5 @@
-﻿using BudgetManager.Menu;
+﻿using System.IO.Abstractions;
+using BudgetManager.Menu;
 using BudgetManager.Provider;
 using BudgetManager.Service;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,7 @@ namespace BudgetManager
         public static void Main(string[] args)
         {
             var serviceProvider = new ServiceCollection()
+                .AddSingleton<IFileSystem, FileSystem>()
                 .AddSingleton<MainMenu>()
                 .AddSingleton<ManageBudgetMenu>()
                 .AddSingleton<IConsole, SystemConsole>()

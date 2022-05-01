@@ -70,7 +70,7 @@ namespace BudgetManager.Menu
             decimal amount;
             string? description;
 
-            while (!_console.TryReadDecimal(out amount, $"{type} ({_budgetService.GetCurrency()}): ") &&
+            while (!_console.TryReadDecimal(out amount, $"{type} ({_budgetService.Currency}): ") &&
                   amount < 0)
             {
                 WriteInvalidValueError();
@@ -89,7 +89,7 @@ namespace BudgetManager.Menu
 
             // TODO: timestamp
 
-            _console.WriteLine($"{type} successfully recorded: {_budgetService.FormatCurrencyAmount(amount)}");
+            _console.WriteLine($"{type} successfully recorded: {_budgetService.FormatCurrencyAmount(amount, _budgetService.Currency)}");
             return new Transaction(amount, description, DateTimeProvider.Now);
         }
 
