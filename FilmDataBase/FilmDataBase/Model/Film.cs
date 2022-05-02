@@ -14,5 +14,7 @@ namespace FilmDataBase.Model
         public string Director { get; set; }
         [XmlElementAttribute("Studio")]
         public string Studio { get; set; }
+        [XmlElementAttribute("Rate")]
+        public double Rate { get; set; }
     }
 }
