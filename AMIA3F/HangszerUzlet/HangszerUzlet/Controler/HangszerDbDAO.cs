@@ -15,6 +15,7 @@ namespace HangszerUzlet
 {
     public class HangszerDbDAO
     {
+
         HangszerDBDataContext context = new HangszerDBDataContext();
         HangszerTipusDAO hangszerTipus = new HangszerTipusDAO();
 
@@ -22,9 +23,10 @@ namespace HangszerUzlet
         {
             var hsz = from h in context.Hangszers select h;
             dataGridView.DataSource = hsz;
+
         }
 
-        public void InsertHangszer(TextBox nev, ComboBox tipus, TextBox ar, DataGridView dataGridView)
+        public async Task InsertHangszer(TextBox nev, ComboBox tipus, TextBox ar, DataGridView dataGridView)
         {
             string netto = ar.Text;
             double brutto = Convert.ToInt32(netto) + (Convert.ToInt32(netto) * 0.27);
@@ -38,6 +40,10 @@ namespace HangszerUzlet
             context.Hangszers.InsertOnSubmit(hsz);
             context.SubmitChanges();
             getHangszerek(dataGridView);
+            await Task.Run(() =>
+            {
+                MessageBox.Show("Sikeres Létrehozás");
+            });
         }
 
         public void ModifyHangszer(TextBox id, TextBox nev, ComboBox tipus, TextBox ar, DataGridView dataGridView)
@@ -74,17 +80,25 @@ namespace HangszerUzlet
         {
             try 
             {
-                if (!string.IsNullOrEmpty(nev.Text))
+
+                if (!string.IsNullOrEmpty(nev.Text) && tipus.SelectedItem == null)
                 {
                     var hsz = context.Hangszers.Where(x => x.Nev == nev.Text).ToList();
                     dataGridView.DataSource = hsz;
                 }
-                else
+
+                if (tipus.SelectedItem != null && string.IsNullOrEmpty(nev.Text))
                 {
                     var hsz = context.Hangszers.Where(x => x.Tipus == tipus.SelectedItem.ToString()).ToList();
                     dataGridView.DataSource = hsz;
                 }
-                
+
+                if (tipus.SelectedItem != null && !string.IsNullOrEmpty(nev.Text))
+                {
+                    var hsz = context.Hangszers.Where(x => x.Nev == nev.Text && x.Tipus == tipus.SelectedItem.ToString()).ToList();
+                    dataGridView.DataSource = hsz;
+                }
+
             }
             catch (Exception e)
             {
