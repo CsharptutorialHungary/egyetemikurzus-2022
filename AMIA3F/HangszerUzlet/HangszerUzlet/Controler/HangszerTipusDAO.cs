@@ -42,7 +42,7 @@ namespace HangszerUzlet.Controler
             catch (Exception ex)
             {
                 var result = MessageBox.Show(ex.ToString(),
-                        "Error Information",
+                        "Error",
                         MessageBoxButtons.AbortRetryIgnore,
                         MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Abort) throw;
@@ -51,6 +51,7 @@ namespace HangszerUzlet.Controler
 
             return hangszerTipusListResult;
         }
+
 
         public void FillCombobox(ComboBox comboBox, List<HangszerTipusModel> hangszerTipusList)
         {

@@ -111,7 +111,7 @@ namespace HangszerUzlet
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(67, 263);
+            this.insertButton.Location = new System.Drawing.Point(131, 205);
             this.insertButton.Name = "insertButton";
             this.insertButton.Size = new System.Drawing.Size(75, 23);
             this.insertButton.TabIndex = 2;
@@ -121,14 +121,14 @@ namespace HangszerUzlet
             // 
             // nameTextBox
             // 
-            this.nameTextBox.Location = new System.Drawing.Point(139, 72);
+            this.nameTextBox.Location = new System.Drawing.Point(90, 71);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(169, 20);
             this.nameTextBox.TabIndex = 3;
             // 
             // priceTextBox
             // 
-            this.priceTextBox.Location = new System.Drawing.Point(139, 171);
+            this.priceTextBox.Location = new System.Drawing.Point(90, 170);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(169, 20);
             this.priceTextBox.TabIndex = 5;
@@ -136,7 +136,7 @@ namespace HangszerUzlet
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(64, 75);
+            this.nameLabel.Location = new System.Drawing.Point(15, 74);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(27, 13);
             this.nameLabel.TabIndex = 6;
@@ -145,7 +145,7 @@ namespace HangszerUzlet
             // typeLabel
             // 
             this.typeLabel.AutoSize = true;
-            this.typeLabel.Location = new System.Drawing.Point(64, 120);
+            this.typeLabel.Location = new System.Drawing.Point(15, 119);
             this.typeLabel.Name = "typeLabel";
             this.typeLabel.Size = new System.Drawing.Size(35, 13);
             this.typeLabel.TabIndex = 7;
@@ -154,7 +154,7 @@ namespace HangszerUzlet
             // priceLabel
             // 
             this.priceLabel.AutoSize = true;
-            this.priceLabel.Location = new System.Drawing.Point(64, 174);
+            this.priceLabel.Location = new System.Drawing.Point(15, 173);
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new System.Drawing.Size(52, 13);
             this.priceLabel.TabIndex = 8;
@@ -163,7 +163,7 @@ namespace HangszerUzlet
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
-            this.infoLabel.Location = new System.Drawing.Point(658, 33);
+            this.infoLabel.Location = new System.Drawing.Point(658, 9);
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(130, 13);
             this.infoLabel.TabIndex = 9;
@@ -171,7 +171,7 @@ namespace HangszerUzlet
             // 
             // idTextBox
             // 
-            this.idTextBox.Location = new System.Drawing.Point(86, 367);
+            this.idTextBox.Location = new System.Drawing.Point(90, 237);
             this.idTextBox.Name = "idTextBox";
             this.idTextBox.Size = new System.Drawing.Size(169, 20);
             this.idTextBox.TabIndex = 10;
@@ -179,7 +179,7 @@ namespace HangszerUzlet
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(25, 370);
+            this.idLabel.Location = new System.Drawing.Point(15, 240);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(55, 13);
             this.idLabel.TabIndex = 11;
@@ -187,7 +187,7 @@ namespace HangszerUzlet
             // 
             // modifyButton
             // 
-            this.modifyButton.Location = new System.Drawing.Point(180, 402);
+            this.modifyButton.Location = new System.Drawing.Point(184, 263);
             this.modifyButton.Name = "modifyButton";
             this.modifyButton.Size = new System.Drawing.Size(75, 23);
             this.modifyButton.TabIndex = 12;
@@ -197,9 +197,9 @@ namespace HangszerUzlet
             // 
             // searchButton
             // 
-            this.searchButton.Location = new System.Drawing.Point(67, 222);
+            this.searchButton.Location = new System.Drawing.Point(275, 120);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.Size = new System.Drawing.Size(75, 20);
             this.searchButton.TabIndex = 13;
             this.searchButton.Text = "Keresés";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@ namespace HangszerUzlet
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(86, 402);
+            this.deleteButton.Location = new System.Drawing.Point(90, 263);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 14;
@@ -218,7 +218,7 @@ namespace HangszerUzlet
             // typeComboBox
             // 
             this.typeComboBox.FormattingEnabled = true;
-            this.typeComboBox.Location = new System.Drawing.Point(139, 120);
+            this.typeComboBox.Location = new System.Drawing.Point(90, 119);
             this.typeComboBox.Name = "typeComboBox";
             this.typeComboBox.Size = new System.Drawing.Size(169, 21);
             this.typeComboBox.TabIndex = 15;

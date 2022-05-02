@@ -44,7 +44,7 @@ namespace HangszerUzlet
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            hangszerDbDAO.Search(nameTextBox, hangszerDataGridView);
+            hangszerDbDAO.Search(nameTextBox, typeComboBox, hangszerDataGridView);
         }
 
         private void deleteButton_Click(object sender, EventArgs e)
@@ -61,5 +61,6 @@ namespace HangszerUzlet
         {
             hangszerDbDAO.SaveToXML(hangszerDataGridView);
         }
+
     }
 }
