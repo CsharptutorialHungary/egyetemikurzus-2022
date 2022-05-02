@@ -215,7 +215,12 @@ namespace FilmDataBase
                 {
                     Console.WriteLine("Rossz formátumban adtad meg az adatokat!! " + ex.Message);
                     Console.ReadLine();
-                    
+
+                }
+                catch (Exception ex)
+                { 
+                    Console.WriteLine(ex.Message)
+                    Console.ReadLine();
                 }
 
                 Console.WriteLine("-----------------------------");
