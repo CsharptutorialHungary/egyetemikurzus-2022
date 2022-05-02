@@ -2,21 +2,21 @@
 using System.Text.Json;
 using System.Xml.Serialization;
 
-namespace FilmDataBase 
+namespace FilmDataBase
 {
-    class Program 
+    class Program
     {
         static void Main(string[] args)
         {
 
             bool showMenu = true;
-            while (showMenu) 
+            while (showMenu)
             {
                 showMenu = MainMenu();
             }
-            
+
         }
-        private static bool MainMenu() 
+        private static bool MainMenu()
         {
             Console.Clear();
             Console.WriteLine("FILMES ADATBÁZIS");
@@ -60,7 +60,7 @@ namespace FilmDataBase
                 default:
                     return true;
             }
-            
+
 
         }
 
@@ -74,7 +74,7 @@ namespace FilmDataBase
                 double Avg = movies.Select(x => x.Rate).Average();
                 Console.WriteLine("A filmek átlag értékelése: " + Avg);
                 Console.ReadLine();
-                
+
 
             }
         }
@@ -93,8 +93,8 @@ namespace FilmDataBase
                 {
                     foreach (var movie in titleWithStudio)
                     {
-                        Console.WriteLine("Studio: "+movie.Studio);
-                        Console.WriteLine("Cím: "+movie.Title);
+                        Console.WriteLine("Studio: " + movie.Studio);
+                        Console.WriteLine("Cím: " + movie.Title);
                     }
                 }
                 Console.ReadLine();
@@ -155,7 +155,7 @@ namespace FilmDataBase
         private static void ListMovies()
         {
             XmlSerializer xs = new XmlSerializer(typeof(List<Film>));
-            using (var f = File.OpenRead("../../../movies.xml")) 
+            using (var f = File.OpenRead("../../../movies.xml"))
             {
                 List<Film> movies = xs.Deserialize(f) as List<Film>;
 
@@ -221,17 +221,56 @@ namespace FilmDataBase
                 {
                     Console.WriteLine(ex.Message);
                     Console.ReadLine();
+                    
                 }
 
                 Console.WriteLine("-----------------------------");
             }
-            
-
             XmlSerializer xs = new XmlSerializer(typeof(List<Film>));
-            using (var f = File.Create("../../../movies.xml"))
+            if (File.Exists("../../../movies.xml"))
             {
-                xs.Serialize(f, list);
+
+                try
+                {
+                    using (var f = File.OpenRead("../../../movies.xml"))
+                    {
+                        List<Film> movies = xs.Deserialize(f) as List<Film>;
+
+                        movies.AddRange(list);
+                        xs.Serialize(f, movies);
+
+
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                    Console.WriteLine(ex.Message);
+
+                }
+
+                
             }
+            else
+            {
+                try
+                {
+
+                    using (var f = File.Create("../../../movies.xml"))
+                    {
+                        xs.Serialize(f, list);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+
+                    Console.WriteLine(ex.Message);
+                }
+
+            }
+
+
         }
     }
 }
