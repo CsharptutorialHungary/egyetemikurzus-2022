@@ -115,6 +115,7 @@ namespace CourseManager.ViewModels
         public CreateCourseViewModel(CourseModel course)
         {
             SubmitCommand = new CreateCourseCommand(this, course);
+            CancelCommand = new CancelCreateCourseCommand();
         }
     }
 }

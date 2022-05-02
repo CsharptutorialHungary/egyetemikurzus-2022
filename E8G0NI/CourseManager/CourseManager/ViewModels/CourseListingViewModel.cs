@@ -1,4 +1,5 @@
-﻿using CourseManager.Models;
+﻿using CourseManager.Commands;
+using CourseManager.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -15,7 +16,7 @@ namespace CourseManager.ViewModels
 
         public IEnumerable<CourseViewModel> Courses => _courses;
 
-        public ICommand BackToHomeView { get; }
+        public ICommand CancelCommand { get; }
         public ICommand ListHungarianCourses { get; }
         public ICommand ListEnglishCourses { get; }
         public ICommand ListMaxCredit { get; }
@@ -30,6 +31,9 @@ namespace CourseManager.ViewModels
         public CourseListingViewModel()
         {
             _courses = new ObservableCollection<CourseViewModel>();
+
+            CancelCommand = new NavigateCommand();
+
             _courses.Add(new CourseViewModel(new CourseModel("IB500g", "Programozás Alapjai", "Nagy József", 4, 60, "Hungarian", "")));
             _courses.Add(new CourseViewModel(new CourseModel("IB500gEN", "Programming Basics", "John Doe", 4, 60, "English", "")));
         }
