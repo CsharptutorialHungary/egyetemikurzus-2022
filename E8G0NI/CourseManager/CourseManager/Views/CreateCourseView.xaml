@@ -32,24 +32,24 @@
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Course Name" Margin="3" />
 
         <!-- Row 2 -->
-        <TextBox Grid.Row="2" Grid.Column="0" Margin="3" MinWidth="125"/>
-        <TextBox Grid.Row="2" Grid.Column="1" Margin="3" MinWidth="125"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Margin="3" MinWidth="125" Text="{Binding Code}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="3" MinWidth="125" Text="{Binding Name}"/>
 
         <!-- Row 3 -->
         <TextBlock Grid.Row="3" Grid.Column="0" Text="Lecturer" Margin="3" />
         <TextBlock Grid.Row="3" Grid.Column="1" Text="Language" Margin="3" />
 
         <!-- Row 4 -->
-        <TextBox Grid.Row="4" Grid.Column="0" Margin="3"/>
-        <TextBox Grid.Row="4" Grid.Column="1" Margin="3"/>
+        <TextBox Grid.Row="4" Grid.Column="0" Margin="3" Text="{Binding Lecturer}"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Margin="3" Text="{Binding Language}"/>
 
         <!-- Row 5 -->
         <TextBlock Grid.Row="5" Grid.Column="0" Text="Credit" Margin="3" />
         <TextBlock Grid.Row="5" Grid.Column="1" Text="Limit" Margin="3" />
 
         <!-- Row 6 -->
-        <TextBox Grid.Row="6" Grid.Column="0" Margin="3"/>
-        <TextBox Grid.Row="6" Grid.Column="1" Margin="3"/>
+        <TextBox Grid.Row="6" Grid.Column="0" Margin="3" Text="{Binding Credit}"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Margin="3" Text="{Binding Limit}"/>
 
         <!-- Row 7 -->
         <TextBlock Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Text="Description (Optional)" Margin="3" />
@@ -62,10 +62,11 @@
             TextWrapping="Wrap"
             AcceptsReturn="True"
             VerticalScrollBarVisibility="Visible"
-            Margin="3" />
+            Margin="3" 
+            Text="{Binding Description}"/>
 
         <!-- Row 9 -->
-        <Button Grid.Row="9" Grid.Column="0" Content="Cancel" MaxWidth="70" Margin="0 5 0 0"/>
-        <Button Grid.Row="9" Grid.Column="1" Content="Submit" MaxWidth="70" Margin="0 5 0 0"/>
+        <Button Grid.Row="9" Grid.Column="0" Content="Cancel" MaxWidth="70" Margin="0 5 0 0" Command="{Binding CancelCommand}"/>
+        <Button Grid.Row="9" Grid.Column="1" Content="Submit" MaxWidth="70" Margin="0 5 0 0" Command="{Binding SubmitCommand}"/>
     </Grid>
 </UserControl>

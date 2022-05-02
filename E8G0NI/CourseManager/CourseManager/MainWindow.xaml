@@ -9,9 +9,9 @@
         Title="CourseManager" Height="450" Width="800"
         ResizeMode="NoResize">
     <Grid Margin="10 0 0 0">
-        <!--<views:CreateCourseView />-->
+        <views:CourseListingView DataContext="{Binding CurrentViewModel}" />
         <!--<views:DeleteCourseView />-->
         <!--<views:CourseListingView />-->
-        <views:HomeView />
+        <!--<views:HomeView />-->
     </Grid>
 </Window>

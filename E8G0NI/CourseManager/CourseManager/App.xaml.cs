@@ -1,4 +1,5 @@
 ﻿using CourseManager.Models;
+using CourseManager.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -16,8 +17,14 @@ namespace CourseManager
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-            CourseModel course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
+            // CourseModel course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
             // MessageBox.Show(course.Name);
+
+            MainWindow = new MainWindow()
+            {
+                DataContext = new MainViewModel()
+            };
+            MainWindow.Show();
 
             base.OnStartup(e);
         }

@@ -25,9 +25,7 @@
         <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="20" Text="View courses"/>
 
         <!-- Row 1 -->
-        <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Margin="0 20 0 20">
-            <ListViewItem />
-
+        <ListView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Margin="0 20 0 20" ItemsSource="{Binding Courses}">
             <ListView.ItemContainerStyle>
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch" />
@@ -39,7 +37,7 @@
                     <GridViewColumn Header="Code">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock HorizontalAlignment="Center" Text="IB500g" />
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding Code}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -47,7 +45,7 @@
                     <GridViewColumn Header="Name">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Programming Basics" />
+                                <TextBlock Text="{Binding Name}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -55,7 +53,7 @@
                     <GridViewColumn Header="Lecturer">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Nagy József" />
+                                <TextBlock Text="{Binding Lecturer}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -63,7 +61,7 @@
                     <GridViewColumn Header="Credit">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock HorizontalAlignment="Center" Text="4" />
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding Credit}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -71,7 +69,7 @@
                     <GridViewColumn Header="Limit">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock HorizontalAlignment="Center" Text="60" />
+                                <TextBlock HorizontalAlignment="Center" Text="{Binding Limit}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -79,7 +77,7 @@
                     <GridViewColumn Header="Language">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
-                                <TextBlock Text="Hungarian" />
+                                <TextBlock Text="{Binding Language}" />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
@@ -88,17 +86,17 @@
         </ListView>
         
         <!-- Row 2 -->
-        <TextBlock Grid.Row="2" Grid.Column="0" Text="Language" Margin="3" />
-        <ComboBox Grid.Row="2" Grid.Column="1" Margin="3" />
-        <TextBlock Grid.Row="2" Grid.Column="2" Text="Order by..." Margin="3" />
-        <ComboBox Grid.Row="2" Grid.Column="3" Margin="3" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Text="Choose language:" />
+        <Button Grid.Row="2" Grid.Column="2" Margin="5" Content="Hungarian" Command="{Binding ListHungarianCourses}" />
+        <Button Grid.Row="2" Grid.Column="3" Margin="5" Content="English" Command="{Binding ListEnglishCourses}" />
 
         <!-- Row 3 -->
-        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Text="Select max..." Margin="3" />
-        <ComboBox Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2" Margin="3" />
+        <TextBlock Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="5" Text="Select max:" />
+        <Button Grid.Row="3" Grid.Column="2" Margin="5" Content="Credit" Command="{Binding ListMaxCredit}" />
+        <Button Grid.Row="3" Grid.Column="3" Margin="5" Content="Limit" Command="{Binding ListMaxLimit}" />
 
         <!-- Row 4 -->
-        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" MaxWidth="100" Content="Go back"/>
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="4" MaxWidth="100" Margin="0 10 0 0" Content="Go back" Command="{Binding BackToHomeView}"/>
 
     </Grid>
 </UserControl>

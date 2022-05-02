@@ -22,10 +22,10 @@
 
         <!-- Row 1 -->
         <TextBlock Grid.Row="1" Grid.Column="0" Text="Course Code:" Margin="3" />
-        <TextBox Grid.Row="1" Grid.Column="1" Margin="3" MinWidth="125"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="3" MinWidth="125" Text="{Binding Code}"/>
 
         <!-- Row 2 -->
-        <Button Grid.Row="2" Grid.Column="0" Content="Cancel" MaxWidth="70" Margin="0 5 0 0"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="Submit" MinWidth="70" HorizontalAlignment="Left" Margin="3 5 0 0"/>
+        <Button Grid.Row="2" Grid.Column="0" Content="Cancel" MaxWidth="70" Margin="0 5 0 0" Command="{Binding CancelCommand}"/>
+        <Button Grid.Row="2" Grid.Column="1" Content="Submit" MinWidth="70" HorizontalAlignment="Left" Margin="3 5 0 0" Command="{Binding SubmitCommand}"/>
     </Grid>
 </UserControl>
