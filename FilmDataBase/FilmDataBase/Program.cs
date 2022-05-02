@@ -182,30 +182,42 @@ namespace FilmDataBase
 
             for (int i = 0; i < Int32.Parse(movieCount); i++)
             {
-                Console.Write("Add meg a film címét:");
-                string Title = Console.ReadLine();
-                Console.Write("Add meg a film évét:");
-                string Year = Console.ReadLine();
-                Console.Write("Add meg a film műfaját:");
-                string Genre = Console.ReadLine();
-                Console.Write("Add meg a film rendezőjét:");
-                string Director = Console.ReadLine();
-                Console.Write("Add meg a film stúdiót:");
-                string Studio = Console.ReadLine();
-                Console.Write("Add meg a film értékelését:");
-                string Rate = Console.ReadLine();
 
-                var film = new Film
+                try
                 {
-                    Title = Title,
-                    Year = Int32.Parse(Year),
-                    Genre = Genre,
-                    Director = Director,
-                    Studio = Studio,
-                    Rate = Double.Parse(Rate)
-                };
+                    Console.Write("Add meg a film címét:");
+                    string Title = Console.ReadLine();
+                    Console.Write("Add meg a film évét:");
+                    string Year = Console.ReadLine();
+                    Console.Write("Add meg a film műfaját:");
+                    string Genre = Console.ReadLine();
+                    Console.Write("Add meg a film rendezőjét:");
+                    string Director = Console.ReadLine();
+                    Console.Write("Add meg a film stúdiót:");
+                    string Studio = Console.ReadLine();
+                    Console.Write("Add meg a film értékelését:");
+                    string Rate = Console.ReadLine();
 
-                list.Add(film);
+                    var film = new Film
+                    {
+                        Title = Title,
+                        Year = Int32.Parse(Year),
+                        Genre = Genre,
+                        Director = Director,
+                        Studio = Studio,
+                        Rate = Double.Parse(Rate)
+                    };
+
+                    list.Add(film);
+
+                }
+                catch (Exception ex) when (ex is System.FormatException)
+                {
+                    Console.WriteLine("Rossz formátumban adtad meg az adatokat!! " + ex.Message);
+                    Console.ReadLine();
+                    
+                }
+
                 Console.WriteLine("-----------------------------");
             }
             
