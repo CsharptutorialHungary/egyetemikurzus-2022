@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CourseManager.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ namespace CourseManager.ViewModels
     {
         public ViewModelBase CurrentViewModel { get; }
 
-        public MainViewModel()
+        public MainViewModel(CourseModel course)
         {
-            CurrentViewModel = new CourseListingViewModel();
+            CurrentViewModel = new CreateCourseViewModel(course);
         }
     }
 }

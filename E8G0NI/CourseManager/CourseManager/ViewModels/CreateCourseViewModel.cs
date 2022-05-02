@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CourseManager.Commands;
+using CourseManager.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -93,7 +95,7 @@ namespace CourseManager.ViewModels
             }
         }
 
-        private string _description;
+        private string _description = "";
         public string Description
         {
             get
@@ -110,9 +112,9 @@ namespace CourseManager.ViewModels
         public ICommand SubmitCommand { get; }
         public ICommand CancelCommand { get; }
 
-        public CreateCourseViewModel()
+        public CreateCourseViewModel(CourseModel course)
         {
-
+            SubmitCommand = new CreateCourseCommand(this, course);
         }
     }
 }

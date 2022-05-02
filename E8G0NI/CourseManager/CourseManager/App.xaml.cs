@@ -15,6 +15,13 @@ namespace CourseManager
     /// </summary>
     public partial class App : Application
     {
+        private readonly CourseModel _course;
+
+        public App()
+        {
+            _course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
+        }
+
         protected override void OnStartup(StartupEventArgs e)
         {
             // CourseModel course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
@@ -22,7 +29,7 @@ namespace CourseManager
 
             MainWindow = new MainWindow()
             {
-                DataContext = new MainViewModel()
+                DataContext = new MainViewModel(_course)
             };
             MainWindow.Show();
 
