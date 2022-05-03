@@ -239,106 +239,65 @@ namespace FilmDataBase
 
                 }
 
-
-
             }
             else
             {
-
-            }
-
-            List<Film> list = new List<Film>();
-
-            for (int i = 0; i < Int32.Parse(movieCount); i++)
-            {
-
-                try
+                List<Film> movies = new List<Film>();
+                using (var f = File.OpenRead("../../../movies.xml"))
                 {
-                    Console.Write("Add meg a film címét:");
-                    string Title = Console.ReadLine();
-                    Console.Write("Add meg a film évét:");
-                    string Year = Console.ReadLine();
-                    Console.Write("Add meg a film műfaját:");
-                    string Genre = Console.ReadLine();
-                    Console.Write("Add meg a film rendezőjét:");
-                    string Director = Console.ReadLine();
-                    Console.Write("Add meg a film stúdiót:");
-                    string Studio = Console.ReadLine();
-                    Console.Write("Add meg a film értékelését:");
-                    string Rate = Console.ReadLine();
 
-                    var film = new Film
+                    Console.WriteLine("Hány filmet szeretnél hozzáadni?:");
+                    string movieCount = Console.ReadLine();
+
+                    for (int i = 0; i < Int32.Parse(movieCount); i++)
                     {
-                        Title = Title,
-                        Year = Int32.Parse(Year),
-                        Genre = Genre,
-                        Director = Director,
-                        Studio = Studio,
-                        Rate = Double.Parse(Rate)
-                    };
+                        try
+                        {
+                            Console.Write("Add meg a film címét:");
+                            string Title = Console.ReadLine();
+                            Console.Write("Add meg a film évét:");
+                            string Year = Console.ReadLine();
+                            Console.Write("Add meg a film műfaját:");
+                            string Genre = Console.ReadLine();
+                            Console.Write("Add meg a film rendezőjét:");
+                            string Director = Console.ReadLine();
+                            Console.Write("Add meg a film stúdiót:");
+                            string Studio = Console.ReadLine();
+                            Console.Write("Add meg a film értékelését:");
+                            string Rate = Console.ReadLine();
 
-                    list.Add(film);
+                            var film = new Film
+                            {
+                                Title = Title,
+                                Year = Int32.Parse(Year),
+                                Genre = Genre,
+                                Director = Director,
+                                Studio = Studio,
+                                Rate = Double.Parse(Rate)
+                            };
 
-                }
-                catch (Exception ex) when (ex is System.FormatException)
-                {
-                    Console.WriteLine("Rossz formátumban adtad meg az adatokat!! " + ex.Message);
-                    Console.ReadLine();
+                            movies.Add(film);
 
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine(ex.Message);
-                    Console.ReadLine();
+                        }
+                        catch (Exception ex) when (ex is System.FormatException)
+                        {
+                            Console.WriteLine("Rossz formátumban adtad meg az adatokat!! " + ex.Message);
+                            Console.ReadLine();
 
-                }
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                            Console.ReadLine();
 
-
-            }
-            XmlSerializer xs = new XmlSerializer(typeof(List<Film>));
-            if (File.Exists("../../../movies.xml"))
-            {
-
-                try
-                {
-                    using (var f = File.OpenRead("../../../movies.xml"))
-                    {
-                        List<Film> movies = xs.Deserialize(f) as List<Film>;
-
-                        movies.AddRange(list);
-                        xs.Serialize(f, movies);
-
-
+                        }
+                        Console.WriteLine("-------------------------------------------------");    
                     }
-                }
-                catch (Exception ex)
-                {
+                    xs.Serialize(f, movies);
 
-                    Console.WriteLine(ex.Message);
-
-                }
-
-
-            }
-            else
-            {
-                try
-                {
-
-                    using (var f = File.Create("../../../movies.xml"))
-                    {
-                        xs.Serialize(f, list);
-                    }
-
-                }
-                catch (Exception ex)
-                {
-
-                    Console.WriteLine(ex.Message);
                 }
 
             }
-
 
         }
     }
