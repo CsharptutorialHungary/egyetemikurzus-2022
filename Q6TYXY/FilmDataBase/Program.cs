@@ -155,23 +155,37 @@ namespace FilmDataBase
         private static void ListMovies()
         {
             XmlSerializer xs = new XmlSerializer(typeof(List<Film>));
-            using (var f = File.OpenRead("../../../movies.xml"))
+
+            try
             {
-                List<Film> movies = xs.Deserialize(f) as List<Film>;
-
-                foreach (var movie in movies)
+                using (var f = File.OpenRead("../../../movies.xml"))
                 {
-                    Console.WriteLine("Film címe: " + movie.Title);
-                    Console.WriteLine("Film éve: " + movie.Year);
-                    Console.WriteLine("Film műfaja: " + movie.Genre);
-                    Console.WriteLine("Film rendezője: " + movie.Director);
-                    Console.WriteLine("Film stúdiója: " + movie.Studio);
-                    Console.WriteLine("Film értékelése: " + movie.Rate);
-                    Console.WriteLine("-----------------------------");
-                }
-                Console.ReadLine();
+                    List<Film> movies = xs.Deserialize(f) as List<Film>;
 
+                    foreach (var movie in movies)
+                    {
+                        Console.WriteLine("Film címe: " + movie.Title);
+                        Console.WriteLine("Film éve: " + movie.Year);
+                        Console.WriteLine("Film műfaja: " + movie.Genre);
+                        Console.WriteLine("Film rendezője: " + movie.Director);
+                        Console.WriteLine("Film stúdiója: " + movie.Studio);
+                        Console.WriteLine("Film értékelése: " + movie.Rate);
+                        Console.WriteLine("-----------------------------");
+                    }
+                    Console.ReadLine();
+
+                }
             }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                Console.ReadLine();
+                
+            }
+
+
+
         }
 
         private static void AddNewMovie()
@@ -293,7 +307,7 @@ namespace FilmDataBase
                             Console.ReadLine();
 
                         }
-                        Console.WriteLine("-------------------------------------------------");    
+                        Console.WriteLine("-------------------------------------------------");
                     }
                     xs.Serialize(f, movies);
 
