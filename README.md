@@ -1,45 +1,19 @@
-# SZTE egyetemi kurzus házi feleadat repó
+* A téma : Hangszerüzlet
 
-## Követelmények
+A kódhoz mellékelek egy SQL querry-t is, localhoston futtattam MSSQL-t mivel oda töltöttem adatokkal két darab táblát a szoftverhez.
+Ha esetleg nem töltene be a database, akkor HangszerUzlet néven készítettem el két táblával: 
 
-Írj egy tetszőleges témájú programot, ami megfelel az alábbi technológiai követelményeknek a tanultak alapján:
+Hangszer:
+Id - auto-inc primary key; 
+Nev - nvarchar(50); 
+Tipus - nvarchar(50); 
+Ar - int;
 
-**Nem kihagyható elemek:**
-* Legyen benne kivételkezelés (`try-catch`)
-* Legalább a képenyőre írjon ki hibaüzeneteket
+HangszerTipus:
+Id - auto-inc primary key;
+Nev - nvarchar(50);
 
-**Kötelezelő elemek** - Ezek közül egy kihagyható vagy cserélhető, ha Unit és/vagy Integration tesztek tartoznak a projekthez:
-
-* adat olvasása fájlból szerializáció segítségével (pl.: Adat betöltés és/vagy mentés JSON/XML fájlból/fájlba)
-* legyen benne saját immutable type (pl.: `record class`)
-* legyen benne LINQ segítségével: szűrés (`where`), csoportosítás (`group by`), rendezés (`order by`), agregáció (Pl.: `Min()`, `Max()`, `First()`, `FirstOrDefault`, `Average()`, stb...) közül legalább kettő
-* legyen benne generikus kollekció (pl.: `List<T>`, `Stack<T>`, stb...)
-* legyen benne aszinkron rész (`async` és `Task`)
-
-## Értékelés
-
-Az értékelés utolsó órán védéssel fog zárulni.
-
-* **Két ember dolgozhat egy alkalmazáson, de akkor a Unit tesztek megléte kötelező és nem opcionális!**
-* **Kódot fogom nézni, nem a program működését főként**, de ez nem azt jelenti, hogy a kódnak nem kell fordulnia! (Unit teszt ha van, akkor az bukhat, de indokot várok ebben az esetben, hogy miért bukik a teszt.)
-* **A karakterek ingyen vannak.** Legyen normálisan elnevezve minden. Nem akarok látni `asd`, `a`, `b`, `c` meg semmit mondó metódus, tulajdonság és változó neveket.
-* **Folyamatos munkát várok**, nem egy giga maratonban kommitolást => másolást feltételezek
-
-## Konzultáció
-
-* Óra után személyesen
-* Github issue formában itt.
-
-## Beadás menete
-
-1. Regisztrálsz github-ra, ha még nem tetted volna meg.
-2. Ezen repó fork gombjával készítesz egy fork-ot erről a repóról
-3. A forkot lokálisan checkout, csinálsz egy mappát, ami a kódod tartalmazza. A mappa neve a neptun kódod legyen. Ha ketten dolgoztok, akkor a kettőtök neve `_` karakterrel elválasztva.
-4. Elkészítitek a beadandót, folyamatos commitokkal
-5. A végén, amikor be akarjátok adni, akkor készítetek egy pull request-et erre a repóra.
-
-## Ajánlott olvasmányok
-
-* [Git tutorial](https://docs.github.com/en/get-started/quickstart)
-* [C# tutorial](https://csharptutorial.hu/)
-
+A programban betölthetők az adatok, illetve működő CRUD-ot tartalmaz, amiket LINQ-val csináltam meg. emellett immutable változókat is (Akciók).
+A felvitt adatokat kilehet menteni az általunk választott helyre serializálva XML formátumba. try catchek kiírják ha valamilyen probléma, exception van.
+Több helyen is van List, például a típusok kiválasztásánál amikor új hangszert szerettnénk felvinni, ott listából tölti be a választható típusokat.
+async rész a hangszer beszúrásánál van. az ár felvitelénél nettót adunk meg, viszont átszámolja bruttóra és úgy kerül feltöltésre.
