@@ -10,20 +10,35 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace HangszerUzlet
 {
     public class HangszerDbDAO
     {
-
         HangszerDBDataContext context = new HangszerDBDataContext();
         HangszerTipusDAO hangszerTipus = new HangszerTipusDAO();
+
+        public readonly string readonlyNev = "Szintetizáror";
+        public readonly string readonlyTipus = "Ütős";
+        public readonly int readonlyRegiAr = 32500;
+        public readonly int readonlyAr = 27500;
 
         public void getHangszerek(DataGridView dataGridView)
         {
             var hsz = from h in context.Hangszers select h;
             dataGridView.DataSource = hsz;
+        }
 
+        public void AddNewRowOffline(DataGridView dataGridView)
+        {
+            dataGridView.Rows.Clear();
+            DataGridViewRow row = (DataGridViewRow)dataGridView.Rows[0].Clone();
+            row.Cells[0].Value = readonlyNev;
+            row.Cells[1].Value = readonlyTipus;
+            row.Cells[2].Value = readonlyRegiAr;
+            row.Cells[3].Value = readonlyAr;
+            dataGridView.Rows.Add(row);
         }
 
         public async Task InsertHangszer(TextBox nev, ComboBox tipus, TextBox ar, DataGridView dataGridView)
@@ -119,20 +134,22 @@ namespace HangszerUzlet
 
         public void SaveToXML(DataGridView dataGridView)
         {
+
             List<HangszerModel> hangszerList = new List<HangszerModel>();
+            XmlSerializer ser = new XmlSerializer(typeof(XmlElement));
             try
             {
-                 hangszerList = (from h in context.Hangszers
-                                               select new HangszerModel
-                                               {
-                                                   Id = h.Id,
-                                                   Nev = h.Nev,
-                                                   Tipus = h.Tipus,
-                                                   Ar = h.Ar
-                                               }).ToList();
+                hangszerList = (from h in context.Hangszers
+                                select new HangszerModel
+                                {
+                                    Id = h.Id,
+                                    Nev = h.Nev,
+                                    Tipus = h.Tipus,
+                                    Ar = h.Ar
+                                }).ToList();
 
                 XElement element = new XElement("Hangszerek",
-                                       (from h in hangszerList 
+                                       (from h in hangszerList
                                         select new XElement("Hangszer",
                                             new XElement("Name", h.Nev),
                                             new XElement("Type", h.Tipus),
@@ -146,12 +163,12 @@ namespace HangszerUzlet
                 }
 
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
-               var result = MessageBox.Show(ex.ToString(),
-                        "Error",
-                        MessageBoxButtons.AbortRetryIgnore,
-                        MessageBoxIcon.Exclamation);
+                var result = MessageBox.Show(ex.ToString(),
+                         "Error",
+                         MessageBoxButtons.AbortRetryIgnore,
+                         MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Abort) throw;
             }
         }

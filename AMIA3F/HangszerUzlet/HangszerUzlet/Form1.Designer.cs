@@ -51,8 +51,16 @@ namespace HangszerUzlet
             this.deleteButton = new System.Windows.Forms.Button();
             this.typeComboBox = new System.Windows.Forms.ComboBox();
             this.saveToXML = new System.Windows.Forms.Button();
+            this.dataGridViewAkcios = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnOldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColumnAr = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.hangszerDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangszerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAkcios)).BeginInit();
             this.SuspendLayout();
             // 
             // hangszerDataGridView
@@ -67,7 +75,7 @@ namespace HangszerUzlet
             this.hangszerDataGridView.DataSource = this.hangszerBindingSource;
             this.hangszerDataGridView.Location = new System.Drawing.Point(356, 52);
             this.hangszerDataGridView.Name = "hangszerDataGridView";
-            this.hangszerDataGridView.Size = new System.Drawing.Size(432, 286);
+            this.hangszerDataGridView.Size = new System.Drawing.Size(432, 176);
             this.hangszerDataGridView.TabIndex = 0;
             // 
             // idDataGridViewTextBoxColumn
@@ -101,7 +109,7 @@ namespace HangszerUzlet
             // 
             // LoadButton
             // 
-            this.LoadButton.Location = new System.Drawing.Point(356, 356);
+            this.LoadButton.Location = new System.Drawing.Point(356, 246);
             this.LoadButton.Name = "LoadButton";
             this.LoadButton.Size = new System.Drawing.Size(106, 40);
             this.LoadButton.TabIndex = 1;
@@ -111,7 +119,7 @@ namespace HangszerUzlet
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(131, 205);
+            this.insertButton.Location = new System.Drawing.Point(90, 205);
             this.insertButton.Name = "insertButton";
             this.insertButton.Size = new System.Drawing.Size(75, 23);
             this.insertButton.TabIndex = 2;
@@ -163,7 +171,7 @@ namespace HangszerUzlet
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
-            this.infoLabel.Location = new System.Drawing.Point(658, 9);
+            this.infoLabel.Location = new System.Drawing.Point(658, 25);
             this.infoLabel.Name = "infoLabel";
             this.infoLabel.Size = new System.Drawing.Size(130, 13);
             this.infoLabel.TabIndex = 9;
@@ -226,7 +234,7 @@ namespace HangszerUzlet
             // 
             // saveToXML
             // 
-            this.saveToXML.Location = new System.Drawing.Point(680, 356);
+            this.saveToXML.Location = new System.Drawing.Point(680, 246);
             this.saveToXML.Name = "saveToXML";
             this.saveToXML.Size = new System.Drawing.Size(108, 40);
             this.saveToXML.TabIndex = 16;
@@ -234,11 +242,66 @@ namespace HangszerUzlet
             this.saveToXML.UseVisualStyleBackColor = true;
             this.saveToXML.Click += new System.EventHandler(this.saveToXML_Click);
             // 
+            // dataGridViewAkcios
+            // 
+            this.dataGridViewAkcios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewAkcios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColumnName,
+            this.ColumnType,
+            this.ColumnOldPrice,
+            this.ColumnAr});
+            this.dataGridViewAkcios.Location = new System.Drawing.Point(356, 329);
+            this.dataGridViewAkcios.Name = "dataGridViewAkcios";
+            this.dataGridViewAkcios.Size = new System.Drawing.Size(432, 99);
+            this.dataGridViewAkcios.TabIndex = 17;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(353, 313);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Heti akciós termékünk:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(171, 205);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Akció felvitele";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ColumnName
+            // 
+            this.ColumnName.HeaderText = "Név";
+            this.ColumnName.Name = "ColumnName";
+            // 
+            // ColumnType
+            // 
+            this.ColumnType.HeaderText = "Típus";
+            this.ColumnType.Name = "ColumnType";
+            // 
+            // ColumnOldPrice
+            // 
+            this.ColumnOldPrice.HeaderText = "Régi ár";
+            this.ColumnOldPrice.Name = "ColumnOldPrice";
+            // 
+            // ColumnAr
+            // 
+            this.ColumnAr.HeaderText = "Új ár";
+            this.ColumnAr.Name = "ColumnAr";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridViewAkcios);
             this.Controls.Add(this.saveToXML);
             this.Controls.Add(this.typeComboBox);
             this.Controls.Add(this.deleteButton);
@@ -259,6 +322,7 @@ namespace HangszerUzlet
             this.Text = "HangszerShop";
             ((System.ComponentModel.ISupportInitialize)(this.hangszerDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hangszerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAkcios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -287,6 +351,13 @@ namespace HangszerUzlet
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.ComboBox typeComboBox;
         private System.Windows.Forms.Button saveToXML;
+        private System.Windows.Forms.DataGridView dataGridViewAkcios;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOldPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColumnAr;
     }
 }
 

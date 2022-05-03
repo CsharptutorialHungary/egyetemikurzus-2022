@@ -30,11 +30,12 @@ namespace HangszerUzlet
         private void LoadButton_Click(object sender, EventArgs e)
         {
             hangszerDbDAO.getHangszerek(hangszerDataGridView);
+            hangszerDbDAO.AddNewRowOffline(dataGridViewAkcios);
         }
 
         private void insertButton_Click(object sender, EventArgs e)
         {
-            hangszerDbDAO.InsertHangszer(nameTextBox, typeComboBox, priceTextBox, hangszerDataGridView);
+            _ = hangszerDbDAO.InsertHangszer(nameTextBox, typeComboBox, priceTextBox, hangszerDataGridView);
         }
 
         private void modifyButton_Click(object sender, EventArgs e)
@@ -62,5 +63,9 @@ namespace HangszerUzlet
             hangszerDbDAO.SaveToXML(hangszerDataGridView);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //hangszerDbDAO.AddNewRowOffline(dataGridViewAkcios);
+        }
     }
 }
