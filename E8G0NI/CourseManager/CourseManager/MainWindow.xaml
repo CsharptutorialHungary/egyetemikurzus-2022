@@ -5,13 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CourseManager" 
         xmlns:views="clr-namespace:CourseManager.Views"
+        xmlns:viewmodels="clr-namespace:CourseManager.ViewModels"
         mc:Ignorable="d"
         Title="CourseManager" Height="450" Width="800"
         ResizeMode="NoResize">
     <Grid Margin="10 0 0 0">
-        <views:CreateCourseView DataContext="{Binding CurrentViewModel}" />
-        <!--<views:DeleteCourseView />-->
-        <!--<views:CourseListingView />-->
-        <!--<views:HomeView />-->
+        <Grid.Resources>
+            <DataTemplate DataType="{x:Type viewmodels:HomeViewModel}">
+                <views:HomeView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:CourseListingViewModel}">
+                <views:CourseListingView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:CreateCourseViewModel}">
+                <views:CreateCourseView />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type viewmodels:DeleteCourseViewModel}">
+                <views:DeleteCourseView />
+            </DataTemplate>
+        </Grid.Resources>
+
+        <ContentControl Content="{Binding CurrentViewModel}" />
+
     </Grid>
 </Window>

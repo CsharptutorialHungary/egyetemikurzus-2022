@@ -1,4 +1,5 @@
 ﻿using CourseManager.Models;
+using CourseManager.Stores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,13 @@ namespace CourseManager.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        public ViewModelBase CurrentViewModel { get; }
+        private readonly NavigationStore _navigationStore;
 
-        public MainViewModel(CourseModel course)
+        public MainViewModel(NavigationStore navigationStore)
         {
-            CurrentViewModel = new CreateCourseViewModel(course);
+            _navigationStore = navigationStore;
         }
+
+        public ViewModelBase CurrentViewModel => _navigationStore.CurrentViewModel;
     }
 }
