@@ -56,5 +56,8 @@ namespace CourseManager
         //{
         //    return new HomeViewModel(_navigationStore, HomeViewModel);
         //}
+
+        // Otthon egy asztali gépen, míg itt Szegeden egy laptopon dolgozok, és úgy látszik, mintha
+        // két külön személy dolgozna ezen a projekten, mivel valamit sikerült elbénázzak a GIT beállítások között...
     }
 }
