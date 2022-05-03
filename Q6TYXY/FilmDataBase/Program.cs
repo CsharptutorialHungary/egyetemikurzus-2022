@@ -259,7 +259,7 @@ namespace FilmDataBase
             else
             {
                 List<Film> movies = new List<Film>();
-                using (var f = File.OpenRead("../../../movies.xml"))
+                using (var f = File.Create("../../../movies.xml"))
                 {
 
                     Console.WriteLine("Hány filmet szeretnél hozzáadni?:");
