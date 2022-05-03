@@ -1,4 +1,5 @@
 ﻿using CourseManager.Models;
+using CourseManager.Services;
 using CourseManager.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,13 @@ namespace CourseManager.Commands
     {
         private readonly CreateCourseViewModel _createCourseViewModel;
         private readonly CourseModel _course;
+        private readonly NavigationService _courseViewNavigationService;
 
-        public CreateCourseCommand(CreateCourseViewModel createCourseViewModel, CourseModel courseModel)
+        public CreateCourseCommand(CreateCourseViewModel createCourseViewModel, CourseModel courseModel, NavigationService courseViewNavigationService)
         {
             _createCourseViewModel = createCourseViewModel;
             _course = courseModel;
-
+            _courseViewNavigationService = courseViewNavigationService;
             _createCourseViewModel.PropertyChanged += OnViewModelPropertyChanged;
         }
 
@@ -45,6 +47,8 @@ namespace CourseManager.Commands
                 _createCourseViewModel.Description);
 
             MessageBox.Show("Created course successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+            _courseViewNavigationService.Navigate();
         }
 
         private void OnViewModelPropertyChanged(object? sender, PropertyChangedEventArgs e)

@@ -1,5 +1,6 @@
 ﻿using CourseManager.Commands;
 using CourseManager.Models;
+using CourseManager.Services;
 using CourseManager.Stores;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace CourseManager.ViewModels
 {
     public class CourseListingViewModel : ViewModelBase
     {
+        private CourseModel _course;
         private readonly ObservableCollection<CourseViewModel> _courses;
 
         public IEnumerable<CourseViewModel> Courses => _courses;
@@ -29,14 +31,24 @@ namespace CourseManager.ViewModels
             "English"
         };
 
-        public CourseListingViewModel(NavigationStore navigationStore, Func<CreateCourseViewModel> createCreateCourseViewModel)
+        public CourseListingViewModel(CourseModel course, NavigationService createCourseNavigationService)
         {
+            _course = course;
             _courses = new ObservableCollection<CourseViewModel>();
 
-            CancelCommand = new NavigateCommand(navigationStore, createCreateCourseViewModel);
+            CancelCommand = new NavigateCommand(createCourseNavigationService);
 
-            _courses.Add(new CourseViewModel(new CourseModel("IB500g", "Programozás Alapjai", "Nagy József", 4, 60, "Hungarian", "")));
-            _courses.Add(new CourseViewModel(new CourseModel("IB500gEN", "Programming Basics", "John Doe", 4, 60, "English", "")));
+            UpdateCourses();
+
+            //_courses.Add(new CourseViewModel(new CourseModel("IB500g", "Programozás Alapjai", "Nagy József", 4, 60, "Hungarian", "")));
+            //_courses.Add(new CourseViewModel(new CourseModel("IB500gEN", "Programming Basics", "John Doe", 4, 60, "English", "")));
+        }
+
+        private void UpdateCourses()
+        {
+            _courses.Clear();
+            CourseViewModel courseViewModel = new CourseViewModel(_course);
+            _courses.Add(courseViewModel);
         }
     }
 }

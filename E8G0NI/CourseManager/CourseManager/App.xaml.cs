@@ -1,4 +1,5 @@
 ﻿using CourseManager.Models;
+using CourseManager.Services;
 using CourseManager.Stores;
 using CourseManager.ViewModels;
 using System;
@@ -30,9 +31,6 @@ namespace CourseManager
             // starting view
             _navigationStore.CurrentViewModel = CreateCourseListingViewModel();
 
-            // CourseModel course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
-            // MessageBox.Show(course.Name);
-
             MainWindow = new MainWindow()
             {
                 DataContext = new MainViewModel(_navigationStore)
@@ -44,12 +42,12 @@ namespace CourseManager
 
         private CreateCourseViewModel CreateCreateCourseViewModel()
         {
-            return new CreateCourseViewModel(_course, _navigationStore, CreateCourseListingViewModel);
+            return new CreateCourseViewModel(_course, new NavigationService(_navigationStore, CreateCourseListingViewModel));
         }
 
         private CourseListingViewModel CreateCourseListingViewModel()
         {
-            return new CourseListingViewModel(_navigationStore, CreateCreateCourseViewModel);
+            return new CourseListingViewModel(_course, new NavigationService(_navigationStore, CreateCreateCourseViewModel));
         }
 
         //private HomeViewModel CreateHomeViewModel()
@@ -57,7 +55,6 @@ namespace CourseManager
         //    return new HomeViewModel(_navigationStore, HomeViewModel);
         //}
 
-        // Otthon egy asztali gépen, míg itt Szegeden egy laptopon dolgozok, és úgy látszik, mintha
-        // két külön személy dolgozna ezen a projekten, mivel valamit sikerült elbénázzak a GIT beállítások között...
+        // Ok
     }
 }

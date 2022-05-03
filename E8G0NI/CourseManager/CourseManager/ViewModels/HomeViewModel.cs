@@ -17,9 +17,9 @@ namespace CourseManager.ViewModels
 
         public HomeViewModel(NavigationStore navigationStore, Func<ViewModelBase> createViewModel)
         {
-            AddCourse = new NavigateCommand(navigationStore, createViewModel);
-            ViewCourses = new NavigateCommand(navigationStore, createViewModel);
-            DeleteCourse = new NavigateCommand(navigationStore, createViewModel);
+            //AddCourse = new NavigateCommand(navigationStore, createViewModel);
+            //ViewCourses = new NavigateCommand(navigationStore, createViewModel);
+            //DeleteCourse = new NavigateCommand(navigationStore, createViewModel);
         }
     }
 }
