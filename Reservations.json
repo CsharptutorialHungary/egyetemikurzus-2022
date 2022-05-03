@@ -1,26 +1,26 @@
 [
   {
     "Id": 1,
-    "Name": "Test User",
-    "Age": 45,
-    "ReservedRoomId": 4,
-    "Adults": 2,
+    "Name": "Santa",
+    "Age": 78,
+    "ReservedRoomId": 102,
+    "Adults": 1,
     "Children": 0,
-    "PhoneNumber": "2143723547",
-    "Email": "emailaddress",
-    "ArrivalDate": "2031-10-01T00:00:00",
-    "DepartureDate": "2031-11-01T00:00:00"
+    "PhoneNumber": "12947843634",
+    "Email": "santamail",
+    "ArrivalDate": "2022-01-01T00:00:00",
+    "DepartureDate": "2022-05-03T00:00:00"
   },
   {
     "Id": 2,
-    "Name": "Another Test",
-    "Age": 74,
-    "ReservedRoomId": 7,
-    "Adults": 2,
-    "Children": 2,
-    "PhoneNumber": "8672346456",
-    "Email": "anotheremail",
-    "ArrivalDate": "2011-01-01T00:00:00",
-    "DepartureDate": "2012-01-01T00:00:00"
+    "Name": "Timmy",
+    "Age": 17,
+    "ReservedRoomId": 45,
+    "Adults": 0,
+    "Children": 1,
+    "PhoneNumber": "328439567",
+    "Email": "kiddomail",
+    "ArrivalDate": "2022-05-23T00:00:00",
+    "DepartureDate": "2022-05-28T00:00:00"
   }
 ]
