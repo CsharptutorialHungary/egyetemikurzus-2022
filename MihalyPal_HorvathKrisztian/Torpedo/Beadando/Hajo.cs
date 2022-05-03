@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace Beadando
 {
-    internal class Hajo
+    public class Hajo
     {
         //Itt megkéne csinálni a koordinátákat úgy, hogy az egész hajó testre érvényesek legyenek 
         public int X { get; set; }
         public int Y { get; set; }
 
-        private int Tipus ; 
+        public int[] XKoordinatak { get; set; }
+
+        public int[] YKoordinatak { get; set; }
+
+        public int Tipus { get; set; }
         public int Eletero { get; set; }
         public int Orientacio { get; set; }
         public Hajo(int x, int y, int tipus, int eletero)
@@ -21,17 +25,22 @@ namespace Beadando
             Y = y;  
             Tipus = tipus;  
             Eletero = eletero;  
+            XKoordinatak = new int[tipus];
+            YKoordinatak = new int[tipus];
 
         }
         public Hajo()
         {
-            
+            Tipus = 0;
         }
         public void SetTipus(int tipus)
         {
             if(tipus >= 2 && tipus <= 5)
             {
                 this.Tipus = tipus;
+                this.Eletero = tipus;
+                this.XKoordinatak = new int[tipus];
+                this.YKoordinatak = new int[tipus];
             }
         }
         public int GetTipus() { return this.Tipus; }
