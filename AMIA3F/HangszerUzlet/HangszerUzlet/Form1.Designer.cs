@@ -53,7 +53,6 @@ namespace HangszerUzlet
             this.saveToXML = new System.Windows.Forms.Button();
             this.dataGridViewAkcios = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.ColumnName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnOldPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -119,7 +118,7 @@ namespace HangszerUzlet
             // 
             // insertButton
             // 
-            this.insertButton.Location = new System.Drawing.Point(90, 205);
+            this.insertButton.Location = new System.Drawing.Point(131, 205);
             this.insertButton.Name = "insertButton";
             this.insertButton.Size = new System.Drawing.Size(75, 23);
             this.insertButton.TabIndex = 2;
@@ -264,16 +263,6 @@ namespace HangszerUzlet
             this.label1.TabIndex = 18;
             this.label1.Text = "Heti akciós termékünk:";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(171, 205);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Akció felvitele";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ColumnName
             // 
             this.ColumnName.HeaderText = "Név";
@@ -299,7 +288,6 @@ namespace HangszerUzlet
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewAkcios);
             this.Controls.Add(this.saveToXML);
@@ -353,7 +341,6 @@ namespace HangszerUzlet
         private System.Windows.Forms.Button saveToXML;
         private System.Windows.Forms.DataGridView dataGridViewAkcios;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnName;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnType;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnOldPrice;
