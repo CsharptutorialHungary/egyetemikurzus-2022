@@ -52,7 +52,7 @@ void GetGuestInformation() {
                     ArrivalDate= new DateTime(2022, 10, 10), DepartureDate= new DateTime(2022, 10, 12)},
             };
 
-    guestList.Append(new Guest
+    guestList.Add(new Guest
     {
         Id = 2,
         Name = name,
@@ -71,7 +71,8 @@ void GetGuestInformation() {
         {
             WriteIndented = true,
         });
-        File.WriteAllText(@"c:\Szalloda\Reservations.json", jsonEncoded);
+        File.WriteAllText(@"../../../../Reservations.json", jsonEncoded);
+        Console.WriteLine("Room reserved");
     }
     catch (Exception ex) when (ex is IOException || ex is JsonException)
     {
