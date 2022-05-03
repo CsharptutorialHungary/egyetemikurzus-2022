@@ -1,5 +1,6 @@
 ﻿using CourseManager.Commands;
 using CourseManager.Models;
+using CourseManager.Stores;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -112,10 +113,10 @@ namespace CourseManager.ViewModels
         public ICommand SubmitCommand { get; }
         public ICommand CancelCommand { get; }
 
-        public CreateCourseViewModel(CourseModel course)
+        public CreateCourseViewModel(CourseModel course, NavigationStore navigationStore, Func<CourseListingViewModel> createCourseListingViewModel)
         {
             SubmitCommand = new CreateCourseCommand(this, course);
-            CancelCommand = new CancelCreateCourseCommand();
+            CancelCommand = new NavigateCommand(navigationStore, createCourseListingViewModel);
         }
     }
 }

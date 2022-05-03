@@ -27,7 +27,8 @@ namespace CourseManager
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            _navigationStore.CurrentViewModel = new HomeViewModel();
+            // starting view
+            _navigationStore.CurrentViewModel = CreateCourseListingViewModel();
 
             // CourseModel course = new CourseModel("IB500g", "Programming Basics", "Nagy József", 4, 60, "Hungarian", "");
             // MessageBox.Show(course.Name);
@@ -40,5 +41,20 @@ namespace CourseManager
 
             base.OnStartup(e);
         }
+
+        private CreateCourseViewModel CreateCreateCourseViewModel()
+        {
+            return new CreateCourseViewModel(_course, _navigationStore, CreateCourseListingViewModel);
+        }
+
+        private CourseListingViewModel CreateCourseListingViewModel()
+        {
+            return new CourseListingViewModel(_navigationStore, CreateCreateCourseViewModel);
+        }
+
+        //private HomeViewModel CreateHomeViewModel()
+        //{
+        //    return new HomeViewModel(_navigationStore, HomeViewModel);
+        //}
     }
 }

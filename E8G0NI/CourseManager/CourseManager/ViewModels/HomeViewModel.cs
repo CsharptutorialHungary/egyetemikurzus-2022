@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CourseManager.Commands;
+using CourseManager.Stores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,9 +15,11 @@ namespace CourseManager.ViewModels
         public ICommand ViewCourses { get; }
         public ICommand DeleteCourse { get; }
 
-        public HomeViewModel()
+        public HomeViewModel(NavigationStore navigationStore, Func<ViewModelBase> createViewModel)
         {
-
+            AddCourse = new NavigateCommand(navigationStore, createViewModel);
+            ViewCourses = new NavigateCommand(navigationStore, createViewModel);
+            DeleteCourse = new NavigateCommand(navigationStore, createViewModel);
         }
     }
 }

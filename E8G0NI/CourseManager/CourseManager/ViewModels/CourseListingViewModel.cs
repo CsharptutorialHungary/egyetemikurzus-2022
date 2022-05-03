@@ -1,5 +1,6 @@
 ﻿using CourseManager.Commands;
 using CourseManager.Models;
+using CourseManager.Stores;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -28,11 +29,11 @@ namespace CourseManager.ViewModels
             "English"
         };
 
-        public CourseListingViewModel()
+        public CourseListingViewModel(NavigationStore navigationStore, Func<CreateCourseViewModel> createCreateCourseViewModel)
         {
             _courses = new ObservableCollection<CourseViewModel>();
 
-            CancelCommand = new NavigateCommand();
+            CancelCommand = new NavigateCommand(navigationStore, createCreateCourseViewModel);
 
             _courses.Add(new CourseViewModel(new CourseModel("IB500g", "Programozás Alapjai", "Nagy József", 4, 60, "Hungarian", "")));
             _courses.Add(new CourseViewModel(new CourseModel("IB500gEN", "Programming Basics", "John Doe", 4, 60, "English", "")));
