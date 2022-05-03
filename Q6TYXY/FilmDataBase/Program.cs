@@ -180,10 +180,10 @@ namespace FilmDataBase
             if (File.Exists("../../../movies.xml"))
             {
 
-
+                List<Film> movies = new List<Film>();
                 using (var f = File.OpenRead("../../../movies.xml"))
                 {
-                    List<Film> movies = xs.Deserialize(f) as List<Film>;
+                    movies = xs.Deserialize(f) as List<Film>;
                     Console.WriteLine("Hány filmet szeretnél hozzáadni?:");
                     string movieCount = Console.ReadLine();
 
@@ -232,9 +232,11 @@ namespace FilmDataBase
 
 
                     }
+                }
+                using (var f = File.OpenWrite("../../../movies.xml"))
+                {
+
                     xs.Serialize(f, movies);
-
-
 
 
                 }
