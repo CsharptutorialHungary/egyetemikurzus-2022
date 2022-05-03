@@ -12,9 +12,7 @@ InitData.InitializeData();
 
 
 AppUI.Welcome();
-GetGuestInformation();
-// használhatjuk a validator-t, de string-eknél nem szükséges.
-// string username = Validator.Convert<string>("username");
+
 string username = Utility.GetUserInput("username");
 Console.WriteLine(username);
 
@@ -28,6 +26,12 @@ while (true)
         break;
     password += key.KeyChar;
 }
+Console.WriteLine("\nBooking: ");
+
+// TODO : ellenőrizni, hogy a beírt felhasználónév/jelszó páros megfelelő-e
+// isSuccess
+
+GetGuestInformation();
 
 void GetGuestInformation() {
     string name = Utility.GetUserInput("Name: ");
@@ -37,16 +41,29 @@ void GetGuestInformation() {
     int children = Utility.GetUserInputInt("Children: ");
     string phonenumber = Utility.GetUserInput("Phone: ");
     string email = Utility.GetUserInput("Email: ");
-    DateTime arrival = Utility.GetUserInputDate("Arrival (Y/M/D): ");
-    DateTime departure = Utility.GetUserInputDate("Departure (Y/M/D): ");
+    DateTime arrival = Utility.GetUserInputDate("Arrival (YYYY/MM/DD): ");
+    DateTime departure = Utility.GetUserInputDate("Departure (YYYY/MM/DD): ");
 
     //teszt
     List<Guest> guestList = new List<Guest>
             {
                 // TODO : folytatni
-                new Guest{Id=1, Name="Zsák Imre", Age=22, ReservedRoomId=1, Adults=2, Children=1, PhoneNumber="06305552233", Email="zsakosfrodo123@gmail.com",
+                new Guest{Id=1, Name="Zsak Imre", Age=22, ReservedRoomId=1, Adults=2, Children=1, PhoneNumber="06305552233", Email="zsakosfrodo123@gmail.com",
                     ArrivalDate= new DateTime(2022, 10, 10), DepartureDate= new DateTime(2022, 10, 12)},
             };
+
+    guestList.Append(new Guest
+    {
+        Id = 2,
+        Name = name,
+        Age = age,
+        ReservedRoomId = reservedroom,
+        Adults = adults,
+        PhoneNumber = phonenumber,
+        Email = email,
+        ArrivalDate = arrival,
+        DepartureDate = departure
+    });
 
     try
     {
