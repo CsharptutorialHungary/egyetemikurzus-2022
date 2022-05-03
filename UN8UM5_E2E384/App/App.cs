@@ -10,30 +10,60 @@ using System.Linq;
 
 InitData.InitializeData();
 AppUI.Welcome();
-LogInAsAdmin();
-GuestsLeavingToday();
-ReservationsByRoom();
-LongestReservation();
-YoungestGuest();
-GetGuestInformation();
 
-void UserLogin()
+AdminLogIn();
+OptionMenu();
+
+
+void OptionMenu()
 {
-    string username = Utility.GetUserInput("username");
-    Console.WriteLine(username);
-
-    // hides the password
-    System.Console.Write("password: ");
-    string password = null;
-    while (true)
+    bool finished = false;
+    do
     {
-        var key = System.Console.ReadKey(true);
-        if (key.Key == ConsoleKey.Enter)
-            break;
-        password += key.KeyChar;
-    }
-    // TODO : ellenőrizni, hogy a beírt felhasználónév/jelszó páros megfelelő-e
-    // isSuccess
+
+        Console.WriteLine("\n\nChoose what would you like to do:");
+        Console.WriteLine("1 - Book");
+        Console.WriteLine("2 - Guests leaving today");
+        Console.WriteLine("3 - Room reservations");
+        Console.WriteLine("4 - Longest reservation");
+        Console.WriteLine("5 - Youngest guest");
+        Console.WriteLine("9 - Quit\n");
+
+        int option = int.Parse(Utility.GetUserInput("Option: "));
+
+
+        if (option == 9)
+        {
+            finished = true;
+        }
+        else
+        {
+            finished = false;
+        }
+
+
+        switch (option)
+        {
+            case 1:
+                GetGuestInformation();
+                break;
+            case 2:
+                GuestsLeavingToday();
+                break;
+            case 3:
+                ReservationsByRoom();
+                break;
+            case 4:
+                LongestReservation();
+                break;
+            case 5:
+                YoungestGuest();
+                break;
+        }
+
+    } while (!finished);
+
+    
 }
 
 //Serialize, Deserialize
@@ -66,6 +96,12 @@ void GetGuestInformation() {
         DepartureDate = departure
     });
 
+    WriteReservationToJSON(InitData.guestList);
+}
+
+
+void WriteReservationToJSON(List<Guest> list)
+{
     try
     {
         string jsonEncoded = JsonSerializer.Serialize(InitData.guestList, new JsonSerializerOptions
@@ -81,8 +117,23 @@ void GetGuestInformation() {
     }
 }
 
+void AdminLogIn()
+{
+    while (true)
+    {
+        if (LogInAsAdmin())
+        {
+            break;
+        }
+        else if (System.Console.ReadKey(true).Key == ConsoleKey.Q)
+        {
+            Environment.Exit(0);
+        }
+    }
+}
+
 //Record class equality
-void LogInAsAdmin()
+bool LogInAsAdmin()
 {
     bool admin = false;
     string username = Utility.GetUserInput("username");
@@ -113,9 +164,10 @@ void LogInAsAdmin()
     }
     else
     {
-        Console.WriteLine("\nLogin failed.");
-        Environment.Exit(0);
+        Console.WriteLine("\nLogin failed. Press q to exit or any other key to try again.");
+        // Environment.Exit(0);
     }
+    return admin;
 }
 
 //LINQ where
