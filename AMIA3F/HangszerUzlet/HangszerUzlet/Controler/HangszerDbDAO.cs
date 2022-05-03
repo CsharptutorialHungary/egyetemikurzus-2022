@@ -136,7 +136,7 @@ namespace HangszerUzlet
         {
 
             List<HangszerModel> hangszerList = new List<HangszerModel>();
-            XmlSerializer ser = new XmlSerializer(typeof(XmlElement));
+             XmlSerializer ser = new XmlSerializer(typeof(XElement));
             try
             {
                 hangszerList = (from h in context.Hangszers
@@ -151,17 +151,20 @@ namespace HangszerUzlet
                 XElement element = new XElement("Hangszerek",
                                        (from h in hangszerList
                                         select new XElement("Hangszer",
+                                            new XElement("Id", h.Id),
                                             new XElement("Name", h.Nev),
                                             new XElement("Type", h.Tipus),
                                             new XElement("Price", h.Ar))));
 
                 SaveFileDialog saveFileDialog = new SaveFileDialog();
                 saveFileDialog.Filter = "XML Files|*.xml";
+
                 if (saveFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    element.Save(saveFileDialog.FileName);
+                    FileStream fs = new FileStream(saveFileDialog.FileName, FileMode.OpenOrCreate);
+                    ser.Serialize(fs, element);
+                    //element.Save(saveFileDialog.FileName);
                 }
-
             }
             catch (Exception ex)
             {
@@ -171,6 +174,19 @@ namespace HangszerUzlet
                          MessageBoxIcon.Exclamation);
                 if (result == DialogResult.Abort) throw;
             }
+        }
+
+        public void ReadXML()
+        {
+            List<HangszerModel> hangszerList = new List<HangszerModel>();
+            hangszerList = (from h in context.Hangszers
+                            select new HangszerModel
+                            {
+                                Id = h.Id,
+                                Nev = h.Nev,
+                                Tipus = h.Tipus,
+                                Ar = h.Ar
+                            }).ToList();
         }
     }
 }
