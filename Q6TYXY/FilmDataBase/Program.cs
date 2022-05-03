@@ -176,6 +176,16 @@ namespace FilmDataBase
 
         private static void AddNewMovie()
         {
+
+            if (File.Exists("../../../movies.xml"))
+            {
+
+            }
+            else
+            {
+                
+            }
+
             List<Film> list = new List<Film>();
             Console.WriteLine("Hány filmet szeretnél hozzáadni?:");
             string movieCount = Console.ReadLine();
