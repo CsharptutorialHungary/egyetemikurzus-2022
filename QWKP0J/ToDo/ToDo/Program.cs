@@ -23,11 +23,7 @@ namespace ToDo
         }
         static void Main(string[] args)
         {
-            List<Item> ppLoadList;
-
             BuildConsoleTable();
-
-
 
             Dictionary<string, ICommand> commands
                 = LoadCommands()
@@ -53,14 +49,14 @@ namespace ToDo
                     console.WriteLine("Unknown command: {0}", cmd[0]);
                 }
             }
-
-
-
         }
 
         public static void BuildConsoleTable()
         {
             Console.Clear();
+            ConsoleTable commandTable = new ConsoleTable("Add", "Complete", "Delete", "Exit");
+            commandTable.Write(Format.Default);
+
             string loadList = File.ReadAllText($@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
             List<Item> pLoadList = JsonSerializer.Deserialize<List<Item>>(loadList);
 
@@ -70,13 +66,6 @@ namespace ToDo
                 table.AddRow(item.Id, item.Task, item.IsComplete);
             }
             table.Write(Format.Default);
-            ConsoleTable commandTable = new ConsoleTable("Add", "Complete", "Delete", "Exit");
-            commandTable.Write(Format.Default);
-
-            Console.WriteLine("Add {task}");
-            Console.WriteLine("Complete {id}");
-            Console.WriteLine("Delete {id}");
-            Console.WriteLine("Exit");
         }
     }
 }
