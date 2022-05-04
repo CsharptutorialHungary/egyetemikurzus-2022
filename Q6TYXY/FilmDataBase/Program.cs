@@ -30,7 +30,6 @@ namespace FilmDataBase
             Console.WriteLine("4. Rendezés értékelés szerint");
             Console.WriteLine("5. Csoportosítás studio szerint");
             Console.WriteLine("6. Átlag értékelés");
-            Console.WriteLine("7. Filmek listázása rest-api-val");
             Console.WriteLine("Q. Kilépés");
             Console.WriteLine();
             Console.Write("Válassz egy opciót: ");
@@ -56,9 +55,6 @@ namespace FilmDataBase
                 case "6":
                     MoviesRateAvarage();
                     return true;
-                case "7":
-                    RestApiMovies();
-                    return true;
                 case "Q":
                     return false;
                 default:
@@ -68,10 +64,6 @@ namespace FilmDataBase
 
         }
 
-        private static void RestApiMovies()
-        {
-            
-        }
 
         private static void MoviesRateAvarage()
         {
