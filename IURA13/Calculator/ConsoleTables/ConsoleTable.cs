@@ -15,50 +15,26 @@ namespace Calculator
 
         internal static void CreateConsoleTable(UsedFunctions uf)
         {
-            List<FunctionsAndTheirNumberOfUses> Usages = new List<FunctionsAndTheirNumberOfUses>
+            Dictionary<string, int> functionUsages= new Dictionary<string, int>()
             {
-                new FunctionsAndTheirNumberOfUses
-                {
-                    functionName = "Add",
-                    uses = uf.Add,
-                },
-
-                new FunctionsAndTheirNumberOfUses
-                {
-                    functionName = "Subtract",
-                    uses = uf.Subtract,
-                },
-
-                new FunctionsAndTheirNumberOfUses
-                {
-                    functionName = "Multiply",
-                    uses = uf.Multiply,
-                },
-
-                new FunctionsAndTheirNumberOfUses
-                {
-                    functionName = "Divide",
-                    uses = uf.Divide,
-                },
-
-                new FunctionsAndTheirNumberOfUses
-                {
-                    functionName = "Factorial",
-                    uses = uf.Factorial,
-                },
+                { "Add", uf.Add},
+                { "Subtract", uf.Subtract},
+                { "Multiply", uf.Multiply },
+                { "Divide", uf.Divide},
+                { "Factorial", uf.Factorial }
             };
 
-            var max = Usages.Max(Use => Use.uses);
+            var max = functionUsages.Max(Use => Use.Value);
 
-            var functionNameMax = from use in Usages
-                                  where max == use.uses                   
-                                  select use.functionName;
+            var functionNameMax = from use in functionUsages
+                                  where max == use.Value                   
+                                  select use.Key;
 
-            var min = Usages.Min(Use => Use.uses);
+            var min = functionUsages.Min(Use => Use.Value);
 
-            var functionNameMin = from use in Usages
-                                  where min == use.uses
-                                  select use.functionName;
+            var functionNameMin = from use in functionUsages
+                                  where min == use.Value
+                                  select use.Key;
 
             static string fMax(IEnumerable<string>? funcMax)
             {
@@ -90,7 +66,7 @@ namespace Calculator
             PrintRow("Add", "Subtract", "Multiply", "Divide", "Factorial");
             PrintRow("+", "-", "* or X", "/", "!");
             PrintLine();
-            PrintRow("You can exit the program by typing 'q'");
+            PrintRow("You can exit the program by typing 'q' and pressing 'Enter'");
             PrintLine();
             PrintRow($"Most used function(s) is/are " + fMin(functionNameMax) + "and has/have been ran: "+ Convert.ToString(max) + " times");
             PrintLine();
