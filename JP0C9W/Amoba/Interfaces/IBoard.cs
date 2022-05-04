@@ -1,13 +1,13 @@
 ﻿namespace Amoba.Interfaces
 {
-    public interface IBoard
+    public interface IBoard<T>
     {
         int MinSize { get; }
         int MaxSize { get; }
         char EmptyCell { get; }
         int BoardSize { get; }
-        char[][] Cells { get; }
-        void SetCell(int rowIndex, int colIndex, char symbol);
+        IEnumerable<T[]> Cells { get; }
+        void SetCell(IBoardCell cell);
         void ResetCells();
         bool IsFilled();
     }

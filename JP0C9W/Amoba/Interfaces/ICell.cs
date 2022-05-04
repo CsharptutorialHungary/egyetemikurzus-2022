@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Amoba.Interfaces
+﻿namespace Amoba.Interfaces
 {
-    public interface ICell
+    public interface ICell<T>
     {
-        int X { get; set; }
-        int Y { get; set; }
+        ICoordinate Coordinate { get; }
+        T Value { get; }
     }
 }

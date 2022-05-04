@@ -4,10 +4,12 @@ namespace Amoba.Interfaces
 {
     public interface IGameEngine
     {
-        IBoard Board { get; }
-        void StartNewGame();
+        IBoard<char> Board { get; }
+        IPlayer[] Players { get; }
+        PlayerColor PlayerTurn { get; }
+        public IBoardCell? PrevMove { get; }
+        void StartNewGame(GameMode mode);
         void RequestMove();
-        bool IsMoveValid(int rowIndex, int colIndex);
         GameStatus GetStatus();
     }
 }

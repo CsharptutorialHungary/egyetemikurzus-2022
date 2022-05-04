@@ -1,12 +1,19 @@
 ﻿namespace Amoba.Interfaces
 {
-    public enum Color
+    public enum PlayerColor
     {
-        WHITE = 'O',
-        BLACK = 'X'
+        WHITE = 0,
+        BLACK = 1
+    }
+    public enum PlayerType
+    {
+        AI = 0,
+        REAL = 1,
     }
     public interface IPlayer
     {
-        IAction SetAction(IBoard board, ICell prevMove, Color playerColor); 
+        PlayerColor Color { get; set; }
+        PlayerType Type { get; }
+        IBoardCell GetMove(IBoard<char> board, IBoardCell? prevMove); 
     }
 }
