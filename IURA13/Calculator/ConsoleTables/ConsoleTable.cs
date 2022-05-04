@@ -2,12 +2,6 @@
 
 namespace Calculator
 {
-    public class FunctionsAndTheirNumberOfUses
-    {
-        public string functionName { get; set; }
-        public int uses { get; set; }
-
-    }
     internal class ConsoleTable
     {
         static int tableWidth = 110;
