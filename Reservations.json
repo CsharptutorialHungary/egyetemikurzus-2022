@@ -1,0 +1,62 @@
+[
+  {
+    "Id": 1,
+    "Name": "Santa",
+    "Age": 0,
+    "ReservedRoomId": 102,
+    "Adults": 0,
+    "Children": 0,
+    "PhoneNumber": "12947843634",
+    "Email": "santamail",
+    "ArrivalDate": "2022-01-01T00:00:00",
+    "DepartureDate": "2022-05-03T00:00:00"
+  },
+  {
+    "Id": 2,
+    "Name": "Timmy",
+    "Age": 18,
+    "ReservedRoomId": 45,
+    "Adults": 1,
+    "Children": 0,
+    "PhoneNumber": "328439567",
+    "Email": "kiddomail",
+    "ArrivalDate": "2022-05-23T00:00:00",
+    "DepartureDate": "2022-05-28T00:00:00"
+  },
+  {
+    "Id": 3,
+    "Name": "Teszt Elek",
+    "Age": 0,
+    "ReservedRoomId": 5,
+    "Adults": 0,
+    "Children": 0,
+    "PhoneNumber": "24522224",
+    "Email": "epphogyelek@test.com",
+    "ArrivalDate": "2022-05-04T00:00:00",
+    "DepartureDate": "2022-05-06T00:00:00"
+  },
+  {
+    "Id": 4,
+    "Name": "Kak Ilona",
+    "Age": 0,
+    "ReservedRoomId": 7,
+    "Adults": 0,
+    "Children": 0,
+    "PhoneNumber": "33224455",
+    "Email": "ilcsi@yahoo.com",
+    "ArrivalDate": "2022-05-10T00:00:00",
+    "DepartureDate": "2022-05-15T00:00:00"
+  },
+  {
+    "Id": 5,
+    "Name": "Jancsi",
+    "Age": 18,
+    "ReservedRoomId": 12,
+    "Adults": 1,
+    "Children": 0,
+    "PhoneNumber": "21312312321",
+    "Email": "email",
+    "ArrivalDate": "1111-11-11T00:00:00",
+    "DepartureDate": "1111-11-12T00:00:00"
+  }
+]
