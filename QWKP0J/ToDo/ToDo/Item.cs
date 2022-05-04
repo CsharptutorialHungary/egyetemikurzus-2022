@@ -11,9 +11,9 @@ namespace ToDo
         public int Id { get; set; }
         public string Task { get; set; }
         public bool IsComplete { get; set; }
-        public Item (string task)
+        public Item(int id, string task)
         {
-            Id = 1;
+            Id = id;
             Task = task;
             IsComplete = false;
         }
