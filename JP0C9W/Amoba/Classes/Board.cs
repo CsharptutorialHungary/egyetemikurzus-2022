@@ -2,7 +2,7 @@
 
 namespace Amoba.Classes
 {
-    public class Board : IBoard
+    public class Board : IBoard<char>
     {
         public int MinSize { get; }
         public int MaxSize { get; }
@@ -27,7 +27,7 @@ namespace Amoba.Classes
                 }
             }
         }
-        public char[][] Cells { get; set; }
+        public IEnumerable<char[]> Cells { get; set; }
         public Board(int minSize, int maxSize, int boardSize, char emptyCell)
         {
             MinSize = minSize;
@@ -56,10 +56,10 @@ namespace Amoba.Classes
             Cells = FillCells(EmptyCell);
         }
 
-        public void SetCell(int rowIndex, int colIndex, char symbol)
+        public void SetCell(IBoardCell cell)
         {
-            if (0 <= rowIndex && rowIndex < BoardSize && 0 <= colIndex && colIndex < BoardSize)
-                Cells[rowIndex][colIndex] = symbol;
+            if (0 <= cell.Coordinate.Y && cell.Coordinate.Y < BoardSize && 0 <= cell.Coordinate.X && cell.Coordinate.X < BoardSize)
+                Cells.ElementAt(cell.Coordinate.Y)[cell.Coordinate.X] = (char)cell.Value;
             else
                 throw new ArgumentException("Invalid cell!");
         }
@@ -68,8 +68,8 @@ namespace Amoba.Classes
         {
             string formattedBoard = "";
             int rowNumTextOffset = (int)Math.Log10(BoardSize);
-            int colNumTextOffset = (int)Math.Log10(BoardSize);
-            char[][] colNumText = new char[colNumTextOffset][];
+            //int colNumTextOffset = (int)Math.Log10(BoardSize);
+            //char[][] colNumText = new char[colNumTextOffset][];
             for (int i = 0; i < BoardSize; i++)
             {
                 for (int j = 0; j < BoardSize; j++)
@@ -82,7 +82,7 @@ namespace Amoba.Classes
                         }
                         formattedBoard += $"{i + 1}  ";
                     }
-                    formattedBoard += Cells[i][j];
+                    formattedBoard += Cells.ElementAt(i)[j];
                     formattedBoard += j != BoardSize - 1 ? " " : '\n';
                 }
             }
@@ -93,7 +93,7 @@ namespace Amoba.Classes
         {
             for (int i = 0; i < BoardSize; i++)
             {
-                var row = new string(Cells[i]);
+                var row = new string(Cells.ElementAt(i));
                 if (row.Contains(EmptyCell))
                     return false;
             }
