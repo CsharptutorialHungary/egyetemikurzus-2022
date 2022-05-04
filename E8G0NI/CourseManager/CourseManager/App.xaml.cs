@@ -64,7 +64,5 @@ namespace CourseManager
         //{
         //    return new HomeViewModel(_navigationStore, HomeViewModel);
         //}
-
-        // Ok
     }
 }
