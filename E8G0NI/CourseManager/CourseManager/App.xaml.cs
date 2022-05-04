@@ -1,7 +1,9 @@
-﻿using CourseManager.Models;
+﻿using CourseManager.DbContexts;
+using CourseManager.Models;
 using CourseManager.Services;
 using CourseManager.Stores;
 using CourseManager.ViewModels;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -17,6 +19,7 @@ namespace CourseManager
     /// </summary>
     public partial class App : Application
     {
+        private const string CONNECTION_STRING = "Data Source=coursemanager.db";
         private readonly CourseModel _course;
         private readonly NavigationStore _navigationStore;
 
@@ -28,6 +31,13 @@ namespace CourseManager
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            DbContextOptions options = new DbContextOptionsBuilder().UseSqlite(CONNECTION_STRING).Options;
+            using (CourseDbContext dbContext = new CourseDbContext(options)) 
+            {
+                dbContext.Database.Migrate();
+
+            }
+
             // starting view
             _navigationStore.CurrentViewModel = CreateCourseListingViewModel();
 
