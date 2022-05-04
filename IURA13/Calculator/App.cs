@@ -17,14 +17,30 @@ namespace Calculator
         [XmlElement("Eddigi eredmény")]
         public double tmpResult { get; set; }
     }
+    public record UsedFunctions
+    {
+        public int Add { get; init; }
+        public int Subtract { get; init; }
+
+        public int Multiply { get; init; }
+
+        public int Divide { get; init; }
+
+        public int Factorial { get; init; }
+    }
     public class Calculator
     {
+
         static double lastResult;
         static async Task Main()
             {
-
-            ConsoleTable.CreateConsoleTable();
-
+            XmlSerializer xs = new XmlSerializer(typeof(UsedFunctions));
+            UsedFunctions des = new UsedFunctions { };
+            using (var f = File.OpenRead(@"../../../FunctionsUsed.xml"))
+            {
+                des = xs.Deserialize(f) as UsedFunctions;
+                ConsoleTable.CreateConsoleTable(des);
+            }
 
             switch (ConsoleTable.chosenCalculation)
                 {
@@ -33,17 +49,29 @@ namespace Calculator
                         AddTable.CreateConsoleTable();
                         AddCalculation ac = new AddCalculation();
                         lastResult = ac.Add(lastResult);
+                        var add = des.Add+1;
+                        des = des with { Add = add };
                         Console.Write("Returning to menu in");
+                        using (var f = File.Create(@"../../../FunctionsUsed.xml"))
+                        {
+                            xs.Serialize(f, des);
+                        }
                         await WaitForRefresh();
                         await Calculator.Main();
-                    return;
+                        return;
 
                     case "subtract":
                     case "-":
                         SubtractTable.CreateConsoleTable();
                         SubtractCalculation sc = new SubtractCalculation();
                         lastResult = sc.Subtract(lastResult);
+                        var sub = des.Subtract + 1;
+                        des = des with { Subtract = sub };
                         Console.Write("Returning to menu in");
+                        using (var f = File.Create(@"../../../FunctionsUsed.xml"))
+                        {
+                            xs.Serialize(f, des);
+                        }
                         await WaitForRefresh();
                         await Calculator.Main();
                         return;
@@ -54,6 +82,13 @@ namespace Calculator
                         MultiplyTable.CreateConsoleTable();
                         MultiplyCalculation mc = new MultiplyCalculation();
                         lastResult = mc.Multiply(lastResult);
+                        var multiply = des.Multiply + 1;
+                        des = des with { Multiply = multiply };
+                        Console.Write("Returning to menu in");
+                        using (var f = File.Create(@"../../../FunctionsUsed.xml"))
+                        {
+                            xs.Serialize(f, des);
+                        }
                         Console.Write("Returning to menu in");
                         await WaitForRefresh();
                         await Calculator.Main();
@@ -64,6 +99,13 @@ namespace Calculator
                         DivideTable.CreateConsoleTable();
                         DivideCalculation dc = new DivideCalculation();
                         lastResult = dc.Divide(lastResult);
+                        var div = des.Divide + 1;
+                        des = des with { Divide = div };
+                        Console.Write("Returning to menu in");
+                        using (var f = File.Create(@"../../../FunctionsUsed.xml"))
+                        {
+                            xs.Serialize(f, des);
+                        }
                         Console.Write("Returning to menu in");
                         await WaitForRefresh();
                         await Calculator.Main();
@@ -74,6 +116,13 @@ namespace Calculator
                         FactorialTable.CreateConsoleTable();
                         FactorialCalculation fc = new FactorialCalculation();
                         lastResult = fc.Factorial(Convert.ToInt32(lastResult));
+                        var fact = des.Factorial + 1;
+                        des = des with { Factorial = fact };
+                        Console.Write("Returning to menu in");
+                        using (var f = File.Create(@"../../../FunctionsUsed.xml"))
+                        {
+                            xs.Serialize(f, des);
+                        }
                         Console.Write("Returning to menu in");
                         await WaitForRefresh();
                         await Calculator.Main();
