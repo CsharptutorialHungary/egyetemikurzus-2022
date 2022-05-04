@@ -1,6 +1,7 @@
 ﻿using FilmDataBase.Model;
 using System.Text.Json;
 using System.Xml.Serialization;
+using Newtonsoft.Json;
 
 namespace FilmDataBase
 {
@@ -30,6 +31,7 @@ namespace FilmDataBase
             Console.WriteLine("4. Rendezés értékelés szerint");
             Console.WriteLine("5. Csoportosítás studio szerint");
             Console.WriteLine("6. Átlag értékelés");
+            Console.WriteLine("7. Filmek listázása (Async)");
             Console.WriteLine("Q. Kilépés");
             Console.WriteLine();
             Console.Write("Válassz egy opciót: ");
@@ -55,6 +57,9 @@ namespace FilmDataBase
                 case "6":
                     MoviesRateAvarage();
                     return true;
+                case "7":
+                    LoadJsonFile();
+                    return true;
                 case "Q":
                     return false;
                 default:
@@ -64,6 +69,33 @@ namespace FilmDataBase
 
         }
 
+        private static async void LoadJsonFile()
+        {
+            if (File.Exists("../../../Film.JSON"))
+            {
+                using (var reader = new StreamReader("../../../Film.JSON"))
+                {
+                    string json = await reader.ReadToEndAsync();
+                    var movies = JsonConvert.DeserializeObject<List<FilmJSON>>(json);
+
+                    await Task.Run(() =>
+                    {
+                        foreach (var item in movies)
+                        {
+                            Console.WriteLine(item.Title);
+                        }
+                    });
+                    Console.ReadKey();
+
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nincs ilyen fájl!");
+            }
+
+
+        }
 
         private static void MoviesRateAvarage()
         {
@@ -182,7 +214,7 @@ namespace FilmDataBase
 
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
-                
+
             }
 
 
