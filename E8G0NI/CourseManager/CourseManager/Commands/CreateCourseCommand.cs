@@ -38,17 +38,25 @@ namespace CourseManager.Commands
 
         public override void Execute(object? parameter)
         {
-            CourseModel course = new CourseModel(_createCourseViewModel.Code, 
-                _createCourseViewModel.Name,
-                _createCourseViewModel.Lecturer,
-                _createCourseViewModel.Credit,
-                _createCourseViewModel.Limit,
-                _createCourseViewModel.Language,
-                _createCourseViewModel.Description);
+            try
+            {
+                CourseModel course = new CourseModel(_createCourseViewModel.Code, 
+                                _createCourseViewModel.Name,
+                                _createCourseViewModel.Lecturer,
+                                _createCourseViewModel.Credit,
+                                _createCourseViewModel.Limit,
+                                _createCourseViewModel.Language,
+                                _createCourseViewModel.Description);
 
-            MessageBox.Show("Created course successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Created course successfully!", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
 
-            _courseViewNavigationService.Navigate();
+                _courseViewNavigationService.Navigate();
+            } 
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            
         }
 
         private void OnViewModelPropertyChanged(object? sender, PropertyChangedEventArgs e)
