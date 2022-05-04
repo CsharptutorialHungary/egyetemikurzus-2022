@@ -2,16 +2,14 @@
 
 namespace ToDo.Commands
 {
-    internal class Delete : ICommand
+    internal class Undo : ICommand
     {
-
-
         public void Execute(IConsole console, string text)
         {
             string vissza = File.ReadAllText(@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
             List<Item> pVissza = JsonSerializer.Deserialize<List<Item>>(vissza);
 
-            pVissza.RemoveAt(Convert.ToInt32(text) - 1);
+            pVissza[Convert.ToInt32(text) - 1].IsComplete = false;
 
             string jsonEncoded = JsonSerializer.Serialize(pVissza, new JsonSerializerOptions
             {

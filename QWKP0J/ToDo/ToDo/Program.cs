@@ -42,7 +42,7 @@ namespace ToDo
                 }
                 else if (commands.ContainsKey(cmd[0]) && cmd.Length != 1)
                 {
-                    commands[cmd[0]].Execute(console, cmd[1]);
+                    commands[cmd[0]].Execute(console, cmd.Length == 1 ? " " : cmd[1]);
                 }
                 else
                 {
@@ -53,19 +53,42 @@ namespace ToDo
 
         public static void BuildConsoleTable()
         {
+            string loadList;
+            List<Item> pLoadList = null;
+            int counter = 1;
+
             Console.Clear();
-            ConsoleTable commandTable = new ConsoleTable("Add", "Complete", "Delete", "Exit");
-            commandTable.Write(Format.Default);
 
-            string loadList = File.ReadAllText($@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
-            List<Item> pLoadList = JsonSerializer.Deserialize<List<Item>>(loadList);
+            ConsoleTable commandTable = new ConsoleTable("Add <feladat>", "Finish <id>", "Undo <id>", "Delete <id>", "Exit");
+            commandTable.AddRow("Feladat hozzáadása", "Státusz készre állítása", "Státusz visszallítása", "Feladat törlése", "Kilépés");
+            commandTable.Write();
 
-            ConsoleTable table = new ConsoleTable("id", "task", "status");
-            foreach (var item in pLoadList)
+            try
             {
-                table.AddRow(item.Id, item.Task, item.IsComplete);
+                loadList = File.ReadAllText($@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
+                pLoadList = JsonSerializer.Deserialize<List<Item>>(loadList);
             }
-            table.Write(Format.Default);
+            catch (FileNotFoundException ex)
+            {
+                Console.WriteLine("Hiányzik a json fájl.");
+            }
+            catch (JsonException ex)
+            {
+                Console.WriteLine("Baj van a json-nel.");
+            }
+
+            if (pLoadList != null)
+            {
+                ConsoleTable table = new ConsoleTable("id", "feladatok", "státusz");
+
+                foreach (var item in pLoadList)
+                {
+                    table.AddRow(counter, item.Task, item.IsComplete ? "Kész" : "Folyamatban");
+                    counter++;
+                }
+                table.Write();
+
+            }
         }
     }
 }
