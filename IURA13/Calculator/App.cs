@@ -5,9 +5,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Calculator
 {
+    public class InputNumbers
+    {
+        [XmlAttribute("Input szám")]
+        public double number { get; set; }
+
+        [XmlElement("Eddigi eredmény")]
+        public double tmpResult { get; set; }
+    }
     public class Calculator
     {
         static double lastResult;
@@ -60,16 +69,19 @@ namespace Calculator
                         await Calculator.Main();
                         return;
 
-                case "factorial":
+                    case "factorial":
                     case "!":
-
-                    default:
                         FactorialTable.CreateConsoleTable();
                         FactorialCalculation fc = new FactorialCalculation();
                         lastResult = fc.Factorial(Convert.ToInt32(lastResult));
                         Console.Write("Returning to menu in");
                         await WaitForRefresh();
                         await Calculator.Main();
+                        return;
+                    case "q":
+                        System.Environment.Exit(1);
+                        return;
+                default:
                         break;
                 }
 

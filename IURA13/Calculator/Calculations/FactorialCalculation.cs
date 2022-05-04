@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace Calculator.Calculations
 {
@@ -10,6 +11,8 @@ namespace Calculator.Calculations
     {
        internal double Factorial(int lastResult)
         {
+            List<InputNumbers> numbers = new List<InputNumbers>() { };
+            XmlSerializer xs = new XmlSerializer(typeof(List<InputNumbers>));
             double result = 1;
             string input = Console.ReadLine().ToLower();
             try
@@ -23,6 +26,7 @@ namespace Calculator.Calculations
                     for (int i = 1; i <= lastResult; i++)
                     {
                         result *= i;
+                        numbers.Add(new InputNumbers { number = i, tmpResult = result });
                     }
                 }
                 if(Convert.ToInt32(input) >= 1)
@@ -30,6 +34,7 @@ namespace Calculator.Calculations
                     for (int i = 1; i <= Convert.ToInt32(input); i++)
                     {
                         result *= i;
+                        numbers.Add(new InputNumbers { number = i, tmpResult = result });
                     }
                 }
                 else
@@ -39,6 +44,10 @@ namespace Calculator.Calculations
                 }
 
                 Console.WriteLine("The result is: " + result);
+                using (var f = File.Create(@"../../../LastFactorialCalculation.xml"))
+                {
+                    xs.Serialize(f, numbers);
+                }
                 return result;
             }
 

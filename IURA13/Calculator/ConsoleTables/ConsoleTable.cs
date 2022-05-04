@@ -19,6 +19,8 @@ namespace Calculator
             PrintRow("Add", "Subtract", "Multiply", "Divide", "Factorial");
             PrintRow("+", "-", "* or X", "/", "!");
             PrintLine();
+            PrintRow("You can exit the program by typing 'q'");
+            PrintLine();
 
             Console.Write("Chosen calculation: ");
             chosenCalculation = Console.ReadLine().ToLower();
