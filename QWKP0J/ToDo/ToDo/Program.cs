@@ -42,7 +42,7 @@ namespace ToDo
                 }
                 else if (commands.ContainsKey(cmd[0]) && cmd.Length != 1)
                 {
-                    commands[cmd[0]].Execute(console, cmd.Length == 1 ? " " : cmd[1]);
+                    commands[cmd[0]].Execute(console, cmd.Length == 1 ? " " : cmd[1]); //csöves megoldás de működik
                 }
                 else
                 {
@@ -87,7 +87,6 @@ namespace ToDo
                     counter++;
                 }
                 table.Write();
-
             }
         }
     }
