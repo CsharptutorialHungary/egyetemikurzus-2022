@@ -23,6 +23,10 @@ namespace Szalloda.Data
                 {
                     _age = 99;
                 }
+                else
+                {
+                    _age = value;
+                }
             }
         }
 
