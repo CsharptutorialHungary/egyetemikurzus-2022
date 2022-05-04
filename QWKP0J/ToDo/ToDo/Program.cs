@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using ConsoleTables;
 using System.Reflection;
-using System.Linq;
-using System.Windows.Input;
+using System.Text.Json;
 using ToDo.Commands;
 
 namespace ToDo
@@ -14,8 +12,8 @@ namespace ToDo
             var current = Assembly.GetExecutingAssembly();
             var commands = from command in current.GetTypes()
                            where
-                            typeof(ICommand).IsAssignableFrom(command)
-                            && !command.IsAbstract
+                           typeof(ICommand).IsAssignableFrom(command)
+                           && !command.IsAbstract
                            select command;
 
             foreach (var command in commands)
@@ -25,14 +23,9 @@ namespace ToDo
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("[Add {task}]");
-            Console.WriteLine("[List {saved | current}]");
-            Console.WriteLine("[Complete {id}]");
-            Console.WriteLine("[Save]");
-            Console.WriteLine("[Delete {id}]");
-            Console.WriteLine("[Exit]");
-            
+            List<Item> ppLoadList;
 
+            BuildConsoleTable();
 
 
 
@@ -46,13 +39,13 @@ namespace ToDo
             {
                 Console.Write("> ");
                 string input = console.ReadLine().ToLower();
-                string[] cmd = input.Split(' ',2);
+                string[] cmd = input.Split(' ', 2);
                 if (cmd[0] == "exit")
                 {
                     break;
                 }
-                else if (commands.ContainsKey(cmd[0]) && cmd.Length!=1)
-                { 
+                else if (commands.ContainsKey(cmd[0]) && cmd.Length != 1)
+                {
                     commands[cmd[0]].Execute(console, cmd[1]);
                 }
                 else
@@ -63,59 +56,27 @@ namespace ToDo
 
 
 
+        }
 
+        public static void BuildConsoleTable()
+        {
+            Console.Clear();
+            string loadList = File.ReadAllText($@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
+            List<Item> pLoadList = JsonSerializer.Deserialize<List<Item>>(loadList);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-           /* Tasklist item = new Tasklist();
-            while (true)
+            ConsoleTable table = new ConsoleTable("id", "task", "status");
+            foreach (var item in pLoadList)
             {
-                string input = Console.ReadLine();
-                switch (input.ToLower())
-                {
-                    case "add":
-                        Console.WriteLine("Task to do:");
-                        string task = Console.ReadLine();
+                table.AddRow(item.Id, item.Task, item.IsComplete);
+            }
+            table.Write(Format.Default);
+            ConsoleTable commandTable = new ConsoleTable("Add", "Complete", "Delete", "Exit");
+            commandTable.Write(Format.Default);
 
-                        Item newItem = new Item(task);
-                        item.AddItem(newItem);
-                        Console.WriteLine("Added");
-                        break;
-                    case "complete":
-                        
-                        break;
-                    case "delete":
-                        break;
-                    case "exit":
-                        return;
-                    default:
-                        Console.WriteLine("valid command pls");
-                        break;
-
-                }
-            }*/
-            
+            Console.WriteLine("Add {task}");
+            Console.WriteLine("Complete {id}");
+            Console.WriteLine("Delete {id}");
+            Console.WriteLine("Exit");
         }
     }
 }

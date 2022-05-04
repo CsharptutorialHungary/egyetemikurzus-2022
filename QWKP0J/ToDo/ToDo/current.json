@@ -1,12 +1,22 @@
 [
   {
     "Id": 1,
-    "Task": "almaa",
-    "IsComplete": false
+    "Task": "alma",
+    "IsComplete": true
   },
   {
-    "Id": 2,
-    "Task": "kecske",
+    "Id": 1,
+    "Task": "asd",
+    "IsComplete": true
+  },
+  {
+    "Id": 1,
+    "Task": "kutja",
+    "IsComplete": true
+  },
+  {
+    "Id": 1,
+    "Task": "anya",
     "IsComplete": false
   }
 ]

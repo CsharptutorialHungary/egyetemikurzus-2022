@@ -1,31 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using System.Text.Json;
 
 namespace ToDo.Commands
 {
-    internal class ADd : ICommand
+    internal class Add : ICommand
     {
-        int id = 0;
-        List<Item> list = new List<Item>();
+        int id = 1;
 
-        public void Execute(IConsole console,string text)
+        static string vissza = File.ReadAllText(@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
+        List<Item> pVissza = JsonSerializer.Deserialize<List<Item>>(vissza);
+
+
+        public void Execute(IConsole console, string text)
         {
-            id++;
+
             Item elem = new Item(id, text);
-            list.Add(elem);
+            id++;
 
+            pVissza.Add(elem);
 
-            string jsonEncoded = JsonSerializer.Serialize(list, new JsonSerializerOptions
+            string jsonEncoded = JsonSerializer.Serialize(pVissza, new JsonSerializerOptions
             {
                 WriteIndented = true,
             });
             File.WriteAllText(@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json", jsonEncoded);
 
-            console.WriteLine("Hozzáadva a listához");
+            Program.BuildConsoleTable();
         }
     }
 }
