@@ -22,6 +22,8 @@ namespace Szalloda.AppBack
 
         public static List<AdminAccount> adminAccountList;
         public static AdminAccount selectedAdminAccount;
+
+        public static CancellationTokenSource tokenSource;
         public static void InitializeData()
         {
             userAccountList = new List<UserAccount>

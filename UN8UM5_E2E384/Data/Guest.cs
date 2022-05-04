@@ -6,51 +6,70 @@ using System.Threading.Tasks;
 
 namespace Szalloda.Data
 {
-    internal class Guest
+    public class Guest
     {
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public int _age;
-        public int Age { get; }
-        public void SetAge()
+        private int _age;
+        public int Age
         {
-            if (Age <= 18)
+            get { return _age; }
+            set
             {
-                _age = 18;
-            }
-            else if (Age > 99)
-            {
-                _age = 99;
+                if (value <= 18)
+                { _age = 18; }
+                else if (value > 99)
+                {
+                    _age = 99;
+                }
             }
         }
+
         public int ReservedRoomId { get; set; }
 
         public int _adults;
-        public int Adults { get; }
-        public void SetAdults()
+        public int Adults
         {
-            if (Adults <= 0)
+            get { return _adults; }
+            set
             {
-                _adults = 1;
+                if (value <= 0)
+                {
+                    _adults = 1;
+                }
             }
         }
 
         public int _children;
-        public int Children { get; }
-        public void SetChildren()
+        public int Children
         {
-            if (Children < 0)
+            get { return _children; }
+            set
             {
-                _children = 0;
+                if (value < 0)
+                {
+                    _children = 0;
+                }
             }
-
         }
 
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
         // MailAddress m = new MailAddress(emailaddress);
         public DateTime ArrivalDate { get; set; }
-        public DateTime DepartureDate { get; set; }
+
+        public DateTime _departureDate;
+        public DateTime DepartureDate
+        {
+            get { return _departureDate; }
+            set
+            {
+                if (value <= ArrivalDate)
+                {
+                    _departureDate = ArrivalDate.AddDays(1);
+                }
+            }
+        }
     }
 }

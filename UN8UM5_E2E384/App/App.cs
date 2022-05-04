@@ -7,11 +7,28 @@ using System.IO;
 using System.Text.Json;
 using System.Xml.Serialization;
 using System.Linq;
+using System.Threading.Tasks;
 
 InitData.InitializeData();
 AppUI.Welcome();
 
 AdminLogIn();
+try
+{
+    InitData.tokenSource = new CancellationTokenSource();
+    Console.CancelKeyPress += OnCancelKey;
+
+    long result = await SumGuests(InitData.tokenSource.Token);
+    Console.WriteLine(result);
+}
+catch (TaskCanceledException e)
+{
+    Console.WriteLine("Türelmetlen");
+}
+finally
+{
+    InitData.tokenSource.Dispose();
+}
 OptionMenu();
 
 
@@ -240,4 +257,26 @@ void YoungestGuest()
     {
         Console.WriteLine("Name: {0}, age: {1}", youngest[0], youngest[1]);
     }
+}
+
+//Async Task
+static async Task<int> SumGuests(CancellationToken token)
+{
+    int total = 0;
+    foreach (var guest in InitData.guestList)
+    {
+        if (token.IsCancellationRequested)
+        {
+            break;
+        }
+        total += (guest.Adults + guest.Children);
+        await Task.Delay(1000);
+    }
+    return total;
+}
+
+static void OnCancelKey(object sender, ConsoleCancelEventArgs e)
+{
+    InitData.tokenSource.Cancel();
+    e.Cancel = true;
 }
