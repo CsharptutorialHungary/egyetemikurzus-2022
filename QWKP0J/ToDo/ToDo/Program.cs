@@ -2,11 +2,11 @@
 using System.Reflection;
 using System.Text.Json;
 using ToDo.Commands;
-
 namespace ToDo
 {
     internal static class Program
     {
+
         static IEnumerable<ICommand> LoadCommands()
         {
             var current = Assembly.GetExecutingAssembly();
@@ -23,6 +23,7 @@ namespace ToDo
         }
         static void Main(string[] args)
         {
+
             BuildConsoleTable();
 
             Dictionary<string, ICommand> commands
@@ -51,12 +52,10 @@ namespace ToDo
             }
         }
 
-        public static void BuildConsoleTable()
+        public static async void BuildConsoleTable()
         {
-            string loadList;
             List<Item> pLoadList = null;
             int counter = 1;
-
             Console.Clear();
 
             ConsoleTable commandTable = new ConsoleTable("Add <feladat>", "Finish <id>", "Undo <id>", "Delete <id>", "Exit");
@@ -65,16 +64,17 @@ namespace ToDo
 
             try
             {
-                loadList = File.ReadAllText($@"D:\csharp_kotprog\egyetemikurzus-2022\QWKP0J\ToDo\ToDo\current.json");
-                pLoadList = JsonSerializer.Deserialize<List<Item>>(loadList);
+                pLoadList = await FileReader();
             }
             catch (FileNotFoundException ex)
             {
                 Console.WriteLine("Hiányzik a json fájl.");
+                Environment.Exit(1);
             }
             catch (JsonException ex)
             {
                 Console.WriteLine("Baj van a json-nel.");
+                Environment.Exit(1);
             }
 
             if (pLoadList != null)
@@ -88,6 +88,14 @@ namespace ToDo
                 }
                 table.Write();
             }
+        }
+        public static async Task<List<Item>> FileReader()
+        {
+            string path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + @"\tasklist.json";
+            string loadList = File.ReadAllText(path);
+            List<Item> pLoadList = JsonSerializer.Deserialize<List<Item>>(loadList);
+
+            return pLoadList;
         }
     }
 }

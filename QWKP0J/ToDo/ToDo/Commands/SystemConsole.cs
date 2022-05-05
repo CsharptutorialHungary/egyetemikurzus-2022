@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ToDo.Commands
+﻿namespace ToDo.Commands
 {
     internal class SystemConsole : IConsole
     {
