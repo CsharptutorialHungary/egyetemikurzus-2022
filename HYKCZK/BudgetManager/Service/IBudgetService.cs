@@ -21,5 +21,8 @@ namespace BudgetManager.Service
         void AddIncome(Transaction transaction);
         void AddCost(Transaction transaction);
         void WriteSummary();
+
+        void SearchIncomes();
+        void SearchCosts();
     }
 }

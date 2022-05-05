@@ -28,6 +28,8 @@ namespace BudgetManager.Menu
             {
                 "Budget Summary",
                 "Manage Budget",
+                "Search Income",
+                "Search Cost",
                 "Quit"
             };
 
@@ -49,6 +51,14 @@ namespace BudgetManager.Menu
                 {
                     ManageBudget();
                 }
+                else if (option == "Search Income")
+                {
+                    SearchIncome();
+                }
+                else if (option == "Search Cost")
+                {
+                    SearchCost();
+                }
             }
 
             _console.WriteLine("Quitting from the application...");
@@ -58,6 +68,16 @@ namespace BudgetManager.Menu
         private void ManageBudget()
         {
             _manageBudgetMenu.Open();
+        }
+
+        private void SearchIncome()
+        {
+            _budgetService.SearchIncomes();
+        }
+
+        private void SearchCost()
+        {
+            _budgetService.SearchCosts();
         }
     }
 }

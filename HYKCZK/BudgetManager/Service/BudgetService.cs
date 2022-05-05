@@ -1,7 +1,7 @@
-﻿using System.IO.Abstractions;
-using BudgetManager.Enum;
+﻿using BudgetManager.Enum;
 using BudgetManager.Model;
 using BudgetManager.Provider;
+using System.IO.Abstractions;
 using System.Text.Encodings.Web;
 using System.Text.Json;
 
@@ -94,23 +94,65 @@ namespace BudgetManager.Service
                 _console.WriteLine("[Warning]: It seems like you have a loan. Pay it back as soon as possible.");
             }
             _console.WriteLine();
-            
-            _console.WriteLine("==== Last 20 transaction ====");
-            var lastTransactions = Budget.Incomes.Union(Budget.Costs)
-                .OrderByDescending(transaction => transaction.AccountedDateTime)
-                .Take(20);
 
-            foreach (var transaction in lastTransactions)
+            var lastIncomes = Budget.Incomes
+                .OrderByDescending(transaction => transaction.AccountedDateTime)
+                .Take(10);
+
+            var lastCosts = Budget.Costs
+                .OrderByDescending(transaction => transaction.AccountedDateTime)
+                .Take(10);
+
+            _console.WriteLine("==== Last 10 Income ====");
+            WriteTransactions(lastIncomes.ToList());
+            _console.WriteLine("========================");
+
+            _console.WriteLine();
+
+            _console.WriteLine("====  Last 10 Cost  ====");
+            WriteTransactions(lastCosts.ToList());
+            _console.WriteLine("========================");
+
+            _console.WriteLine();
+        }
+
+        public void SearchIncomes()
+        {
+            SearchIn(Budget.Incomes);
+        }
+
+        public void SearchCosts()
+        {
+            SearchIn(Budget.Costs);
+        }
+
+        private void SearchIn(List<Transaction> transactions)
+        {
+            string search;
+            while(string.IsNullOrEmpty(search = _console.ReadString("Search for: ")))
+            {
+                _console.WriteLine("Empty search is not allowed.");
+            }
+
+            var results = (from transaction in transactions
+                           where transaction.Description.Contains(search, StringComparison.CurrentCultureIgnoreCase)
+                           select transaction).ToList();
+
+
+            _console.WriteLine($"==== Found {results.Count} Transaction ====");
+            WriteTransactions(results);
+        }
+
+        private void WriteTransactions(List<Transaction> transactions)
+        {
+            foreach (var transaction in transactions)
             {
                 _console.WriteLine("{0,-25} {1,14} - {2}",
                     transaction.AccountedDateTime.ToString("MM/dd/yyyy HH:mm:ss"),
                     FormatCurrencyAmount(transaction.Amount, Budget.Currency),
                     transaction.Description
                 );
-            }
-
-            _console.WriteLine("=============================");
-            _console.WriteLine();
+            };
         }
 
         private Budget? LoadBudgetFromJson()
