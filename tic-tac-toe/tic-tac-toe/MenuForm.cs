@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.IO;
 using System.Text.Json;
-using System.Collections.Immutable;
 
 namespace tic_tac_toe
 {
@@ -48,8 +47,14 @@ namespace tic_tac_toe
             {
                 List<Player> playerList = new List<Player>();
                 string playersJson = JsonSerializer.Serialize(playerList);
-                File.WriteAllText(gameConfig.ToplistPath, playersJson);
-                loadPlayersData();
+                try {
+                    File.WriteAllText(gameConfig.ToplistPath, playersJson);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            loadPlayersData();
             }
         }
 

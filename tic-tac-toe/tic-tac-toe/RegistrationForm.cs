@@ -64,11 +64,17 @@ namespace tic_tac_toe
                         Loses = 0,
                         Draw = 0,
                     });
-                    string playersJson = JsonSerializer.Serialize(MenuForm.players);;
-                    File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
-                    MessageBox.Show("You have successfully registered.", "TicTacToe",
-                        MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    MenuForm.loadPlayersData();
+                    string playersJson = JsonSerializer.Serialize(MenuForm.players);
+                    try {
+                        File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
+                        MessageBox.Show("You have successfully registered.", "TicTacToe",
+                                MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MenuForm.loadPlayersData();
+                    }
+                        catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
             }
         }

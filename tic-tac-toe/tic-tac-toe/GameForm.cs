@@ -4,7 +4,6 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace tic_tac_toe
@@ -86,7 +85,6 @@ namespace tic_tac_toe
             Buttons_Enable();
             Player tempP1 = MenuForm.players.Find(p => { return p.Name == p1.Name;  });
             Player tempP2 = MenuForm.players.Find(p => p.Name == p2.Name);
-            Console.WriteLine(p1.Name);
             if (p1.Name == playerName)
             {
                 tempP1.Wins++;
@@ -97,7 +95,14 @@ namespace tic_tac_toe
                 tempP1.Loses++;
             }
             string playersJson = JsonSerializer.Serialize(MenuForm.players);
-            File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
+            try
+            {
+                File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void draw_game()
@@ -107,8 +112,14 @@ namespace tic_tac_toe
             MenuForm.players.Find(p => p.Name == p1.Name).Draw++;
             MenuForm.players.Find(p => p.Name == p2.Name).Draw++;
             string playersJson = JsonSerializer.Serialize(MenuForm.players);
-            File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
-        }
+            try {
+                File.WriteAllText(MenuForm.gameConfig.ToplistPath, playersJson);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "TicTacToe", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+}
 
         private void button1_Click(object sender, EventArgs e)
         {
