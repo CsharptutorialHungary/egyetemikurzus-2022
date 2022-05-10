@@ -1,8 +1,7 @@
 ﻿namespace Amoba.Interfaces
 {
-    public interface ICell<T>
+    public interface ICell<T> : ICoordinate
     {
-        ICoordinate Coordinate { get; }
         T Value { get; }
     }
 }
