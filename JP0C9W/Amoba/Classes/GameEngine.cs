@@ -7,8 +7,6 @@ namespace Amoba.Classes
         public static readonly Random RANDOM = new();
         public static readonly string PLAY_MODE = "play";
         public static readonly string REPLAY_MODE = "replay"; 
-        private const int MIN_BOARD_SIZE = 5;
-        private const int MAX_BOARD_SIZE = 100;
         private readonly string WHITE_WINNER_STATE;
         private readonly string BLACK_WINNER_STATE;
         public IGameReporter Reporter { get; init; }
@@ -98,9 +96,9 @@ namespace Amoba.Classes
 
         public GameEngine(IGameReporter gameReporter, int boardSize) {
             Reporter = gameReporter;
-            WHITE_WINNER_STATE = new((char)BoardCellValue.WHITE, MIN_BOARD_SIZE);
-            BLACK_WINNER_STATE = new((char)BoardCellValue.BLACK, MIN_BOARD_SIZE);
-            Board = new Board(MIN_BOARD_SIZE, MAX_BOARD_SIZE, boardSize, (char)BoardCellValue.EMPTY);
+            WHITE_WINNER_STATE = new((char)BoardCellValue.WHITE, Classes.Board.MIN_BOARD_SIZE);
+            BLACK_WINNER_STATE = new((char)BoardCellValue.BLACK, Classes.Board.MIN_BOARD_SIZE);
+            Board = new Board(boardSize, (char)BoardCellValue.EMPTY);
             IsGameRunning = false;
             TurnIndex = -1;
             Players = new IPlayer[2];
@@ -242,7 +240,7 @@ namespace Amoba.Classes
             diagonalCells[1] = new Coordinate(0, Board.MinSize - 1);
             var diagonals = new string[2];
             // dividing board into 5x5 squares when checking diagonals
-            for (int i = 0; i < Board.BoardSize - MIN_BOARD_SIZE + 1; i++)
+            for (int i = 0; i < Board.BoardSize - Classes.Board.MIN_BOARD_SIZE + 1; i++)
             {
                 // go down
                 if (i != 0)
@@ -250,7 +248,7 @@ namespace Amoba.Classes
                     diagonalCells[0].Y++;
                     diagonalCells[1].Y++;
                 }
-                for (int j = 0; j < Board.BoardSize - MIN_BOARD_SIZE + 1; j++)
+                for (int j = 0; j < Board.BoardSize - Classes.Board.MIN_BOARD_SIZE + 1; j++)
                 {
                     diagonals[0] = "";
                     diagonals[1] = "";
