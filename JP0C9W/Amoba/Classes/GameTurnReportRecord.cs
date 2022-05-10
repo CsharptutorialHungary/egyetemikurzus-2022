@@ -2,7 +2,7 @@
 
 namespace Amoba.Classes
 {
-    public record class GameTurnReportRecord //: IGameTurnReport
+    public record class GameTurnReportRecord : IGameTurnReport
     {
         public int TurnIndex { get; init; }
         public GameStatus GameStatus { get; init; }
