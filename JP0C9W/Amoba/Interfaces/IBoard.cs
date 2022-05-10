@@ -10,5 +10,6 @@
         void SetCell(IBoardCell cell);
         void ResetCells();
         bool IsFilled();
+        IEnumerable<T[]> CopyCells();
     }
 }

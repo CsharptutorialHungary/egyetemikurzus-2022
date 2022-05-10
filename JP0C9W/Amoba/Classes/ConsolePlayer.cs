@@ -26,6 +26,7 @@ namespace Amoba.Classes
 
                 Console.WriteLine("Column: ");
                 var inputColIndex = Console.ReadLine();
+                Console.WriteLine();
                 if (!int.TryParse(inputColIndex, out int tmpColIndex) || tmpColIndex <= 0)
                 {
                     Console.WriteLine($"{inputColIndex} is not a valid index!");
@@ -36,11 +37,11 @@ namespace Amoba.Classes
                     coordinate.X = tmpColIndex - 1;
                 }
 
-                isValidMove = GameEngine.IsMoveValid(new BoardCell(coordinate.ToImmutable(), GameEngine.ColorToValue(Color)), board);
+                isValidMove = GameEngine.IsMoveValid(new BoardCell(coordinate.X, coordinate.Y, GameEngine.ColorToValue(Color)), board);
                 if (!isValidMove)
                     Console.WriteLine($"Row: {tmpRowIndex}, Column: {tmpColIndex} is not a valid move!");
             }
-            return new BoardCell(coordinate.ToImmutable(), GameEngine.ColorToValue(Color));
+            return new BoardCell(coordinate.X, coordinate.Y, GameEngine.ColorToValue(Color));
         }
 
         public ConsolePlayer(PlayerColor color)

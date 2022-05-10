@@ -2,90 +2,210 @@
 
 namespace Amoba.Classes
 {
-    public enum GameStatus
-    {
-        WHITE_WON = 0,
-        BLACK_WON = 1,
-        DRAW = 2,
-        NOT_FINISHED = 3
-    }
-    public enum GameMode
-    {
-        REAL_VS_REAL = 0,
-        REAL_VS_AI = 1,
-        AI_VS_AI = 2,
-    }
     public class GameEngine : IGameEngine
     {
+        public static readonly Random RANDOM = new();
+        public static readonly string PLAY_MODE = "play";
+        public static readonly string REPLAY_MODE = "replay"; 
         private const int MIN_BOARD_SIZE = 5;
         private const int MAX_BOARD_SIZE = 100;
         private readonly string WHITE_WINNER_STATE;
         private readonly string BLACK_WINNER_STATE;
+        public IGameReporter Reporter { get; init; }
+        public GameMode? Mode { get; private set; }
+        public int TurnIndex { get; private set; }
         public IPlayer[] Players { get; private set; }
         public PlayerColor PlayerTurn { get; private set; }
         public bool IsGameRunning { get; private set; }
         public IBoard<char> Board { get; private set; }
         public IBoardCell? PrevMove { get; private set; }
-        public static bool IsMoveValid(IBoardCell cell, IBoard<char> board)
-        {
-            return 0 <= cell.Coordinate.Y && cell.Coordinate.Y < board.BoardSize && 0 <= cell.Coordinate.X && cell.Coordinate.X < board.BoardSize && board.Cells.ElementAt(cell.Coordinate.Y)[cell.Coordinate.X] == board.EmptyCell;
-        }
-        public GameEngine(int boardSize) {
-            WHITE_WINNER_STATE = new((char)BoardCellValue.WHITE, MIN_BOARD_SIZE);
-            BLACK_WINNER_STATE = new((char)BoardCellValue.BLACK, MIN_BOARD_SIZE);
-            Board = new Board(MIN_BOARD_SIZE, MAX_BOARD_SIZE, boardSize, (char)BoardCellValue.EMPTY);
-            IsGameRunning = false;
-            Players = new IPlayer[2];
-            PlayerTurn = PlayerColor.WHITE;
+
+        public static bool IsValidEngineMode(string mode) 
+        { 
+            return mode.ToLower() == PLAY_MODE || mode.ToLower() == REPLAY_MODE;
         }
 
+        public static bool IsMoveValid(IBoardCell cell, IBoard<char> board)
+        {
+            return 0 <= cell.Y && cell.Y < board.BoardSize && 0 <= cell.X && cell.X < board.BoardSize && board.Cells.ElementAt(cell.Y)[cell.X] == board.EmptyCell;
+        }
+
+        public static string ColorToString(PlayerColor Color)
+        {
+            return Color == PlayerColor.WHITE ? "White" : "Black"; 
+        }
         public static BoardCellValue ColorToValue(PlayerColor Color)
         {
             return Color == PlayerColor.WHITE ? BoardCellValue.WHITE : BoardCellValue.BLACK;
         }
 
-        public void StartNewGame(GameMode mode)
+        public static string GameStatusToString(GameStatus gameStatus)
         {
-            Board.ResetCells();
-            IsGameRunning = true;
-            var rnd = new Random();
+            return gameStatus switch
+            {
+                GameStatus.DRAW => "Draw",
+                GameStatus.BLACK_WON => "Black (X) won",
+                GameStatus.WHITE_WON => "White (O) won",
+                GameStatus.NOT_FINISHED => "Game has not yet finished",
+                _ => throw new Exception("Invalid game status!"),
+            };
+        }
+
+        public static GameStatus StringToGameStatus(string gameStatus)
+        {
+            return gameStatus switch
+            {
+                "Draw" => GameStatus.DRAW,
+                "Black (X) won" => GameStatus.BLACK_WON,
+                "White (O) won" => GameStatus.WHITE_WON,
+                "Game has not yet finished" => GameStatus.NOT_FINISHED,
+                _ => throw new Exception("Invalid game status!"),
+            };
+        }
+
+        public static string GameModeToString(GameMode gameMode)
+        {
+            return gameMode switch
+            {
+                GameMode.REAL_VS_REAL => "Real vs Real",
+                GameMode.REAL_VS_AI => "Real vs AI",
+                GameMode.AI_VS_AI => "AI vs AI",
+                _ => throw new ArgumentException("Unknown game mode!"),
+            };
+        }
+
+        public static GameMode StringToGameMode(string gameMode)
+        {
+            return gameMode switch
+            {
+                "Real vs Real" => GameMode.REAL_VS_REAL,
+                "Real vs AI" => GameMode.REAL_VS_AI,
+                "AI vs AI" => GameMode.AI_VS_AI,
+                _ => throw new ArgumentException("Unknown game mode!"),
+            };
+        }
+
+        public static GameMode IntToGameMode(int gameModeCode)
+        {
+            return gameModeCode switch
+            {
+                0 => GameMode.REAL_VS_REAL,
+                1 => GameMode.REAL_VS_AI,
+                2 => GameMode.AI_VS_AI,
+                _ => throw new ArgumentException("Unknown game mode!"),
+            };
+        }
+
+        public GameEngine(IGameReporter gameReporter, int boardSize) {
+            Reporter = gameReporter;
+            WHITE_WINNER_STATE = new((char)BoardCellValue.WHITE, MIN_BOARD_SIZE);
+            BLACK_WINNER_STATE = new((char)BoardCellValue.BLACK, MIN_BOARD_SIZE);
+            Board = new Board(MIN_BOARD_SIZE, MAX_BOARD_SIZE, boardSize, (char)BoardCellValue.EMPTY);
+            IsGameRunning = false;
+            TurnIndex = -1;
+            Players = new IPlayer[2];
+            PlayerTurn = PlayerColor.WHITE;
+        }
+
+        private void RequestMove()
+        {
+            try
+            {
+                var player = Players[(int)PlayerTurn];
+                var action = player.GetMove(Board, PrevMove);
+                while (!IsMoveValid(action, Board))
+                {
+                    action = player.GetMove(Board, PrevMove);
+                }
+                PrevMove = action;
+                Board.SetCell(action);
+                PlayerTurn = (PlayerColor)(1 - (int)PlayerTurn);
+                // save turn
+                Reporter.SaveTurn(new GameTurnReportRecord(TurnIndex++, GetStatus(), Board.CopyCells(), new BoardCell(action)));
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+        }
+
+        public void AssignColorToPlayers(GameMode mode)
+        {
+            if (IsGameRunning)
+            {
+                Console.Error.WriteLine("Can't assign colors to players, because a game is already running!");
+                return;
+            }
+
+            int coinFlip = RANDOM.Next(0, 2);
             switch (mode)
             {
-                case GameMode.REAL_VS_REAL:
-                    Players[0] = new ConsolePlayer((PlayerColor)rnd.Next(0, 1));
-                    Players[1] = new ConsolePlayer((PlayerColor)(1 - (int)Players[0].Color));
-                    break;
                 case GameMode.REAL_VS_AI:
-                    Players[0] = new ConsolePlayer((PlayerColor)rnd.Next(0, 1));
-                    Players[1] = new RandomPlayer((PlayerColor)(1 - (int)Players[0].Color), Board);
+                    Players[coinFlip] = new ConsolePlayer((PlayerColor)coinFlip);
+                    Players[1 - coinFlip] = new RandomPlayer((PlayerColor)(1 - coinFlip), Board);
                     break;
                 case GameMode.AI_VS_AI:
-                    Players[0] = new RandomPlayer((PlayerColor)rnd.Next(0, 1), Board);
-                    Players[1] = new RandomPlayer((PlayerColor)(1 - (int)Players[0].Color), Board);
+                    Players[coinFlip] = new RandomPlayer((PlayerColor)coinFlip, Board);
+                    Players[1 - coinFlip] = new RandomPlayer((PlayerColor)(1 - coinFlip), Board);
                     break;
                 default:
-                    Console.WriteLine("Unexpected game mode!");
+                    Players[coinFlip] = new ConsolePlayer((PlayerColor)coinFlip);
+                    Players[1 - coinFlip] = new ConsolePlayer((PlayerColor)(1 - coinFlip));
                     break;
             }
-            PlayerTurn = PlayerColor.WHITE;
-            PrevMove = null;
         }
 
-        public void RequestMove()
+        public void StartNewGame(GameMode mode)
         {
-            var player = Players[(int)PlayerTurn];
-            var action = player.GetMove(Board, PrevMove);
-            while (!IsMoveValid(action, Board))
+            if (IsGameRunning)
             {
-                action = player.GetMove(Board, PrevMove);
+                Console.Error.WriteLine("A new game cannot be started, bacuase a game is already running!");
+                return;
             }
-            Console.WriteLine("Player's turn: " + ColorToValue(player.Color));
-            PrevMove = action;
-            Board.SetCell(action);
-            PlayerTurn = (PlayerColor)(1 - (int)PlayerTurn);
+
+            Board.ResetCells();
+            TurnIndex = 0;
+            Mode = mode;
+            AssignColorToPlayers(mode);
+            PlayerTurn = PlayerColor.WHITE; // White starts
+            PrevMove = null;
+            IsGameRunning = true;
+            while (IsGameRunning)
+            {
+                var status = GetStatus();
+                if (status == GameStatus.NOT_FINISHED)
+                {
+                    if (TurnIndex > 0)
+                        Console.WriteLine($"Turn: {TurnIndex}. {ColorToString(PlayerTurn)}\n");
+                    else
+                    {
+                        Console.WriteLine($"Game mode: {GameModeToString(mode)}\n");
+                        Console.WriteLine(Board.ToString());
+                        Console.WriteLine($"Turn: {++TurnIndex}. {ColorToString(PlayerTurn)}\n");
+                    }
+                        
+
+                    RequestMove();
+                    Console.WriteLine(Board.ToString());
+                    Console.WriteLine($"Move: {PrevMove}\n");
+                }
+                else
+                {
+                    try
+                    {
+                        EndGame();
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+
+                }
+            }
         }
 
-        public GameStatus GetStatus()
+        public GameStatus CheckBoardRows()
         {
             for (int i = 0; i < Board.BoardSize; i++)
             {
@@ -95,8 +215,11 @@ namespace Amoba.Classes
                 else if (row.Contains(BLACK_WINNER_STATE))
                     return GameStatus.BLACK_WON;
             }
+            return GameStatus.NOT_FINISHED;
+        }
 
-            var strList = new List<string>();
+        public GameStatus CheckBoardCols()
+        {
             for (int i = 0; i < Board.BoardSize; i++)
             {
                 string col = "";
@@ -109,8 +232,11 @@ namespace Amoba.Classes
                 else if (col.Contains(BLACK_WINNER_STATE))
                     return GameStatus.BLACK_WON;
             }
+            return GameStatus.NOT_FINISHED;
+        }
 
-            strList.Clear();
+        public GameStatus CheckBoardDiagonals()
+        {
             var diagonalCells = new Coordinate[2];
             diagonalCells[0] = new Coordinate();
             diagonalCells[1] = new Coordinate(0, Board.MinSize - 1);
@@ -133,13 +259,13 @@ namespace Amoba.Classes
                     {
                         diagonalCells[0].X = 0;
                         diagonalCells[1].X = 0;
-                    } 
+                    }
                     else
                     {
                         diagonalCells[0].X++;
                         diagonalCells[1].X++;
                     }
-                    
+
                     for (int k = 0; k < Board.MinSize; k++)
                     {
                         diagonals[0] += Board.Cells.ElementAt(diagonalCells[0].Y + k)[diagonalCells[0].X + k];
@@ -155,6 +281,25 @@ namespace Amoba.Classes
                     }
                 }
             }
+            return GameStatus.NOT_FINISHED;
+        }
+
+        public GameStatus GetStatus()
+        {
+            Task<GameStatus>[] taskArray = {
+                Task<GameStatus>.Factory.StartNew(() => CheckBoardRows()),
+                Task<GameStatus>.Factory.StartNew(() => CheckBoardCols()),
+                Task<GameStatus>.Factory.StartNew(() => CheckBoardDiagonals())
+            };
+
+            foreach (var task in taskArray)
+            {
+                var res = task.Result;
+                if (res != GameStatus.NOT_FINISHED)
+                {
+                    return res;
+                }
+            }
 
             return Board.IsFilled() ? GameStatus.DRAW : GameStatus.NOT_FINISHED;
         }
@@ -162,21 +307,26 @@ namespace Amoba.Classes
 
         public void EndGame()
         {
-            switch (GetStatus())
+            var status = GetStatus();
+            if (status == GameStatus.NOT_FINISHED)
             {
-                case GameStatus.DRAW:
-                    Console.Write("Draw");
-                    break;
-                case GameStatus.BLACK_WON:
-                    Console.Write("X won");
-                    break;
-                case GameStatus.WHITE_WON:
-                    Console.Write("O won");
-                    break;
-                default:
-                    throw new Exception("Game has not yet finished!");
+                Console.Error.WriteLine("Game can not be ended, because it has not yet finished!");
+                return;
             }
-            IsGameRunning = false;
+
+            try
+            {
+                string gameResult = GameStatusToString(GetStatus());
+                Console.WriteLine($"{gameResult}!");
+                IsGameRunning = false;
+                TurnIndex = -1;
+                var task = Task.Run( async () => await Reporter.SaveGameToFileAsync());
+                task.Wait();
+            } 
+            catch (Exception)
+            {
+                throw;
+            }
         }
     }
 }
