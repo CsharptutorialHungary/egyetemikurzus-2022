@@ -4,9 +4,46 @@ namespace Amoba.Classes
 {
     public class Board : IBoard<char>
     {
-        public int MinSize { get; }
-        public int MaxSize { get; }
-        public char EmptyCell { get; }
+        public static readonly int MIN_BOARD_SIZE = 5;
+        public static readonly int MAX_BOARD_SIZE = 100;
+        private int _minSize;
+        public int MinSize {
+            get
+            {
+                return _minSize;
+            }
+            init
+            {
+                if (value > MAX_BOARD_SIZE)
+                {
+                    _minSize = MAX_BOARD_SIZE;
+                }
+                else
+                {
+                    _minSize = MIN_BOARD_SIZE > value ? MIN_BOARD_SIZE : value;
+                }
+            } 
+        }
+        private int _maxSize;
+        public int MaxSize
+        {
+            get
+            {
+                return _maxSize;
+            }
+            init
+            {
+                if (value > MAX_BOARD_SIZE)
+                {
+                    _maxSize = MAX_BOARD_SIZE;
+                }
+                else
+                {
+                    _maxSize = MIN_BOARD_SIZE > value ? MIN_BOARD_SIZE : value;
+                }
+            }
+        }
+        public char EmptyCell { get; init; }
         
         private int _boardSize;
         public int BoardSize
@@ -34,6 +71,8 @@ namespace Amoba.Classes
             string formattedBoard = "";
             if (!cells.Any())
                 throw new ArgumentException("Can't convert cells to string, bacause cells argument is empty!");
+            else if (cells.Count() != cells.ElementAt(0).Length)
+                throw new ArgumentException("Board is not symmetrical!");
 
             int boardSize = cells.Count();
             int rowNumTextOffset = (int)Math.Log10(boardSize);
@@ -57,8 +96,25 @@ namespace Amoba.Classes
         } 
         public Board(int minSize, int maxSize, int boardSize, char emptyCell)
         {
-            MinSize = minSize;
-            MaxSize = maxSize;
+            if (maxSize < minSize) 
+            {
+                MinSize = maxSize;
+                MaxSize = minSize;
+            } 
+            else 
+            {
+                MinSize = minSize;
+                MaxSize = maxSize;
+            }
+            BoardSize = boardSize;
+            EmptyCell = emptyCell;
+            Cells = FillCells(EmptyCell);
+        }
+
+        public Board(int boardSize, char emptyCell)
+        {
+            MinSize = MIN_BOARD_SIZE;
+            MaxSize = MAX_BOARD_SIZE;
             BoardSize = boardSize;
             EmptyCell = emptyCell;
             Cells = FillCells(EmptyCell);
