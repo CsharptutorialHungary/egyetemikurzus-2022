@@ -1,6 +1,4 @@
-﻿using Amoba.Classes;
-
-namespace Amoba.Interfaces
+﻿namespace Amoba.Interfaces
 {
     public enum BoardCellValue
     {

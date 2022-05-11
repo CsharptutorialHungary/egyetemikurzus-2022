@@ -7,6 +7,7 @@
         DRAW = 2,
         NOT_FINISHED = 3
     }
+
     public enum GameMode
     {
         REAL_VS_REAL = 0,

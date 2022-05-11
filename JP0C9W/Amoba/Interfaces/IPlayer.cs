@@ -12,7 +12,7 @@
     }
     public interface IPlayer
     {
-        PlayerColor Color { get; set; }
+        PlayerColor Color { get; }
         PlayerType Type { get; }
         IBoardCell GetMove(IBoard<char> board, IBoardCell? prevMove); 
     }

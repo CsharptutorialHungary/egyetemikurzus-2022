@@ -2,12 +2,12 @@
 
 namespace Amoba.Classes
 {
-    internal class RandomPlayer : IPlayer
+    public record class RandomPlayer : IPlayer
     {
-        private ICollection<IBoardCell> FreeCells;
-        public PlayerColor Color { get; set; }
-        public PlayerType Type { get; }
-        public static void ShuffleCollection<T>(ref ICollection<T> col)
+        private IList<IBoardCell> FreeCells;
+        public PlayerColor Color { get; init; }
+        public PlayerType Type { get; init; }
+        public static void ShuffleCollection<T>(ref IList<T> col)
         {
             col = col.OrderBy(i => GameEngine.RANDOM.Next()).ToList();
         } 
@@ -16,11 +16,12 @@ namespace Amoba.Classes
             Type = PlayerType.AI;
             Color = color;
             FreeCells = new List<IBoardCell>();
+            var cells = board.Cells;
             for (int i = 0; i < board.BoardSize; i++)
             {
                 for (int j = 0; j < board.BoardSize; j++)
                 {
-                    if (board.Cells.ElementAt(i)[j] == board.EmptyCell)
+                    if (cells.ElementAt(i)[j] == Board.EMPTY_CELL)
                     {
                         FreeCells.Add(new BoardCell(j, i, BoardCellValue.EMPTY));
                     }
@@ -40,16 +41,12 @@ namespace Amoba.Classes
                     try
                     {
                         prevCell = FreeCells.Single(cell => cell.Y == prevMove.Y && cell.X == prevMove.X);
+                        FreeCells.Remove(prevCell);
                     } 
                     catch (Exception)
                     {
                         throw;
                     }
-
-                    if (prevCell != null)
-                        FreeCells.Remove(prevCell);
-                    else
-                        throw new Exception($"Can't find previous move ({prevMove}) on board!");
                 }
                 ShuffleCollection(ref FreeCells);
                 var selectedCell = FreeCells.ElementAt(GameEngine.RANDOM.Next(0, FreeCells.Count));

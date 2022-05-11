@@ -6,6 +6,7 @@ namespace Amoba.Classes
     {
         public static readonly int MIN_BOARD_SIZE = 5;
         public static readonly int MAX_BOARD_SIZE = 100;
+        public static readonly char EMPTY_CELL = (char)BoardCellValue.EMPTY;
         private int _minSize;
         public int MinSize {
             get
@@ -43,8 +44,6 @@ namespace Amoba.Classes
                 }
             }
         }
-        public char EmptyCell { get; init; }
-        
         private int _boardSize;
         public int BoardSize
         {
@@ -64,7 +63,18 @@ namespace Amoba.Classes
                 }
             }
         }
-        public IEnumerable<char[]> Cells { get; set; }
+        private IEnumerable<char[]> _cells; 
+        public IEnumerable<char[]> Cells
+        {
+            get
+            {
+                return CopyCells(); // Only copy access
+            }
+            private set
+            {
+                _cells = value;
+            }
+        }
 
         public static string BoardCellsToString(IEnumerable<char[]> cells)
         {
@@ -94,7 +104,15 @@ namespace Amoba.Classes
             }
             return formattedBoard;
         } 
-        public Board(int minSize, int maxSize, int boardSize, char emptyCell)
+
+        public Board(IBoard<char> board)
+        {
+            MinSize = board.MinSize;
+            MaxSize = board.MaxSize;
+            BoardSize = board.BoardSize;
+            _cells = board.CopyCells();
+        }
+        public Board(int minSize, int maxSize, int boardSize)
         {
             if (maxSize < minSize) 
             {
@@ -107,17 +125,15 @@ namespace Amoba.Classes
                 MaxSize = maxSize;
             }
             BoardSize = boardSize;
-            EmptyCell = emptyCell;
-            Cells = FillCells(EmptyCell);
+            _cells = FillCells(EMPTY_CELL);
         }
 
-        public Board(int boardSize, char emptyCell)
+        public Board(int boardSize)
         {
             MinSize = MIN_BOARD_SIZE;
             MaxSize = MAX_BOARD_SIZE;
             BoardSize = boardSize;
-            EmptyCell = emptyCell;
-            Cells = FillCells(EmptyCell);
+            _cells = FillCells(EMPTY_CELL);
         }
 
         private char[][] FillCells(char fillChar)
@@ -136,28 +152,33 @@ namespace Amoba.Classes
 
         public void ResetCells()
         {
-            Cells = FillCells(EmptyCell);
+            _cells = FillCells(EMPTY_CELL);
         }
 
         public void SetCell(IBoardCell cell)
         {
             if (0 <= cell.Y && cell.Y < BoardSize && 0 <= cell.X && cell.X < BoardSize)
-                Cells.ElementAt(cell.Y)[cell.X] = (char)cell.Value;
+                _cells.ElementAt(cell.Y)[cell.X] = (char)cell.Value;
             else
                 throw new ArgumentException("Invalid cell!");
         }
 
+        public void SetCell(int x, int y, BoardCellValue value)
+        {
+            SetCell(new BoardCell(x, y, value));
+        }
+
         public override string ToString()
         {
-            return BoardCellsToString(Cells);
+            return BoardCellsToString(_cells);
         }
 
         public bool IsFilled()
         {
             for (int i = 0; i < BoardSize; i++)
             {
-                var row = new string(Cells.ElementAt(i));
-                if (row.Contains(EmptyCell))
+                var row = new string(_cells.ElementAt(i));
+                if (row.Contains(EMPTY_CELL))
                     return false;
             }
             return true;
@@ -169,10 +190,7 @@ namespace Amoba.Classes
             for (int i = 0; i < BoardSize; i++)
             {
                 res[i] = new char[BoardSize];
-                for (int j = 0; j < BoardSize; j++)
-                {
-                    res[i][j] = Cells.ElementAt(i)[j];
-                }
+                _cells.ElementAt(i).CopyTo(res[i], 0);
             }
             return res;
         } 

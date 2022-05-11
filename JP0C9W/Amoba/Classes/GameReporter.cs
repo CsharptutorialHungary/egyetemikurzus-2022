@@ -24,10 +24,13 @@ namespace Amoba.Classes
                 using var stream = new StreamReader(filePath);
                 string json = await stream.ReadToEndAsync();
                 var res = JsonSerializer.Deserialize<GameReportRecord>(json);
-                if (res != null)
+                if (res != null && res.GameMode != null && res.GameTurnReports != null)
+                {
+                    _ = GameEngine.GameModeToString(res.GameMode.Value);
                     GameReport = res;
+                }
                 else
-                    throw new Exception("File is invalid!");
+                    throw new Exception("Game file content is invalid!");
             }
             catch (Exception)
             {
@@ -35,12 +38,12 @@ namespace Amoba.Classes
             }
         }
 
-        public async Task ReplayGameAsync(string filePath)
+        public async Task ReplayGameAsync(string filePath, int pauseBetWeenTurnsInMs = 0)
         {
             try
             {
                 await LoadGameFromFileAsync(filePath);
-                GameReport.Replay(500);
+                GameReport.Replay(pauseBetWeenTurnsInMs);
             }
             catch (Exception)
             {
@@ -48,7 +51,7 @@ namespace Amoba.Classes
             }
         }
 
-        public async Task SaveGameToFileAsync()
+        public async Task<string> SaveGameToFileAsync()
         {
             try
             {
@@ -63,6 +66,7 @@ namespace Amoba.Classes
                         WriteIndented = true,
                     }
                 );
+                return path;
             }
             catch (Exception)
             {

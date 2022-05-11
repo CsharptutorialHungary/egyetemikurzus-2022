@@ -2,10 +2,16 @@
 
 namespace Amoba.Classes
 {
-    internal class ConsolePlayer : IPlayer 
+    public record class ConsolePlayer : IPlayer 
     {
-        public PlayerColor Color { get; set; }
-        public PlayerType Type { get; }
+        public PlayerColor Color { get; init; }
+        public PlayerType Type { get; init; }
+        public ConsolePlayer(PlayerColor color)
+        {
+            Type = PlayerType.REAL;
+            Color = color;
+        }
+        public ConsolePlayer() : this(PlayerColor.WHITE) { }
         public IBoardCell GetMove(IBoard<char> board, IBoardCell? prevMove)
         {
             var coordinate = new Coordinate(-1, -1);
@@ -16,7 +22,7 @@ namespace Amoba.Classes
                 var inputRowIndex = Console.ReadLine();
                 if (!int.TryParse(inputRowIndex, out int tmpRowIndex) || tmpRowIndex <= 0)
                 {
-                    Console.WriteLine($"{inputRowIndex} is not a valid index!");
+                    Console.WriteLine($"{inputRowIndex} is not a valid row index!");
                     continue;
                 }
                 else
@@ -29,7 +35,7 @@ namespace Amoba.Classes
                 Console.WriteLine();
                 if (!int.TryParse(inputColIndex, out int tmpColIndex) || tmpColIndex <= 0)
                 {
-                    Console.WriteLine($"{inputColIndex} is not a valid index!");
+                    Console.WriteLine($"{inputColIndex} is not a valid column index!");
                     continue;
                 }
                 else
@@ -43,13 +49,5 @@ namespace Amoba.Classes
             }
             return new BoardCell(coordinate.X, coordinate.Y, GameEngine.ColorToValue(Color));
         }
-
-        public ConsolePlayer(PlayerColor color)
-        {
-            Type = PlayerType.REAL;
-            Color = color;
-        }
-
-        public ConsolePlayer() : this(PlayerColor.WHITE) { }
     }
 }

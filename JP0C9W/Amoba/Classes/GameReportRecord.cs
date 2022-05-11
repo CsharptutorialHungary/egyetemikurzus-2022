@@ -20,6 +20,11 @@ namespace Amoba.Classes
         {
             if (timeout < 0)
                 throw new ArgumentException("Timeout must be greater than or equal to 0!");
+            
+            if (!GameTurnReports.Any())
+            {
+                throw new Exception("No turns to replay!");
+            } 
 
             for (int i = 0; i < GameTurnReports.Count; i++)
             {

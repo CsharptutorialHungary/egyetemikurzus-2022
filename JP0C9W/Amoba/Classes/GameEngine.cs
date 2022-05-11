@@ -9,13 +9,37 @@ namespace Amoba.Classes
         public static readonly string REPLAY_MODE = "replay"; 
         private readonly string WHITE_WINNER_STATE;
         private readonly string BLACK_WINNER_STATE;
+        private IPlayer[] _players;
+        private IBoard<char> _board;
         public IGameReporter Reporter { get; init; }
         public GameMode? Mode { get; private set; }
         public int TurnIndex { get; private set; }
-        public IPlayer[] Players { get; private set; }
+        public IPlayer[] Players 
+        { 
+            get
+            {
+                var copy = new IPlayer[_players.Length];
+                _players.CopyTo(copy, 0);
+                return copy;
+            }
+            private set
+            {
+                _players = value;
+            } 
+        }
         public PlayerColor PlayerTurn { get; private set; }
         public bool IsGameRunning { get; private set; }
-        public IBoard<char> Board { get; private set; }
+        public IBoard<char> Board 
+        { 
+            get 
+            {
+                return new Board(_board);
+            }
+            private set 
+            {
+                _board = value;
+            } 
+        }
         public IBoardCell? PrevMove { get; private set; }
 
         public static bool IsValidEngineMode(string mode) 
@@ -25,7 +49,7 @@ namespace Amoba.Classes
 
         public static bool IsMoveValid(IBoardCell cell, IBoard<char> board)
         {
-            return 0 <= cell.Y && cell.Y < board.BoardSize && 0 <= cell.X && cell.X < board.BoardSize && board.Cells.ElementAt(cell.Y)[cell.X] == board.EmptyCell;
+            return 0 <= cell.Y && cell.Y < board.BoardSize && 0 <= cell.X && cell.X < board.BoardSize && board.Cells.ElementAt(cell.Y)[cell.X] == Classes.Board.EMPTY_CELL;
         }
 
         public static string ColorToString(PlayerColor Color)
@@ -45,7 +69,7 @@ namespace Amoba.Classes
                 GameStatus.BLACK_WON => "Black (X) won",
                 GameStatus.WHITE_WON => "White (O) won",
                 GameStatus.NOT_FINISHED => "Game has not yet finished",
-                _ => throw new Exception("Invalid game status!"),
+                _ => throw new ArgumentException("Invalid game status!"),
             };
         }
 
@@ -57,7 +81,7 @@ namespace Amoba.Classes
                 "Black (X) won" => GameStatus.BLACK_WON,
                 "White (O) won" => GameStatus.WHITE_WON,
                 "Game has not yet finished" => GameStatus.NOT_FINISHED,
-                _ => throw new Exception("Invalid game status!"),
+                _ => throw new ArgumentException("Invalid game status!"),
             };
         }
 
@@ -68,7 +92,7 @@ namespace Amoba.Classes
                 GameMode.REAL_VS_REAL => "Real vs Real",
                 GameMode.REAL_VS_AI => "Real vs AI",
                 GameMode.AI_VS_AI => "AI vs AI",
-                _ => throw new ArgumentException("Unknown game mode!"),
+                _ => throw new ArgumentException("Invalid game mode!"),
             };
         }
 
@@ -79,7 +103,7 @@ namespace Amoba.Classes
                 "Real vs Real" => GameMode.REAL_VS_REAL,
                 "Real vs AI" => GameMode.REAL_VS_AI,
                 "AI vs AI" => GameMode.AI_VS_AI,
-                _ => throw new ArgumentException("Unknown game mode!"),
+                _ => throw new ArgumentException("Invalid game mode!"),
             };
         }
 
@@ -90,7 +114,7 @@ namespace Amoba.Classes
                 0 => GameMode.REAL_VS_REAL,
                 1 => GameMode.REAL_VS_AI,
                 2 => GameMode.AI_VS_AI,
-                _ => throw new ArgumentException("Unknown game mode!"),
+                _ => throw new ArgumentException("Invalid game mode!"),
             };
         }
 
@@ -98,28 +122,39 @@ namespace Amoba.Classes
             Reporter = gameReporter;
             WHITE_WINNER_STATE = new((char)BoardCellValue.WHITE, Classes.Board.MIN_BOARD_SIZE);
             BLACK_WINNER_STATE = new((char)BoardCellValue.BLACK, Classes.Board.MIN_BOARD_SIZE);
-            Board = new Board(boardSize, (char)BoardCellValue.EMPTY);
+            _board = new Board(boardSize);
             IsGameRunning = false;
             TurnIndex = -1;
-            Players = new IPlayer[2];
+            _players = new IPlayer[2];
             PlayerTurn = PlayerColor.WHITE;
         }
 
         private void RequestMove()
         {
+            if (!IsGameRunning)
+            {
+                Console.WriteLine("Can't request move, because game is not running!");
+                return;
+            }
+
             try
             {
-                var player = Players[(int)PlayerTurn];
-                var action = player.GetMove(Board, PrevMove);
-                while (!IsMoveValid(action, Board))
+                IPlayer? player = _players[(int)PlayerTurn];
+                if (player == null)
                 {
-                    action = player.GetMove(Board, PrevMove);
+                    Console.WriteLine("Players aren't initialized!");
+                    return;
+                }
+                var action = player.GetMove(_board, PrevMove);
+                while (!IsMoveValid(action, _board))
+                {
+                    action = player.GetMove(_board, PrevMove);
                 }
                 PrevMove = action;
-                Board.SetCell(action);
+                _board.SetCell(action);
                 PlayerTurn = (PlayerColor)(1 - (int)PlayerTurn);
                 // save turn
-                Reporter.SaveTurn(new GameTurnReportRecord(TurnIndex++, GetStatus(), Board.CopyCells(), new BoardCell(action)));
+                Reporter.SaveTurn(new GameTurnReportRecord(TurnIndex++, GetStatus(), _board.CopyCells(), new BoardCell(action)));
             }
             catch (Exception)
             {
@@ -132,7 +167,7 @@ namespace Amoba.Classes
         {
             if (IsGameRunning)
             {
-                Console.Error.WriteLine("Can't assign colors to players, because a game is already running!");
+                Console.WriteLine("Can't assign colors to players, because a game is already running!");
                 return;
             }
 
@@ -140,16 +175,16 @@ namespace Amoba.Classes
             switch (mode)
             {
                 case GameMode.REAL_VS_AI:
-                    Players[coinFlip] = new ConsolePlayer((PlayerColor)coinFlip);
-                    Players[1 - coinFlip] = new RandomPlayer((PlayerColor)(1 - coinFlip), Board);
+                    _players[coinFlip] = new ConsolePlayer((PlayerColor)coinFlip);
+                    _players[1 - coinFlip] = new RandomPlayer((PlayerColor)(1 - coinFlip), _board);
                     break;
                 case GameMode.AI_VS_AI:
-                    Players[coinFlip] = new RandomPlayer((PlayerColor)coinFlip, Board);
-                    Players[1 - coinFlip] = new RandomPlayer((PlayerColor)(1 - coinFlip), Board);
+                    _players[coinFlip] = new RandomPlayer((PlayerColor)coinFlip, _board);
+                    _players[1 - coinFlip] = new RandomPlayer((PlayerColor)(1 - coinFlip), _board);
                     break;
                 default:
-                    Players[coinFlip] = new ConsolePlayer((PlayerColor)coinFlip);
-                    Players[1 - coinFlip] = new ConsolePlayer((PlayerColor)(1 - coinFlip));
+                    _players[coinFlip] = new ConsolePlayer((PlayerColor)coinFlip);
+                    _players[1 - coinFlip] = new ConsolePlayer((PlayerColor)(1 - coinFlip));
                     break;
             }
         }
@@ -158,11 +193,11 @@ namespace Amoba.Classes
         {
             if (IsGameRunning)
             {
-                Console.Error.WriteLine("A new game cannot be started, bacuase a game is already running!");
+                Console.WriteLine("A new game cannot be started, because a game is already running!");
                 return;
             }
 
-            Board.ResetCells();
+            _board.ResetCells();
             TurnIndex = 0;
             Mode = mode;
             AssignColorToPlayers(mode);
@@ -179,13 +214,13 @@ namespace Amoba.Classes
                     else
                     {
                         Console.WriteLine($"Game mode: {GameModeToString(mode)}\n");
-                        Console.WriteLine(Board.ToString());
+                        Console.WriteLine(_board.ToString());
                         Console.WriteLine($"Turn: {++TurnIndex}. {ColorToString(PlayerTurn)}\n");
                     }
                         
 
                     RequestMove();
-                    Console.WriteLine(Board.ToString());
+                    Console.WriteLine(_board.ToString());
                     Console.WriteLine($"Move: {PrevMove}\n");
                 }
                 else
@@ -205,9 +240,10 @@ namespace Amoba.Classes
 
         public GameStatus CheckBoardRows()
         {
-            for (int i = 0; i < Board.BoardSize; i++)
+            var cells = _board.Cells;
+            for (int i = 0; i < _board.BoardSize; i++)
             {
-                var row = new string(Board.Cells.ElementAt(i));
+                var row = new string(cells.ElementAt(i));
                 if (row.Contains(WHITE_WINNER_STATE))
                     return GameStatus.WHITE_WON;
                 else if (row.Contains(BLACK_WINNER_STATE))
@@ -218,12 +254,13 @@ namespace Amoba.Classes
 
         public GameStatus CheckBoardCols()
         {
-            for (int i = 0; i < Board.BoardSize; i++)
+            var cells = _board.Cells;
+            for (int i = 0; i < _board.BoardSize; i++)
             {
                 string col = "";
-                for (int j = 0; j < Board.BoardSize; j++)
+                for (int j = 0; j < _board.BoardSize; j++)
                 {
-                    col += Board.Cells.ElementAt(j)[i];
+                    col += cells.ElementAt(j)[i];
                 }
                 if (col.Contains(WHITE_WINNER_STATE))
                     return GameStatus.WHITE_WON;
@@ -237,10 +274,11 @@ namespace Amoba.Classes
         {
             var diagonalCells = new Coordinate[2];
             diagonalCells[0] = new Coordinate();
-            diagonalCells[1] = new Coordinate(0, Board.MinSize - 1);
+            diagonalCells[1] = new Coordinate(0, _board.MinSize - 1);
             var diagonals = new string[2];
+            var cells = _board.Cells;
             // dividing board into 5x5 squares when checking diagonals
-            for (int i = 0; i < Board.BoardSize - Classes.Board.MIN_BOARD_SIZE + 1; i++)
+            for (int i = 0; i < _board.BoardSize - Classes.Board.MIN_BOARD_SIZE + 1; i++)
             {
                 // go down
                 if (i != 0)
@@ -248,7 +286,7 @@ namespace Amoba.Classes
                     diagonalCells[0].Y++;
                     diagonalCells[1].Y++;
                 }
-                for (int j = 0; j < Board.BoardSize - Classes.Board.MIN_BOARD_SIZE + 1; j++)
+                for (int j = 0; j < _board.BoardSize - Classes.Board.MIN_BOARD_SIZE + 1; j++)
                 {
                     diagonals[0] = "";
                     diagonals[1] = "";
@@ -264,10 +302,10 @@ namespace Amoba.Classes
                         diagonalCells[1].X++;
                     }
 
-                    for (int k = 0; k < Board.MinSize; k++)
+                    for (int k = 0; k < _board.MinSize; k++)
                     {
-                        diagonals[0] += Board.Cells.ElementAt(diagonalCells[0].Y + k)[diagonalCells[0].X + k];
-                        diagonals[1] += Board.Cells.ElementAt(diagonalCells[1].Y - k)[diagonalCells[1].X + k];
+                        diagonals[0] += cells.ElementAt(diagonalCells[0].Y + k)[diagonalCells[0].X + k];
+                        diagonals[1] += cells.ElementAt(diagonalCells[1].Y - k)[diagonalCells[1].X + k];
                     }
 
                     foreach (var diag in diagonals)
@@ -299,16 +337,22 @@ namespace Amoba.Classes
                 }
             }
 
-            return Board.IsFilled() ? GameStatus.DRAW : GameStatus.NOT_FINISHED;
+            return _board.IsFilled() ? GameStatus.DRAW : GameStatus.NOT_FINISHED;
         }
 
 
         public void EndGame()
         {
-            var status = GetStatus();
-            if (status == GameStatus.NOT_FINISHED)
+            if (!IsGameRunning)
             {
-                Console.Error.WriteLine("Game can not be ended, because it has not yet finished!");
+                Console.WriteLine("Game is not running!");
+                return;
+            } 
+
+            var status = GetStatus();
+            if (status == GameStatus.NOT_FINISHED && IsGameRunning)
+            {
+                Console.WriteLine("Game can not be ended, because it has not yet finished!");
                 return;
             }
 
@@ -318,7 +362,7 @@ namespace Amoba.Classes
                 Console.WriteLine($"{gameResult}!");
                 IsGameRunning = false;
                 TurnIndex = -1;
-                var task = Task.Run( async () => await Reporter.SaveGameToFileAsync());
+                var task = Task.Run( async () => _ = await Reporter.SaveGameToFileAsync());
                 task.Wait();
             } 
             catch (Exception)
