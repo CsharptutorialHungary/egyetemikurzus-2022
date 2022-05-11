@@ -39,7 +39,7 @@ namespace Amoba.Tests
         }
 
         [TestInitialize]
-        public void SetUp()
+        public void Setup()
         {
             Console.SetOut(new StringWriter(ConsoleOutput));
             ConsoleOutput.Clear();
@@ -68,9 +68,8 @@ namespace Amoba.Tests
         }
 
         [TestMethod]
-        public void Test_Replay_Console_Write_Count()
+        public void Test_Replay_Console_Write_Check()
         {
-            ConsoleOutput.Clear();
             _testGameReport.Replay(0);
             foreach (var turnReport in _testGameReport.GameTurnReports)
                 Assert.IsTrue(ConsoleOutput.ToString().Contains(turnReport.ToString()));
@@ -79,6 +78,14 @@ namespace Amoba.Tests
 
             if (_testGameReport.GameMode.HasValue)
                 Assert.IsTrue(ConsoleOutput.ToString().Contains($"Game mode: {GameEngine.GameModeToString(_testGameReport.GameMode.Value)}"));
+        }
+
+        [TestMethod]
+        public void Test_Replay_No_Turn_Records()
+        {
+            var report = new GameReportRecord();
+            var excpetion = Assert.ThrowsException<Exception>( () => report.Replay(0));
+            Assert.AreEqual("No turns to replay!", excpetion.Message);
         }
     }
 }
