@@ -15,48 +15,79 @@ namespace Amoba.Tests
             int expectedMinSize,
             int expectedMaxSize,
             int expectedBoardSize,
-            char expectedEmptyCell,
             Board board
         )
         {
             Assert.AreEqual(expectedMinSize, board.MinSize, "Min board size is wrong!");
             Assert.AreEqual(expectedMaxSize, board.MaxSize, "Max board size is wrong!");
             Assert.AreEqual(expectedBoardSize, board.BoardSize, "Board size is wrong!");
-            Assert.AreEqual(expectedEmptyCell, board.EmptyCell, "Empty cell is wrong!");
-            Assert.IsTrue(board.Cells.All(row => row.All(cell => cell == board.EmptyCell)), "Cells are not filled with empty cell!");
+            Assert.IsTrue(board.Cells.All(row => row.All(cell => cell == Board.EMPTY_CELL)), "Cells are not filled with empty cell!");
         }
 
         [TestMethod]
         public void Test_Full_Constructor()
         {
-            Check_Board_Instance(5, 5, 5, 'a', new Board(-1, 5, 12, 'a'));
-            Check_Board_Instance(5, 5, 5, 'b', new Board(-1, 1, 23, 'b'));
-            Check_Board_Instance(5, 5, 5, 'c', new Board(5, 1, 1, 'c'));
-            Check_Board_Instance(5, 100, 5, 'd', new Board(101, 1, 3, 'd'));
-            Check_Board_Instance(11, 100, 100, 'e', new Board(11, 102, 100, 'e'));
-            Check_Board_Instance(100, 100, 100, 'f', new Board(101, 102, 5, 'f'));
-            Check_Board_Instance(10, 50, 12, 'g', new Board(10, 50, 12, 'g'));
-            Check_Board_Instance(5, 100, 26, 'h', new Board(1, 101, 26, 'h'));
-            Check_Board_Instance(100, 100, 100, 'i', new Board(123, 123, 123, 'i'));
+            Check_Board_Instance(5, 5, 5, new Board(-1, 5, 12));
+            Check_Board_Instance(5, 5, 5, new Board(-1, 1, 23));
+            Check_Board_Instance(5, 5, 5, new Board(5, 1, 1));
+            Check_Board_Instance(5, 100, 5, new Board(101, 1, 3));
+            Check_Board_Instance(11, 100, 100, new Board(11, 102, 100));
+            Check_Board_Instance(100, 100, 100, new Board(101, 102, 5));
+            Check_Board_Instance(10, 50, 12, new Board(10, 50, 12));
+            Check_Board_Instance(5, 100, 26, new Board(1, 101, 26));
+            Check_Board_Instance(100, 100, 100, new Board(123, 123, 123));
         }
 
-        [DataRow(1, 'a')]
-        [DataRow(4, 'a')]
-        [DataRow(5, 'b')]
-        [DataRow(6, 'b')]
-        [DataRow(99, 'c')]
-        [DataRow(100, 'd')]
-        [DataRow(101, 'e')]
+        [DataRow(1)]
+        [DataRow(4)]
+        [DataRow(5)]
+        [DataRow(6)]
+        [DataRow(99)]
+        [DataRow(100)]
+        [DataRow(101)]
         [DataTestMethod]
-        public void Test_BoardSize_EmptyCell_Constructor(int boardSize, char emptyCell)
+        public void Test_BoardSize_EmptyCell_Constructor(int boardSize)
         {
-            var board = new Board(boardSize, emptyCell);
+            var board = new Board(boardSize);
             Assert.AreEqual(Board.MIN_BOARD_SIZE, board.MinSize);
             Assert.AreEqual(Board.MAX_BOARD_SIZE, board.MaxSize);
             Assert.AreEqual(boardSize < board.MinSize ? Board.MIN_BOARD_SIZE
                 : (board.MaxSize < boardSize ? board.MaxSize : boardSize), board.BoardSize);
-            Assert.AreEqual(emptyCell, board.EmptyCell, "Empty cell is wrong!");
-            Assert.IsTrue(board.Cells.All(row => row.All(cell => cell == board.EmptyCell)), "Cells are not filled with empty cell!");
+            Assert.IsTrue(board.Cells.All(row => row.All(cell => cell == Board.EMPTY_CELL)), "Cells are not filled with empty cell!");
+        }
+
+        [DataRow(1)]
+        [DataRow(4)]
+        [DataRow(5)]
+        [DataRow(6)]
+        [DataRow(99)]
+        [DataRow(100)]
+        [DataRow(101)]
+        [DataTestMethod]
+        public void Test_Board_Copy_Constructor(int boardSize)
+        {
+            var board = new Board(boardSize);
+            for (int i = 0; i < board.BoardSize; i++)
+            {
+                for (int j = 0; j < board.BoardSize; j++)
+                {
+                    board.SetCell(i, j, BoardCellValue.WHITE);
+                }
+            }
+            board.SetCell(4, 4, BoardCellValue.BLACK);
+            board.SetCell(2, 0, BoardCellValue.EMPTY);
+            var copy = new Board(board);
+            Assert.AreEqual(board.BoardSize, copy.BoardSize);
+            Assert.AreEqual(board.MaxSize, copy.MaxSize);
+            Assert.AreEqual(board.MinSize, copy.MinSize);
+            var boardCells = board.Cells;
+            var copyCells = copy.Cells;
+            for (int i = 0; i < board.BoardSize; i++)
+            {
+                var rowString = new string(boardCells.ElementAt(i));
+                var copyRowString = new string(copyCells.ElementAt(i));
+                Assert.AreEqual(rowString, copyRowString);
+            }
         }
 
         [DataRow('$')]
@@ -66,7 +97,7 @@ namespace Amoba.Tests
         [DataTestMethod]
         public void Test_FillCells_Method(char fillChar)
         {
-            var board = new Board(5, '#');
+            var board = new Board(5);
             MethodInfo? methodInfo = typeof(Board).GetMethod("FillCells", BindingFlags.NonPublic | BindingFlags.Instance);
             object[] parameters = { fillChar };
             if (methodInfo != null)
@@ -81,18 +112,27 @@ namespace Amoba.Tests
         }
 
         [TestMethod]
+        public void Test_Board_Cells_Only_Copy_Access()
+        {
+            var board = new Board(5);
+            board.SetCell(0, 0, BoardCellValue.WHITE);
+            board.Cells.ElementAt(0)[0] = (char)BoardCellValue.BLACK;
+            Assert.AreEqual(board.Cells.ElementAt(0)[0], (char)BoardCellValue.WHITE);
+        }
+
+        [TestMethod]
         public void Test_ResetCells_Method()
         {
-            var board = new Board(5, 'a');
+            var board = new Board(5);
             for (int i = 0; i < board.BoardSize; i++)
             {
                 for (int j = 0; j < board.BoardSize; j++)
                 {
-                    board.Cells.ElementAt(i)[j] = 'x';
+                    board.SetCell(i, j, BoardCellValue.BLACK);
                 }
             }
             board.ResetCells();
-            Assert.IsTrue(board.Cells.All(row => row.All(cell => cell == board.EmptyCell)), "Cells are not reset to empty cell!");
+            Assert.IsTrue(board.Cells.All(row => row.All(cell => cell == Board.EMPTY_CELL)), "Cells are not reset to empty cell!");
         }
 
         [DataRow(0, 0, BoardCellValue.WHITE)]
@@ -107,9 +147,8 @@ namespace Amoba.Tests
         [DataTestMethod]
         public void Test_SetCell_With_Valid_Cell(int x, int y, BoardCellValue value)
         {
-            var board = new Board(5, 'a');
-            var cell = new BoardCell(x, y, value);
-            board.SetCell(cell);
+            var board = new Board(5);
+            board.SetCell(x, y, value);
             Assert.AreEqual((char)value, board.Cells.ElementAt(y)[x]);
         }
 
@@ -121,21 +160,22 @@ namespace Amoba.Tests
         [DataTestMethod]
         public void Test_SetCell_With_Invalid_Cell(int x, int y, BoardCellValue value)
         {
-            var board = new Board(5, 'a');
-            var cell = new BoardCell(x, y, value);
-            var exception = Assert.ThrowsException<ArgumentException>(() => board.SetCell(cell));
+            var board = new Board(5);
+            var exception = Assert.ThrowsException<ArgumentException>(() => board.SetCell(x, y, value));
             Assert.AreEqual("Invalid cell!", exception.Message);
         }
 
-        [TestMethod]
-        public void Test_IsFilled_True()
+        [DataRow(BoardCellValue.BLACK)]
+        [DataRow(BoardCellValue.WHITE)]
+        [DataTestMethod]
+        public void Test_IsFilled_True(BoardCellValue value)
         {
-            var board = new Board(5, 'a');
+            var board = new Board(5);
             for (int i = 0; i < board.BoardSize; i++)
             {
                 for (int j = 0; j < board.BoardSize; j++)
                 {
-                    board.Cells.ElementAt(i)[j] = 'x';
+                    board.SetCell(i, j, value);
                 }
             }
             Assert.IsTrue(board.IsFilled());
@@ -144,7 +184,7 @@ namespace Amoba.Tests
         [TestMethod]
         public void Test_IsFilled_False()
         {
-            var board = new Board(5, 'a');
+            var board = new Board(5);
             Assert.IsFalse(board.IsFilled());
             for (int i = 0; i < board.BoardSize; i++)
             {
@@ -153,7 +193,7 @@ namespace Amoba.Tests
                     board.Cells.ElementAt(i)[j] = 'X';
                 }
             }
-            board.Cells.ElementAt(2)[2] = board.EmptyCell;
+            board.Cells.ElementAt(2)[2] = Board.EMPTY_CELL;
             Assert.IsFalse(board.IsFilled());
         }
 
@@ -167,24 +207,26 @@ namespace Amoba.Tests
         [DataTestMethod]
         public void Test_CopyCells(int boardSize)
         {
-            var board = new Board(boardSize, 'a');
-            var cellCopy = board.CopyCells();
+            var board = new Board(boardSize);
+            var cellsCopy = board.CopyCells();
+            var actualCells = board.Cells;
             for (int i = 0; i < board.BoardSize; i++)
             {
                 for (int j = 0; j < board.BoardSize; j++)
                 {
-                    Assert.AreEqual(board.Cells.ElementAt(i)[j], cellCopy.ElementAt(i)[j]);
-                    board.Cells.ElementAt(i)[j] = 'X';
+                    Assert.AreEqual(actualCells.ElementAt(i)[j], cellsCopy.ElementAt(i)[j]);
+                    // y == i == row   x == j == col
+                    board.SetCell(j, i, BoardCellValue.BLACK);
                 }
             }
-            board.Cells.ElementAt(2)[2] = board.EmptyCell;
-            cellCopy = board.CopyCells();
+            board.SetCell(2, 2, BoardCellValue.EMPTY);
+            cellsCopy = board.CopyCells();
+            actualCells = board.Cells;
             for (int i = 0; i < board.BoardSize; i++)
             {
-                for (int j = 0; j < board.BoardSize; j++)
-                {
-                    Assert.AreEqual(board.Cells.ElementAt(i)[j], cellCopy.ElementAt(i)[j]);
-                }
+                var rowString = new string(actualCells.ElementAt(i));
+                var copyRowString = new string(cellsCopy.ElementAt(i));
+                Assert.AreEqual(rowString, copyRowString);
             }
         }
 
@@ -294,26 +336,26 @@ namespace Amoba.Tests
         public void Test_ToString_Method()
         {
             int count = 0;
-            var board = new Board(10, 'X');
+            var board = new Board(10);
             string expectedString =
-                " 1  X X X X X X X X X X\n" +
-                " 2  X X X X X X X X X X\n" +
-                " 3  X X X X X X X X X X\n" +
-                " 4  X X X X X X X X X X\n" +
-                " 5  X X X X X X X X X X\n" +
-                " 6  X X X X X X X X X X\n" +
-                " 7  X X X X X X X X X X\n" +
-                " 8  X X X X X X X X X X\n" +
-                " 9  X X X X X X X X X X\n" +
-                "10  X X X X X X X X X X\n";
+                " 1  # # # # # # # # # #\n" +
+                " 2  # # # # # # # # # #\n" +
+                " 3  # # # # # # # # # #\n" +
+                " 4  # # # # # # # # # #\n" +
+                " 5  # # # # # # # # # #\n" +
+                " 6  # # # # # # # # # #\n" +
+                " 7  # # # # # # # # # #\n" +
+                " 8  # # # # # # # # # #\n" +
+                " 9  # # # # # # # # # #\n" +
+                "10  # # # # # # # # # #\n";
             Assert.AreEqual(expectedString, board.ToString(), $"Failed on {++count}. board!");
-            board = new Board(5, 'O');
+            board = new Board(5);
             expectedString =
-                "1  O O O O O\n" +
-                "2  O O O O O\n" +
-                "3  O O O O O\n" +
-                "4  O O O O O\n" +
-                "5  O O O O O\n";
+                "1  # # # # #\n" +
+                "2  # # # # #\n" +
+                "3  # # # # #\n" +
+                "4  # # # # #\n" +
+                "5  # # # # #\n";
             Assert.AreEqual(expectedString, board.ToString(), $"Failed on {++count}. board!");
         }
     }
