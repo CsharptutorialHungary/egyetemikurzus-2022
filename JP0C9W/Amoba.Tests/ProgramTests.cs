@@ -179,8 +179,8 @@ namespace Amoba.Tests
             writer.Dispose();
             Program.StartReporter(filePath, 0);
             Assert.IsTrue(ConsoleOutput.ToString().Contains("Turn: 1."));
-            Assert.IsTrue(ConsoleOutput.ToString().Contains("#"));
-            Assert.IsTrue(ConsoleOutput.ToString().Contains("O"));
+            Assert.IsTrue(ConsoleOutput.ToString().Contains('#'));
+            Assert.IsTrue(ConsoleOutput.ToString().Contains('O'));
             Assert.IsTrue(ConsoleOutput.ToString().Contains($"Move: Color: WHITE, Row: {2 + 1}, Column: {0 + 1}"));
             Assert.IsTrue(ConsoleOutput.ToString().Contains($"1  # # # # #"));
             Assert.IsTrue(ConsoleOutput.ToString().Contains($"2  # # # # #"));
@@ -239,7 +239,7 @@ namespace Amoba.Tests
             var writer = new StreamWriter(args[0]);
             writer.WriteLine(data);
             writer.Dispose();
-            Assert.AreEqual(0, Program.Main(args)));
+            Assert.AreEqual(0, Program.Main(args));
             File.Delete(args[0]);
         }
     }
