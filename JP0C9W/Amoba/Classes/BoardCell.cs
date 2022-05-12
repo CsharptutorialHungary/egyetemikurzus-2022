@@ -8,7 +8,7 @@ namespace Amoba.Classes
         public int X { get; init; }
         public int Y { get; init; }
         public BoardCellValue Value { get; init; }
-        
+
         [JsonConstructor]
         public BoardCell(int x, int y, BoardCellValue value)
         {
@@ -19,7 +19,7 @@ namespace Amoba.Classes
         public BoardCell(int x) : this(x, 0, BoardCellValue.EMPTY) { }
         public BoardCell(BoardCellValue value) : this(0, 0, value) { }
         public BoardCell() : this(0, 0, BoardCellValue.EMPTY) { }
-        public BoardCell(IBoardCell boardCell) 
+        public BoardCell(IBoardCell boardCell)
         {
             X = boardCell.X;
             Y = boardCell.Y;

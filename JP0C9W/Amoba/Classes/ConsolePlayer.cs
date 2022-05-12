@@ -2,7 +2,7 @@
 
 namespace Amoba.Classes
 {
-    public record class ConsolePlayer : IPlayer 
+    public record class ConsolePlayer : IPlayer
     {
         public PlayerColor Color { get; init; }
         public PlayerType Type { get; init; }
@@ -45,7 +45,9 @@ namespace Amoba.Classes
 
                 isValidMove = GameEngine.IsMoveValid(new BoardCell(coordinate.X, coordinate.Y, GameEngine.ColorToValue(Color)), board);
                 if (!isValidMove)
+                {
                     Console.WriteLine($"Row: {tmpRowIndex}, Column: {tmpColIndex} is not a valid move!");
+                }
             }
             return new BoardCell(coordinate.X, coordinate.Y, GameEngine.ColorToValue(Color));
         }

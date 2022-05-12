@@ -19,25 +19,33 @@ namespace Amoba.Classes
         public void Replay(int timeout)
         {
             if (timeout < 0)
+            {
                 throw new ArgumentException("Timeout must be greater than or equal to 0!");
-            
+            }
+
             if (!GameTurnReports.Any())
             {
                 throw new Exception("No turns to replay!");
-            } 
+            }
 
             for (int i = 0; i < GameTurnReports.Count; i++)
             {
                 if (i == 0 && GameMode.HasValue)
+                {
                     Console.WriteLine($"Game mode: {GameEngine.GameModeToString(GameMode.Value)}\n");
+                }
 
                 var turnReport = GameTurnReports.ElementAt(i);
                 Console.WriteLine(turnReport);
 
                 if (i == GameTurnReports.Count - 1)
+                {
                     Console.WriteLine($"Game result: {GameEngine.GameStatusToString(turnReport.GameStatus)}");
+                }
                 else
+                {
                     Thread.Sleep(timeout);
+                }
             }
         }
     }

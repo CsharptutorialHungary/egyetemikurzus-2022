@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Amoba.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.IO;
 using System.Text;
-using Amoba.Interfaces;
 
 namespace Amoba.Tests
 {
@@ -236,10 +236,10 @@ namespace Amoba.Tests
         public void Test_Main_Valid_Replay_Arguments(string argsStr, string data)
         {
             var args = argsStr.Split(' ');
-            var writer = new StreamWriter(args[0]);
+            var writer = new StreamWriter(args[1]);
             writer.WriteLine(data);
             writer.Dispose();
-            Assert.AreEqual(0, Program.Main(args));
+            Assert.AreEqual(0, Program.Main(args), ConsoleOutput.ToString());
             File.Delete(args[0]);
         }
     }

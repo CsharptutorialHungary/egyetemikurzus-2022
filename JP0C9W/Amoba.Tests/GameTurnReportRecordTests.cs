@@ -1,6 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Linq;
 
 namespace Amoba.Tests

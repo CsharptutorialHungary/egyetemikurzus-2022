@@ -8,7 +8,8 @@ namespace Amoba.Classes
         public static readonly int MAX_BOARD_SIZE = 100;
         public static readonly char EMPTY_CELL = (char)BoardCellValue.EMPTY;
         private int _minSize;
-        public int MinSize {
+        public int MinSize
+        {
             get
             {
                 return _minSize;
@@ -23,7 +24,7 @@ namespace Amoba.Classes
                 {
                     _minSize = MIN_BOARD_SIZE > value ? MIN_BOARD_SIZE : value;
                 }
-            } 
+            }
         }
         private int _maxSize;
         public int MaxSize
@@ -63,12 +64,12 @@ namespace Amoba.Classes
                 }
             }
         }
-        private IEnumerable<char[]> _cells; 
+        private IEnumerable<char[]> _cells;
         public IEnumerable<char[]> Cells
         {
             get
             {
-                return CopyCells(); // Only copy access
+                return CopyCells();
             }
             private set
             {
@@ -80,9 +81,13 @@ namespace Amoba.Classes
         {
             string formattedBoard = "";
             if (!cells.Any())
+            {
                 throw new ArgumentException("Can't convert cells to string, bacause cells argument is empty!");
+            }
             else if (cells.Count() != cells.ElementAt(0).Length)
+            {
                 throw new ArgumentException("Board is not symmetrical!");
+            }
 
             int boardSize = cells.Count();
             int rowNumTextOffset = (int)Math.Log10(boardSize);
@@ -103,7 +108,7 @@ namespace Amoba.Classes
                 }
             }
             return formattedBoard;
-        } 
+        }
 
         public Board(IBoard<char> board)
         {
@@ -114,12 +119,12 @@ namespace Amoba.Classes
         }
         public Board(int minSize, int maxSize, int boardSize)
         {
-            if (maxSize < minSize) 
+            if (maxSize < minSize)
             {
                 MinSize = maxSize;
                 MaxSize = minSize;
-            } 
-            else 
+            }
+            else
             {
                 MinSize = minSize;
                 MaxSize = maxSize;
@@ -147,7 +152,7 @@ namespace Amoba.Classes
                     result[i][j] = fillChar;
                 }
             }
-            return result;   
+            return result;
         }
 
         public void ResetCells()
@@ -158,9 +163,13 @@ namespace Amoba.Classes
         public void SetCell(IBoardCell cell)
         {
             if (0 <= cell.Y && cell.Y < BoardSize && 0 <= cell.X && cell.X < BoardSize)
+            {
                 _cells.ElementAt(cell.Y)[cell.X] = (char)cell.Value;
+            }
             else
+            {
                 throw new ArgumentException("Invalid cell!");
+            }
         }
 
         public void SetCell(int x, int y, BoardCellValue value)
@@ -179,7 +188,9 @@ namespace Amoba.Classes
             {
                 var row = new string(_cells.ElementAt(i));
                 if (row.Contains(EMPTY_CELL))
+                {
                     return false;
+                }
             }
             return true;
         }
@@ -193,6 +204,6 @@ namespace Amoba.Classes
                 _cells.ElementAt(i).CopyTo(res[i], 0);
             }
             return res;
-        } 
+        }
     }
 }

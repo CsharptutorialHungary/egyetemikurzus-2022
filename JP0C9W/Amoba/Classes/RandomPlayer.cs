@@ -10,7 +10,7 @@ namespace Amoba.Classes
         public static void ShuffleCollection<T>(ref IList<T> col)
         {
             col = col.OrderBy(i => GameEngine.RANDOM.Next()).ToList();
-        } 
+        }
         public RandomPlayer(PlayerColor color, IBoard<char> board)
         {
             Type = PlayerType.AI;
@@ -34,7 +34,7 @@ namespace Amoba.Classes
         public IBoardCell GetMove(IBoard<char> board, IBoardCell? prevMove)
         {
             if (FreeCells.Count > 0)
-                {
+            {
                 if (prevMove != null)
                 {
                     IBoardCell? prevCell = null;
@@ -42,7 +42,7 @@ namespace Amoba.Classes
                     {
                         prevCell = FreeCells.Single(cell => cell.Y == prevMove.Y && cell.X == prevMove.X);
                         FreeCells.Remove(prevCell);
-                    } 
+                    }
                     catch (Exception)
                     {
                         throw;

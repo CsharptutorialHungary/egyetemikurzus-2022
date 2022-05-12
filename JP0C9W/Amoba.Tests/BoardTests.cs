@@ -1,9 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Linq;
 using System.Reflection;
-using System;
 
 namespace Amoba.Tests
 {
@@ -103,7 +103,9 @@ namespace Amoba.Tests
             if (methodInfo != null)
             {
                 if (methodInfo.Invoke(board, parameters) is char[][] result)
+                {
                     Assert.IsTrue(result.All(row => row.All(cell => cell == fillChar)), "Cells are not filled with FillCells method!");
+                }
                 else
                 {
                     Assert.Fail("No result!");
@@ -256,10 +258,14 @@ namespace Amoba.Tests
         public static char[][] CreateTestArray(int rowSize, int colSize, char fillChar)
         {
             if (rowSize <= 0)
+            {
                 throw new ArgumentException("Invalid row size!");
+            }
             else if (colSize <= 0)
+            {
                 throw new ArgumentException("Invalid col size!");
-            
+            }
+
             char[][] array = new char[rowSize][];
             for (int i = 0; i < rowSize; i++)
             {
@@ -270,7 +276,8 @@ namespace Amoba.Tests
         }
 
         [TestMethod]
-        public void Test_CreateTestArray_Invalid_Row_Size_ArgumentException() {
+        public void Test_CreateTestArray_Invalid_Row_Size_ArgumentException()
+        {
             string errorMsg = "Invalid row size!";
             var exception = Assert.ThrowsException<ArgumentException>(() => CreateTestArray(-1, 1, 'A'));
             Assert.AreEqual(errorMsg, exception.Message);
@@ -307,7 +314,7 @@ namespace Amoba.Tests
                 {
                     Assert.AreEqual(value, array[i][j]);
                 }
-            } 
+            }
         }
 
         [TestMethod]

@@ -1,6 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +34,9 @@ namespace Amoba.Tests
             {
                 var freeCells = propInfo.GetValue(player);
                 if (propInfo.GetValue(player) is IList<IBoardCell> result)
+                {
                     Assert.IsTrue(result.All(cell => cell.Value == BoardCellValue.EMPTY));
+                }
                 else
                 {
                     Assert.Fail("No FreeCells property!");

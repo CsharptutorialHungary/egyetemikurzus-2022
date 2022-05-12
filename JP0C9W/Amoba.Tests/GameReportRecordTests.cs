@@ -1,11 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
-using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Text;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace Amoba.Tests
 {
@@ -13,7 +13,7 @@ namespace Amoba.Tests
     public class GameReportRecordTests
     {
         private StringBuilder ConsoleOutput { get; set; }
-        private readonly List<GameTurnReportRecord> _testTurnReports; 
+        private readonly List<GameTurnReportRecord> _testTurnReports;
         private readonly GameReportRecord _testGameReport;
 
         public GameReportRecordTests()
@@ -49,7 +49,7 @@ namespace Amoba.Tests
         public void Test_GameReportRecord_GameMode_Reports_Constructor()
         {
             var gameReport = new GameReportRecord(GameMode.REAL_VS_REAL, _testTurnReports);
-            Assert.AreEqual(GameMode.REAL_VS_REAL ,gameReport.GameMode);
+            Assert.AreEqual(GameMode.REAL_VS_REAL, gameReport.GameMode);
             Assert.AreEqual(_testTurnReports.Count, gameReport.GameTurnReports.Count);
             for (int i = 0; i < gameReport.GameTurnReports.Count; i++)
             {
@@ -72,19 +72,23 @@ namespace Amoba.Tests
         {
             _testGameReport.Replay(0);
             foreach (var turnReport in _testGameReport.GameTurnReports)
+            {
                 Assert.IsTrue(ConsoleOutput.ToString().Contains(turnReport.ToString()));
+            }
 
             Assert.IsTrue(ConsoleOutput.ToString().Contains($"Game result: {GameEngine.GameStatusToString(_testGameReport.GameTurnReports.Last().GameStatus)}"));
 
             if (_testGameReport.GameMode.HasValue)
+            {
                 Assert.IsTrue(ConsoleOutput.ToString().Contains($"Game mode: {GameEngine.GameModeToString(_testGameReport.GameMode.Value)}"));
+            }
         }
 
         [TestMethod]
         public void Test_Replay_No_Turn_Records()
         {
             var report = new GameReportRecord();
-            var excpetion = Assert.ThrowsException<Exception>( () => report.Replay(0));
+            var excpetion = Assert.ThrowsException<Exception>(() => report.Replay(0));
             Assert.AreEqual("No turns to replay!", excpetion.Message);
         }
     }

@@ -1,8 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
-using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
+using System.IO;
 using System.Text;
 
 namespace Amoba.Tests
@@ -16,7 +16,7 @@ namespace Amoba.Tests
         public ConsolePlayerTests()
         {
             ConsoleOutput = new StringBuilder();
-        } 
+        }
 
         [TestInitialize]
         public void Setup()
@@ -45,12 +45,12 @@ namespace Amoba.Tests
             Assert.AreEqual(PlayerType.REAL, player.Type);
         }
 
-        [DataRow("1","2")]
-        [DataRow("1","5")]
-        [DataRow("5","1")]
-        [DataRow("5","5")]
-        [DataRow("03","04")]
-        [DataRow("1","1")]
+        [DataRow("1", "2")]
+        [DataRow("1", "5")]
+        [DataRow("5", "1")]
+        [DataRow("5", "5")]
+        [DataRow("03", "04")]
+        [DataRow("1", "1")]
         [DataTestMethod]
         public void Test_GetMove_Method_With_Valid_Input(string row, string col)
         {

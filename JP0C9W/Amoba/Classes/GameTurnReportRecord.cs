@@ -6,11 +6,12 @@ namespace Amoba.Classes
     public record class GameTurnReportRecord : IGameTurnReport
     {
         private int _turnIndex;
-        public int TurnIndex {
+        public int TurnIndex
+        {
             get
             {
                 return _turnIndex;
-            } 
+            }
             init
             {
                 _turnIndex = value <= 0 ? 1 : value;
@@ -22,7 +23,7 @@ namespace Amoba.Classes
         public BoardCell Move { get; init; }
 
         [JsonConstructor]
-        public GameTurnReportRecord(int turnIndex, GameStatus gameStatus, IEnumerable<char[]> gameBoardStatus, BoardCell move) 
+        public GameTurnReportRecord(int turnIndex, GameStatus gameStatus, IEnumerable<char[]> gameBoardStatus, BoardCell move)
         {
             TurnIndex = turnIndex;
             GameStatus = gameStatus;

@@ -9,7 +9,7 @@ namespace Amoba.Classes
         public RecordCoordinate(int x, int y)
         {
             X = x;
-            Y = y; 
+            Y = y;
         }
 
         public RecordCoordinate(int x) : this(x, 0) { }

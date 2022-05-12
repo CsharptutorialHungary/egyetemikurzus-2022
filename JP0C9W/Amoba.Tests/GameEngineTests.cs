@@ -1,11 +1,11 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
-using System.Text;
-using System.IO;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Reflection;
+using System.Text;
 
 namespace Amoba.Tests
 {
@@ -150,12 +150,12 @@ namespace Amoba.Tests
         }
 
         [TestInitialize]
-        public void Setup() 
+        public void Setup()
         {
             Console.SetOut(new StringWriter(ConsoleOutput));
             ConsoleOutput.Clear();
         }
-        
+
         [DataRow("a")]
         [DataRow("xd")]
         [DataRow("reeplay")]
@@ -290,7 +290,7 @@ namespace Amoba.Tests
         [DataTestMethod]
         public void Test_Static_GameStatusToString_Invalid(string gameStatus)
         {
-            var exception = Assert.ThrowsException<ArgumentException>( () => GameEngine.StringToGameStatus(gameStatus));
+            var exception = Assert.ThrowsException<ArgumentException>(() => GameEngine.StringToGameStatus(gameStatus));
             Assert.AreEqual("Invalid game status!", exception.Message);
         }
 
@@ -356,7 +356,7 @@ namespace Amoba.Tests
         [DataTestMethod]
         public void Test_Static_IntToGameMode_Valid(int gameMode)
         {
-            switch(gameMode)
+            switch (gameMode)
             {
                 case 0:
                     Assert.AreEqual(GameMode.REAL_VS_REAL, GameEngine.IntToGameMode(gameMode));
@@ -540,7 +540,7 @@ namespace Amoba.Tests
             foreach (var board in BlackRowWinnerBoards)
             {
                 typeof(GameEngine).GetField("_board", BindingFlags.Instance | BindingFlags.NonPublic)?.SetValue(engine, board);
-                Assert.AreEqual(GameStatus.BLACK_WON ,engine.CheckBoardRows());
+                Assert.AreEqual(GameStatus.BLACK_WON, engine.CheckBoardRows());
             }
         }
 

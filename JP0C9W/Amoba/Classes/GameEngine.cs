@@ -6,7 +6,7 @@ namespace Amoba.Classes
     {
         public static readonly Random RANDOM = new();
         public static readonly string PLAY_MODE = "play";
-        public static readonly string REPLAY_MODE = "replay"; 
+        public static readonly string REPLAY_MODE = "replay";
         private readonly string WHITE_WINNER_STATE;
         private readonly string BLACK_WINNER_STATE;
         private IPlayer[] _players;
@@ -14,8 +14,8 @@ namespace Amoba.Classes
         public IGameReporter Reporter { get; init; }
         public GameMode? Mode { get; private set; }
         public int TurnIndex { get; private set; }
-        public IPlayer[] Players 
-        { 
+        public IPlayer[] Players
+        {
             get
             {
                 var copy = new IPlayer[_players.Length];
@@ -25,25 +25,25 @@ namespace Amoba.Classes
             private set
             {
                 _players = value;
-            } 
+            }
         }
         public PlayerColor PlayerTurn { get; private set; }
         public bool IsGameRunning { get; private set; }
-        public IBoard<char> Board 
-        { 
-            get 
+        public IBoard<char> Board
+        {
+            get
             {
                 return new Board(_board);
             }
-            private set 
+            private set
             {
                 _board = value;
-            } 
+            }
         }
         public IBoardCell? PrevMove { get; private set; }
 
-        public static bool IsValidEngineMode(string mode) 
-        { 
+        public static bool IsValidEngineMode(string mode)
+        {
             return mode.ToLower() == PLAY_MODE || mode.ToLower() == REPLAY_MODE;
         }
 
@@ -54,7 +54,7 @@ namespace Amoba.Classes
 
         public static string ColorToString(PlayerColor Color)
         {
-            return Color == PlayerColor.WHITE ? "White" : "Black"; 
+            return Color == PlayerColor.WHITE ? "White" : "Black";
         }
         public static BoardCellValue ColorToValue(PlayerColor Color)
         {
@@ -118,7 +118,8 @@ namespace Amoba.Classes
             };
         }
 
-        public GameEngine(IGameReporter gameReporter, int boardSize) {
+        public GameEngine(IGameReporter gameReporter, int boardSize)
+        {
             Reporter = gameReporter;
             WHITE_WINNER_STATE = new((char)BoardCellValue.WHITE, Classes.Board.MIN_BOARD_SIZE);
             BLACK_WINNER_STATE = new((char)BoardCellValue.BLACK, Classes.Board.MIN_BOARD_SIZE);
@@ -210,14 +211,16 @@ namespace Amoba.Classes
                 if (status == GameStatus.NOT_FINISHED)
                 {
                     if (TurnIndex > 0)
+                    {
                         Console.WriteLine($"Turn: {TurnIndex}. {ColorToString(PlayerTurn)}\n");
+                    }
                     else
                     {
                         Console.WriteLine($"Game mode: {GameModeToString(mode)}\n");
                         Console.WriteLine(_board.ToString());
                         Console.WriteLine($"Turn: {++TurnIndex}. {ColorToString(PlayerTurn)}\n");
                     }
-                        
+
 
                     RequestMove();
                     Console.WriteLine(_board.ToString());
@@ -245,9 +248,13 @@ namespace Amoba.Classes
             {
                 var row = new string(cells.ElementAt(i));
                 if (row.Contains(WHITE_WINNER_STATE))
+                {
                     return GameStatus.WHITE_WON;
+                }
                 else if (row.Contains(BLACK_WINNER_STATE))
+                {
                     return GameStatus.BLACK_WON;
+                }
             }
             return GameStatus.NOT_FINISHED;
         }
@@ -263,9 +270,13 @@ namespace Amoba.Classes
                     col += cells.ElementAt(j)[i];
                 }
                 if (col.Contains(WHITE_WINNER_STATE))
+                {
                     return GameStatus.WHITE_WON;
+                }
                 else if (col.Contains(BLACK_WINNER_STATE))
+                {
                     return GameStatus.BLACK_WON;
+                }
             }
             return GameStatus.NOT_FINISHED;
         }
@@ -311,9 +322,13 @@ namespace Amoba.Classes
                     foreach (var diag in diagonals)
                     {
                         if (diag.Contains(WHITE_WINNER_STATE))
+                        {
                             return GameStatus.WHITE_WON;
+                        }
                         else if (diag.Contains(BLACK_WINNER_STATE))
+                        {
                             return GameStatus.BLACK_WON;
+                        }
                     }
                 }
             }
@@ -347,7 +362,7 @@ namespace Amoba.Classes
             {
                 Console.WriteLine("Game is not running!");
                 return;
-            } 
+            }
 
             var status = GetStatus();
             if (status == GameStatus.NOT_FINISHED && IsGameRunning)
@@ -362,9 +377,9 @@ namespace Amoba.Classes
                 Console.WriteLine($"{gameResult}!");
                 IsGameRunning = false;
                 TurnIndex = -1;
-                var task = Task.Run( async () => _ = await Reporter.SaveGameToFileAsync());
+                var task = Task.Run(async () => _ = await Reporter.SaveGameToFileAsync());
                 task.Wait();
-            } 
+            }
             catch (Exception)
             {
                 throw;

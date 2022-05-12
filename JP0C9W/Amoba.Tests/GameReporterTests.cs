@@ -1,10 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using Amoba.Classes;
+﻿using Amoba.Classes;
 using Amoba.Interfaces;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.IO;
-using System.Text.Json;
 using System.Linq;
+using System.Text.Json;
 
 namespace Amoba.Tests
 {
@@ -12,7 +12,7 @@ namespace Amoba.Tests
     public class GameReporterTests
     {
         private GameReporter Reporter;
-        public GameReporterTests() 
+        public GameReporterTests()
         {
             Reporter = new GameReporter();
         }
@@ -22,7 +22,7 @@ namespace Amoba.Tests
         {
             Reporter = new GameReporter();
         }
-        
+
         [TestMethod]
         public void Test_GameReporter_Constructor()
         {
@@ -31,7 +31,7 @@ namespace Amoba.Tests
             Assert.AreEqual(null, reporter.GameReport.GameMode);
         }
 
-        
+
         [DataRow(1, GameStatus.DRAW, 10, 1, 1, BoardCellValue.BLACK)]
         [DataRow(10, GameStatus.BLACK_WON, 100, 12, 1, BoardCellValue.WHITE)]
         [DataRow(100, GameStatus.WHITE_WON, 12, 1, 0, BoardCellValue.BLACK)]
@@ -55,7 +55,9 @@ namespace Amoba.Tests
         public void Test_LoadGameFromFileAsync_FileNotFoundException(string file)
         {
             if (File.Exists(file))
+            {
                 File.Delete(file);
+            }
 
             var exception = Assert.ThrowsExceptionAsync<FileNotFoundException>(async () => await Reporter.LoadGameFromFileAsync(file)).Result;
             Assert.AreEqual($"The given saved game file ({file}) doesn't exist!", exception.Message);

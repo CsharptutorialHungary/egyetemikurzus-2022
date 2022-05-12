@@ -56,7 +56,7 @@ namespace Amoba
                     "\n" +
                     "   Board sizes: 5-100\n" +
                     "\n" +
-                    "   Rules: First player to place 5 symbols (O or X) in a line (row, column, diagonal) wins!" 
+                    "   Rules: First player to place 5 symbols (O or X) in a line (row, column, diagonal) wins!"
                 );
             }
 
@@ -115,7 +115,7 @@ namespace Amoba
                 Console.WriteLine(ex.Message);
                 return 1;
             }
-            
+
             return 0;
         }
     }

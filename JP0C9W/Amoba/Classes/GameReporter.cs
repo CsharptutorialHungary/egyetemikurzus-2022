@@ -18,9 +18,12 @@ namespace Amoba.Classes
         public async Task LoadGameFromFileAsync(string filePath)
         {
             if (!File.Exists(filePath))
+            {
                 throw new FileNotFoundException($"The given saved game file ({filePath}) doesn't exist!");
+            }
 
-            try {
+            try
+            {
                 using var stream = new StreamReader(filePath);
                 string json = await stream.ReadToEndAsync();
                 var res = JsonSerializer.Deserialize<GameReportRecord>(json);
@@ -30,7 +33,9 @@ namespace Amoba.Classes
                     GameReport = res;
                 }
                 else
+                {
                     throw new Exception("Game file content is invalid!");
+                }
             }
             catch (Exception)
             {
