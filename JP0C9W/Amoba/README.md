@@ -23,4 +23,4 @@ Board size: 5x5-100x100
     
 ## Game rules
 
-First player to place 5 symbols (O or X) in a line (row, column, diagonal) wins!
+First player to place 5 symbols (O or X) in a line (row, column, diagonal) wins.
