@@ -62,14 +62,19 @@ namespace Amoba.Tests
             Assert.AreEqual($"Color: {BoardCellValue.EMPTY}, Row: {1}, Column: {1}", str);
         }
 
+        [DataRow(1, 2, BoardCellValue.BLACK)]
+        [DataRow(11, 23, BoardCellValue.WHITE)]
+        [DataRow(111, 233, BoardCellValue.BLACK)]
+        [DataRow(1233, 3, BoardCellValue.WHITE)]
+        [DataRow(1, 3321, BoardCellValue.EMPTY)]
         [TestMethod]
-        public void Test_Copy_Method()
+        public void Test_Copy_Method(int x, int y, BoardCellValue value)
         {
-            var cell = new BoardCell();
+            var cell = new BoardCell(x, y, value);
             var copy = cell.Copy();
-            Assert.AreEqual(cell.X, copy.X);
-            Assert.AreEqual(cell.X, copy.Y);
-            Assert.AreEqual(cell.Value, copy.Value);
+            Assert.AreEqual(x, copy.X);
+            Assert.AreEqual(y, copy.Y);
+            Assert.AreEqual(value, copy.Value);
         }
     }
 }
